@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Tap Defender</title>
+    <link rel='stylesheet' href='../styles.css'>        
+    <link rel='icon' href='../logo.png' type='image/png'>    
+
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+      var unityInstance = UnityLoader.instantiate("unityContainer", "Build/TapDefenderWebGL.json");
+    </script>
+  </head>
+  <body>
+    <div class = "navbar">
+      <div class = "navanchors">
+          <ul>
+              <li><a href = "../index.html">Home</a></li>
+              <li><a href = "../about.html">About Me</a></li>
+              <li><a href = "../contact.html">Contact</a></li>
+          </ul>
+      </div>
+    </div>
+    <div class="webgl-content">
+      <div id="unityContainer" style="width: 48vh; height: 80vh"></div>      
+    </div>
+    <div class="howTo"><br><h2>Tap with mouse or finger</h2></div>
+  </body>
+</html>

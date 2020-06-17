@@ -1,0 +1,253 @@
+
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;   
+}
+
+html{
+    /* scroll-snap-type: block mandatory; */
+    background-color: #979797;
+    color:white;
+} 
+body{
+    margin: 0;
+    height: 100%; 
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.navbar{
+    width: 100%;
+    position: fixed;
+    display: flex;
+    background-color: orange;
+    z-index: 1;
+}
+
+.navbar img{
+    margin: auto 4%;        
+}
+
+.navbar ul{
+    margin: 4px;
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    justify-content: center;    
+}
+
+
+
+
+.navbar li{    
+    list-style: none;
+    margin: 0 auto;
+}
+
+.navanchors{
+    margin: 0 auto;
+    padding: 0 auto;
+    width: 80%;
+}
+
+.navbar ul li a {
+    color:white;
+    font-weight: bolder;
+    font-size: large;
+    width: 1%;
+}
+
+#cubeinc{    
+    background-image: url("cubeIncWide.PNG");
+}
+
+.gamedescription{
+    -webkit-text-stroke-width: 0;
+}
+
+#cashout{
+    background-image: url("cashOutSkyView.PNG"); 
+}
+
+#inspirationjar{
+    background-image: url("inspirationcapture.png");
+}
+
+#jetlagged{
+    background-image: url("world.png");
+}
+
+#bounceArchitect{
+    background-image: url("bouncebanner.PNG");   
+}
+
+#tapdefender{
+    background-image: url("TapDefenderBanner.PNG"); 
+}
+#colorjump{
+    background-image: url("colorjumpwide.png");
+}
+
+#rhymetime{
+    background-image: url("rhymetimebanner.png");
+
+}
+
+#spacespin{
+    background-image: url("spacespin.png");
+}
+
+.gameBlock{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.gametext{
+    padding: 500px 0 40px 0;
+    -webkit-text-stroke-color: black;
+    -webkit-text-stroke-width: 1px;    
+}
+
+.gametitle{    
+    font-size: 4rem;
+    font-weight: bolder;
+}
+
+.gamedescription{
+    font-size: 2rem;
+    font-weight: lighter;
+    padding: 0 20px;
+}
+
+.gamedescription a {
+    font-weight: bold;
+    color: gold;
+}
+
+.gamedescription a img {
+    vertical-align: middle;
+}
+
+a{
+    text-decoration: none;    
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+footer{
+    margin: 20px 0;
+    padding: 0 20px;
+}
+
+
+
+
+.bio{
+    background-color: rgb(0, 149, 218);
+    padding: 50px;
+}
+
+.name{
+    font-size: 5rem;
+}
+
+.shortbio{
+    font-weight: lighter;
+    font-size: 1.5rem;
+}
+
+.shortbio ul {
+    margin: 20px 0;
+    padding-left: 35%;
+    text-align: left;
+    display: block;
+}
+
+.shortbio ul li{       
+    list-style-position: outside;
+    font-size: 1.25rem;
+    word-wrap: break-word;
+}
+
+.shortbio ul li a{
+    font-size:white;
+}
+
+.longbio{
+    font-style: italic;
+    font-size: 2rem;
+    margin: 150px 0 ;
+}
+
+.longbio strong{
+    font-family: Snell Roundhand;
+    font-size: 2rem;
+}
+
+.separator{
+    margin: 100px 14% 0 14%;
+    border: 1px solid wheat;
+}
+
+.intro{
+    z-index: -1;
+    position: relative;    
+    padding: 20px 5px 0 5px;
+}
+.mail{
+    color: white;
+}
+.intro strong{
+    font-size: larger;
+    text-decoration: underline;
+}
+
+
+.webgl-content{
+    margin: auto;
+    margin-top: 100px;
+}
+
+
+@media screen and (max-width: 600px) {
+
+    .navbar ul {
+        flex-direction: column;
+        padding: 0;        
+    }    
+    
+    .shortbio ul{
+        scroll-snap-align: top;        
+        padding-left: 10vw;
+    }
+
+    .longbio{
+        scroll-snap-align: center;        
+    }    
+
+    .intro {
+        scroll-snap-align: center;
+        padding-top: 70px;
+    }
+
+    .gametext{
+        scroll-snap-align: end;
+        padding-top: 300px;
+    }
+
+    .gametitle{
+        font-size: 3rem;
+    }
+
+    .gamedescription{
+        font-size: 1.6rem;
+    }
+    
+    .footer {
+        scroll-snap-align: center;
+    }
+}

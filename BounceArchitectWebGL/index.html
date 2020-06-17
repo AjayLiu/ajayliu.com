@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Bounce Architect</title>
+    <link rel='stylesheet' href='../styles.css'>  
+    <link rel='stylesheet' href='bounce.css'>               
+    <link rel="icon" type="image/png" href="../logo.png">     
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+      var unityInstance = UnityLoader.instantiate("unityContainer", "Build/WebGL.json");
+    </script>
+  </head>
+  <body>
+    <div class = "navbar">
+      <div class = "navanchors">
+          <ul>
+              <li><a href = "../index.html">Home</a></li>
+              <li><a href = "../about.html">About me</a></li>
+              <li><a href = "../contact.html">Contact</a></li>
+          </ul>
+      </div>
+    </div>
+    <div class="webgl-content">
+      <div id="unityContainer"></div>      
+    </div>
+    <div class="howTo"><h2>Use A and D or Arrow Keys to move your drawing. Use Mouse to draw. Keep the ball bouncing! </h2></div>
+  </body>
+</html>
