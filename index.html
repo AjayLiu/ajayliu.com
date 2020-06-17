@@ -7,10 +7,8 @@
         <meta name='viewport' content='width=device-width, initial-scale=1'>
         <link rel='stylesheet' href='styles.css'>        
         <link rel="icon" type="image/png" href="/logo.png">     
-        <link rel='stylesheet' href='background.css'>  
-        <script src= "https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/TweenLite.min.js"></script>
-        <script src= "https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/EasePack.min.js"></script>
-        <script src= "https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/demo.js"></script>
+        <link rel='stylesheet' href='background.css'> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     </head>
 
     <body>
@@ -26,150 +24,165 @@
             VANTA.NET({
             el: "#net",
             backgroundColor: "#252934",
-            color:"#0077be",
+            color:"#74e78d",
             mouseControls: true,
             touchControls: true,
             minHeight: 200.00,
             minWidth: 200.00,
             scale: 1.00,
             scaleMobile: 1.00,
-            showDots: false
+            showDots: true
             })
             </script>
         </div>
         
-        
-        <div class = "navbar">
-            <div class = "navanchors">
-                <ul>
-                    <li><a href = "index.html">Home</a></li>
-                    <li><a href = "about.html">About Me</a></li>
-                    <li><a href = "contact.html">Contact</a></li>
-                </ul>
-            </div>            
-        </div>
-        <div id = "cubeinc" class = "gameBlock">
-            <div class = "gametext">
-                <div class = "gametitle">
-                    Cube Inc                
+        <div id = "gallery">
+            <div id = "cubeinc" class = "gameBlock">
+                <div class = "gametext">
+                    <div class = "gametitle">
+                        Cube Inc                
+                    </div>
                     <div class = "gamedescription">
                         <p>a minimalistic, yet challenging puzzle game.</p>
+                    </div>
+                    <div class = "gamelinks">
                         <a href = "CubeIncWebGL/index.html"> Play in browser</a>
                         <a href="https://play.google.com/store/apps/details?id=com.TroyGameDevelopmentClub.CubeInc">
-                            <img border="0" src="en_badge_web_generic.png" width="205" height="83">
+                            <img src="en_badge_web_generic.png" width="153" height="62">
                         </a>
                     </div>
-                </div>
-            </div>                 
-        </div> 
-        <div id = "inspirationjar" class = "gameBlock">
-            <div class = "gametext">
-                <div class = "gametitle">
-                    Inspiration Jar                
+                </div>                 
+            </div> 
+            <div id = "inspirationjar" class = "gameBlock">
+                <div class = "gametext">
+                    <div class = "gametitle">
+                        Inspiration Jar                
+                    </div>
                     <div class = "gamedescription">
                         <p>a platform for users to submit encouraging messages and make the world a little happier!</p>
+                    </div>
+                    <div class = "gamelinks">
                         <a href = "https://www.inspirationjar.com">Visit the Website!</a>
                     </div>
-                </div>
-            </div>                 
-        </div>
-        <div id = "jetlagged" class = "gameBlock">
-            <div class = "gametext">
-                <div class = "gametitle">
-                    Jetlag Calculator                
+                </div>                 
+            </div>
+            <div id = "jetlagged" class = "gameBlock">
+                <div class = "gametext">
+                    <div class = "gametitle">
+                        Jetlag Calculator                
+                    </div>
                     <div class = "gamedescription">
                         <p>a plethora of tools dealing with time!</p>
+                    </div>
+                    <div class = "gamelinks">                        
                         <a href = "https://jetlag.netlify.app/index.html">Visit the Website!</a>
                     </div>
-                </div>
-            </div>                 
-        </div> 
-        <div id = "bounceArchitect" class = "gameBlock">
-            <div class = "gametext">
-                <div class = "gametitle">
-                    Bounce Architect                
-                    <div class = "gamedescription">
-                        <p>What shape bounces best in all orientations? Sketch it out now! Made in under 12 hours.</p>
-                        <a href = "BounceArchitectWebGL/index.html"> Play in browser</a>
-                        <a href="https://play.google.com/store/apps/details?id=com.HackathonGroup.BounceArchitect">
-                            <img border="0" src="en_badge_web_generic.png" width="205" height="83">
-                        </a>
+                </div>                 
+            </div> 
+            <div id = "cashout" class = "gameBlock">
+                <div class = "gametext">
+                    <div class = "gametitle">
+                        Cash Out                
                     </div>
-                </div>
-            </div>                 
-        </div>
-        <div id = "cashout" class = "gameBlock">
-            <div class = "gametext">
-                <div class = "gametitle">
-                    Cash Out                
                     <div class = "gamedescription">
                         <p>a fast paced police pursuit game.</p>
+                    </div>
+                    <div class = "gamelinks">                         
                         <a href = "CashOutWebGL/index.html"> Play in browser</a>
                         <a href="https://play.google.com/store/apps/details?id=com.TroyGameDevelopment.CashOut">
-                            <img border="0" src="en_badge_web_generic.png" width="205" height="83">
+                            <img src="en_badge_web_generic.png" width="153" height="62">
                         </a>
                     </div>
-                </div>
-            </div>                 
-        </div>
-        <div id = "tapdefender" class = "gameBlock">
-            <div class = "gametext">
-                <div class = "gametitle">
-                    Tap Defender                
+                </div>                 
+            </div>
+            <div id = "bounceArchitect" class = "gameBlock">
+                <div class = "gametext ">
+                    <div class = "gametitle">
+                        Bounce Architect                
+                    </div>
+                    <div class = "gamedescription">
+                        <p>What shape bounces best in all orientations? Sketch it out now! Made in under 12 hours.</p>
+                    </div>
+                    <div class = "gamelinks"> 
+                        <a href = "BounceArchitectWebGL/index.html"> Play in browser</a>
+                        <a href="https://play.google.com/store/apps/details?id=com.HackathonGroup.BounceArchitect">
+                            <img  src="en_badge_web_generic.png" width="153" height="62">
+                        </a>                        
+                    </div>
+                </div>                 
+            </div>
+            <div id = "tapdefender" class = "gameBlock">
+                <div class = "gametext">
+                    <div class = "gametitle">
+                        Tap Defender                
+                    </div>
                     <div class = "gamedescription">
                         <p>a funny, light-hearted tapping game</p>
-                        <a href = "TapDefenderWebGL/index.html"> Play in browser </a>
+                    </div>
+                    <div class = "gamelinks">                         
+                        <a href = "TapDefenderWebGL/index.html">Play in browser</a>
                         <a href="https://play.google.com/store/apps/details?id=com.TroyGameDev.TapDefender">
-                            <img border="0" src="en_badge_web_generic.png" width="205" height="83">
+                            <img src="en_badge_web_generic.png" width="153" height="62">
                         </a>
                     </div>
-                </div>
-            </div>                 
-        </div> 
-        <div id = "colorjump" class = "gameBlock">
-            <div class = "gametext">
-                <div class = "gametitle">
-                    Color Jump                
+                </div>                 
+            </div> 
+            <div id = "colorjump" class = "gameBlock">
+                <div class = "gametext ">
+                    <div class = "gametitle">
+                        Color Jump                
+                    </div>
                     <div class = "gamedescription">
                         <p>a color coordination arcade game - easy to learn, hard to master </p>
+                    </div>
+                    <div class = "gamelinks"> 
                         <a href = "ColorJumpWebGL/index.html"> Play in browser</a>
                         <a href="https://play.google.com/store/apps/details?id=com.MerbolaGames.ColorJump">
-                            <img border="0" src="en_badge_web_generic.png" width="205" height="83">
-                        </a>
+                            <img src="en_badge_web_generic.png" width="153" height="62">
+                        </a>                        
                     </div>
-                </div>
-            </div>                 
-        </div>  
-        <div id = "rhymetime" class = "gameBlock">
-            <div class = "gametext">
-                <div class = "gametitle">
-                    Rhyme Time                
+                </div>                 
+            </div>  
+            <div id = "rhymetime" class = "gameBlock">
+                <div class = "gametext ">
+                    <div class = "gametitle">
+                        Rhyme Time                
+                    </div>
                     <div class = "gamedescription">
                         <p> put your rhyming skills to the test and race against the clock </p>
-                        <a href="https://play.google.com/store/apps/details?id=com.MerbolaGames.RhymeTime">
-                            <img border="0" src="en_badge_web_generic.png" width="205" height="83">
-                        </a>
                     </div>
-                </div>
-            </div>                 
-        </div>
-        <div id = "spacespin" class = "gameBlock">
-            <div class = "gametext">
-                <div class = "gametitle">
-                    Space Spin                
+                    <div class = "gamelinks"> 
+                        <a href="https://play.google.com/store/apps/details?id=com.MerbolaGames.RhymeTime">
+                            <img src="en_badge_web_generic.png" width="153" height="62">
+                        </a>                        
+                    </div>
+                </div>                 
+            </div>
+            <div id = "spacespin" class = "gameBlock">
+                <div class = "gametext ">
+                    <div class = "gametitle">
+                        Space Spin                
+                    </div>
                     <div class = "gamedescription">
                         <p> orbit your way across the universe, but watch out for obstacles and your fuel </p>
+                    </div>
+                    <div class = "gamelinks"> 
                         <a href = "SpaceSpinWebGL/index.html"> Play in browser</a>
                         <a href="https://play.google.com/store/apps/details?id=com.MerbolaGaming.SpaceSpin">
-                            <img border="0" src="en_badge_web_generic.png" width="205" height="83">
+                            <img src="en_badge_web_generic.png" width="153" height="62">
                         </a>
+                        
                     </div>
-                </div>
-            </div>                 
+                </div>                 
+            </div>
         </div>
 
-        <footer>
+        
+
+        <!-- <footer>
             © 2020 Ajay Liu. All Rights Reserved • contact@ajayliu.com
-        </footer>
+        </footer> -->
     </body>
+    <script src = "hover.js"></script> 
+
 </html>
