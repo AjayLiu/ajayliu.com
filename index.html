@@ -7,10 +7,38 @@
         <meta name='viewport' content='width=device-width, initial-scale=1'>
         <link rel='stylesheet' href='styles.css'>        
         <link rel="icon" type="image/png" href="/logo.png">     
-
+        <link rel='stylesheet' href='background.css'>  
+        <script src= "https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/TweenLite.min.js"></script>
+        <script src= "https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/EasePack.min.js"></script>
+        <script src= "https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/demo.js"></script>
     </head>
 
     <body>
+        <div id = "net">
+            <div class = "intro">
+                <h1>Hello! My name is <strong>Ajay Liu</strong><br>
+                    I love creating things!
+                </h1>                                                     
+            </div> 
+            <script src="http://minime.stephan-brumme.com/files/threejs/three-r95.min.js"></script>
+            <script src="vanta.net.min.js"></script>
+            <script>
+            VANTA.NET({
+            el: "#net",
+            backgroundColor: "#252934",
+            color:"#0077be",
+            mouseControls: true,
+            touchControls: true,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            showDots: false
+            })
+            </script>
+        </div>
+        
+        
         <div class = "navbar">
             <div class = "navanchors">
                 <ul>
@@ -20,12 +48,6 @@
                 </ul>
             </div>            
         </div>
-
-        <div class = "intro">
-            <h1>hello.</h1>
-            <p>My name is Ajay Liu. Below are some games and projects that I've worked on. Go give them a try!</p>                             
-        </div> 
-
         <div id = "cubeinc" class = "gameBlock">
             <div class = "gametext">
                 <div class = "gametitle">

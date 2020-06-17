@@ -1,11 +1,10 @@
-
 * {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;   
 }
 
 html{
     /* scroll-snap-type: block mandatory; */
-    background-color: #979797;
+    background-color: #252934;
     color:white;
 } 
 body{
@@ -17,9 +16,23 @@ body{
     text-align: center;
 }
 
+
+.intro{
+    font-size: large;
+    display: flex;
+    justify-content: center;
+    margin: 30vh auto 0 auto;
+    z-index: 2;
+    width: 100%;
+    text-align: left;
+}
+.intro strong{
+    color: #f33864;
+    font-size: larger;
+}
+
 .navbar{
     width: 100%;
-    position: fixed;
     display: flex;
     background-color: orange;
     z-index: 1;
@@ -36,8 +49,6 @@ body{
     align-items: center;
     justify-content: center;    
 }
-
-
 
 
 .navbar li{    
@@ -193,18 +204,10 @@ footer{
     border: 1px solid wheat;
 }
 
-.intro{
-    z-index: -1;
-    position: relative;    
-    padding: 20px 5px 0 5px;
-}
 .mail{
     color: white;
 }
-.intro strong{
-    font-size: larger;
-    text-decoration: underline;
-}
+
 
 
 .webgl-content{
