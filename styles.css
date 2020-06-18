@@ -304,6 +304,10 @@ footer{
         width: 40vw;
         height: 40vw;
     }
+    #aboutAchievements{
+        grid-template-columns: 45% 45%;
+        margin: auto;
+    }
     cite{
         right: 0;
     }
@@ -321,9 +325,7 @@ footer{
         margin-left: 20px;
         margin-right: 20px;
     }
-    #aboutAchievements{
-        grid-template-columns: 50% 50%;
-    }
+    
     #contactBar{
         width: 100%;
         font-size: 100%;
