@@ -4,7 +4,7 @@ function gallery (){
     if(window.innerWidth > 600){
         
         //Track mouse pos
-        var x, y;
+        var x = 0, y = 0;
         $(document).mousemove(function(event){
             x = event.clientX;
             y = event.clientY;
@@ -45,6 +45,7 @@ function gallery (){
         
 
         $(".gameBlock").mouseover(function(){
+            $(this).css({"cursor" : "pointer"});
             $(this).find(".gametext").css({"opacity": "1", "transition": "opacity 0.1s"});
         }).mouseout(function(){
             $(this).find(".gametext").css({"opacity": "0", "transition": "opacity 0.5s"});
@@ -64,11 +65,43 @@ $( "#viewButton" ).click(function() {
   
 
 window.onresize = function(event) {
-
     gallery();
-
 };
 
 jQuery(document.links).filter(function() { 
     return this.hostname != window.location.hostname;   
 }).attr('target', '_blank');  
+
+
+$(".gameBlock a").click(function(e){
+    e.stopPropagation();
+});
+$("#cubeinc").click(function(){
+    window.open("CubeIncWebGL/index.html");
+});
+$("#inspirationjar").click(function(){
+    window.open("https://www.inspirationjar.com");
+});
+$("#jetlagged").click(function(){
+    window.open("https://jetlag.netlify.app/index.html");
+});
+$("#cashout").click(function(){
+    window.open("CashOutWebGL/index.html");
+});
+$("#bounceArchitect").click(function(){
+    window.open("BounceArchitectWebGL/index.html");
+});
+$("#tapdefender").click(function(){
+    window.open("TapDefenderWebGL/index.html");
+});
+$("#colorjump").click(function(){
+    window.open("ColorJumpWebGL/index.html");
+});
+$("#rhymetime").click(function(){
+    window.open("https://play.google.com/store/apps/details?id=com.MerbolaGames.RhymeTime");
+});
+$("#spacespin").click(function(){
+    window.open("SpaceSpinWebGL/index.html");
+});
+
+
