@@ -18,6 +18,7 @@ body{
     overflow-x: hidden;
 }
 
+
 .intro{
     font-size: inherit;
     height: 100%;
@@ -57,6 +58,7 @@ body{
 }
 
 .sectionTitle {
+    margin-top: 60px;
     font-size: xx-large;
 }
 
@@ -207,8 +209,6 @@ body{
 #skillBar{
     width: 90%;
     margin: auto;
-    display: flex;
-    flex-direction: row;
 }
 
 .skillPair img{
@@ -216,6 +216,7 @@ body{
 }
 
 .skillPair{
+    display: inline-block;
     margin: 20px;
 }
 
@@ -227,7 +228,7 @@ body{
     justify-content: center;
     margin: auto auto 200px auto;
     border-radius: 25px;
-    background-color: #707070;
+    background-color: #383849;
     font-size: 200%;
 }
 

@@ -2,9 +2,9 @@ gallery();
 
 function gallery (){
     if(window.innerWidth > 600){
-        $(".gameBlock").hover(function(){
+        $(".gameBlock").mouseenter(function(){
             $(this).find(".gametext").css({"opacity": "1", "transition": "opacity 0.2s"});
-        }, function(){
+        }).mouseleave(function(){
             $(this).find(".gametext").css({"opacity": "0", "transition": "opacity 0.2s"});
         });
     } else {
