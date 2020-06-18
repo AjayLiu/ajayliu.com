@@ -69,7 +69,14 @@ body{
 }
 
 #profile strong{
-    font-size: xx-large;
+    font-size: 300%;
+}
+
+cite{
+    position: relative;
+    right: -120px;
+    text-align: right;
+    font-size: x-small;
 }
 
 #aboutImg{
@@ -255,9 +262,13 @@ footer{
     flex-direction: column-reverse;  
     align-items: center;
     width: 100%;
-    height: 50px;
     margin: auto;
-    padding: 0 20px;
+    padding: 20px;
+}
+
+#socialLinks img{
+    margin: 0 20px;
+    width: 50px;    
 }
 
 .webgl-content{
