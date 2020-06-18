@@ -36,6 +36,7 @@ body{
     font-size: larger;
 }
 
+
 #viewButton{
     margin-top: 30px;
     background-color: Transparent;
@@ -149,7 +150,7 @@ body{
     margin: auto;
     grid-template-columns: 19vw 19vw 19vw 19vw 19vw;
     grid-template-rows: 20vh 20vh 20vh 20vh 20vh;
-    gap: 2px 2px;
+    gap: 12px 12px;
 }
 
 .gameBlock{    
@@ -201,6 +202,23 @@ body{
 .gamelinks img {
     vertical-align: middle;
 }
+
+
+#skillBar{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.skillPair img{
+    width: 80px;
+}
+
+.skillPair{
+    margin: 20px;
+}
+
 
 #contactBar{
     display: flex;
