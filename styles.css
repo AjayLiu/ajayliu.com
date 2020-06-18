@@ -192,7 +192,7 @@ body{
     align-items: center;
     width: 80vw;
     justify-content: center;
-    margin: auto;
+    margin: auto auto 200px auto;
     border-radius: 25px;
     background-color: #707070;
     font-size: 200%;
@@ -200,6 +200,10 @@ body{
 
 #contactBar img{
     width: 50%;
+}
+
+#contact p{
+    padding-right: 30px;
 }
 
 a{
@@ -212,7 +216,13 @@ a:hover{
 }
 
 footer{
-    margin: 20px 0;
+    background-color: #181b22;
+    display: flex;  
+    flex-direction: column-reverse;  
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    margin: auto;
     padding: 0 20px;
 }
 
