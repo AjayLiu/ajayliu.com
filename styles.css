@@ -35,6 +35,20 @@ body{
     font-size: larger;
 }
 
+#viewButton{
+    margin-top: 30px;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    width: 30%;
+    height: 50px;
+    font-size: large;
+    color: white;
+    border: 2px solid white;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+}
+
 #about{
     margin: auto;
     width: 98%;
@@ -216,7 +230,7 @@ a:hover{
 }
 
 footer{
-    background-color: #181b22;
+    background-color: #23262f;
     display: flex;  
     flex-direction: column-reverse;  
     align-items: center;

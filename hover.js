@@ -16,6 +16,11 @@ function gallery (){
     }
 }
 
+$( "#viewButton" ).click(function() {
+    document.getElementById("about").scrollIntoView({behavior: "smooth"});
+});
+  
+
 window.onresize = function(event) {
 
     gallery();
