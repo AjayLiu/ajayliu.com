@@ -60,7 +60,7 @@ function gallery (){
 }
 
 $( "#viewButton" ).click(function() {
-    document.getElementById("about").scrollIntoView({behavior: "smooth"});
+    document.getElementById("aboutSection").scrollIntoView({behavior: "smooth"});
 });
   
 
