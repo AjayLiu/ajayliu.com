@@ -1,7 +1,7 @@
 gallery();
 
 function gallery (){
-    if(window.innerWidth > 600){
+    if(window.innerWidth > 1200){
         
         //Track mouse pos
         var x = 0, y = 0;
