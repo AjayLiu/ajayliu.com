@@ -4,8 +4,8 @@
 
 html{
     /* scroll-snap-type: block mandatory; */
-    /* background-color: #252934; */
-    background: white;
+    background-color: #252934;
+    /* background-color: white; */
     color:white;
 } 
 body{
@@ -19,13 +19,14 @@ body{
 }
 
 .intro{
-    font-size: 100%;
+    font-size: inherit;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 2;
     width: 100%;
+    
     text-align: left;
 }
 
@@ -34,69 +35,105 @@ body{
     font-size: larger;
 }
 
+#about{
+    margin: auto;
+    width: 98%;
+}
+
+.sectionTitle {
+    font-size: xx-large;
+}
+
+#aboutSplit{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#profile strong{
+    font-size: xx-large;
+}
+
+#aboutImg{
+    margin: auto;
+    width: 70%;
+    height: auto;
+}
+
+#aboutAchievements{
+    display: grid;
+    margin: auto;
+    grid-template-columns: 30% 30% 30%;
+    gap: 50px 50px;
+}
+
+.achievement img{
+    width: 120px;
+    height: 120px;
+}
+
+.achievement p {
+    width: auto;
+}
+
 #cubeinc{    
-    background-image: url("cubeIncWide.PNG");
+    background-image: url("imgs/cubeIncWide.PNG");    
     grid-row: 1/4;
     grid-column: 1 / 4;
 }
 
 #inspirationjar{
-    background-image: url("inspirationcapture.png");
+    background-image: url("imgs/inspirationcapture.png");
     grid-row: 1/5;
     grid-column: 4 / 6;
 }
 
 #jetlagged{
-    background-image: url("world.png");
+    background-image: url("imgs/world.png");
     grid-row: 5/8;
     grid-column: 4 / 6;
 }
 
 #cashout{
-    background-image: url("cashOutSkyView.PNG"); 
+    background-image: url("imgs/cashOutSkyView.PNG"); 
     grid-row: 4/6;
     grid-column: 1 / 4;
 }
 
 #bounceArchitect{
-    background-image: url("bouncebanner.PNG");   
+    background-image: url("imgs/bouncebanner.PNG");   
     grid-row: 6/8;
     grid-column: 2 / 4;
 }
 
 #tapdefender{
-    background-image: url("TapDefenderBanner.PNG");
+    background-image: url("imgs/TapDefenderBanner.PNG");
     grid-row: 6/8;
     grid-column: 1; 
 }
 
 #colorjump{
-    background-image: url("colorjumpwide.png");
+    background-image: url("imgs/colorjumpwide.png");
     grid-row: 8 / 10;
     grid-column: 1 / 3;
 }
 
 #rhymetime{
-    background-image: url("rhymetimebanner.png");
+    background-image: url("imgs/rhymetimebanner.png");
     grid-row: 8 / 10;
     grid-column: 3 / 5;
 }
 
 #spacespin{
-    background-image: url("spacespin.png");
+    background-image: url("imgs/spacespin.png");
     grid-row: 8 / 10;    
 }
 
-.gamedescription{
-    -webkit-text-stroke-width: 0;
-}
-
 #gallery{
-    width: 100%;
-    margin: auto;
     display: grid;
-    grid-template-columns: 20% 20% 20% 20% 20%;
-    grid-template-rows: 20% 20% 20% 20% 20% 20% 20% 20% 20% 20%;
+    margin: auto;
+    grid-template-columns: 19vw 19vw 19vw 19vw 19vw;
+    grid-template-rows: 20vh 20vh 20vh 20vh 20vh;
     gap: 2px 2px;
 }
 
@@ -104,18 +141,25 @@ body{
     border-radius: 2%;
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat;    
+}
+
+.gameBlock:hover {
+    transition: transform .2s; /* Animation */
+    transform: scale(1.02);
 }
 
 .gametext{
+    z-index: 2;
+    opacity: 0;
     margin: auto;
     width: 90%;
     height: 90%;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-  
+    justify-content: flex-end; 
 }
+
 .gametitle{        
     -webkit-text-stroke-color: black;
     -webkit-text-stroke-width: 1px;  
@@ -143,7 +187,23 @@ body{
     vertical-align: middle;
 }
 
+#contactBar{
+    display: flex;
+    align-items: center;
+    width: 80vw;
+    justify-content: center;
+    margin: auto;
+    border-radius: 25px;
+    background-color: #707070;
+    font-size: 200%;
+}
+
+#contactBar img{
+    width: 50%;
+}
+
 a{
+    color: white;
     text-decoration: none;    
 }
 
@@ -156,67 +216,43 @@ footer{
     padding: 0 20px;
 }
 
-
-
-
-.bio{
-    background-color: rgb(0, 149, 218);
-    padding: 50px;
-}
-
-.name{
-    font-size: 5rem;
-}
-
-.shortbio{
-    font-weight: lighter;
-    font-size: 1.5rem;
-}
-
-.shortbio ul {
-    margin: 20px 0;
-    padding-left: 35%;
-    text-align: left;
-    display: block;
-}
-
-.shortbio ul li{       
-    list-style-position: outside;
-    font-size: 1.25rem;
-    word-wrap: break-word;
-}
-
-.shortbio ul li a{
-    font-size:white;
-}
-
-.longbio{
-    font-style: italic;
-    font-size: 2rem;
-    margin: 150px 0 ;
-}
-
-.longbio strong{
-    font-family: Snell Roundhand;
-    font-size: 2rem;
-}
-
-.separator{
-    margin: 100px 14% 0 14%;
-    border: 1px solid wheat;
-}
-
-.mail{
-    color: white;
-}
-
-
-
 .webgl-content{
     margin: auto;
     margin-top: 100px;
 }
 
+.returnHome{
+    font-size: xx-large;
+    text-align: left;
+    margin: 20px 0 0 20px;
+    color: white;
+}
 
 @media screen and (max-width: 600px) {
+    #gallery{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .gameBlock{
+        height: 300px;
+    }
+
+    #aboutSplit{
+        flex-direction: column;
+    }
+
+    #aboutImg{
+        width: 80vw;
+        height: 80vw;
+    }
+
+    #aboutAchievements{
+        grid-template-columns: auto auto;
+    }
+
+    #contactBar{
+        width: 100%;
+        font-size: 100%;
+    }
 }
