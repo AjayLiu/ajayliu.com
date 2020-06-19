@@ -292,6 +292,10 @@ footer{
     color: white;
 }
 
+.loadWarning{
+    font-style: italic;
+    color: red;
+}
 
 
 
