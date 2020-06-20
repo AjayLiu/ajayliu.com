@@ -85,6 +85,9 @@ $("#inspirationjar").click(function(){
 $("#jetlagged").click(function(){
     window.open("https://jetlag.netlify.app/index.html");
 });
+$("#sheepgoat").click(function(){
+    window.open("https://sheepgoat.herokuapp.com/");
+});
 $("#cashout").click(function(){
     window.open("CashOutWebGL/index.html");
 });
