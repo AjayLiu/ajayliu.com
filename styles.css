@@ -65,7 +65,7 @@ section{
 
 #about{
     margin: auto;
-    width: 98%;
+    width: 90%;
 }
 
 #aboutSplit{
@@ -173,7 +173,7 @@ cite{
 #gallery{
     display: grid;
     margin: auto;
-    grid-template-columns: 19vw 19vw 19vw 19vw 19vw;
+    grid-template-columns: 19% 19% 19% 19% 19%;
     grid-template-rows: 20vh 20vh 20vh 20vh 20vh;
     gap: 12px 12px;
 }
