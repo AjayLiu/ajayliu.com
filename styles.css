@@ -1,5 +1,6 @@
 * {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;   
+    /* border: 1px solid red; */
 }
 
 html{
@@ -54,6 +55,7 @@ body{
 }
 
 section{
+    width: 95%;
     margin: auto;
     margin-top: 40px;    
 }
@@ -175,7 +177,8 @@ cite{
     margin: auto;
     grid-template-columns: 19% 19% 19% 19% 19%;
     grid-template-rows: 20vh 20vh 20vh 20vh 20vh;
-    gap: 12px 12px;
+    justify-content: space-evenly;
+    gap: 12px 0;
 }
 
 .gameBlock{    
