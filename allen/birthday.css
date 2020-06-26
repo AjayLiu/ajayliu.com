@@ -30,3 +30,25 @@ html, body{
 #content p{
     font-size: xx-large;
 }
+
+#scrollIndicator{
+	position: absolute;
+	bottom: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	z-index: 4;
+}
+
+#scrollIndicatorInput{
+	position: absolute;
+	bottom: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	width: 100px;
+	height: 100px;
+	z-index: 5;
+}
