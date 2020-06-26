@@ -22,9 +22,8 @@ html, body{
 }
 #content{
     z-index: 3;
-    margin: auto;
+    margin: 100px auto;
     width: 90%;
-    height: 100vh;
 }
 
 #content p{
@@ -51,4 +50,8 @@ html, body{
 	width: 100px;
 	height: 100px;
 	z-index: 5;
+}
+
+#googleImg{
+    width: 30%;
 }
