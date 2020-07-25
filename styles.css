@@ -105,19 +105,26 @@ cite {
 
 #aboutAchievements {
   display: grid;
+  grid-template-columns: auto auto auto auto;
   margin: auto;
-  grid-template-columns: auto auto auto;
-  gap: 50px 50px;
+  width: 70%;
+  gap: 50px;
+}
+
+.achievement {
+  width: 150px;
+  margin: auto;
 }
 
 .achievement img {
   width: 120px;
   height: 120px;
+  margin: auto;
 }
 
 .achievement p {
-  width: auto;
-  font-size: large;
+  width: 150px;
+  font-size: medium;
 }
 
 #cubeinc {
@@ -325,7 +332,9 @@ footer {
     grid-template-columns: 45% 45%;
     gap: auto;
     margin: auto;
+    width: 100%;
   }
+
   cite {
     right: 0;
   }
