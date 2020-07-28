@@ -199,6 +199,7 @@ cite {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  text-shadow: black 0px 0px 10px;
 }
 
 .gameBlock:hover {
@@ -218,17 +219,26 @@ cite {
 }
 
 .gametitle {
-  -webkit-text-stroke-color: black;
-  -webkit-text-stroke-width: 1px;
+  /* text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000; */
   font-size: 300%;
+
   font-weight: bolder;
 }
 
 .gamedescription p {
+  margin: auto;
+  width: fit-content;
   font-size: medium;
 }
 
+.hardToRead {
+  text-shadow: black 0px 0px 10px, black 0px 0px 10px, black 0px 0px 10px,
+    black 0px 0px 10px;
+}
+
 .gamelinks {
+  margin-top: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
