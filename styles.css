@@ -57,13 +57,19 @@ body {
 
 section {
   width: 100%;
-  margin: auto;
-  margin-top: 40px;
+  margin: 20px auto;
 }
 
 .sectionTitle {
-  margin-bottom: 40px;
+  width: fit-content;
+  height: 70px;
+  margin: 40px auto 40px auto;
   font-size: xx-large;
+  border-bottom: 1px solid white;
+}
+
+#aboutSection {
+  margin-top: 0;
 }
 
 #about {
@@ -189,7 +195,7 @@ cite {
   display: grid;
   margin: auto;
   grid-template-columns: 19% 19% 19% 19% 19%;
-  grid-template-rows: 150px 150px 150px 150px 150px;
+  grid-template-rows: 160px 160px 160px 160px 160px;
   justify-content: space-evenly;
   gap: 12px 0;
 }
@@ -310,6 +316,9 @@ footer {
   margin: 0 20px;
   width: 50px;
 }
+#socialLinks a {
+  text-decoration: none;
+}
 
 .webgl-content {
   margin: auto;
@@ -358,10 +367,10 @@ footer {
     margin: auto;
     margin-bottom: 100px;
   }
+
   section {
     width: 90%;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
   }
 
   #contactBar {
