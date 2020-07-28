@@ -98,14 +98,14 @@ section {
 
 cite {
   position: relative;
-  right: -120px;
   text-align: right;
   font-size: x-small;
 }
 
 #aboutImg {
   margin: auto;
-  width: 60%;
+  width: 50%;
+  max-width: 200px;
 }
 
 #aboutAchievements {
@@ -343,8 +343,6 @@ footer {
     flex-direction: column;
   }
   #aboutImg {
-    width: 40vw;
-    height: 40vw;
   }
   #aboutAchievements {
     grid-template-columns: 45% 45%;
