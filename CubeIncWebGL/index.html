@@ -1,24 +1,36 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Cube Inc</title>
-    <link rel='stylesheet' href='../styles.css'>        
-    <link rel="icon" type="image/png" href='../imgs/logo.png'>     
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="icon" type="image/png" href="../imgs/logo.png" />
 
     <script src="Build/UnityLoader.js"></script>
     <script>
-      var unityInstance = UnityLoader.instantiate("unityContainer", "Build/CubeIncWebGL.json");
+      var unityInstance = UnityLoader.instantiate(
+        "unityContainer",
+        "Build/Builds.json"
+      );
     </script>
   </head>
   <body>
-    <a class = "returnHome" href = "../index.html">Return Home</a>          
-    <div class="howTo"><br><h2>Keyboard: WASD to move, pan with arrow keys</h2></div>
-    <div class="howTo"><br><h2>Mobile: Swipe to move, pan with two fingers</h2></div>
-    <aside class = "loadWarning">Note: Mobile browsers may display an error when loading the game. Just press "OK" and it will load.</aside>
+    <a class="returnHome" href="../index.html">Return Home</a>
+    <div class="howTo">
+      <br />
+      <h2>Keyboard: WASD to move, pan with arrow keys</h2>
+    </div>
+    <div class="howTo">
+      <br />
+      <h2>Mobile: Swipe to move, pan with two fingers</h2>
+    </div>
+    <aside class="loadWarning">
+      Note: Mobile browsers may display an error when loading the game. Just
+      press "OK" and it will load.
+    </aside>
     <div class="webgl-content">
-      <div id="unityContainer" style="width: 48vh; height: 80vh"></div>      
+      <div id="unityContainer" style="width: 48vh; height: 80vh;"></div>
     </div>
   </body>
 </html>
