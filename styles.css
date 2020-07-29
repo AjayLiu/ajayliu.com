@@ -349,7 +349,7 @@ footer {
 
   #aboutAchievements {
     justify-content: center;
-    grid-template-columns: 45% 45%;
+    grid-template-columns: auto auto;
     gap: 50px;
     margin: auto;
     width: 90%;
