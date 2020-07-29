@@ -132,6 +132,11 @@ cite {
   font-size: medium;
 }
 
+/* #clickToTry {
+  margin: 30px;
+  font-size: large;
+} */
+
 #cubeinc {
   background-image: url("imgs/cubeIncWide.PNG");
   grid-row: 1/4;
