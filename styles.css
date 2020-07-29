@@ -113,7 +113,6 @@ cite {
   grid-template-columns: auto auto auto auto;
   margin: auto;
   width: 70%;
-  gap: 50px;
 }
 
 .achievement {
@@ -347,13 +346,13 @@ footer {
   #aboutSplit {
     flex-direction: column;
   }
-  #aboutImg {
-  }
+
   #aboutAchievements {
+    justify-content: center;
     grid-template-columns: 45% 45%;
-    gap: auto;
+    gap: 50px;
     margin: auto;
-    width: 100%;
+    width: 90%;
   }
 
   cite {
