@@ -264,6 +264,10 @@ cite {
   vertical-align: middle;
 }
 
+#skills a {
+  text-decoration: none;
+}
+
 #skillBar {
   width: 90%;
   margin: auto;
