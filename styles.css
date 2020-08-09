@@ -150,8 +150,8 @@ cite {
 
 #jetlagged {
   background-image: url("imgs/world.png");
-  grid-row: 5/8;
-  grid-column: 4 / 6;
+  grid-row: 7/10;
+  grid-column: 3 / 5;
 }
 
 #cashout {
@@ -161,15 +161,21 @@ cite {
 }
 
 #sheepgoat {
-  grid-row: 4/6;
+  grid-row: 4/7;
   grid-column: 3 / 3;
   background-image: url("imgs/goatsheepbanner.png");
 }
 
 #bounceArchitect {
   background-image: url("imgs/bouncebanner.PNG");
-  grid-row: 6/8;
-  grid-column: 2 / 4;
+  grid-row: 5/7;
+  grid-column: 4 / 6;
+}
+
+#tenseconds {
+  background-image: url("imgs/timerbanner.png");
+  grid-row: 7/10;
+  grid-column: 5 / 6;
 }
 
 #tapdefender {
@@ -180,26 +186,27 @@ cite {
 
 #colorjump {
   background-image: url("imgs/colorjumpwide.png");
-  grid-row: 8 / 10;
-  grid-column: 1 / 3;
+  grid-row: 6 / 8;
+  grid-column: 2 / 3;
 }
 
 #rhymetime {
   background-image: url("imgs/rhymetimebanner.png");
   grid-row: 8 / 10;
-  grid-column: 3 / 5;
+  grid-column: 1 / 2;
 }
 
 #spacespin {
   background-image: url("imgs/spacespin.png");
   grid-row: 8 / 10;
+  grid-column: 2 / 3;
 }
 
 #gallery {
   display: grid;
   margin: auto;
   grid-template-columns: 19% 19% 19% 19% 19%;
-  grid-template-rows: 160px 160px 160px 160px 160px;
+  grid-template-rows: 160px 160px 160px 160px 160px 160px 160px 160px 160px 160px 160px;
   justify-content: space-evenly;
   gap: 12px 0;
 }
@@ -232,7 +239,8 @@ cite {
   /* text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
     1px 1px 0 #000; */
   font-size: 300%;
-
+  line-height: 100%;
+  margin-bottom: 20px;
   font-weight: bolder;
 }
 
