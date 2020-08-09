@@ -206,7 +206,7 @@ cite {
   display: grid;
   margin: auto;
   grid-template-columns: 19% 19% 19% 19% 19%;
-  grid-template-rows: 160px 160px 160px 160px 160px 160px 160px 160px 160px 160px 160px;
+  grid-template-rows: 160px 160px 160px 160px 160px 160px 160px 160px 160px;
   justify-content: space-evenly;
   gap: 12px 0;
 }
