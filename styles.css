@@ -202,11 +202,15 @@ cite {
   grid-column: 2 / 3;
 }
 
+#tenseconds .gametitle {
+  font-size: 200%;
+}
+
 #gallery {
   display: grid;
   margin: auto;
   grid-template-columns: 19% 19% 19% 19% 19%;
-  grid-template-rows: 160px 160px 160px 160px 160px 160px 160px 160px 160px;
+  grid-template-rows: 150px 150px 150px 150px 150px 150px 150px 150px 150px 150px;
   justify-content: space-evenly;
   gap: 12px 0;
 }
