@@ -27,6 +27,9 @@ function gallery() {
 
               //new div
               displayedDiv = divs[i].children[0];
+              //exception with recommendation star
+              if (divs[i].children[0].id == "recommend")
+                displayedDiv = divs[i].children[1];
               displayedDiv.style.opacity = "1";
               displayedDiv.style.transition = "opacity 0.1s";
               found = true;
