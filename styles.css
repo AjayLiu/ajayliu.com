@@ -305,8 +305,8 @@ cite {
 #contactBar {
   display: flex;
   align-items: center;
-  width: 50%;
-  justify-content: center;
+  width: 40%;
+  justify-content: space-evenly;
   margin: auto auto 200px auto;
   border-radius: 25px;
   background-color: #383849;
@@ -314,11 +314,12 @@ cite {
 }
 
 #contactBar img {
-  width: 40%;
+  height: 100px;
+  padding: 20px 0;
 }
 
 #contact p {
-  margin-right: 70px;
+  font-weight: lighter;
 }
 
 a {
