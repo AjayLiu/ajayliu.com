@@ -10,9 +10,13 @@
       content="My name is Ajay Liu and I love creating
     things!"
     />
+
     <link rel="stylesheet" href="styles.css" />
-    <link rel="icon" type="image/png" href="imgs/logo.png" />
     <link rel="stylesheet" href="background.css" />
+
+    <link rel="stylesheet" type="text/css" href="ie.css" />
+
+    <link rel="icon" type="image/png" href="imgs/logo.png" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
 
@@ -41,43 +45,45 @@
           <button id="viewButton">Let's Go!</button>
         </h1>
       </div>
-      <script src="https://minime.stephan-brumme.com/files/threejs/three-r95.min.js"></script>
-      <script src="vanta.net.min.js"></script>
-      <script>
-        if (window.innerWidth > 1200) {
-          VANTA.NET({
-            el: "#net",
-            points: 5,
-            spacing: 22,
-            maxDistance: 30,
-            backgroundColor: "#252934",
-            color: "#74e78d",
-            mouseControls: true,
-            touchControls: true,
-            minHeight: 200.0,
-            minWidth: 200.0,
-            scale: 1.0,
-            scaleMobile: 1.0,
-            showDots: true,
-          });
-        } else {
-          VANTA.NET({
-            el: "#net",
-            points: 3,
-            spacing: 35,
-            maxDistance: 70,
-            backgroundColor: "#252934",
-            color: "#74e78d",
-            mouseControls: true,
-            touchControls: true,
-            minHeight: 200.0,
-            minWidth: 200.0,
-            scale: 1.0,
-            scaleMobile: 1.0,
-            showDots: true,
-          });
-        }
-      </script>
+      <div id="vanta">
+        <script src="https://minime.stephan-brumme.com/files/threejs/three-r95.min.js"></script>
+        <script src="vanta.net.min.js"></script>
+        <script>
+          if (window.innerWidth > 1200) {
+            VANTA.NET({
+              el: "#net",
+              points: 5,
+              spacing: 22,
+              maxDistance: 30,
+              backgroundColor: "#252934",
+              color: "#74e78d",
+              mouseControls: true,
+              touchControls: true,
+              minHeight: 200.0,
+              minWidth: 200.0,
+              scale: 1.0,
+              scaleMobile: 1.0,
+              showDots: true,
+            });
+          } else {
+            VANTA.NET({
+              el: "#net",
+              points: 3,
+              spacing: 35,
+              maxDistance: 70,
+              backgroundColor: "#252934",
+              color: "#74e78d",
+              mouseControls: true,
+              touchControls: true,
+              minHeight: 200.0,
+              minWidth: 200.0,
+              scale: 1.0,
+              scaleMobile: 1.0,
+              showDots: true,
+            });
+          }
+        </script>
+      </div>
     </div>
 
     <section id="aboutSection">
@@ -130,7 +136,7 @@
                 <img src="imgs/web.png" />
                 <p>
                   Web Developer <br />
-                  <em style="font-size: medium;">I coded this website</em>
+                  <em style="font-size: medium">I coded this website</em>
                 </p>
               </div>
             </a>
@@ -157,17 +163,13 @@
       </div>
     </section>
 
-    <section>
-      <p class="sectionTitle">
-        Projects
-      </p>
+    <section class="section">
+      <p class="sectionTitle">Projects</p>
       <div id="gallery">
         <div id="cubeinc" class="gameBlock">
           <img id="recommend" src="imgs/star.png" />
           <div class="gametext">
-            <div class="gametitle">
-              Cube Inc
-            </div>
+            <div class="gametitle">Cube Inc</div>
             <div class="gamedescription">
               <p>A minimalistic, yet challenging puzzle game.</p>
             </div>
@@ -187,9 +189,7 @@
         </div>
         <div id="inspirationjar" class="gameBlock">
           <div class="gametext">
-            <div class="gametitle">
-              Inspiration Jar
-            </div>
+            <div class="gametitle">Inspiration Jar</div>
             <div class="gamedescription">
               <p>
                 A platform for users to submit encouraging messages and make the
@@ -203,9 +203,7 @@
         </div>
         <div id="jetlagged" class="gameBlock">
           <div class="gametext">
-            <div class="gametitle">
-              Jetlag Calculator
-            </div>
+            <div class="gametitle">Jetlag Calculator</div>
             <div class="gamedescription">
               <p>Tools dealing with time and timezones!</p>
             </div>
@@ -218,9 +216,7 @@
         </div>
         <div id="cashout" class="gameBlock">
           <div class="gametext">
-            <div class="gametitle">
-              Cash Out
-            </div>
+            <div class="gametitle">Cash Out</div>
             <div class="gamedescription">
               <p>A fast paced police pursuit game</p>
             </div>
@@ -240,9 +236,7 @@
         </div>
         <div id="sheepgoat" class="gameBlock">
           <div class="gametext">
-            <div class="gametitle">
-              Sheep or Goat?
-            </div>
+            <div class="gametitle">Sheep or Goat?</div>
             <div class="gamedescription">
               <p>
                 Can't tell apart a sheep from a goat? Let the power of machine
@@ -256,9 +250,7 @@
         </div>
         <div id="bounceArchitect" class="gameBlock">
           <div class="gametext">
-            <div class="gametitle">
-              Bounce Architect
-            </div>
+            <div class="gametitle">Bounce Architect</div>
             <div class="gamedescription">
               <p>
                 What shape bounces best in all orientations? Sketch it out now!
@@ -281,13 +273,9 @@
         </div>
         <div id="tenseconds" class="gameBlock">
           <div class="gametext">
-            <div class="gametitle">
-              10 Second Challenge
-            </div>
+            <div class="gametitle">10 Second Challenge</div>
             <div class="gamedescription">
-              <p>
-                How well can you count 10 seconds in your head?
-              </p>
+              <p>How well can you count 10 seconds in your head?</p>
             </div>
             <div class="gamelinks">
               <a href="https://10seconds.netlify.app/"> Visit the Website!</a>
@@ -296,9 +284,7 @@
         </div>
         <div id="tapdefender" class="gameBlock">
           <div class="gametext">
-            <div class="gametitle">
-              Tap Defender
-            </div>
+            <div class="gametitle">Tap Defender</div>
             <div class="gamedescription hardToRead">
               <p>A funny, light-hearted tapping game</p>
             </div>
@@ -318,9 +304,7 @@
         </div>
         <div id="colorjump" class="gameBlock">
           <div class="gametext">
-            <div class="gametitle">
-              Color Jump
-            </div>
+            <div class="gametitle">Color Jump</div>
             <div class="gamedescription hardToRead">
               <p>
                 A color coordination arcade game - easy to learn, hard to master
@@ -342,9 +326,7 @@
         </div>
         <div id="rhymetime" class="gameBlock">
           <div class="gametext">
-            <div class="gametitle">
-              Rhyme Time
-            </div>
+            <div class="gametitle">Rhyme Time</div>
             <div class="gamedescription hardToRead">
               <p>
                 Put your rhyming skills to the test and race against the clock
@@ -365,9 +347,7 @@
         </div>
         <div id="spacespin" class="gameBlock">
           <div class="gametext">
-            <div class="gametitle">
-              Space Spin
-            </div>
+            <div class="gametitle">Space Spin</div>
             <div class="gamedescription">
               <p>
                 Orbit your way across the universe, but watch out for obstacles
