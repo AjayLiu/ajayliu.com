@@ -1,5 +1,17 @@
-@supports not (display: grid) {
-  * {
-    color: red;
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  #aboutAchievements {
+    display: -ms-flexbox;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+  #gallery {
+    display: -ms-flexbox;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+  .gameBlock {
+    margin: 10px;
+    width: 25%;
+    height: 300px;
   }
 }

@@ -321,11 +321,15 @@ cite {
   display: flex;
   align-items: center;
   width: 40%;
-  justify-content: space-evenly;
+  justify-content: center;
   margin: auto auto 200px auto;
   border-radius: 25px;
   background-color: #383849;
   font-size: 200%;
+}
+
+#contactBar > div {
+  margin: 0 20px;
 }
 
 #contactBar img {
