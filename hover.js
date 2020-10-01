@@ -85,7 +85,7 @@ $(".gameBlock a").click(function (e) {
   e.stopPropagation();
 });
 $("#cubeinc").click(function () {
-  window.open("CubeIncWebGL/index.html");
+  window.open("CubeInc/index.html");
 });
 $("#inspirationjar").click(function () {
   window.open("https://www.inspirationjar.com");
@@ -97,19 +97,19 @@ $("#sheepgoat").click(function () {
   window.open("https://sheepgoat.herokuapp.com/");
 });
 $("#cashout").click(function () {
-  window.open("CashOutWebGL/index.html");
+  window.open("CashOut/index.html");
 });
 $("#bounceArchitect").click(function () {
-  window.open("BounceArchitectWebGL/index.html");
+  window.open("BounceArchitect/index.html");
 });
 $("#tenseconds").click(function () {
   window.open("https://10seconds.netlify.app/");
 });
 $("#tapdefender").click(function () {
-  window.open("TapDefenderWebGL/index.html");
+  window.open("TapDefender/index.html");
 });
 $("#colorjump").click(function () {
-  window.open("ColorJumpWebGL/index.html");
+  window.open("ColorJump/index.html");
 });
 $("#rhymetime").click(function () {
   window.open(
@@ -117,5 +117,5 @@ $("#rhymetime").click(function () {
   );
 });
 $("#spacespin").click(function () {
-  window.open("SpaceSpinWebGL/index.html");
+  window.open("SpaceSpin/index.html");
 });
