@@ -319,15 +319,15 @@ cite {
 #contactBar {
   display: flex;
   align-items: center;
-  width: 40%;
+  width: 30%;
   justify-content: center;
-  margin: auto auto 200px auto;
+  margin: 20px auto;
   border-radius: 25px;
   background-color: #383849;
   font-size: 200%;
 }
 
-#contactBar > div {
+#contactBar > * {
   margin: 0 20px;
 }
 
