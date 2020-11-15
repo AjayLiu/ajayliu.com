@@ -75,7 +75,7 @@ section {
 }
 
 .sectionTitle {
-  width: fit-content;
+  width: max-content;
   height: 70px;
   margin: 40px auto 40px auto;
   font-size: xx-large;
