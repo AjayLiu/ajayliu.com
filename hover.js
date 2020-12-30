@@ -90,6 +90,9 @@ $("#cubeinc").click(function () {
 $("#inspirationjar").click(function () {
   window.open("https://www.inspirationjar.com");
 });
+$("#pixelbeats").click(function () {
+  window.open("PixelBeats/index.html");
+});
 $("#jetlagged").click(function () {
   window.open("https://jetlag.netlify.app/index.html");
 });
