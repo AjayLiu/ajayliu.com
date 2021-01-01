@@ -412,6 +412,12 @@ footer {
   cite {
     right: 0;
   }
+
+  #demoReel > iframe {
+    width: 80vw;
+    height: 45vw;
+  }
+
   #gallery {
     display: flex;
     flex-direction: column;
