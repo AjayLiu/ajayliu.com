@@ -234,6 +234,14 @@ cite {
   font-size: 200%;
 }
 
+#demoReel {
+  margin-bottom: 100px;
+}
+#demoReel > iframe {
+  width: 48vw;
+  height: 27vw;
+}
+
 #gallery {
   display: grid;
   margin: auto;
@@ -325,7 +333,7 @@ cite {
 #contactBar {
   display: flex;
   align-items: center;
-  width: 30%;
+  width: 40%;
   justify-content: center;
   margin: 20px auto;
   border-radius: 25px;
