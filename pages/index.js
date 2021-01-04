@@ -2,6 +2,9 @@ import Head from 'next/head'
 import Header from '@components/Header'
 import Footer from '@components/Footer'
 import LandingPage from '@components/LandingPage'
+import About from '@components/About'
+import Projects from '@components/Projects'
+import Skills from '@components/Skills'
 
 export default function Home() {
   return (
@@ -28,6 +31,8 @@ export default function Home() {
       <main>
         <LandingPage />
         <About />
+        <Projects />
+        <Skills />
       </main>
 
       <Footer />

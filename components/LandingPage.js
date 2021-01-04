@@ -32,7 +32,7 @@ class LandingPage extends React.Component{
     render (){
         return (
         <div id={styles.net} ref={this.vantaRef}>
-            <div class={styles.intro}>
+            <div className={styles.intro}>
                 <h1>
                 Hello! My name is <strong>Ajay Liu</strong><br />
                 I love creating things!

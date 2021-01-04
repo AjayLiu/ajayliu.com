@@ -1,0 +1,46 @@
+#aboutSection {
+  margin-top: 0;
+}
+
+#about {
+  margin: auto;
+  width: 90%;
+}
+
+#aboutSplit {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 95%;
+  margin: auto;
+}
+
+#profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 100px;
+}
+
+#profile strong {
+  font-size: 300%;
+}
+
+.cite {
+  position: relative;
+  text-align: right;
+  font-size: x-small;
+}
+
+#aboutImg {
+  margin: auto;
+  width: 50%;
+  max-width: 200px;
+}
+
+#aboutAchievements {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  margin: auto;
+  width: 70%;
+}

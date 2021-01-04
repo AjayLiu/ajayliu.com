@@ -1,0 +1,139 @@
+#recommend {
+  width: 80px;
+  display: flex;
+  position: absolute;
+  margin-left: 20px;
+  margin-top: 15px;
+}
+
+#inspirationjar {
+  background-image: url("../public/imgs/inspirationcapture.png");
+  grid-row: 1/5;
+  grid-column: 4 / 6;
+}
+
+#pixelbeats {
+  background-image: url("../public/imgs/pixelbeats.png");
+  grid-row: 4/8;
+  grid-column: 1 / 3;
+}
+
+#jetlagged {
+  background-image: url("../public/imgs/world.png");
+  grid-row: 7/10;
+  grid-column: 3 / 5;
+}
+
+#cashout {
+  background-image: url("../public/imgs/cashOutSkyView.PNG");
+  grid-row: 10/12;
+  grid-column: 3 / 6;
+}
+
+#sheepgoat {
+  grid-row: 4/7;
+  grid-column: 3 / 3;
+  background-image: url("../public/imgs/goatsheepbanner.png");
+}
+
+#bounceArchitect {
+  background-image: url("../public/imgs/bouncebanner.PNG");
+  grid-row: 5/7;
+  grid-column: 4 / 6;
+}
+
+#tenseconds {
+  background-image: url("../public/imgs/timerbanner.png");
+  grid-row: 7/10;
+  grid-column: 5 / 6;
+}
+
+#tapdefender {
+  background-image: url("../public/imgs/TapDefenderBanner.PNG");
+  grid-row: 8/10;
+  grid-column: 1;
+}
+
+#colorjump {
+  background-image: url("../public/imgs/colorjumpwide.png");
+  grid-row: 8/10;
+  grid-column: 2 / 3;
+}
+
+#rhymetime {
+  background-image: url("../public/imgs/rhymetimebanner.png");
+  grid-row: 10 / 12;
+  grid-column: 1 / 2;
+}
+
+#spacespin {
+  background-image: url("../public/imgs/spacespin.png");
+  grid-row: 10 / 12;
+  grid-column: 2 / 3;
+}
+
+#tenseconds .gametitle {
+  font-size: 200%;
+}
+
+.gameBlock {
+  border-radius: 2%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-shadow: black 0px 0px 10px;
+}
+
+.gameBlock:hover {
+  cursor: pointer;
+  transition: transform 0.2s; /* Animation */
+  transform: scale(1.02);
+}
+
+.gametext {
+  z-index: 2;
+  /* opacity: 0; */
+  margin: auto;
+  width: 90%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.gametitle {
+  /* text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+      1px 1px 0 #000; */
+  font-size: 300%;
+  line-height: 100%;
+  margin-bottom: 20px;
+  font-weight: bolder;
+}
+
+.gamedescription p {
+  margin: auto;
+  width: fit-content;
+  font-size: medium;
+}
+
+.hardToRead {
+  text-shadow: black 0px 0px 10px, black 0px 0px 10px, black 0px 0px 10px,
+    black 0px 0px 10px;
+}
+
+.gamelinks {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.gamelinks a {
+  font-weight: bold;
+  color: gold;
+}
+
+.gamelinks img {
+  vertical-align: middle;
+}
