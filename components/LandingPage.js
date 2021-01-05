@@ -10,21 +10,40 @@ class LandingPage extends React.Component{
         this.letsGoTargetRef = React.createRef()
     }
     componentDidMount() {
-        this.vantaEffect = NET({
-            el: this.vantaRef.current,
-            points: 5,
-            spacing: 22,
-            maxDistance: 30,
-            backgroundColor: "#252934",
-            color: "#74e78d",
-            mouseControls: true,
-            touchControls: true,
-            minHeight: 200.0,
-            minWidth: 200.0,
-            scale: 1.0,
-            scaleMobile: 1.0,
-            showDots: true            
-        })
+        if(window.innerWidth > 1200){
+            this.vantaEffect = NET({
+                el: this.vantaRef.current,
+                points: 5,
+                spacing: 22,
+                maxDistance: 30,
+                backgroundColor: "#252934",
+                color: "#74e78d",
+                mouseControls: true,
+                touchControls: true,
+                minHeight: 200.0,
+                minWidth: 200.0,
+                scale: 1.0,
+                scaleMobile: 1.0,
+                showDots: true,       
+            })
+        } else {
+            this.vantaEffect = NET({
+                el: this.vantaRef.current,
+                points: 3,
+                spacing: 35,
+                maxDistance: 70,
+                backgroundColor: "#252934",
+                color: "#74e78d",
+                mouseControls: true,
+                touchControls: true,
+                minHeight: 200.0,
+                minWidth: 200.0,
+                scale: 1.0,
+                scaleMobile: 1.0,
+                showDots: true,       
+            })
+        }
+        
     }
     componentWillUnmount() {
         if (this.vantaEffect) this.vantaEffect.destroy()
