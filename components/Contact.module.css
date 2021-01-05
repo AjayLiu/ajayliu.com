@@ -1,0 +1,30 @@
+#contact {
+  width: 40%;
+  margin: 20px auto;
+  margin-bottom: 200px;
+  font-size: 200%;
+}
+
+#contactBar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
+  background-color: #383849;
+}
+
+#contactBar > * {
+  margin: 0 20px;
+}
+
+#contactBar img {
+  height: 100px;
+  padding: 20px 0;
+}
+
+@media screen and (max-width: 1200px) {
+  #contact {
+    width: 90%;
+    font-size: 125%;
+  }
+}

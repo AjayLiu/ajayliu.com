@@ -4,9 +4,10 @@ import NET from 'vanta/dist/vanta.net.min'
 
 
 class LandingPage extends React.Component{
-    constructor() {
-        super()
+    constructor(props) {
+        super(props)
         this.vantaRef = React.createRef()
+        this.letsGoTargetRef = React.createRef()
     }
     componentDidMount() {
         this.vantaEffect = NET({
@@ -29,6 +30,11 @@ class LandingPage extends React.Component{
         if (this.vantaEffect) this.vantaEffect.destroy()
     }
 
+    handleClick = () => {
+        let pageHeight = window.innerHeight;
+        window.scrollBy({left: 0, top: pageHeight, behavior: 'smooth'});
+    } 
+
     render (){
         return (
         <div id={styles.net} ref={this.vantaRef}>
@@ -37,7 +43,7 @@ class LandingPage extends React.Component{
                 Hello! My name is <strong>Ajay Liu</strong><br />
                 I love creating things!
                 <br />
-                <button id={styles.viewButton}>Let's Go!</button>
+                <button id={styles.viewButton} onClick={this.handleClick}>Let's Go!</button>
                 </h1>
             </div>
         </div>

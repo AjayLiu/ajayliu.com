@@ -1,0 +1,23 @@
+.footer {
+  width: 100%;
+  margin-top: 5px;
+  height: 38px;
+  font-family: Helvetica, Verdana, Arial, sans-serif;
+  font-size: auto;
+}
+.footer .webgl-logo,
+.title,
+.fullscreen {
+  height: 100%;
+  display: inline-block;
+  background: transparent center no-repeat;
+}
+.footer .title {
+  margin-right: 10px;
+  float: right;
+}
+.footer .fullscreen {
+  background-image: url("../public/imgs/fullscreen.png");
+  width: 38px;
+  float: right;
+}

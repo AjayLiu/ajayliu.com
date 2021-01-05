@@ -44,3 +44,24 @@
   margin: auto;
   width: 70%;
 }
+
+@media screen and (max-width: 1200px) {
+  #aboutSplit {
+    flex-direction: column;
+  }
+
+  #aboutAchievements {
+    justify-content: center;
+    grid-template-columns: auto auto;
+    gap: 50px;
+    margin: auto;
+    width: 90%;
+  }
+  .cite {
+    right: 0;
+  }
+  #profile {
+    margin: auto;
+    margin-bottom: 100px;
+  }
+}

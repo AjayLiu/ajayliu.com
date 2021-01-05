@@ -11,7 +11,8 @@ class ProjectItem extends React.Component{
         this.click = this.click.bind(this);
         this.state={
             redirect: this.props.link,
-            isHover: false
+            isHover: false,
+            hardToRead: this.props.hardToRead,
         };
 
         this.blockStyle = {
@@ -41,11 +42,13 @@ class ProjectItem extends React.Component{
 
     render(){
         const textStyle = {
-            opacity: this.state.isHover ? "1":"0",
-            transition: this.state.isHover? "opacity 0.1s" : "opacity 0.5s"
+            // opacity: this.state.isHover ? "1":"0",
+            // transition: this.state.isHover? "opacity 0.1s" : "opacity 0.5s"
+            textShadow: this.state.hardToRead ? "black 0px 0px 10px, black 0px 0px 10px, black 0px 0px 10px, black 0px 0px 10px" : ""
         }
         
-        var googleplayElem="";
+        var googleplayElem='';
+        var letsGoElem = <a onClick={this.handleAnchorClick} href={this.props.link}>Let's Go!</a>;
         if(this.props.playstoreLink != null){
             googleplayElem = 
             <a onClick={this.handleAnchorClick} 
@@ -58,6 +61,11 @@ class ProjectItem extends React.Component{
               alt = "google play link button"
             />
             </a>
+
+            if(this.props.link == null){
+                letsGoElem= '';
+            }
+
         }
         var recommendedElem = "";
         if(this.props.isRecommended){
@@ -73,7 +81,7 @@ class ProjectItem extends React.Component{
                         <p>{this.props.description}</p>
                     </div>
                     <div className={styles.gamelinks}>
-                        <a onClick={this.handleAnchorClick} href={this.props.link}>Let's Go!</a>
+                        {letsGoElem}
                         {googleplayElem}
                     </div>
                 </div>

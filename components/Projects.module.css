@@ -14,3 +14,15 @@
   justify-content: space-evenly;
   gap: 12px 0;
 }
+
+@media screen and (max-width: 1200px) {
+  #demoReel > iframe {
+    width: 80vw;
+    height: 45vw;
+  }
+
+  #gallery {
+    display: flex;
+    flex-direction: column;
+  }
+}

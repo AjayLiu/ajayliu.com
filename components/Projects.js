@@ -6,7 +6,7 @@ export default function Projects() {
     <section>
         <h2 class="sectionTitle">Projects</h2>
         <div id = {styles.demoReel}>
-        <iframe src="https://www.youtube.com/embed/n_rKZs7hjDI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen></iframe>      
+        <iframe src="https://www.youtube.com/embed/n_rKZs7hjDI" frameborder="0" allow="accelerometer; autoplay=1; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen></iframe>      
         </div>
         <p style = {{marginBottom:"40px"}}>Click on any of them to play!</p>
         <div id={styles.gallery}>
@@ -15,10 +15,10 @@ export default function Projects() {
             gridRow="1/4"
             gridCol="1/4"
             title="Cube Inc." 
-            link = "/CubeInc" 
+            link = "/cubeinc" 
             playstoreLink = "https://play.google.com/store/apps/details?id=com.TroyGameDevelopmentClub.CubeInc"
             description = "A minimalistic, yet challenging puzzle game."
-            isRecommended = "true"
+            isRecommended
           />
           <ProjectItem 
             bgImg="imgs/inspirationcapture.png"
@@ -26,15 +26,6 @@ export default function Projects() {
             gridCol="4/6"
             title="Inspiration Jar" 
             link = "https://www.inspirationjar.com" 
-            description = "A platform for users to submit encouraging messages and make the world a little happier!"
-          />
-          <ProjectItem 
-            bgImg="imgs/inspirationcapture.png"
-            gridRow="1/5"
-            gridCol="4/6"
-            title="Inspiration Jar" 
-            link = "https://www.inspirationjar.com" 
-            playstoreLink = "https://play.google.com/store/apps/details?id=com.TroyGameDevelopmentClub.CubeInc"
             description = "A platform for users to submit encouraging messages and make the world a little happier!"
           />
           <ProjectItem 
@@ -50,7 +41,7 @@ export default function Projects() {
             gridRow="10/12"
             gridCol="3/6"
             title="Cash Out" 
-            link = "CashOut/" 
+            link = "cashout/" 
             playstoreLink="https://play.google.com/store/apps/details?id=com.TroyGameDevelopment.CashOut"
             description = "A fast paced police pursuit game."
           />
@@ -67,7 +58,7 @@ export default function Projects() {
             gridRow="4/8"
             gridCol="1/3"
             title="Pixel Beats" 
-            link = "PixelBeats/" 
+            link = "pixelbeats/" 
             description = "Are you an artist, musician, or dancer? Tap to the beat and be them all!"
           />
           <ProjectItem 
@@ -75,7 +66,7 @@ export default function Projects() {
             gridRow="5/7"
             gridCol="4/6"
             title="Bounce Architect" 
-            link = "BounceArchitect/" 
+            link = "bounceArchitect/" 
             playstoreLink="https://play.google.com/store/apps/details?id=com.HackathonGroup.BounceArchitect"
             description = "What shape bounces best in all orientations? Sketch it out now! Made in under 12 hours."
           />
@@ -92,34 +83,35 @@ export default function Projects() {
             gridRow="8/10"
             gridCol="1"
             title="Tap Defender" 
-            link = "TapDefender/"
+            link = "tapdefender/"
             playstoreLink="https://play.google.com/store/apps/details?id=com.TroyGameDev.TapDefender" 
             description = "A funny, light-hearted tapping game."
+            hardToRead
           />
           <ProjectItem 
             bgImg="imgs/colorjumpwide.png"
             gridRow="8/10"
             gridCol="2/3"
             title="Color Jump" 
-            link = "ColorJump/"
+            link="/colorjump"
             playstoreLink="https://play.google.com/store/apps/details?id=com.MerbolaGames.ColorJump" 
             description = "A color coordination arcade game - easy to learn, hard to master."
+            hardToRead
           />
           <ProjectItem 
             bgImg="imgs/rhymetimebanner.png"
             gridRow="10/12"
             gridCol="1/2"
             title="Rhyme Time" 
-            link = "RhymeTime/" 
             playstoreLink="https://play.google.com/store/apps/details?id=com.MerbolaGames.RhymeTime" 
             description = "Put your rhyming skills to the test and race against the clock."
+            hardToRead
           />
           <ProjectItem 
             bgImg="imgs/spacespin.png"
             gridRow="10/12"
             gridCol="2 / 3"
             title="Space Spin" 
-            link = "SpaceSpin/" 
             playstoreLink="https://play.google.com/store/apps/details?id=com.MerbolaGaming.SpaceSpin" 
             description = "Orbit your way across the universe, but watch out for obstacles and your fuel."
           />

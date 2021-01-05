@@ -1,10 +1,11 @@
 import Head from 'next/head'
-import Header from '@components/Header'
+// import Header from '@components/Header'
 import Footer from '@components/Footer'
 import LandingPage from '@components/LandingPage'
 import About from '@components/About'
 import Projects from '@components/Projects'
 import Skills from '@components/Skills'
+import Contact from '@components/Contact'
 
 export default function Home() {
   return (
@@ -33,6 +34,7 @@ export default function Home() {
         <About />
         <Projects />
         <Skills />
+        <Contact email="contact@ajayliu.com"/>
       </main>
 
       <Footer />

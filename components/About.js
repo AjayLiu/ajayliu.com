@@ -12,7 +12,7 @@ export default function About() {
                 <img id={styles.aboutImg} src="imgs/logothin.png" alt = "logo"/>
                 <p>
                     <a href="https://animatedreamer.com/"
-                    ><cite className={styles.cite}>-logo designed by Tiffany Liu</cite></a
+                    ><cite className={styles.cite}>-logo designed by Animate Dreamer</cite></a
                     >
                 </p>
                 <p><strong>Ajay Liu</strong></p>
@@ -31,7 +31,7 @@ export default function About() {
                 alt = "web development icon" description={<>Web Developer<br></br><em>I coded this website</em></>}/>
               <Achievement link = "https://www.linkedin.com/in/ajayliu/" image = "imgs/tutor.png" 
                 alt = "online tutor icon" description="Online Tutor"/>
-              <Achievement link = "https://www.troydance.org/" image = "imgs/dance.png" 
+              <Achievement link = "https://www.youtube.com/watch?v=RM-mVUny46s" image = "imgs/dance.png" 
                 alt = "hip hop dance icon" description={" \"All Male\" Varsity Dance Team "}/>
               <Achievement link = "/secret" image = "imgs/languages.png" 
                 alt = "multilingual speaker icon" description="Trilingual... ok maybe bilingual"/>

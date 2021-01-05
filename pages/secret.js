@@ -1,3 +1,3 @@
 export default function Home() {
-    return <p>SECRET PAGE!</p>
+    return <p>YOU'VE FOUND THE SECRET PAGE, NICE!</p>
 }

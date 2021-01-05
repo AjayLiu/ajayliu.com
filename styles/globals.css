@@ -55,26 +55,6 @@ section {
   font-size: large;
 } */
 
-#contactBar {
-  display: flex;
-  align-items: center;
-  width: 40%;
-  justify-content: center;
-  margin: 20px auto;
-  border-radius: 25px;
-  background-color: #383849;
-  font-size: 200%;
-}
-
-#contactBar > * {
-  margin: 0 20px;
-}
-
-#contactBar img {
-  height: 100px;
-  padding: 20px 0;
-}
-
 a {
   color: white;
   text-decoration: none;
@@ -84,74 +64,10 @@ a:hover {
   text-decoration: underline;
 }
 
-.webgl-content {
-  display: inline-block;
-  margin: 100px auto;
-}
-
-.returnHome {
-  display: block;
-  font-size: xx-large;
-  text-align: left;
-  margin: 20px 0 0 20px;
-  color: white;
-}
-
-.loadWarning {
-  font-style: italic;
-  color: red;
-}
-
 /* TABLET */
 @media screen and (max-width: 1200px) {
-  #aboutSplit {
-    flex-direction: column;
-  }
-
-  #aboutAchievements {
-    justify-content: center;
-    grid-template-columns: auto auto;
-    gap: 50px;
-    margin: auto;
-    width: 90%;
-  }
-
-  cite {
-    right: 0;
-  }
-
-  #demoReel > iframe {
-    width: 80vw;
-    height: 45vw;
-  }
-
-  #gallery {
-    display: flex;
-    flex-direction: column;
-  }
-  .gameBlock {
-    height: 300px;
-  }
-  #profile {
-    margin: auto;
-    margin-bottom: 100px;
-  }
-
   section {
     width: 90%;
     margin: auto;
   }
-
-  #contactBar {
-    width: 100%;
-    font-size: 100%;
-  }
-
-  .gamelinks {
-    flex-direction: row;
-  }
-}
-
-/* MOBILE */
-@media screen and (max-width: 600px) {
 }
