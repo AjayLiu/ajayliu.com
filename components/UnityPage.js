@@ -3,8 +3,9 @@ import Head from 'next/head'
 import styles from './UnityPage.module.css'
 import templateStyles from '@components/TemplateData.module.css'
 import Footer from '@components/Footer'
+import GoogleAnalyticsHook from '@components/GoogleAnalyticsHook'
 
-export default function UnityPage({gameName, jsonPath, width, height, howTo, fullscreenOption, is2018}) {
+export default function UnityPage({pageEnding, gameName, jsonPath, width, height, howTo, fullscreenOption, is2018}) {
     
     var unityLoaderPath = is2018? "/2018UnityLoader.js" : "/UnityLoader.js";    
 
@@ -23,6 +24,7 @@ export default function UnityPage({gameName, jsonPath, width, height, howTo, ful
 
     return (
         <>
+        <GoogleAnalyticsHook/>
         <Head>
             <title>{gameName}</title>
             <meta charset="utf-8" />

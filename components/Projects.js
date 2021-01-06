@@ -66,7 +66,7 @@ export default function Projects() {
             gridRow="5/7"
             gridCol="4/6"
             title="Bounce Architect" 
-            link = "bounceArchitect/" 
+            link = "bouncearchitect/" 
             playstoreLink="https://play.google.com/store/apps/details?id=com.HackathonGroup.BounceArchitect"
             description = "What shape bounces best in all orientations? Sketch it out now! Made in under 12 hours."
           />

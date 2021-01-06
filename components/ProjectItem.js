@@ -1,6 +1,5 @@
 import React from 'react'
 import styles from './ProjectItem.module.css'
-import  {BrowserRouter, Redirect } from 'react-router-dom'
 
 class ProjectItem extends React.Component{
 
@@ -10,7 +9,6 @@ class ProjectItem extends React.Component{
         this.mouseLeave = this.mouseLeave.bind(this);
         this.click = this.click.bind(this);
         this.state={
-            redirect: this.props.link,
             isHover: false,
             hardToRead: this.props.hardToRead,
         };
@@ -25,7 +23,7 @@ class ProjectItem extends React.Component{
     }
 
     click = () => {
-        window.open(this.state.redirect);
+        window.open(this.props.link || this.props.playstoreLink);
     }
 
     mouseEnter = () => {
