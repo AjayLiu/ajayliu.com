@@ -39,7 +39,7 @@ export default function Projects() {
           <ProjectItem 
             bgImg="imgs/cashOutSkyView.png"
             gridRow="10/12"
-            gridCol="3/6"
+            gridCol="4/6"
             title="Cash Out" 
             link = "cashout/" 
             playstoreLink="https://play.google.com/store/apps/details?id=com.TroyGameDevelopment.CashOut"
@@ -72,11 +72,19 @@ export default function Projects() {
           />
           <ProjectItem 
             bgImg="imgs/timerbanner.PNG"
-            gridRow="7/10"
-            gridCol="5/6"
+            gridRow="10/12"
+            gridCol="3"
             title="10 Second Challenge" 
             link = "https://10seconds.netlify.app/" 
             description = "How well can you count 10 seconds in your head?"
+          />
+          <ProjectItem 
+            bgImg="imgs/ichibanbanner.png"
+            gridRow="7/10"
+            gridCol="5/6"
+            title="Ichiban" 
+            link = "https://ichiban.netlify.app/" 
+            description = "An anime popularity guessing game!"
           />
           <ProjectItem 
             bgImg="imgs/TapDefenderBanner.PNG"
