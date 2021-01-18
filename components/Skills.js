@@ -8,6 +8,7 @@ export default function Skills() {
             <div id={styles.skills}>
                 <div id={styles.skillBar}>
                     <SkillPair image="imgs/unity.png" alt="unity logo" description= "Unity" />
+                    <SkillPair image="imgs/vscode.png" alt="vscode logo" description= "Visual Studio Code" /> 
                     <SkillPair image="imgs/photoshop.png" alt="photoshop logo" description= "Photoshop" />
                     <SkillPair image="imgs/vegas.png" alt="sony vegas pro logo" description= "Sony Vegas Pro" />
                     <SkillPair image="imgs/csharp.png" alt="C# logo" description= "C#" />
@@ -22,6 +23,7 @@ export default function Skills() {
                     <SkillPair image="imgs/fastai.png" alt="Fast.ai logo" description= "Fast.ai" />
                     <SkillPair image="imgs/react.png" alt="react logo" description= "React" />
                     <SkillPair image="imgs/nextjs.png" alt="Next.js logo" description= "Next.js" />
+                    <SkillPair image="imgs/vim.png" alt="Vim logo" description= "Vim" />
                     <SkillPair image="imgs/github.png" alt="Github logo" description= "Github" />
                     <SkillPair image="imgs/netlify.png" alt="Netlify logo" description= "Netlify" />
                     <SkillPair image="imgs/heroku.png" alt="Heroku logo" description= "Heroku" />

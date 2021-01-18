@@ -22,6 +22,24 @@
   padding: 20px 0;
 }
 
+.form {
+  font-size: xx-large;
+  margin: auto;
+  max-width: 600px;
+  border: 1px solid white;
+}
+
+.field {
+  width: 50%;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.labels {
+  margin-bottom: 20px;
+}
+
 @media screen and (max-width: 1200px) {
   #contact {
     width: 95%;
