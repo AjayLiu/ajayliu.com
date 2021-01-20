@@ -22,26 +22,69 @@
   padding: 20px 0;
 }
 
+.formTitle {
+  padding-top: 20px;
+  height: 50px;
+  font-size: xx-large;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.row > .field {
+  width: 40%;
+}
+
 .form {
   font-size: xx-large;
-  margin: auto;
-  max-width: 600px;
-  border: 1px solid white;
+  margin: 60px auto;
+  border-radius: 25px;
+  background-color: #383849;
 }
 
 .field {
-  width: 50%;
-  margin: 20px auto;
+  margin: 20px auto 0px;
   display: flex;
   flex-direction: column;
 }
 
-.labels {
-  margin-bottom: 20px;
+.smallInput,
+.messageBox {
+  /* border-radius: 10px; */
+  font-size: large;
+  padding-left: 20px;
+}
+
+.smallInput {
+  height: 50px;
+}
+
+.messageBox {
+  width: 87%;
+  height: 300px;
+  margin: 0px auto;
+  padding-top: 20px;
+}
+
+.formButton {
+  background: none;
+  padding: 10px 20px;
+  border: 2px solid white;
+  color: white;
+  font-size: medium;
+  margin: 30px auto 30px;
+}
+
+.formButton:hover {
+  cursor: pointer;
 }
 
 @media screen and (max-width: 1200px) {
-  #contact {
+  #contact,
+  .form {
     width: 95%;
     font-size: 100%;
   }
