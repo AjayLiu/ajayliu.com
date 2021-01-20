@@ -58,7 +58,7 @@ export default function Contact({email}) {
               }, 6000)
           }
       }).catch( (err) => {
-          //console.log(err.response.status)
+          console.log(err.response.status)
           setForm({
               ...formState,
               buttonText: 'Failed to send',
@@ -68,6 +68,9 @@ export default function Contact({email}) {
     }
 
   }
+
+
+
   return (
     <section >
       <h2 class="sectionTitle">Contact</h2>
@@ -93,7 +96,7 @@ export default function Contact({email}) {
           <p onChange={(e)=>onChange(e)} className={styles.field}>
             <textarea className={styles.messageBox} type="text" name="message" placeholder="Your Message"></textarea>
           </p>
-          <button className={styles.formButton} onClick={(e)=>submitForm(e)}>{formState.buttonText}</button>
+          <button className={styles.formButton} onClick={submitForm}>{formState.buttonText}</button>
         </form>
       </div>
       
