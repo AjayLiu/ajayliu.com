@@ -15,7 +15,7 @@ export default function Contact({email}) {
   const onChange = (e) => {
       setForm({...formState, [e.target.name]: e.target.value });
   }
-  const submitForm = async (e) => {
+  const submitForm = (e) => {
     e.preventDefault();
     if(!formState.sent){
 
@@ -86,14 +86,14 @@ export default function Contact({email}) {
         <form className={styles.form} name="contact">
           <div className={styles.formTitle}>Contact Form</div>
           <div className={styles.row}>
-            <p onChange={(e)=>onChange(e)} className={styles.field}>
+            <p onChange={onChange} className={styles.field}>
               <input className={styles.smallInput} type="text" name="name" placeholder="Your Name"/>
             </p>
-            <p onChange={(e)=>onChange(e)} className={styles.field}>
+            <p onChange={onChange} className={styles.field}>
               <input className={styles.smallInput} type="text" name="email" placeholder="Your Email"/>
             </p>
           </div>
-          <p onChange={(e)=>onChange(e)} className={styles.field}>
+          <p onChange={onChange} className={styles.field}>
             <textarea className={styles.messageBox} type="text" name="message" placeholder="Your Message"></textarea>
           </p>
           <button className={styles.formButton} onClick={submitForm}>{formState.buttonText}</button>
