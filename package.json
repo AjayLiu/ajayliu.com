@@ -10,6 +10,7 @@
     "build:lambda": "netlify-lambda build backend"
   },
   "dependencies": {
+    "@sendgrid/mail": "^7.4.2",
     "axios": "^0.21.1",
     "next": "10.0.4",
     "nodemailer": "^6.4.17",

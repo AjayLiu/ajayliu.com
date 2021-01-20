@@ -83,6 +83,19 @@ export default function Contact({email}) {
             </p>
           </div>        
         </a>
+        <form 
+          name="contact" 
+          method="POST" 
+          data-netlify="true" 
+          netlify-honeypot="bot-field"
+        >
+          <div className={styles.hidden}>
+            <label>Don't fill this out if you're human: 
+              <input name="bot-field"/>
+            </label>
+          </div>
+        </form>
+
         <form className={styles.form} name="contact">
           <div className={styles.formTitle}>Contact Form</div>
           <div className={styles.row}>
