@@ -58,7 +58,7 @@ export default function Contact({email}) {
               }, 6000)
           }
       }).catch( (err) => {
-          console.log(err.response.status)
+          console.log(err)
           setForm({
               ...formState,
               buttonText: 'Failed to send',
