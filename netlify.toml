@@ -1,6 +1,6 @@
 [build]
-  command = "yarn build"
-  publish = "build"
+  command = "npm run build && npm run export"
+  publish = "out"
   functions = "functions"
 [[redirects]]
     from = "/api/*"
