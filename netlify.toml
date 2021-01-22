@@ -23,6 +23,9 @@
 [[redirects]]
     from = "/donate"
     to = "https://www.buymeacoffee.com/ajayliu/"
+[[redirects]]
+    from = "/youtube"
+    to = "https://www.youtube.com/channel/UClr6XCaguPeM0g7UL6Lvs3g"
 
 [[redirects]]
     from = "/sheeporgoat"
