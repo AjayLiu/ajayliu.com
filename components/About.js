@@ -9,12 +9,7 @@ export default function About() {
         <div id={styles.aboutSplit}>
             <div id={styles.profile}>
                 <div>
-                <img id={styles.aboutImg} src="imgs/logothin.png" alt = "logo"/>
-                <p>
-                    <a href="https://animatedreamer.com/"
-                    ><cite className={styles.cite}>-logo designed by Animate Dreamer</cite></a
-                    >
-                </p>
+                <img id={styles.aboutImg} src="imgs/profilepic2.png" alt = "profile picture"/>
                 <p><strong>Ajay Liu</strong></p>
                 <p><em>"You deserve a month-long break 12 times a year!"</em></p>
                 </div>

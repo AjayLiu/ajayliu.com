@@ -6,6 +6,7 @@ import About from '@components/About'
 import Projects from '@components/Projects'
 import Skills from '@components/Skills'
 import Contact from '@components/Contact'
+import FAQ from '@components/FAQ'
 import GoogleAnalyticsHook from '@components/GoogleAnalyticsHook'
 
 export default function Home() {
@@ -37,6 +38,7 @@ export default function Home() {
         <Projects />
         <Skills />
         <Contact email="contact@ajayliu.com"/>
+        <FAQ />
       </main>
 
       <Footer />
