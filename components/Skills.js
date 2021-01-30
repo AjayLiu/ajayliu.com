@@ -22,6 +22,7 @@ export default function Skills() {
                     <SkillPair image="imgs/py.png" alt="Python logo" description= "Python" />
                     <SkillPair image="imgs/fastai.png" alt="Fast.ai logo" description= "Fast.ai" />
                     <SkillPair image="imgs/react.png" alt="react logo" description= "React" />
+                    <SkillPair image="imgs/react.png" alt="react native logo" description= "React Native" />
                     <SkillPair image="imgs/nextjs.png" alt="Next.js logo" description= "Next.js" />
                     <SkillPair image="imgs/vim.png" alt="Vim logo" description= "Vim" />
                     <SkillPair image="imgs/github.png" alt="Github logo" description= "Github" />
