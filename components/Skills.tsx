@@ -16,6 +16,7 @@ export default function Skills() {
                     <SkillPair image="imgs/java.png" alt="Java logo" description= "Java" />
                     <SkillPair image="imgs/htmlcss.png" alt="HTML/CSS logo" description= "HTML/CSS" />
                     <SkillPair image="imgs/js.png" alt="javascript logo" description= "JavaScript" />
+                    <SkillPair image="imgs/typescript.png" alt="typescript logo" description= "TypeScript" />
                     <SkillPair image="imgs/php.png" alt="PHP logo" description= "PHP" />
                     <SkillPair image="imgs/mysql.png" alt="MySQL logo" description= "MySQL" />
                     <SkillPair image="imgs/node.png" alt="node.js logo" description= "Node.js" />
