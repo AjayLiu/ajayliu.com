@@ -1,4 +1,4 @@
-import styles from './Skills.module.css'
+import styles from '@styles/Skills.module.css'
 import SkillPair from '@components/SkillPair'
 
 export default function Skills() {

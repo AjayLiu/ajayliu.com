@@ -1,4 +1,4 @@
-import styles from './Contact.module.css'
+import styles from '@styles/Contact.module.css'
 import {useState} from 'react'
 import axios from 'axios';
 

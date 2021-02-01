@@ -1,4 +1,4 @@
-import styles from './LandingPage.module.css'
+import styles from '@styles/LandingPage.module.css'
 import React from 'react'
 import NET from 'vanta/dist/vanta.net.min'
 

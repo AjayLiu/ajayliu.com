@@ -1,7 +1,7 @@
 import React from "react";
 import Head from 'next/head'
-import styles from './UnityPage.module.css'
-import templateStyles from '@components/TemplateData.module.css'
+import styles from '@styles/UnityPage.module.css'
+import templateStyles from '@styles/TemplateData.module.css'
 import Footer from '@components/Footer'
 import GoogleAnalyticsHook from '@components/GoogleAnalyticsHook'
 

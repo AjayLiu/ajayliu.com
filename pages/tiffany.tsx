@@ -1,6 +1,4 @@
-
-import Card from '@components/Card.js'
-
+import Card from '@components/Card'
 export default function Tiffany() {
   return (
     <Card 
