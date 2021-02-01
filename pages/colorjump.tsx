@@ -1,3 +1,4 @@
+// @ts-nocheck
 import UnityPage from '@components/UnityPage'
 
 export default function ColorJump() {

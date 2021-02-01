@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 import React from "react";
 import Head from 'next/head'
 import styles from '@styles/UnityPage.module.css'

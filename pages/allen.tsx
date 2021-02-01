@@ -1,4 +1,5 @@
 
+// @ts-nocheck
 import Card from '@components/Card'
 
 export default function Allen() {

@@ -108,7 +108,7 @@ export default function Contact({email}) {
               </p>
             </div>
             <p onChange={onChange} className={styles.field}>
-              <textarea className={styles.messageBox} type="text" name="message" placeholder="Your Message"></textarea>
+              <textarea className={styles.messageBox}  name="message" placeholder="Your Message"></textarea>
             </p>
           </div>
           <button className={styles.formButton} onClick={submitForm}>{formState.buttonText}</button>

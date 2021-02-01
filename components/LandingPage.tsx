@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 import styles from '@styles/LandingPage.module.css'
 import React from 'react'
 import NET from 'vanta/dist/vanta.net.min'

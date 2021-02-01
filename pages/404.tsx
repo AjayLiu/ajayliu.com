@@ -1,3 +1,4 @@
+// @ts-nocheck
 import GoogleAnalyticsHook from '@components/GoogleAnalyticsHook'
 
 export default function FourOhFour() {

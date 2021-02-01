@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 import styles from '@styles/Projects.module.css'
 import ProjectItem from '@components/ProjectItem'
 
