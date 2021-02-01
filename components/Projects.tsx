@@ -6,7 +6,7 @@ export default function Projects() {
     <section>
         <h2 className="sectionTitle">Projects</h2>
         <div id = {styles.demoReel}>
-        <iframe src="https://www.youtube.com/embed/n_rKZs7hjDI" frameborder="0" allow="accelerometer; autoplay=1; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen></iframe>      
+        <iframe src="https://www.youtube.com/embed/n_rKZs7hjDI" frameBorder="0" allow="accelerometer; autoplay=1; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowFullScreen></iframe>      
         </div>
         <p style = {{marginBottom:"40px"}}>Click on any of them to play!</p>
         <div id={styles.gallery}>
