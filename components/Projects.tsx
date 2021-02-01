@@ -4,7 +4,7 @@ import ProjectItem from '@components/ProjectItem'
 export default function Projects() {
   return (
     <section>
-        <h2 class="sectionTitle">Projects</h2>
+        <h2 className="sectionTitle">Projects</h2>
         <div id = {styles.demoReel}>
         <iframe src="https://www.youtube.com/embed/n_rKZs7hjDI" frameborder="0" allow="accelerometer; autoplay=1; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen></iframe>      
         </div>

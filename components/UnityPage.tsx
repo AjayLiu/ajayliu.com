@@ -15,9 +15,9 @@ export default function UnityPage({pageEnding, gameName, jsonPath, width, height
 
     var fullscreenElem = fullscreenOption ?
     <>
-        <div class={templateStyles.footer}>
-            <div class={templateStyles.fullscreen} onClick={fullscreenHandler}></div>
-            <div class = {templateStyles.title}>Click here to enter fullscreen (recommended) → </div>
+        <div className={templateStyles.footer}>
+            <div className={templateStyles.fullscreen} onClick={fullscreenHandler}></div>
+            <div className = {templateStyles.title}>Click here to enter fullscreen (recommended) → </div>
         </div>
     </> : ""; 
 

@@ -4,7 +4,7 @@ import Achievement from '@components/Achievement'
 export default function About() {
   return (
     <section id={styles.aboutSection}>
-      <h2 class="sectionTitle">About Me</h2>
+      <h2 className="sectionTitle">About Me</h2>
       <div id={styles.about}>
         <div id={styles.aboutSplit}>
             <div id={styles.profile}>
