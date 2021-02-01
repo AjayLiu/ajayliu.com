@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './ProjectItem.module.css'
+import styles from '@styles/ProjectItem.module.css'
 
 class ProjectItem extends React.Component{
 

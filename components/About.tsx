@@ -1,4 +1,4 @@
-import styles from './About.module.css'
+import styles from '@styles/About.module.css'
 import Achievement from '@components/Achievement'
 
 export default function About() {

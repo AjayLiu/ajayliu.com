@@ -1,4 +1,4 @@
-import styles from './SkillPair.module.css'
+import styles from '@styles/SkillPair.module.css'
 
 export default function SkillPair({image, alt, description}) {
     return (

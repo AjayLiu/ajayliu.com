@@ -1,4 +1,4 @@
-import styles from './Card.module.css'
+import styles from '@styles/Card.module.css'
 import Footer from '@components/Footer'
 import GoogleAnalyticsHook from '@components/GoogleAnalyticsHook'
 export default function Card({title, banner, content, signature, imagePath}) {
