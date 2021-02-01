@@ -4,7 +4,7 @@ import SkillPair from '@components/SkillPair'
 export default function Skills() {
     return (
         <section>
-            <h2 class="sectionTitle">I use...</h2>
+            <h2 className="sectionTitle">I use...</h2>
             <div id={styles.skills}>
                 <div id={styles.skillBar}>
                     <SkillPair image="imgs/unity.png" alt="unity logo" description= "Unity" />

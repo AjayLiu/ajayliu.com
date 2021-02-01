@@ -9,7 +9,7 @@ import {
 export default function FAQ() {
     return (
         <>
-        <h2 class="sectionTitle">Q&A</h2>
+        <h2 className="sectionTitle">Q&A</h2>
         <Accordion allowZeroExpanded allowMultipleExpanded >
             <AccordionItem>
                 <AccordionItemHeading>
