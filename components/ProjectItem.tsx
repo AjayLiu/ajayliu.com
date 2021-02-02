@@ -1,95 +1,91 @@
-// @ts-nocheck
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import styles from '@styles/ProjectItem.module.css'
 
-class ProjectItem extends React.Component{
+interface Props {
+    title: string;
+    description: string;
+    hardToRead: boolean;
+    bgImg: string;
+    gridRow: number;
+    gridCol: number;
+    link: string;
+    playstoreLink: string;
+    isRecommended: boolean;
+}
 
-    constructor(props){
-        super(props);
-        this.mouseEnter = this.mouseEnter.bind(this);
-        this.mouseLeave = this.mouseLeave.bind(this);
-        this.click = this.click.bind(this);
-        this.state={
-            isHover: false,
-            hardToRead: this.props.hardToRead,
-        };
-
-        this.blockStyle = {
-            backgroundImage: `url(${this.props.bgImg})`,
-            gridRow: this.props.gridRow,
-            gridColumn: this.props.gridCol
-        }        
-
-
+const ProjectItem: React.FC<Props> = ({ title, description, hardToRead, bgImg, gridRow, gridCol, link, playstoreLink, isRecommended}) => {
+    const [isHover, setIsHover] = useState(false);
+    const blockStyle = {
+        backgroundImage: `url(${bgImg})`,
+        gridRow: gridRow,
+        gridColumn: gridCol
     }
 
-    click = () => {
-        window.open(this.props.link || this.props.playstoreLink);
+    function click () {
+        window.open(link || playstoreLink);
     }
 
-    mouseEnter = () => {
-        this.setState({isHover: true});
-    }
-    
-    mouseLeave = () => {
-        this.setState({isHover: false});
+    function mouseEnter (){
+        setIsHover(true);
     }
 
-    handleAnchorClick = (e) => {
+    function mouseLeave (){
+        setIsHover(false);
+    }
+
+    function handleAnchorClick (e){
         e.stopPropagation();
     }
 
-    render(){
-        const textStyle = {
-            // opacity: this.state.isHover ? "1":"0",
-            // transition: this.state.isHover? "opacity 0.1s" : "opacity 0.5s"
-            textShadow: this.state.hardToRead ? "black 0px 0px 10px, black 0px 0px 10px, black 0px 0px 10px, black 0px 0px 10px" : ""
-        }
-        
-        var googleplayElem='';
-        var letsGoElem = <a onClick={this.handleAnchorClick} href={this.props.link}>Let's Go!</a>;
-        if(this.props.playstoreLink != null){
-            googleplayElem = 
-            <a onClick={this.handleAnchorClick} 
-                href={this.props.playstoreLink}
+    const textStyle = {
+        // opacity: this.state.isHover ? "1":"0",
+        // transition: this.state.isHover? "opacity 0.1s" : "opacity 0.5s"
+        textShadow: hardToRead ? "black 0px 0px 10px, black 0px 0px 10px, black 0px 0px 10px, black 0px 0px 10px" : ""
+    }
+
+    let googleplayElem = <></>;
+    let letsGoElem = <a onClick={(e) => handleAnchorClick} href={link}>Let's Go!</a>;
+    if (playstoreLink != null) {
+        googleplayElem =
+            <a onClick={(e) => handleAnchorClick}
+                href={playstoreLink}
             >
-            <img
-              src="imgs/en_badge_web_generic.png"
-              width="153"
-              height="62"
-              alt = "google play link button"
-            />
+                <img
+                    src="imgs/en_badge_web_generic.png"
+                    width="153"
+                    height="62"
+                    alt="google play link button"
+                />
             </a>
 
-            if(this.props.link == null){
-                letsGoElem= '';
-            }
-
-        }
-        var recommendedElem = "";
-        if(this.props.isRecommended){
-            recommendedElem = <img id={styles.recommend} src="imgs/recommended.png" alt = "recommendation thumbs up badge"/>
+        if (link == null) {
+            letsGoElem = <></>;
         }
 
-        return (
-            <div style={this.blockStyle} className={styles.gameBlock} onMouseEnter={this.mouseEnter} onMouseLeave={this.mouseLeave} onClick={this.click}>
-                {recommendedElem}
-                <div style={textStyle} className={styles.gametext}>
-                    <div className={styles.gametitle}>{this.props.title}</div>
-                    <div className={styles.gamedescription}>
-                        <p>{this.props.description}</p>
-                    </div>
-                    <div className={styles.gamelinks}>
-                        {letsGoElem}
-                        {googleplayElem}
-                    </div>
+    }
+    let recommendedElem = <></>;
+    if (isRecommended) {
+        recommendedElem = <img id={styles.recommend} src="imgs/recommended.png" alt="recommendation thumbs up badge" />
+    }
+
+    return (
+        <div style={blockStyle} className={styles.gameBlock} onMouseEnter={()=>mouseEnter} onMouseLeave={()=>mouseLeave} onClick={()=>click}>
+            {recommendedElem}
+            <div style={textStyle} className={styles.gametext}>
+                <div className={styles.gametitle}>{title}</div>
+                <div className={styles.gamedescription}>
+                    <p>{description}</p>
+                </div>
+                <div className={styles.gamelinks}>
+                    {letsGoElem}
+                    {googleplayElem}
                 </div>
             </div>
-        )
-    }
-    
-    
-     
+        </div>
+    )
+
+
+
 }
 
 export default ProjectItem;
