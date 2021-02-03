@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+// import React, { useEffect, useState } from 'react'
 import styles from '@styles/ProjectItem.module.css'
 
 interface Props {
@@ -16,7 +16,7 @@ interface Props {
 const ProjectItem: React.FC<Props> = ({ title, description, hardToRead, bgImg, gridRow, gridCol, link, playstoreLink, isRecommended}) => {
 
     
-    const [isHover, setIsHover] = useState(false);
+    // const [isHover, setIsHover] = useState(false);
     const blockStyle = {
         backgroundImage: `url(${bgImg})`,
         gridRow: gridRow,
