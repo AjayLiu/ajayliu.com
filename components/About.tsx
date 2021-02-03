@@ -9,7 +9,7 @@ const About: React.FC = () => {
         <div id={styles.aboutSplit}>
             <div id={styles.profile}>
                 <div>
-                <img id={styles.aboutImg} src="imgs/profilepic2.png" alt = "profile picture"/>
+                <img id={styles.aboutImg} src="imgs/profilepic2_optimized.png" alt = "profile picture"/>
                 <p><strong>Ajay Liu</strong></p>
                 <p><em>"You deserve a month-long break 12 times a year!"</em></p>
                 </div>
