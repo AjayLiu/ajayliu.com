@@ -1,7 +1,13 @@
 import styles from '@styles/Achievement.module.css'
-import {Router, Link} from 'react-router-dom'
 
-export default function Achievement({link, description, image, alt}) {
+interface Props {
+   link: string;
+   description: string | JSX.Element;
+   image: string;
+   alt: string; 
+}
+
+const Achievement: React.FC<Props> = ({link, description, image, alt}) => {
     return (
         <a href={link}>
             <div className={styles.achievement}>
@@ -11,3 +17,5 @@ export default function Achievement({link, description, image, alt}) {
         </a>
     )    
 }
+
+export default Achievement;

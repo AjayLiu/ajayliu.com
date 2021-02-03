@@ -1,5 +1,3 @@
-// @ts-nocheck
-
 import React from "react";
 import Head from 'next/head'
 import styles from '@styles/UnityPage.module.css'
@@ -7,11 +5,22 @@ import templateStyles from '@styles/TemplateData.module.css'
 import Footer from '@components/Footer'
 import GoogleAnalyticsHook from '@components/GoogleAnalyticsHook'
 
-export default function UnityPage({pageEnding, gameName, jsonPath, width, height, howTo, fullscreenOption, is2018}) {
-    
-    var unityLoaderPath = is2018? "/2018UnityLoader.js" : "/UnityLoader.js";    
+interface Props {
+    gameName : string;
+    jsonPath : string;
+    width: number;
+    height: number;
+    howTo: HTMLElement;
+    fullscreenOption?: boolean;
+    is2018?: boolean;
+}
 
-    function fullscreenHandler () {
+const UnityPage: React.FC <Props> = ({ gameName, jsonPath, width, height, howTo, fullscreenOption, is2018}) => {
+    
+    const unityLoaderPath = is2018? "/2018UnityLoader.js" : "/UnityLoader.js";    
+
+    const fullscreenHandler = () => {
+        // @ts-ignore
         unityInstance.SetFullscreen(1)
     }
 
@@ -23,13 +32,13 @@ export default function UnityPage({pageEnding, gameName, jsonPath, width, height
         </div>
     </> : ""; 
 
-
+    
     return (
         <>
         <GoogleAnalyticsHook/>
         <Head>
             <title>{gameName}</title>
-            <meta charset="utf-8" />
+            {/* <meta charset="utf-8" /> */}
             <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
             <script src={unityLoaderPath}></script>
@@ -60,3 +69,5 @@ export default function UnityPage({pageEnding, gameName, jsonPath, width, height
     );
     
 }
+
+export default UnityPage;

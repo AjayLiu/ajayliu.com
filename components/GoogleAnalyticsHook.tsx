@@ -1,7 +1,7 @@
 import { useEffect } from 'react'
 import ReactGA from 'react-ga'
 
-export default function GoogleAnalyticsHook() {
+const GoogleAnalyticsHook: React.FC = () => {
 
     useEffect(()=>{
         ReactGA.initialize('UA-178410803-1')
@@ -14,3 +14,4 @@ export default function GoogleAnalyticsHook() {
         </>
     )
 }
+export default GoogleAnalyticsHook;

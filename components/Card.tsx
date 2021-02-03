@@ -1,11 +1,19 @@
 import styles from '@styles/Card.module.css'
 import Footer from '@components/Footer'
 import GoogleAnalyticsHook from '@components/GoogleAnalyticsHook'
-export default function Card({title, banner, content, signature, imagePath}) {
+
+interface Props{
+    title: string;
+    banner: HTMLElement;
+    content: HTMLElement;
+    signature: HTMLElement;
+    imagePath: string;
+}
+const Card: React.FC<Props>=({title, banner, content, signature, imagePath}) => {
     return (
         <>
             <GoogleAnalyticsHook/>
-
+            
             <title>
                 {title}
             </title>
@@ -23,3 +31,5 @@ export default function Card({title, banner, content, signature, imagePath}) {
         </>
     )    
 }
+
+export default Card;

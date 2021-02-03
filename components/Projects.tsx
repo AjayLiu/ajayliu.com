@@ -1,9 +1,7 @@
-// @ts-nocheck
-
 import styles from '@styles/Projects.module.css'
 import ProjectItem from '@components/ProjectItem'
 
-export default function Projects() {
+const Projects: React.FC = () => {
   return (
     <section>
         <h2 className="sectionTitle">Projects</h2>
@@ -129,3 +127,5 @@ export default function Projects() {
     </section>
   )
 }
+
+export default Projects;

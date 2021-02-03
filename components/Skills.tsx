@@ -1,7 +1,7 @@
 import styles from '@styles/Skills.module.css'
 import SkillPair from '@components/SkillPair'
 
-export default function Skills() {
+const Skills: React.FC = () =>{
     return (
         <section>
             <h2 className="sectionTitle">I use...</h2>
@@ -35,3 +35,5 @@ export default function Skills() {
         </section>
     )
 }
+
+export default Skills;

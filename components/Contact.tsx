@@ -2,7 +2,11 @@ import styles from '@styles/Contact.module.css'
 import {useState} from 'react'
 import axios from 'axios';
 
-export default function Contact({email}) {
+interface Props {
+  email: string;
+}
+
+const Contact: React.FC<Props> = ({email}) => {
 
   const [formState, setForm] = useState({
     name: "",
@@ -117,3 +121,5 @@ export default function Contact({email}) {
     </section>
   )
 }
+
+export default Contact;

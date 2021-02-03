@@ -4,37 +4,41 @@ import styles from '@styles/ProjectItem.module.css'
 interface Props {
     title: string;
     description: string;
-    hardToRead: boolean;
+    hardToRead?: boolean;
     bgImg: string;
-    gridRow: number;
-    gridCol: number;
-    link: string;
-    playstoreLink: string;
-    isRecommended: boolean;
+    gridRow: string;
+    gridCol: string;
+    link?: string;
+    playstoreLink?: string;
+    isRecommended?: boolean;
 }
 
 const ProjectItem: React.FC<Props> = ({ title, description, hardToRead, bgImg, gridRow, gridCol, link, playstoreLink, isRecommended}) => {
+
+    
     const [isHover, setIsHover] = useState(false);
     const blockStyle = {
         backgroundImage: `url(${bgImg})`,
         gridRow: gridRow,
         gridColumn: gridCol
     }
-
-    function click () {
+    
+    const click = () => {
         window.open(link || playstoreLink);
     }
 
-    function mouseEnter (){
+    const mouseEnter = () => {
         setIsHover(true);
+        console.log("enter")
     }
 
-    function mouseLeave (){
+    const mouseLeave = () => {
         setIsHover(false);
     }
 
-    function handleAnchorClick (e){
+    const handleAnchorClick = (e: MouseEvent) => {
         e.stopPropagation();
+        console.log("HEY")
     }
 
     const textStyle = {
@@ -47,7 +51,7 @@ const ProjectItem: React.FC<Props> = ({ title, description, hardToRead, bgImg, g
     let letsGoElem = <a onClick={(e) => handleAnchorClick} href={link}>Let's Go!</a>;
     if (playstoreLink != null) {
         googleplayElem =
-            <a onClick={(e) => handleAnchorClick}
+            <a onClick={(e: React.MouseEvent<HTMLElement>) => {handleAnchorClick(e)}}
                 href={playstoreLink}
             >
                 <img
@@ -69,7 +73,7 @@ const ProjectItem: React.FC<Props> = ({ title, description, hardToRead, bgImg, g
     }
 
     return (
-        <div style={blockStyle} className={styles.gameBlock} onMouseEnter={()=>mouseEnter} onMouseLeave={()=>mouseLeave} onClick={()=>click}>
+        <div style={blockStyle} className={styles.gameBlock} onMouseEnter={mouseEnter} onMouseLeave={mouseLeave} onClick={click}>
             {recommendedElem}
             <div style={textStyle} className={styles.gametext}>
                 <div className={styles.gametitle}>{title}</div>

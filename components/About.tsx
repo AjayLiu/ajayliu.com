@@ -1,7 +1,7 @@
 import styles from '@styles/About.module.css'
 import Achievement from '@components/Achievement'
 
-export default function About() {
+const About: React.FC = () => {
   return (
     <section id={styles.aboutSection}>
       <h2 className="sectionTitle">About Me</h2>
@@ -23,7 +23,7 @@ export default function About() {
                 alt = "google play logo" description="Released more than 8 games on Google Play"/>
               <Achievement link = "https://unity.com/" image = "imgs/unity.png" alt = "unity logo" description="Unity Game Developer"/>
               <Achievement link = "https://github.com/AjayLiu" image = "imgs/web.png" 
-                alt = "web development icon" description={<>Web Developer<br></br><em>I coded this website</em></>}/>
+                alt = "web development icon" description={<>Web Developer<br></br><em>I coded this website</em></>} />
               <Achievement link = "https://www.linkedin.com/in/ajayliu/" image = "imgs/tutor.png" 
                 alt = "online tutor icon" description="Online Tutor"/>
               <Achievement link = "https://www.youtube.com/watch?v=RM-mVUny46s" image = "imgs/dance.png" 
@@ -36,3 +36,5 @@ export default function About() {
     </section>
   )
 }
+
+export default About;

@@ -6,7 +6,7 @@ import {
     AccordionItemPanel,
 } from 'react-accessible-accordion';
 
-export default function FAQ() {
+const FAQ: React.FC = () => {
     return (
         <>
         <h2 className="sectionTitle">Q&A</h2>
@@ -58,3 +58,5 @@ export default function FAQ() {
         </>
     );
 }
+
+export default FAQ;

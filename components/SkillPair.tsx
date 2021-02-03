@@ -1,6 +1,12 @@
 import styles from '@styles/SkillPair.module.css'
 
-export default function SkillPair({image, alt, description}) {
+interface Props{
+    image: string;
+    alt: string;
+    description: string;
+}
+
+const SkillPair: React.FC<Props> = ({image, alt, description}) => {
     return (
         <div className={styles.skillPair}>
             <img src={image} alt={alt}/>
@@ -8,3 +14,5 @@ export default function SkillPair({image, alt, description}) {
         </div>
     )
 }
+
+export default SkillPair;

@@ -48,7 +48,7 @@ const LandingPage: React.FC = () => {
         }
     }, []);
         
-    function handleClick () {
+    const handleClick = () => {
         let pageHeight = window.innerHeight;
         window.scrollBy({left: 0, top: pageHeight, behavior: 'smooth'});
     } 
@@ -60,7 +60,7 @@ const LandingPage: React.FC = () => {
             Hello! My name is <strong>Ajay Liu</strong><br />
             I love creating things!
             <br />
-            <button id={styles.viewButton} onClick={()=> handleClick}>Let's Go!</button>
+            <button id={styles.viewButton} onClick={handleClick}>Let's Go!</button>
             </h1>
         </div>
     </div>
