@@ -4,9 +4,9 @@ import GoogleAnalyticsHook from '@components/GoogleAnalyticsHook'
 
 interface Props{
     title: string;
-    banner: HTMLElement;
-    content: HTMLElement;
-    signature: HTMLElement;
+    banner: JSX.Element;
+    content: JSX.Element ;
+    signature: JSX.Element ;
     imagePath: string;
 }
 const Card: React.FC<Props>=({title, banner, content, signature, imagePath}) => {

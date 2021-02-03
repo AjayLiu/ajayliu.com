@@ -1,7 +1,6 @@
-// @ts-nocheck
 import UnityPage from '@components/UnityPage'
 
-export default function CashOut() {
+const CashOut: React.FC = () => {
     return (
         <UnityPage gameName="Cash Out" jsonPath="cashout/WebGL Jan20.json" width="48vh" height="80vh" 
             howTo={
@@ -12,3 +11,6 @@ export default function CashOut() {
         />
     )
 }
+
+    
+export default CashOut;

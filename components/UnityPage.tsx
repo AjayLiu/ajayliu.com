@@ -8,9 +8,9 @@ import GoogleAnalyticsHook from '@components/GoogleAnalyticsHook'
 interface Props {
     gameName : string;
     jsonPath : string;
-    width: number;
-    height: number;
-    howTo: HTMLElement;
+    width: string;
+    height: string;
+    howTo: JSX.Element;
     fullscreenOption?: boolean;
     is2018?: boolean;
 }

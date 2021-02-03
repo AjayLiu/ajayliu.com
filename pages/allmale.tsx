@@ -1,7 +1,7 @@
 
 import Card from '@components/Card'
 
-export default function AllMale() {
+const AllMale: React.FC = () => {
   return (
     <Card 
 
@@ -34,3 +34,6 @@ export default function AllMale() {
     />
   )
 }
+
+
+export default AllMale;

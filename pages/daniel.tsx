@@ -1,8 +1,6 @@
-// @ts-nocheck
-
 import Card from '@components/Card'
 
-export default function Daniel() {
+const Daniel: React.FC = () => {
   return (
     <Card 
 
@@ -17,7 +15,7 @@ export default function Daniel() {
     }
     content={
         <> 
-            It's already been one and a half years since you moved to Canada. 時間真的過太快了... or should I say... <strike>时间真的过太快了</strike>.
+            It's already been one and a half years since you moved to Canada. 時間真的過太快了... or should I say... <div style={{textDecorationLine: 'line-through', textDecorationStyle: 'solid'}}>时间真的过太快了</div>.
             Sorry I keep roasting your Beijing 腔, I'm just jealous you were able to make so many friends so quickly while I'm here dying alone T_T.
             On a side note, I'm really glad that you've picked up an interest in programming, (I know you look up to me as your role model xaxaxa). 
             We will honor the 劉 family! All that said tho, stop playing league, it's bad for your health :) 
@@ -35,3 +33,6 @@ export default function Daniel() {
     />
   )
 }
+
+
+export default Daniel;

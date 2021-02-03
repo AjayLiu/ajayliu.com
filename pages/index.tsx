@@ -9,7 +9,7 @@ import Contact from '@components/Contact'
 import FAQ from '@components/FAQ'
 import GoogleAnalyticsHook from '@components/GoogleAnalyticsHook'
 
-export default function Home() {
+const Home: React.FC = () => {
   return (
     <>
     <GoogleAnalyticsHook />
@@ -46,3 +46,6 @@ export default function Home() {
     </>
   )
 }
+
+
+export default Home;

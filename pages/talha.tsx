@@ -1,7 +1,7 @@
 
 import Card from '@components/Card'
 
-export default function Talha() {
+const Talha: React.FC = () => {
   return (
     <Card 
     title = "Happy Holidays Talha!"
@@ -33,3 +33,5 @@ export default function Talha() {
     />
   )
 }
+
+export default Talha;

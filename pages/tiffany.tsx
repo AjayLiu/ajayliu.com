@@ -1,5 +1,5 @@
 import Card from '@components/Card'
-export default function Tiffany() {
+const Tiffany = () => {
   return (
     <Card 
 
@@ -32,3 +32,5 @@ export default function Tiffany() {
     />
   )
 }
+
+export default Tiffany;

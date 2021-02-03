@@ -1,7 +1,6 @@
-// @ts-nocheck
 import UnityPage from '@components/UnityPage'
 
-export default function ColorJump() {
+const ColorJump: React.FC = () => {
     return (
         <>
         <UnityPage gameName="Color Jump" jsonPath="colorjump/Ajay Liu Website.json" width="48vh" height="80vh" is2018
@@ -16,3 +15,5 @@ export default function ColorJump() {
         </>
     )
 }
+    
+export default ColorJump;

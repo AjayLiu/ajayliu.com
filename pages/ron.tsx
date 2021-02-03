@@ -1,7 +1,7 @@
 
 import Card from '@components/Card'
 
-export default function Ron() {
+const Ron: React.FC = () => {
   return (
     <Card 
 
@@ -34,3 +34,6 @@ export default function Ron() {
     />
   )
 }
+
+
+export default Ron;

@@ -1,7 +1,6 @@
-// @ts-nocheck
 import UnityPage from '@components/UnityPage'
 
-export default function PixelBeats() {
+const PixelBeats: React.FC = () => {
     return (
         <>
         <UnityPage gameName="Pixel Beats" jsonPath="pixelbeats/Builds.json" width="80vw" height="45vw" 
@@ -19,3 +18,5 @@ export default function PixelBeats() {
         </>
     )
 }
+
+export default PixelBeats;

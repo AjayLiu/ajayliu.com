@@ -1,9 +1,8 @@
-// @ts-nocheck
 import GoogleAnalyticsHook from '@components/GoogleAnalyticsHook'
 
-export default function FourOhFour() {
+const FourOhFour: React.FC = () => {
   return <>
-    <GoogleAnalyticsHook pageName = "404" />
+    <GoogleAnalyticsHook />
 
     <h1>404 - Page Not Found :(</h1>
     <a href="../">
@@ -11,3 +10,4 @@ export default function FourOhFour() {
     </a>
   </>
 }
+export default FourOhFour;

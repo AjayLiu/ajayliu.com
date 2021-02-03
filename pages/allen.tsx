@@ -1,8 +1,6 @@
-
-// @ts-nocheck
 import Card from '@components/Card'
 
-export default function Allen() {
+const Allen: React.FC = () => {
   return (
     <Card 
     title = "Happy Birthday Bro!"
@@ -22,7 +20,7 @@ export default function Allen() {
         I still get anxious before riding roller coasters, but somehow after that experience, I’ve grown to at least try. 
         I never would’ve thought that I would be president of a game development club, or have my own website,
         or join a dance team if you hadn’t taught me how to grow out of my shell. My breaks spent with you are always 
-        filled with uncomfortable, but door-opening memories. Looking forward to creating more memories <strike>skydiving</strike> with you on my 18th birthday! 
+        filled with uncomfortable, but door-opening memories. Looking forward to creating more memories <div style={{textDecorationLine: 'line-through', textDecorationStyle: 'solid'}}>skydiving</div> with you on my 18th birthday! 
         </>
     }
 
@@ -36,3 +34,6 @@ export default function Allen() {
     />
   )
 }
+
+
+export default Allen;

@@ -1,7 +1,6 @@
-// @ts-nocheck
 import UnityPage from '@components/UnityPage'
 
-export default function TapDefender() {
+const TapDefender: React.FC = () => {
     return (
         <>
         <UnityPage gameName="Tap Defender" jsonPath="tapdefender/TapDefenderWebGL.json" width="48vh" height="80vh" 
@@ -14,3 +13,5 @@ export default function TapDefender() {
         </>
     )
 }
+
+export default TapDefender;

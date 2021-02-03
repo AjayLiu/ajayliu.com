@@ -27,16 +27,15 @@ const ProjectItem: React.FC<Props> = ({ title, description, hardToRead, bgImg, g
         window.open(link || playstoreLink);
     }
 
-    const mouseEnter = () => {
-        setIsHover(true);
-        console.log("enter")
-    }
+    // const mouseEnter = () => {
+    //     setIsHover(true);
+    // }
 
-    const mouseLeave = () => {
-        setIsHover(false);
-    }
+    // const mouseLeave = () => {
+    //     setIsHover(false);
+    // }
 
-    const handleAnchorClick = (e: MouseEvent) => {
+    const handleAnchorClick = (e) => {
         e.stopPropagation();
         console.log("HEY")
     }
@@ -73,7 +72,7 @@ const ProjectItem: React.FC<Props> = ({ title, description, hardToRead, bgImg, g
     }
 
     return (
-        <div style={blockStyle} className={styles.gameBlock} onMouseEnter={mouseEnter} onMouseLeave={mouseLeave} onClick={click}>
+        <div style={blockStyle} className={styles.gameBlock} /* onMouseEnter={mouseEnter} onMouseLeave={mouseLeave} */ onClick={click}>
             {recommendedElem}
             <div style={textStyle} className={styles.gametext}>
                 <div className={styles.gametitle}>{title}</div>

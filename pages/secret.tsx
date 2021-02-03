@@ -1,5 +1,5 @@
 import GoogleAnalyticsHook from '@components/GoogleAnalyticsHook'
-export default function Home() {
+const Secret: React.FC = () => {
     return (
         <>        
         <GoogleAnalyticsHook />
@@ -11,3 +11,5 @@ export default function Home() {
         </>
     )
 }
+
+export default Secret;
