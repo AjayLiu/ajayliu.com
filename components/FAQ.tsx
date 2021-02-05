@@ -63,8 +63,8 @@ const FAQ: React.FC = () => {
                 <AccordionItemPanel>
                     <p>
                         This website was originally coded from pure HTML, CSS, and JavaScript. Now I have refactored
-                        the code to React and Next.js. This site is hosted on Netlify and all the code to this website
-                        can be found on my <a href = "https://github.com/ajayliu">github</a>.
+                        the code to React and Next.js, written in TypeScript. This site is hosted on Netlify and all 
+                        the code to this website can be found on my <a href = "https://github.com/ajayliu">github</a>.
                     </p>
                 </AccordionItemPanel>
             </AccordionItem>
