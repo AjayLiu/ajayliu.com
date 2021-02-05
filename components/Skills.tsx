@@ -20,6 +20,7 @@ const Skills: React.FC = () =>{
                     <SkillPair image="imgs/php.png" alt="PHP logo" description= "PHP" />
                     <SkillPair image="imgs/mysql.png" alt="MySQL logo" description= "MySQL" />
                     <SkillPair image="imgs/node.png" alt="node.js logo" description= "Node.js" />
+                    <SkillPair image="imgs/mongoleaf.png" alt="MongoDB logo" description= "MongoDB" />
                     <SkillPair image="imgs/py.png" alt="Python logo" description= "Python" />
                     <SkillPair image="imgs/fastai.png" alt="Fast.ai logo" description= "Fast.ai" />
                     <SkillPair image="imgs/react.png" alt="react logo" description= "React" />
