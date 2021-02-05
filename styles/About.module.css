@@ -3,16 +3,14 @@
 }
 
 #about {
-  margin: auto;
-  width: 90%;
+  margin: auto 80px;
 }
 
 #aboutSplit {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  width: 95%;
-  margin: auto;
+  margin: auto 10px;
 }
 
 #profile {
@@ -47,22 +45,31 @@
 }
 
 @media screen and (max-width: 1200px) {
+  
+  #about{
+    margin: 0;
+  }
   #aboutSplit {
+    margin: 0;
     flex-direction: column;
   }
 
   #aboutAchievements {
+    display: flex;
+    align-items: center;
     justify-content: center;
-    grid-template-columns: auto auto;
-    gap: 50px;
-    margin: auto;
-    width: 90%;
+    flex-wrap:wrap;
+    /* border: 1px solid red; */
+    width: 100%;
+    margin-bottom: 30px;
+    /* height: 2000px; */
   }
+
   .cite {
     right: 0;
   }
   #profile {
     margin: auto;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
   }
 }
