@@ -1,5 +1,6 @@
 // import React, { useEffect, useState } from 'react'
 import styles from '@styles/ProjectItem.module.css'
+import GooglePlayButton from './GooglePlayButton';
 
 interface Props {
     title: string;
@@ -37,7 +38,6 @@ const ProjectItem: React.FC<Props> = ({ title, description, hardToRead, bgImg, g
 
     const handleAnchorClick = (e) => {
         e.stopPropagation();
-        console.log("HEY")
     }
 
     const textStyle = {
@@ -47,24 +47,12 @@ const ProjectItem: React.FC<Props> = ({ title, description, hardToRead, bgImg, g
     }
 
     let googleplayElem = <></>;
-    let letsGoElem = <a onClick={(e) => handleAnchorClick} href={link}>Let's Go!</a>;
+    let letsGoElem = <a onClick={(e)=>handleAnchorClick(e)} href={link}>Let's Go!</a>;
     if (playstoreLink != null) {
-        googleplayElem =
-            <a onClick={(e: React.MouseEvent<HTMLElement>) => {handleAnchorClick(e)}}
-                href={playstoreLink}
-            >
-                <img
-                    src="imgs/en_badge_web_generic.png"
-                    width="153"
-                    height="62"
-                    alt="google play link button"
-                />
-            </a>
-
+        googleplayElem = <GooglePlayButton link={playstoreLink} />
         if (link == null) {
             letsGoElem = <></>;
         }
-
     }
     let recommendedElem = <></>;
     if (isRecommended) {

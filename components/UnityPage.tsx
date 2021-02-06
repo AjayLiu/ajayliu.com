@@ -4,6 +4,7 @@ import styles from '@styles/UnityPage.module.css'
 import templateStyles from '@styles/TemplateData.module.css'
 import Footer from '@components/Footer'
 import GoogleAnalyticsHook from '@components/GoogleAnalyticsHook'
+import GooglePlayButton from "./GooglePlayButton";
 
 interface Props {
     gameName : string;
@@ -13,9 +14,10 @@ interface Props {
     howTo: JSX.Element;
     fullscreenOption?: boolean;
     is2018?: boolean;
+    playstoreLink?: string;
 }
 
-const UnityPage: React.FC <Props> = ({ gameName, jsonPath, width, height, howTo, fullscreenOption, is2018}) => {
+const UnityPage: React.FC <Props> = ({ gameName, jsonPath, width, height, howTo, fullscreenOption, is2018, playstoreLink}) => {
     
     const unityLoaderPath = is2018? "/2018UnityLoader.js" : "/UnityLoader.js";    
 
@@ -63,6 +65,9 @@ const UnityPage: React.FC <Props> = ({ gameName, jsonPath, width, height, howTo,
             </div>
             {fullscreenElem}
         </div>
+
+        {playstoreLink && <GooglePlayButton link = {playstoreLink}/>}
+
         <Footer />
 
         </>

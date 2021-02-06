@@ -84,6 +84,7 @@ const Projects: React.FC = () => {
             gridCol="5/6"
             title="Ichiban" 
             link = "https://ichiban.netlify.app/" 
+            playstoreLink="https://play.google.com/store/apps/details?id=com.ichibanreactnative"
             description = "An anime popularity guessing game!"
           />
           <ProjectItem 

@@ -2,7 +2,7 @@ import UnityPage from '@components/UnityPage'
 
 const BounceArchitect: React.FC = () => {
     return (
-        <UnityPage gameName="Bounce Architect" jsonPath="bouncearchitect/WebGL.json" width="80vw" height="45vw" 
+        <UnityPage gameName="Bounce Architect" jsonPath="bouncearchitect/WebGL.json" width="80vw" height="45vw" playstoreLink="https://play.google.com/store/apps/details?id=com.HackathonGroup.BounceArchitect"
             howTo={<h2>Use A and D or Arrow Keys to move your drawing. Use Mouse to draw. Keep the ball bouncing! </h2>} fullscreenOption 
         />
     )
