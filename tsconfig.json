@@ -20,15 +20,16 @@
 
     "baseUrl": "./",
     "paths": {
-      "@components/*": ["components/*"],
-      "@styles/*": ["styles/*"]
+      "@components/*": ["src/components/*"],
+      "@styles/*": ["public/styles/*"]
     }
   },
   "include": [
     "next-env.d.ts",
     "**/*.ts",
-    "**/*.tsx"
-, "pages/_app.js"  ],
+    "**/*.tsx", 
+    "src/pages/_app.tsx"  
+  ],
   "exclude": [
     "node_modules"
   ]
