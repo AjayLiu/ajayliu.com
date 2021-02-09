@@ -24,7 +24,6 @@ interface Props {
 
 const UnityPage: React.FC <PropObject> = (props)  => {
     const { slug, gameName, jsonPath, width, height, howTo, fullscreenOption, is2018, playstoreLink} = props.props;
-    console.log(slug);
 
     const unityLoaderPath = is2018? "/2018UnityLoader.js" : "/UnityLoader.js";    
 
@@ -41,6 +40,8 @@ const UnityPage: React.FC <PropObject> = (props)  => {
         </div>
     </> : ""; 
 
+    // const howToElem = JSON.stringify(howTo.props.children[0].type);
+    // const howToElem = 
     return (
         <>
         <GoogleAnalyticsHook/>
@@ -60,7 +61,9 @@ const UnityPage: React.FC <PropObject> = (props)  => {
 
         <a className={styles.returnHome} href="../">Return Home</a>
         <div className={styles.howTo}>
-            {/* {React.createElement(howTo,)} */}
+            {howTo.props.children.map(c=>{
+                return React.createElement(c.type, c.props) ;
+            }) }
         </div>
         <div className={styles.gamename}>
             {gameName} 
