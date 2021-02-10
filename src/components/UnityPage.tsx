@@ -40,8 +40,6 @@ const UnityPage: React.FC <PropObject> = (props)  => {
         </div>
     </> : ""; 
 
-    // const howToElem = JSON.stringify(howTo.props.children[0].type);
-    // const howToElem = 
     return (
         <>
         <GoogleAnalyticsHook/>
@@ -53,8 +51,8 @@ const UnityPage: React.FC <PropObject> = (props)  => {
             <script src={unityLoaderPath}></script>
             <script>
                 var unityInstance = UnityLoader.instantiate(
-                    "unityContainer",
-                    "{jsonPath}"
+                    `unityContainer`,
+                    `{jsonPath}`
                 );
             </script>                            
         </Head>        

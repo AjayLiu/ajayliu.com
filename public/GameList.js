@@ -2,7 +2,7 @@ export const gameList = [
     {
         slug:"cubeinc",
         gameName: "Cube Inc.",
-        jsonPath: "../games/cubeinc/Builds.json", 
+        jsonPath: "/game_folders/cubeinc/Builds.json", 
         width:"48vh",
         height:"80vh",
         playstoreLink:"https://play.google.com/store/apps/details?id=com.TroyGameDevelopmentClub.CubeInc",
@@ -11,7 +11,7 @@ export const gameList = [
     {
         slug:"pixelbeats",
         gameName:"Pixel Beats",
-        jsonPath:"../games/pixelbeats/Builds.json", 
+        jsonPath:"/game_folders/pixelbeats/Builds.json", 
         width:"80vw",
         height:"48vw",
         howTo: 
@@ -27,7 +27,7 @@ export const gameList = [
     {
         slug:"cashout",
         gameName:"Cash Out",
-        jsonPath:"cashout/WebGL Jan20.json",
+        jsonPath:"/game_folders/cashout/WebGL Jan20.json",
         width:"48vh" ,
         height:"80vh" ,
         playstoreLink:"https://play.google.com/store/apps/details?id=com.TroyGameDevelopment.CashOut",
@@ -41,7 +41,7 @@ export const gameList = [
     {
         slug:"colorjump",
         gameName:"Color Jump",
-        jsonPath:"colorjump/Ajay Liu Website.json",
+        jsonPath:"/game_folders/colorjump/Ajay Liu Website.json",
         width:"48vh" ,
         height:"80vh" ,
         is2018: true,
@@ -56,7 +56,7 @@ export const gameList = [
     {
         slug: "bouncearchitect",
         gameName:"Bounce Architect",
-        jsonPath:"bouncearchitect/WebGL.json" ,
+        jsonPath:"/game_folders/bouncearchitect/WebGL.json" ,
         width:"80vw",
         height:"45vw",
         playstoreLink:"https://play.google.com/store/apps/details?id=com.HackathonGroup.BounceArchitect",
@@ -70,7 +70,7 @@ export const gameList = [
     {
         slug: "tapdefender",
         gameName:"Tap Defender" ,
-        jsonPath:"tapdefender/TapDefenderWebGL.json",
+        jsonPath:"/game_folders/tapdefender/TapDefenderWebGL.json",
         width:"48vh" ,
         height:"80vh" ,
         playstoreLink:"https://play.google.com/store/apps/details?id=com.TroyGameDev.TapDefender",

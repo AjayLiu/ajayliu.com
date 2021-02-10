@@ -7,3 +7,38 @@
     from = "/api/*"
     to = "/.netlify/functions/:splat"
     status = 200
+
+[[redirects]]
+    from = "/home"
+    to = "/"
+[[redirects]]
+    from = "/github"
+    to = "https://github.com/ajayliu/"
+[[redirects]]
+    from = "/linkedin"
+    to = "https://www.linkedin.com/in/ajayliu/"
+[[redirects]]
+    from = "/googleplay"
+    to = "https://play.google.com/store/apps/developer?id=Troy+Game+Development+Club/"
+[[redirects]]
+    from = "/donate"
+    to = "https://www.buymeacoffee.com/ajayliu/"
+[[redirects]]
+    from = "/youtube"
+    to = "https://www.youtube.com/channel/UClr6XCaguPeM0g7UL6Lvs3g"
+
+[[redirects]]
+    from = "/sheeporgoat"
+    to = "https://sheepgoat.herokuapp.com/"
+[[redirects]]
+    from = "/jetlag"
+    to = "https://jetlag.netlify.app/"
+[[redirects]]
+    from = "/inspirationjar"
+    to = "https://www.inspirationjar.com/"
+[[redirects]]
+    from = "/10seconds"
+    to = "https://10seconds.netlify.app/"
+[[redirects]]
+    from = "/ichiban"
+    to = "https://ichiban.netlify.app/"

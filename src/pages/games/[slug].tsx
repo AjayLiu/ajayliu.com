@@ -1,5 +1,5 @@
 import UnityPage from '@components/UnityPage';
-import {gameList} from "public/games/GameList.js"
+import {gameList} from "public/GameList"
 
 interface Props {
     slug: string;
@@ -11,9 +11,9 @@ const Game: React.FC<Props> = ({slug}) => {
     return (
         <div>
             {/* {slug} */}
-            <pre>
+            <div>
                 <UnityPage props = {props} />
-            </pre>
+            </div>
         </div>
     )
 }
