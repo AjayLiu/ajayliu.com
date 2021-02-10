@@ -1,5 +1,5 @@
 import styles from '@styles/Footer.module.css'
-
+import {imgPath} from 'public/path'
 const Footer: React.FC = () => {
   return (
     <>
@@ -12,13 +12,13 @@ const Footer: React.FC = () => {
         </p>
         <div id={styles.socialLinks}>
           <a href="https://github.com/AjayLiu">
-            <img src="imgs/github.png" alt="github logo"/>
+            <img src={imgPath+"/github.png"} alt="github logo"/>
           </a>
           <a href="https://www.linkedin.com/in/ajayliu/">
-            <img src="imgs/linkedin.png" alt="linkedin logo"/>
+            <img src={imgPath+ "/linkedin.png"} alt="linkedin logo"/>
           </a>
           <a href="https://www.youtube.com/channel/UClr6XCaguPeM0g7UL6Lvs3g">
-            <img src="imgs/youtubedark.png" alt="dark youtube logo"/>
+            <img src={imgPath+"/youtubedark.png"} alt="dark youtube logo"/>
           </a>
         </div>
       </footer>

@@ -14,10 +14,11 @@
   z-index: 3;
   margin: 100px auto;
   width: 90%;
+  font-size: xx-large;
 }
 
-#content p {
-  font-size: xx-large;
+#content > div {
+  white-space: normal;
 }
 
 #image {

@@ -15,7 +15,7 @@ const Projects: React.FC = () => {
             gridRow="1/4"
             gridCol="1/4"
             title="Cube Inc." 
-            link = "/cubeinc" 
+            link = "/games/cubeinc" 
             playstoreLink = "https://play.google.com/store/apps/details?id=com.TroyGameDevelopmentClub.CubeInc"
             description = "A minimalistic, yet challenging puzzle game."
             isRecommended
@@ -41,7 +41,7 @@ const Projects: React.FC = () => {
             gridRow="10/12"
             gridCol="4/6"
             title="Cash Out" 
-            link = "cashout/" 
+            link = "games/cashout/" 
             playstoreLink="https://play.google.com/store/apps/details?id=com.TroyGameDevelopment.CashOut"
             description = "A fast paced police pursuit game."
           />
@@ -58,7 +58,7 @@ const Projects: React.FC = () => {
             gridRow="4/8"
             gridCol="1/3"
             title="Pixel Beats" 
-            link = "pixelbeats/" 
+            link = "games/pixelbeats/" 
             description = "Are you an artist, musician, or dancer? Tap to the beat and be them all!"
           />
           <ProjectItem 
@@ -66,7 +66,7 @@ const Projects: React.FC = () => {
             gridRow="5/7"
             gridCol="4/6"
             title="Bounce Architect" 
-            link = "bouncearchitect/" 
+            link = "games/bouncearchitect/" 
             playstoreLink="https://play.google.com/store/apps/details?id=com.HackathonGroup.BounceArchitect"
             description = "What shape bounces best in all orientations? Sketch it out now! Made in under 12 hours."
           />
@@ -92,7 +92,7 @@ const Projects: React.FC = () => {
             gridRow="8/10"
             gridCol="1"
             title="Tap Defender" 
-            link = "tapdefender/"
+            link = "games/tapdefender/"
             playstoreLink="https://play.google.com/store/apps/details?id=com.TroyGameDev.TapDefender" 
             description = "A funny, light-hearted tapping game."
             hardToRead
@@ -102,7 +102,7 @@ const Projects: React.FC = () => {
             gridRow="8/10"
             gridCol="2/3"
             title="Color Jump" 
-            link="/colorjump"
+            link="games/colorjump"
             playstoreLink="https://play.google.com/store/apps/details?id=com.MerbolaGames.ColorJump" 
             description = "A color coordination arcade game - easy to learn, hard to master."
             hardToRead

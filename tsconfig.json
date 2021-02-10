@@ -21,14 +21,14 @@
     "baseUrl": "./",
     "paths": {
       "@components/*": ["src/components/*"],
-      "@styles/*": ["public/styles/*"]
+      "@styles/*": ["public/styles/*"],
+      "@imgs/*": ["https://localhost:3000/public/imgs/*"]
     }
   },
   "include": [
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx", 
-    "src/pages/_app.tsx"  
   ],
   "exclude": [
     "node_modules"

@@ -6,7 +6,12 @@ import Footer from '@components/Footer'
 import GoogleAnalyticsHook from '@components/GoogleAnalyticsHook'
 import GooglePlayButton from "./GooglePlayButton";
 
+interface PropObject {
+    props : Props;
+}
+
 interface Props {
+    slug : string;
     gameName : string;
     jsonPath : string;
     width: string;
@@ -17,8 +22,9 @@ interface Props {
     playstoreLink?: string;
 }
 
-const UnityPage: React.FC <Props> = ({ gameName, jsonPath, width, height, howTo, fullscreenOption, is2018, playstoreLink}) => {
-    
+const UnityPage: React.FC <PropObject> = (props)  => {
+    const { slug, gameName, jsonPath, width, height, howTo, fullscreenOption, is2018, playstoreLink} = props.props;
+
     const unityLoaderPath = is2018? "/2018UnityLoader.js" : "/UnityLoader.js";    
 
     const fullscreenHandler = () => {
@@ -34,14 +40,15 @@ const UnityPage: React.FC <Props> = ({ gameName, jsonPath, width, height, howTo,
         </div>
     </> : ""; 
 
-    
+    // const howToElem = JSON.stringify(howTo.props.children[0].type);
+    // const howToElem = 
     return (
         <>
         <GoogleAnalyticsHook/>
         <Head>
             <title>{gameName}</title>
             {/* <meta charset="utf-8" /> */}
-            <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+            <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
 
             <script src={unityLoaderPath}></script>
             <script>
