@@ -2,6 +2,10 @@ import styles from '@styles/Card.module.css'
 import Footer from '@components/Footer'
 import GoogleAnalyticsHook from '@components/GoogleAnalyticsHook'
 
+
+interface PropRaw {
+    props : Props;
+}
 interface Props{
     title: string;
     banner: JSX.Element;
@@ -9,7 +13,10 @@ interface Props{
     signature: JSX.Element ;
     imagePath: string;
 }
-const Card: React.FC<Props>=({title, banner, content, signature, imagePath}) => {
+const Card: React.FC<PropRaw>=(props) => {
+
+    const {title, banner, content, signature, imagePath} = props.props;
+
     return (
         <>
             <GoogleAnalyticsHook/>
@@ -20,11 +27,13 @@ const Card: React.FC<Props>=({title, banner, content, signature, imagePath}) => 
             <section id = {styles.banner}>
                 {banner}
             </section>
+
+            
             <section id = {styles.content}>
                 <img src = {imagePath} id = {styles.image} />
-                <p>
+                <div>
                     {content}                    
-                </p>
+                </div>
                 <p id={styles.signature}>{signature}</p>
             </section>
             <Footer />

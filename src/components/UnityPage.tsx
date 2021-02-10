@@ -48,7 +48,7 @@ const UnityPage: React.FC <PropObject> = (props)  => {
         <Head>
             <title>{gameName}</title>
             {/* <meta charset="utf-8" /> */}
-            <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+            <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
 
             <script src={unityLoaderPath}></script>
             <script>
@@ -61,9 +61,7 @@ const UnityPage: React.FC <PropObject> = (props)  => {
 
         <a className={styles.returnHome} href="../">Return Home</a>
         <div className={styles.howTo}>
-            {howTo.props.children.map(c=>{
-                return React.createElement(c.type, c.props) ;
-            }) }
+            {howTo}
         </div>
         <div className={styles.gamename}>
             {gameName} 

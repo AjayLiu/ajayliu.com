@@ -1,27 +1,26 @@
-import UnityPage from '@components/UnityPage';
-import {gameList} from "public/games/GameList.js"
+import Card from '@components/Card'
+import {cardList} from "public/cards/CardList.js"
 
 interface Props {
     slug: string;
     contentsJSON: string; 
 }
 
-const Game: React.FC<Props> = ({slug}) => {
-    const props = gameList.find(el => el.slug == slug);
+const CardPage: React.FC<Props> = ({slug}) => {
+    const props = cardList.find(el => el.slug == slug);
     return (
         <div>
-            {/* {slug} */}
             <pre>
-                <UnityPage props = {props} />
+                <Card props = {props} />
             </pre>
         </div>
     )
 }
 
 export const getStaticPaths = async() => {
-    const paths = gameList.map(game => ({
+    const paths = cardList.map(page => ({
         params: {
-            slug: game.slug,
+            slug: page.slug,
         }
     }))
     return {
@@ -38,4 +37,4 @@ export const getStaticProps = async ({params: {slug}}) => {
     }
 }
 
-export default Game;
+export default CardPage;
