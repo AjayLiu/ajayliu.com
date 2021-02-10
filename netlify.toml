@@ -42,3 +42,43 @@
 [[redirects]]
     from = "/ichiban"
     to = "https://ichiban.netlify.app/"
+
+
+[[redirects]]
+    from = "/cubeinc"
+    to = "/games/cubeinc"
+[[redirects]]
+    from = "/cashout"
+    to = "/games/cashout"
+[[redirects]]
+    from = "/pixelbeats"
+    to = "/games/pixelbeats"
+[[redirects]]
+    from = "/colorjump"
+    to = "/games/colorjump"
+[[redirects]]
+    from = "/bouncearchitect"
+    to = "/games/bouncearchitect"
+[[redirects]]
+    from = "/tapdefender"
+    to = "/games/tapdefender"
+
+
+[[redirects]]
+    from = "/allen"
+    to = "/cards/allen"
+[[redirects]]
+    from = "/tiffany"
+    to = "/cards/tiffany"
+[[redirects]]
+    from = "/ron"
+    to = "/cards/ron"
+[[redirects]]
+    from = "/daniel"
+    to = "/cards/daniel"
+[[redirects]]
+    from = "/talha"
+    to = "/cards/talha"
+[[redirects]]
+    from = "/allmale"
+    to = "/cards/allmale"
