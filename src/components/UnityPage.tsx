@@ -23,7 +23,7 @@ interface Props {
 }
 
 const UnityPage: React.FC <PropObject> = (props)  => {
-    const {gameName, jsonPath, width, height, howTo, fullscreenOption, is2018, playstoreLink} = props.props;
+    const { gameName, jsonPath, width, height, howTo, fullscreenOption, is2018, playstoreLink} = props.props;
 
     const unityLoaderPath = is2018? "/2018UnityLoader.js" : "/UnityLoader.js";    
 
