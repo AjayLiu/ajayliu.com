@@ -22,11 +22,11 @@ const Projects: React.FC = () => {
           />
           <ProjectItem 
             bgImg="imgs/inspirationcapture.png"
-            gridRow="1/5"
-            gridCol="4/6"
+            gridRow="7/10"
+            gridCol="5/6"
             title="Inspiration Jar" 
-            link = "https://www.inspirationjar.com" 
-            description = "A platform for users to submit encouraging messages and make the world a little happier!"
+            link = "https://inspirationjar.netlify.app" 
+            description = "(no longer supported) A platform for users to submit encouraging messages and make the world a little happier!"
           />
           <ProjectItem 
             bgImg="imgs/world.png"
@@ -80,8 +80,8 @@ const Projects: React.FC = () => {
           />
           <ProjectItem 
             bgImg="imgs/ichibanbanner.png"
-            gridRow="7/10"
-            gridCol="5/6"
+            gridRow="1/5"
+            gridCol="4/6"
             title="Ichiban" 
             link = "https://ichiban.netlify.app/" 
             playstoreLink="https://play.google.com/store/apps/details?id=com.ichibanreactnative"
