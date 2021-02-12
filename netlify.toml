@@ -35,7 +35,7 @@
     to = "https://jetlag.netlify.app/"
 [[redirects]]
     from = "/inspirationjar"
-    to = "https://www.inspirationjar.com/"
+    to = "https://inspirationjar.netlify.app/"
 [[redirects]]
     from = "/10seconds"
     to = "https://10seconds.netlify.app/"
