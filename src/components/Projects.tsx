@@ -30,14 +30,6 @@ const Projects: React.FC = () => {
             description = "An anime popularity guessing game!"
           />
           <ProjectItem 
-            bgImg="imgs/world.png"
-            gridRow="7/10"
-            gridCol="3/5"
-            title="Jetlag Calculator" 
-            link = "https://jetlag.netlify.app/index.html" 
-            description = "Tools to help you deal with time and timezones!"
-          />
-          <ProjectItem 
             bgImg="imgs/cashOutSkyView.png"
             gridRow="10/12"
             gridCol="4/6"
@@ -62,6 +54,15 @@ const Projects: React.FC = () => {
             link = "games/pixelbeats/" 
             description = "Are you an artist, musician, or dancer? Tap to the beat and be them all!"
           />
+          <ProjectItem 
+            bgImg="imgs/whenbanner.jpg"
+            gridRow="7/10"
+            gridCol = "3/5"
+            title="when?"
+            link = "https://when.netlify.app/"
+            description = "Have a worldwide event? Share a single link to convert that meeting time to everyone's local time!"
+          />
+
           <ProjectItem 
             bgImg="imgs/inspirationcapture.png"
             gridRow="7/10"

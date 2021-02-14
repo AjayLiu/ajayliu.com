@@ -31,9 +31,6 @@
     from = "/sheeporgoat"
     to = "https://sheepgoat.herokuapp.com/"
 [[redirects]]
-    from = "/jetlag"
-    to = "https://jetlag.netlify.app/"
-[[redirects]]
     from = "/inspirationjar"
     to = "https://inspirationjar.netlify.app/"
 [[redirects]]
@@ -42,6 +39,9 @@
 [[redirects]]
     from = "/ichiban"
     to = "https://ichiban.netlify.app/"
+[[redirects]]
+    from = "/when"
+    to = "https://when.netlify.app/"
 
 
 [[redirects]]
