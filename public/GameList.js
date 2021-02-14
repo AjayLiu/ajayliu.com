@@ -79,5 +79,18 @@ export const gameList = [
             <h2>Tap with mouse or finger</h2>              
             <div></div>
         </>
+    },
+    {
+        slug: "triviadash",
+        gameName:"Trivia Dash" ,
+        jsonPath:"/game_folders/triviadash/Builds.json",
+        width:"80vw" ,
+        height:"45vw" ,
+        howTo:
+        <>
+            <h2>Jump over the obstacles with Space</h2>              
+            <h2>Every incorrect answer increases difficulty</h2>
+            <h2>Every correct answer earns 1/5 heart</h2>
+        </>
     }
 ]

@@ -109,21 +109,12 @@ const Projects: React.FC = () => {
             hardToRead
           />
           <ProjectItem 
-            bgImg="imgs/rhymetimebanner.png"
+            bgImg="imgs/triviadashbanner.svg"
             gridRow="10/12"
-            gridCol="1/2"
-            title="Rhyme Time" 
-            playstoreLink="https://play.google.com/store/apps/details?id=com.MerbolaGames.RhymeTime" 
-            description = "Put your rhyming skills to the test and race against the clock."
-            hardToRead
-          />
-          <ProjectItem 
-            bgImg="imgs/spacespin.png"
-            gridRow="10/12"
-            gridCol="2 / 3"
-            title="Space Spin" 
-            playstoreLink="https://play.google.com/store/apps/details?id=com.MerbolaGaming.SpaceSpin" 
-            description = "Orbit your way across the universe, but watch out for obstacles and your fuel."
+            gridCol="1/3"
+            link="games/triviadash"
+            title="Trivia Dash" 
+            description = "(work in progress) You're late for school! Study up and avoid the obstacles!"
           />
         </div>
     </section>

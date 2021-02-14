@@ -5,7 +5,7 @@ const Footer: React.FC = () => {
     <>
       <footer className={styles.footer}>
         <p>
-          © 2021 Ajay Liu. All Rights Reserved •
+          © 2021 <a href="https://ajayliu.com">Ajay Liu</a>. All Rights Reserved •
           <a href="https://mail.google.com/mail/?view=cm&fs=1&to=contact@ajayliu.com"
             > contact@ajayliu.com
           </a>

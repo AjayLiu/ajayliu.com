@@ -62,6 +62,9 @@
 [[redirects]]
     from = "/tapdefender"
     to = "/games/tapdefender"
+[[redirects]]
+    from = "/triviadash"
+    to = "/games/triviadash"
 
 
 [[redirects]]
