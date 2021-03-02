@@ -10,7 +10,7 @@
   display: grid;
   margin: auto;
   grid-template-columns: 19% 19% 19% 19% 19%;
-  grid-template-rows: 150px 150px 150px 150px 150px 150px 150px 150px 150px 150px 150px;
+  grid-template-rows: 150px 150px 150px 150px 150px 150px 150px 150px 150px 150px;
   justify-content: space-evenly;
   gap: 12px 0;
 }

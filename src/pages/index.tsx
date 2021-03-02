@@ -39,6 +39,12 @@ const Home: React.FC = () => {
         <Skills />
         <Contact email="contact@ajayliu.com"/>
         <FAQ />
+        <div style={{"margin":"100px 40px 0px", "fontStyle":"italic"}}>
+          <p>psst... there's a secret link you can click somewhere on this page ;)</p>
+          <p>
+            hint: i wonder how many languages you can speak
+          </p>
+        </div>
       </main>
 
       <Footer />
