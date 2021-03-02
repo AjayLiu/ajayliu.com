@@ -32,7 +32,7 @@
     to = "https://sheepgoat.herokuapp.com/"
 [[redirects]]
     from = "/inspirationjar"
-    to = "https://inspirationjar.netlify.app/"
+    to = "https://inspirationjar.herokuapp.com/"
 [[redirects]]
     from = "/10seconds"
     to = "https://10seconds.netlify.app/"
