@@ -12,6 +12,7 @@
   "dependencies": {
     "@sendgrid/mail": "^7.4.2",
     "axios": "^0.21.1",
+    "netlify-cli": "^3.10.5",
     "next": "10.0.4",
     "react": "17.0.1",
     "react-accessible-accordion": "^3.3.3",
