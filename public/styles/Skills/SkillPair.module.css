@@ -1,9 +1,15 @@
-.skillPair img {
-  width: 80px;
-  /* height: 80px; */
-}
-
 .skillPair {
   display: inline-block;
   margin: 20px;
+}
+
+.skillImgContainer {
+  display: flex;
+  width: 80px;
+  height: 80px;
+  margin: auto;
+}
+
+.skillImg {
+  width: 100%;
 }

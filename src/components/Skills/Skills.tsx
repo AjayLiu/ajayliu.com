@@ -8,7 +8,7 @@ const Skills: React.FC = () => {
       <div id={styles.skills}>
         <div id={styles.skillBar}>
           <SkillPair
-            image="imgs/unity.png"
+            image="imgs/unity.svg"
             alt="unity logo"
             description="Unity"
           />
@@ -79,7 +79,7 @@ const Skills: React.FC = () => {
             description="MySQL"
           />
           <SkillPair
-            image="imgs/fastai.svg"
+            image="imgs/fastai.jpg"
             alt="Fast.ai logo"
             description="Fast.ai"
           />

@@ -11,7 +11,7 @@ const About: React.FC = () => {
             <div>
               <img
                 id={styles.aboutImg}
-                src="imgs/profilepic2_optimized.png"
+                src="imgs/profile-picture.jpg"
                 alt="profile picture"
               />
               <p>
@@ -43,7 +43,7 @@ const About: React.FC = () => {
             />
             <Achievement
               link="https://unity.com/"
-              image="imgs/unity.png"
+              image="imgs/unity.svg"
               alt="unity logo"
               description="Unity Game Developer"
             />
