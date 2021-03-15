@@ -98,3 +98,7 @@
 [[redirects]]
     from = "/allmale"
     to = "/cards/allmale"
+
+[[redirects]]
+    from = "/blog"
+    to = "https://blog.ajayliu.com/"
