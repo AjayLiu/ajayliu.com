@@ -73,6 +73,11 @@ const Skills: React.FC = () => {
             description="MySQL"
           />
           <SkillPair
+            image="imgs/graphql.svg"
+            alt="GraphQL logo"
+            description="GraphQL"
+          />
+          <SkillPair
             image="imgs/expressjs.png"
             alt="expressjs logo"
             description="Express.js"

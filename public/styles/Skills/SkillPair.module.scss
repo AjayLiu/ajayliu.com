@@ -5,11 +5,14 @@
 
 .skillImgContainer {
   display: flex;
-  width: 80px;
-  height: 80px;
+  align-items: center;
+  justify-content: center;
+  height: 70px;
   margin: auto;
 }
 
 .skillImg {
   width: 100%;
+  max-width: 70px;
+  max-height: 70px;
 }
