@@ -15,23 +15,21 @@
   width: 80%;
 
   text-align: left;
-}
-
-.intro strong {
-  color: #f33864;
-  font-size: larger;
-}
-
-#viewButton {
-  margin-top: 30px;
-  background-color: Transparent;
-  background-repeat: no-repeat;
-  width: 30%;
-  height: 50px;
-  font-size: large;
-  color: white;
-  border: 2px solid white;
-  cursor: pointer;
-  overflow: hidden;
-  outline: none;
+  strong {
+    color: #f33864;
+    font-size: larger;
+  }
+  #viewButton {
+    margin-top: 30px;
+    background-color: Transparent;
+    background-repeat: no-repeat;
+    width: 30%;
+    height: 50px;
+    font-size: large;
+    color: white;
+    border: 2px solid white;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+  }
 }

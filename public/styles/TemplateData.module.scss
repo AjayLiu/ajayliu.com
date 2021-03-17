@@ -4,6 +4,16 @@
   height: 38px;
   font-family: Helvetica, Verdana, Arial, sans-serif;
   font-size: auto;
+
+  .title {
+    margin-right: 10px;
+    float: right;
+  }
+  .fullscreen {
+    background-image: url("../imgs/fullscreen.png");
+    width: 38px;
+    float: right;
+  }
 }
 .footer .webgl-logo,
 .title,
@@ -11,13 +21,4 @@
   height: 100%;
   display: inline-block;
   background: transparent center no-repeat;
-}
-.footer .title {
-  margin-right: 10px;
-  float: right;
-}
-.footer .fullscreen {
-  background-image: url("../imgs/fullscreen.png");
-  width: 38px;
-  float: right;
 }

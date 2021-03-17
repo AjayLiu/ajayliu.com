@@ -1,4 +1,5 @@
 /* OLD INTERNET EXPLORER SUPPORT */
+@import "mixins";
 
 article,
 aside,
@@ -40,6 +41,10 @@ body {
 section {
   width: 100%;
   margin: 20px auto;
+  @include mobile {
+    width: 89%;
+    margin: auto;
+  }
 }
 
 .sectionTitle {
@@ -62,12 +67,4 @@ a {
 
 a:hover {
   text-decoration: underline;
-}
-
-/* TABLET */
-@media screen and (max-width: 1200px) {
-  section {
-    width: 90%;
-    margin: auto;
-  }
 }

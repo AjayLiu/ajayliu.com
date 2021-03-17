@@ -53,6 +53,11 @@ const Skills: React.FC = () => {
           <SkillPair image="imgs/html.svg" alt="HTML logo" description="HTML" />
           <SkillPair image="imgs/css.png" alt="CSS logo" description="CSS" />
           <SkillPair
+            image="imgs/sass.svg"
+            alt="Sass CSS logo"
+            description="SCSS"
+          />
+          <SkillPair
             image="imgs/postgres.svg"
             alt="postgresql logo"
             description="PostgreSQL"
@@ -61,6 +66,11 @@ const Skills: React.FC = () => {
             image="imgs/mongoleaf.svg"
             alt="MongoDB logo"
             description="MongoDB"
+          />
+          <SkillPair
+            image="imgs/mysql.svg"
+            alt="MySQL logo"
+            description="MySQL"
           />
           <SkillPair
             image="imgs/expressjs.png"
@@ -73,11 +83,6 @@ const Skills: React.FC = () => {
             description="Node.js"
           />
           <SkillPair image="imgs/php.svg" alt="PHP logo" description="PHP" />
-          <SkillPair
-            image="imgs/mysql.svg"
-            alt="MySQL logo"
-            description="MySQL"
-          />
           <SkillPair
             image="imgs/fastai.jpg"
             alt="Fast.ai logo"

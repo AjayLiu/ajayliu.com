@@ -1,9 +1,15 @@
+@import "../mixins";
+
 #aboutSection {
   margin-top: 0;
 }
 
 #about {
   margin: auto 80px;
+
+  @include mobile {
+    margin: 0;
+  }
 }
 
 #aboutSplit {
@@ -12,6 +18,10 @@
   margin: auto 10px;
 
   justify-content: center;
+  @include mobile {
+    margin: 0;
+    flex-direction: column;
+  }
 }
 
 #profile {
@@ -19,17 +29,22 @@
   flex-direction: column;
   justify-content: center;
   margin-right: 100px;
-
-}
-
-#profile strong {
-  font-size: 300%;
+  strong {
+    font-size: 300%;
+  }
+  @include mobile {
+    margin: auto;
+    margin-bottom: 50px;
+  }
 }
 
 .cite {
   position: relative;
   text-align: right;
   font-size: x-small;
+  @include mobile {
+    right: 0;
+  }
 }
 
 #aboutImg {
@@ -43,34 +58,14 @@
   display: grid;
   grid-template-columns: auto auto auto auto;
   width: 60%;
-}
-
-@media screen and (max-width: 1200px) {
-  
-  #about{
-    margin: 0;
-  }
-  #aboutSplit {
-    margin: 0;
-    flex-direction: column;
-  }
-
-  #aboutAchievements {
+  @include mobile {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
     /* border: 1px solid red; */
     width: 100%;
     margin-bottom: 30px;
     /* height: 2000px; */
-  }
-
-  .cite {
-    right: 0;
-  }
-  #profile {
-    margin: auto;
-    margin-bottom: 50px;
   }
 }
