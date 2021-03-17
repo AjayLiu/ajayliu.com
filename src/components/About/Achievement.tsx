@@ -1,21 +1,21 @@
-import styles from '@styles/About/Achievement.module.css'
+import styles from "@styles/About/Achievement.module.scss";
 
 interface Props {
-   link: string;
-   description: string | JSX.Element;
-   image: string;
-   alt: string; 
+  link: string;
+  description: string | JSX.Element;
+  image: string;
+  alt: string;
 }
 
-const Achievement: React.FC<Props> = ({link, description, image, alt}) => {
-    return (
-        <a href={link}>
-            <div className={styles.achievement}>
-            <img src={image} alt={alt}/>
-            <p>{description}</p>
-            </div>
-        </a>
-    )    
-}
+const Achievement: React.FC<Props> = ({ link, description, image, alt }) => {
+  return (
+    <a href={link}>
+      <div className={styles.achievement}>
+        <img src={image} alt={alt} />
+        <p>{description}</p>
+      </div>
+    </a>
+  );
+};
 
 export default Achievement;

@@ -1,4 +1,4 @@
-import styles from "@styles/About/About.module.css";
+import styles from "@styles/About/About.module.scss";
 import Achievement from "@components/About/Achievement";
 
 const About: React.FC = () => {

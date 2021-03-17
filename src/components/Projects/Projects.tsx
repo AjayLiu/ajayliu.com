@@ -1,4 +1,4 @@
-import styles from "@styles/Projects/Projects.module.css";
+import styles from "@styles/Projects/Projects.module.scss";
 import ProjectItem from "@components/Projects/ProjectItem";
 
 const Projects: React.FC = () => {
