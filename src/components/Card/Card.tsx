@@ -1,5 +1,5 @@
-import styles from "@styles/Card.module.scss";
-import Footer from "@components/Footer";
+import styles from "./Card.module.scss";
+import Footer from "@components/Footer/Footer";
 import GoogleAnalyticsHook from "@components/GoogleAnalyticsHook";
 
 interface PropRaw {

@@ -1,4 +1,4 @@
-import styles from "@styles/About/Achievement.module.scss";
+import styles from "./Achievement.module.scss";
 
 interface Props {
   link: string;

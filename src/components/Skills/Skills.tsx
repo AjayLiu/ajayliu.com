@@ -1,5 +1,5 @@
-import styles from "@styles/Skills/Skills.module.scss";
-import SkillPair from "@components/Skills/SkillPair";
+import styles from "./Skills.module.scss";
+import SkillPair from "@components/SkillPair/SkillPair";
 
 const Skills: React.FC = () => {
   return (

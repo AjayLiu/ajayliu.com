@@ -1,10 +1,10 @@
 import React from "react";
 import Head from "next/head";
-import styles from "@styles/UnityPage.module.scss";
+import styles from "./UnityPage.module.scss";
 import templateStyles from "@styles/TemplateData.module.scss";
-import Footer from "@components/Footer";
+import Footer from "@components/Footer/Footer";
 import GoogleAnalyticsHook from "@components/GoogleAnalyticsHook";
-import GooglePlayButton from "./GooglePlayButton";
+import GooglePlayButton from "@components/GooglePlayButton/GooglePlayButton";
 
 interface PropObject {
   props: Props;

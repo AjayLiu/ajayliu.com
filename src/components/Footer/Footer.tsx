@@ -1,4 +1,4 @@
-import styles from "@styles/Footer.module.scss";
+import styles from "./Footer.module.scss";
 import { imgPath } from "public/path";
 const Footer: React.FC = () => {
   return (

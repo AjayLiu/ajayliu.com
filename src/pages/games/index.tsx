@@ -1,13 +1,13 @@
-import Projects from '@components/Projects/Projects'
-import Footer from '@components/Footer'
+import Projects from "@components/Projects/Projects";
+import Footer from "@components/Footer/Footer";
 
 const GameIndex: React.FC = () => {
-    return (
-        <div>
-            <Projects/>
-            <Footer />
-        </div>
-    )
-}
+  return (
+    <div>
+      <Projects />
+      <Footer />
+    </div>
+  );
+};
 
 export default GameIndex;

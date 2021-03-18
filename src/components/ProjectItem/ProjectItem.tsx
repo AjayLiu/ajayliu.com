@@ -1,6 +1,6 @@
 // import React, { useEffect, useState } from 'react'
-import styles from "@styles/Projects/ProjectItem.module.scss";
-import GooglePlayButton from "../GooglePlayButton";
+import styles from "./ProjectItem.module.scss";
+import GooglePlayButton from "@components/GooglePlayButton/GooglePlayButton";
 
 interface Props {
   title: string;

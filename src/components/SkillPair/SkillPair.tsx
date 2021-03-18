@@ -1,4 +1,4 @@
-import styles from "@styles/Skills/SkillPair.module.scss";
+import styles from "./SkillPair.module.scss";
 
 interface Props {
   image: string;

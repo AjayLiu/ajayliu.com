@@ -1,4 +1,4 @@
-import styles from "@styles/GooglePlayButton.module.scss";
+import styles from "./GooglePlayButton.module.scss";
 import { imgPath } from "public/path";
 interface Props {
   link: string;

@@ -1,4 +1,4 @@
-import styles from "@styles/LandingPage.module.scss";
+import styles from "./LandingPage.module.scss";
 import React, { useEffect } from "react";
 import NET from "vanta/dist/vanta.net.min";
 

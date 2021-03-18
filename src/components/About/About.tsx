@@ -1,5 +1,5 @@
-import styles from "@styles/About/About.module.scss";
-import Achievement from "@components/About/Achievement";
+import styles from "./About.module.scss";
+import Achievement from "@components/Achievement/Achievement";
 
 const About: React.FC = () => {
   return (
