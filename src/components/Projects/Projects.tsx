@@ -59,9 +59,19 @@ const Projects: React.FC = () => {
           description="Can't tell apart a sheep from a goat? Let the power of machine learning assist you!"
         />
         <ProjectItem
+          bgImg="imgs/anime-character-quiz.svg"
+          gridRow="7/9"
+          gridCol="1"
+          bgColor="#b88897"
+          title="Anime Character Quiz"
+          link="https://anime-character-quiz.netlify.app/"
+          description="(work in progress) How well do you know your favorite anime characters?"
+          hardToRead
+        />
+        <ProjectItem
           bgImg="imgs/pixelbeats.png"
           gridRow="7/9"
-          gridCol="1/3"
+          gridCol="2/4"
           title="Pixel Beats"
           link="games/pixelbeats/"
           description="Are you an artist, musician, or dancer? Tap to the beat and be them all!"
@@ -69,7 +79,7 @@ const Projects: React.FC = () => {
         <ProjectItem
           bgImg="imgs/cashout.jpg"
           gridRow="7/9"
-          gridCol="3/5"
+          gridCol="4"
           title="Cash Out"
           link="games/cashout/"
           playstoreLink="https://play.google.com/store/apps/details?id=com.TroyGameDevelopment.CashOut"

@@ -100,3 +100,6 @@
 [[redirects]]
     from = "/blog"
     to = "https://blog.ajayliu.com/"
+[[redirects]]
+    from = "/acq"
+    to = "https://anime-music-quiz.netlify.app/"

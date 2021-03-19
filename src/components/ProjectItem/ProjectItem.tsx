@@ -1,6 +1,7 @@
 // import React, { useEffect, useState } from 'react'
 import styles from "./ProjectItem.module.scss";
 import GooglePlayButton from "@components/GooglePlayButton/GooglePlayButton";
+import { getStaticProps } from "src/pages/games/[slug]";
 
 interface Props {
   title: string;
@@ -12,6 +13,7 @@ interface Props {
   link?: string;
   playstoreLink?: string;
   isRecommended?: boolean;
+  bgColor?: string;
 }
 
 const ProjectItem: React.FC<Props> = ({
@@ -24,10 +26,12 @@ const ProjectItem: React.FC<Props> = ({
   link,
   playstoreLink,
   isRecommended,
+  bgColor,
 }) => {
   // const [isHover, setIsHover] = useState(false);
   const blockStyle = {
     backgroundImage: `url(${bgImg})`,
+    backgroundColor: bgColor,
     gridRow: gridRow,
     gridColumn: gridCol,
   };
