@@ -65,7 +65,7 @@ const Projects: React.FC = () => {
           bgColor="#b88897"
           title="Anime Character Quiz"
           link="https://anime-character-quiz.netlify.app/"
-          description="(work in progress) How well do you know your favorite anime characters?"
+          description="Can you tell which anime these characters are from just from a single image?"
           hardToRead
         />
         <ProjectItem
