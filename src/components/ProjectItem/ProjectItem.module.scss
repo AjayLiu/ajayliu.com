@@ -72,5 +72,9 @@
   }
   @include mobile {
     flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    max-width: 300px;
+    margin: 10px auto;
   }
 }
