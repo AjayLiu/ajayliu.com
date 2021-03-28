@@ -3,10 +3,11 @@ import Footer from "@components/Footer/Footer";
 
 const GameIndex: React.FC = () => {
   return (
-    <div>
+    <>
+      <title>Games</title>
       <Projects />
       <Footer />
-    </div>
+    </>
   );
 };
 
