@@ -76,7 +76,12 @@
 [[redirects]]
     from = "/triviadash"
     to = "/games/triviadash"
-
+[[redirects]]
+    from = "/blog"
+    to = "https://blog.ajayliu.com/"
+[[redirects]]
+    from = "/acq"
+    to = "https://anime-character-quiz.netlify.app/"
 
 [[redirects]]
     from = "/allen"
@@ -96,10 +101,3 @@
 [[redirects]]
     from = "/allmale"
     to = "/cards/allmale"
-
-[[redirects]]
-    from = "/blog"
-    to = "https://blog.ajayliu.com/"
-[[redirects]]
-    from = "/acq"
-    to = "https://anime-character-quiz.netlify.app/"
