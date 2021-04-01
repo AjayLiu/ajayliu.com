@@ -9,31 +9,17 @@
 #contactBar {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   border-radius: 25px;
   background-color: #383849;
 
   img {
-    height: 100px;
+    width: 20%;
     padding: 20px 0;
   }
-  .formTitle {
-    padding-top: 20px;
-    height: 50px;
-    font-size: xx-large;
-  }
+
   > * {
     margin: 0 20px;
-  }
-}
-
-.row {
-  margin: auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  .field {
-    width: 48%;
   }
 }
 
@@ -42,48 +28,54 @@
   margin: 60px auto;
   border-radius: 25px;
   background-color: #383849;
-}
+  .formTitle {
+    padding-top: 20px;
+    height: 50px;
+    font-size: xx-large;
+  }
 
-.fieldsContainer {
-  width: 80%;
-  margin: 20px auto;
-}
+  .fieldsContainer {
+    width: 80%;
+    margin: 20px auto;
+    .row {
+      width: 101%;
+      display: flex;
+      justify-content: center;
+    }
+  }
 
+  .formButton {
+    background: none;
+    padding: 10px 20px;
+    border: 2px solid white;
+    color: white;
+    font-size: medium;
+    margin: 30px auto 30px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
 .field {
   margin-top: 0px;
   margin-bottom: 15px;
-}
-
-.smallInput,
-.messageBox {
-  /* border-radius: 10px; */
-  font-size: large;
-  text-indent: 10px;
-}
-
-.smallInput {
   width: 100%;
-  height: 50px;
-}
 
-.messageBox {
-  width: 100%;
-  height: 300px;
-  margin: 0px auto;
-  padding-top: 20px;
-}
-
-.formButton {
-  background: none;
-  padding: 10px 20px;
-  border: 2px solid white;
-  color: white;
-  font-size: medium;
-  margin: 30px auto 30px;
-}
-
-.formButton:hover {
-  cursor: pointer;
+  .smallInput,
+  .messageBox {
+    font-size: medium;
+    text-indent: 10px;
+  }
+  .smallInput {
+    width: 95%;
+    height: 50px;
+  }
+  .messageBox {
+    width: 100%;
+    height: 200px;
+    margin: 0px auto;
+    padding-top: 20px;
+  }
 }
 
 @include mobile {
