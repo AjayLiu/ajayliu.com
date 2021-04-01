@@ -82,6 +82,9 @@
 [[redirects]]
     from = "/acq"
     to = "https://anime-character-quiz.netlify.app/"
+[[redirects]]
+    from = "/anime-character-quiz"
+    to = "https://anime-character-quiz.netlify.app/"
 
 [[redirects]]
     from = "/allen"
