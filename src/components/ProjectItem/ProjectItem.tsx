@@ -74,7 +74,7 @@ const ProjectItem: React.FC<Props> = ({
     </StyledLink>
   );
   if (playstoreLink != null) {
-    googleplayElem = <GooglePlayButton link={playstoreLink} stopPropagate />;
+    googleplayElem = <GooglePlayButton link={playstoreLink} />;
     if (link == null) {
       letsGoElem = <></>;
     }
