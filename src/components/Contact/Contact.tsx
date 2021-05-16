@@ -1,6 +1,7 @@
 import styles from "./Contact.module.scss";
 import { useState } from "react";
 import axios from "axios";
+import Link from "next/link";
 
 interface Props {
   email: string;
@@ -76,12 +77,12 @@ const Contact: React.FC<Props> = ({ email }) => {
     <section>
       <h2 className="sectionTitle">Contact</h2>
       <div id={styles.contact}>
-        <a href={`https://mail.google.com/mail/?view=cm&fs=1&to=${email}`}>
-          <div id={styles.contactBar}>
+        <Link href={`https://mail.google.com/mail/?view=cm&fs=1&to=${email}`}>
+          <div className="link" id={styles.contactBar}>
             <img src="imgs/gmail.svg" alt="gmail logo" />
             <p>{email}</p>
           </div>
-        </a>
+        </Link>
         <form
           name="contact"
           method="POST"

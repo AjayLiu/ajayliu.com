@@ -2,6 +2,8 @@
 import styles from "./ProjectItem.module.scss";
 import GooglePlayButton from "@components/GooglePlayButton/GooglePlayButton";
 import { getStaticProps } from "src/pages/games/[slug]";
+import StyledLink from "@components/StyledLink/StyledLink";
+import { useRouter } from "next/dist/client/router";
 
 interface Props {
   title: string;
@@ -37,7 +39,7 @@ const ProjectItem: React.FC<Props> = ({
   };
 
   const click = () => {
-    window.open(link || playstoreLink);
+    window.location.href = link || playstoreLink;
   };
 
   // const mouseEnter = () => {
@@ -48,9 +50,9 @@ const ProjectItem: React.FC<Props> = ({
   //     setIsHover(false);
   // }
 
-  const handleAnchorClick = (e) => {
-    e.stopPropagation();
-  };
+  // const handleAnchorClick = (e) => {
+  //   e.stopPropagation();
+  // };
 
   const textStyle = {
     // opacity: this.state.isHover ? "1":"0",
@@ -62,12 +64,17 @@ const ProjectItem: React.FC<Props> = ({
 
   let googleplayElem = <></>;
   let letsGoElem = (
-    <a onClick={(e) => handleAnchorClick(e)} href={link}>
-      Let's Go!
-    </a>
+    <StyledLink href={link}>
+      <div
+        className={styles.link}
+        // onClick={(e) => handleAnchorClick(e)}
+      >
+        Let's Go!
+      </div>
+    </StyledLink>
   );
   if (playstoreLink != null) {
-    googleplayElem = <GooglePlayButton link={playstoreLink} />;
+    googleplayElem = <GooglePlayButton link={playstoreLink} stopPropagate />;
     if (link == null) {
       letsGoElem = <></>;
     }

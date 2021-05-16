@@ -1,3 +1,5 @@
+import StyledLink from "@components/StyledLink/StyledLink";
+import Link from "next/link";
 import React from "react";
 import styles from "./Footer.module.scss";
 const Footer: React.FC = () => {
@@ -13,18 +15,18 @@ const Footer: React.FC = () => {
           </a>
         </p>
         <div id={styles.socialLinks}>
-          <a href="https://ajayliu.com">
+          <StyledLink href="https://ajayliu.com">
             <img src={imgPath + "/web_icon.svg"} alt="website logo" />
-          </a>
-          <a href="https://github.com/AjayLiu">
+          </StyledLink>
+          <StyledLink href="https://github.com/AjayLiu">
             <img src={imgPath + "/github.svg"} alt="github logo" />
-          </a>
-          <a href="https://www.linkedin.com/in/ajayliu/">
+          </StyledLink>
+          <StyledLink href="https://www.linkedin.com/in/ajayliu/">
             <img src={imgPath + "/linkedin.svg"} alt="linkedin logo" />
-          </a>
-          <a href="https://www.youtube.com/channel/UClr6XCaguPeM0g7UL6Lvs3g">
+          </StyledLink>
+          <StyledLink href="https://www.youtube.com/channel/UClr6XCaguPeM0g7UL6Lvs3g">
             <img src={imgPath + "/youtube.svg"} alt="youtube logo" />
-          </a>
+          </StyledLink>
         </div>
       </footer>
     </>
