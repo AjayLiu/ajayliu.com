@@ -68,9 +68,9 @@ const Skills: React.FC = () => {
             description="MongoDB"
           />
           <SkillPair
-            image="imgs/mysql.svg"
-            alt="MySQL logo"
-            description="MySQL"
+            image="imgs/socketio.svg"
+            alt="socket.io logo"
+            description="Socket.io"
           />
           <SkillPair
             image="imgs/graphql.svg"
