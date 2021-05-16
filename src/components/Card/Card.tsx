@@ -1,6 +1,5 @@
 import styles from "./Card.module.scss";
-import Footer from "@components/Footer/Footer";
-import GoogleAnalyticsHook from "@components/GoogleAnalyticsHook";
+import Head from "next/head";
 
 interface PropRaw {
   props: Props;
@@ -17,9 +16,9 @@ const Card: React.FC<PropRaw> = (props) => {
 
   return (
     <>
-      <GoogleAnalyticsHook />
-
-      <title>{title}</title>
+      <Head>
+        <title>{title}</title>
+      </Head>
       <section id={styles.banner}>{banner}</section>
 
       <section id={styles.content}>
@@ -27,7 +26,6 @@ const Card: React.FC<PropRaw> = (props) => {
         <div>{content}</div>
         <p id={styles.signature}>{signature}</p>
       </section>
-      <Footer />
     </>
   );
 };

@@ -1,3 +1,4 @@
+import Layout from "@components/Layout/Layout";
 import UnityPage from "@components/UnityPage/UnityPage";
 import { gameList } from "public/GameList";
 
@@ -9,12 +10,9 @@ interface Props {
 const Game: React.FC<Props> = ({ slug }) => {
   const props = gameList.find((el) => el.slug == slug);
   return (
-    <div>
-      {/* {slug} */}
-      <div>
-        <UnityPage props={props} />
-      </div>
-    </div>
+    <Layout title={slug}>
+      <UnityPage props={props} />
+    </Layout>
   );
 };
 

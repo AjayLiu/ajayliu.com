@@ -60,11 +60,14 @@ section {
   font-size: large;
 } */
 
-a {
+a,
+.link {
   color: white;
   text-decoration: none;
 }
 
-a:hover {
+a:hover,
+.link:hover {
   text-decoration: underline;
+  cursor: pointer;
 }

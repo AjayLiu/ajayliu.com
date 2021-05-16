@@ -2,8 +2,6 @@ import React from "react";
 import Head from "next/head";
 import styles from "./UnityPage.module.scss";
 import templateStyles from "@styles/TemplateData.module.scss";
-import Footer from "@components/Footer/Footer";
-import GoogleAnalyticsHook from "@components/GoogleAnalyticsHook";
 import GooglePlayButton from "@components/GooglePlayButton/GooglePlayButton";
 
 interface PropObject {
@@ -59,17 +57,15 @@ const UnityPage: React.FC<PropObject> = (props) => {
 
   return (
     <>
-      <GoogleAnalyticsHook />
       <Head>
-        <title>{gameName}</title>
-        {/* <meta charset="utf-8" /> */}
-        <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
-
         <script src={unityLoaderPath}></script>
         <script>
           var unityInstance = UnityLoader.instantiate( `unityContainer`, `
-          {jsonPath}` );
+          {jsonPath}`);
         </script>
+        <title>{gameName}</title>
+        {/* <meta charset="utf-8" /> */}
+        <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
       </Head>
 
       <a className={styles.returnHome} href="../">
@@ -86,8 +82,6 @@ const UnityPage: React.FC<PropObject> = (props) => {
       </div>
 
       {playstoreLink && <GooglePlayButton link={playstoreLink} />}
-
-      <Footer />
     </>
   );
 };

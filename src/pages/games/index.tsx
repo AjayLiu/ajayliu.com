@@ -1,13 +1,11 @@
 import Projects from "@components/Projects/Projects";
-import Footer from "@components/Footer/Footer";
+import Layout from "@components/Layout/Layout";
 
 const GameIndex: React.FC = () => {
   return (
-    <>
-      <title>Games</title>
+    <Layout title="Games">
       <Projects />
-      <Footer />
-    </>
+    </Layout>
   );
 };
 

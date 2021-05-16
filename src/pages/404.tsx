@@ -1,13 +1,12 @@
-import GoogleAnalyticsHook from "@components/GoogleAnalyticsHook";
+import Layout from "@components/Layout/Layout";
+import Link from "next/link";
 
 const FourOhFour: React.FC = () => {
   return (
-    <>
-      <GoogleAnalyticsHook />
-      <title>404 Ajay Liu</title>
+    <Layout title="404">
       <h1>404 - Page Not Found :(</h1>
-      <a href="../">Click me to go to home page</a>
-    </>
+      <Link href="../">Click me to go to home page</Link>
+    </Layout>
   );
 };
 export default FourOhFour;

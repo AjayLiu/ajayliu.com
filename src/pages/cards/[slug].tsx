@@ -1,4 +1,5 @@
 import Card from "@components/Card/Card";
+import Layout from "@components/Layout/Layout";
 import { cardList } from "public/cards/CardList.js";
 
 interface Props {
@@ -9,11 +10,11 @@ interface Props {
 const CardPage: React.FC<Props> = ({ slug }) => {
   const props = cardList.find((el) => el.slug == slug);
   return (
-    <div>
+    <Layout>
       <pre>
         <Card props={props} />
       </pre>
-    </div>
+    </Layout>
   );
 };
 
