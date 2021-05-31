@@ -16,6 +16,7 @@ interface Props {
   playstoreLink?: string;
   isRecommended?: boolean;
   bgColor?: string;
+  imgWidth?: string;
 }
 
 const ProjectItem: React.FC<Props> = ({
@@ -29,11 +30,14 @@ const ProjectItem: React.FC<Props> = ({
   playstoreLink,
   isRecommended,
   bgColor,
+  imgWidth,
 }) => {
   // const [isHover, setIsHover] = useState(false);
   const blockStyle = {
     backgroundImage: `url(${bgImg})`,
+    backgroundSize: imgWidth || "cover",
     backgroundColor: bgColor,
+    backgroundPosition: "50% 10%",
     gridRow: gridRow,
     gridColumn: gridCol,
   };

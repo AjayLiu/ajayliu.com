@@ -18,7 +18,7 @@ const Projects: React.FC = () => {
         <ProjectItem
           bgImg="imgs/cubeinc.jpg"
           gridRow="1/4"
-          gridCol="1/4"
+          gridCol="1/3"
           title="Cube Inc."
           link="/games/cubeinc"
           playstoreLink="https://play.google.com/store/apps/details?id=com.TroyGameDevelopmentClub.CubeInc"
@@ -26,9 +26,20 @@ const Projects: React.FC = () => {
           isRecommended
         />
         <ProjectItem
+          gridRow="1/4"
+          gridCol="3/5"
+          bgImg="imgs/bet-you-dont-know-logo.png"
+          link="https://bet-you-dont-know.herokuapp.com/"
+          title="Bet You Don't Know"
+          description="A multiplayer game of wits, deception, and bets! (2+players)"
+          imgWidth="50%"
+          bgColor="#181818"
+          hardToRead
+        />
+        <ProjectItem
           bgImg="imgs/ichiban.jpg"
           gridRow="1/4"
-          gridCol="4/6"
+          gridCol="5"
           title="Ichiban"
           link="https://ichiban.netlify.app/"
           playstoreLink="https://play.google.com/store/apps/details?id=com.ichibanreactnative"
@@ -46,7 +57,7 @@ const Projects: React.FC = () => {
           bgImg="imgs/when.jpg"
           gridRow="4/7"
           gridCol="3/5"
-          title="when?"
+          title="When?"
           link="https://when.netlify.app/"
           description="Have a worldwide event? Share a single link to convert that meeting time to everyone's local time!"
         />
@@ -61,29 +72,21 @@ const Projects: React.FC = () => {
         <ProjectItem
           bgImg="imgs/anime-character-quiz.svg"
           gridRow="7/9"
-          gridCol="1"
+          gridCol="1/3"
           bgColor="#b88897"
           title="Anime Character Quiz"
           link="https://anime-character-quiz.netlify.app/"
           description="Can you tell which anime these characters are from just from a single image?"
           hardToRead
+          imgWidth="50%"
         />
         <ProjectItem
           bgImg="imgs/pixelbeats.png"
           gridRow="7/9"
-          gridCol="2/4"
+          gridCol="3/5"
           title="Pixel Beats"
           link="games/pixelbeats/"
           description="Are you an artist, musician, or dancer? Tap to the beat and be them all!"
-        />
-        <ProjectItem
-          bgImg="imgs/cashout.jpg"
-          gridRow="7/9"
-          gridCol="4"
-          title="Cash Out"
-          link="games/cashout/"
-          playstoreLink="https://play.google.com/store/apps/details?id=com.TroyGameDevelopment.CashOut"
-          description="A fast paced police pursuit game."
         />
         <ProjectItem
           bgImg="imgs/bouncebanner.PNG"
@@ -123,12 +126,13 @@ const Projects: React.FC = () => {
           description="How well can you count 10 seconds in your head?"
         />
         <ProjectItem
-          bgImg="imgs/triviadashbanner.svg"
+          bgImg="imgs/cashout.jpg"
           gridRow="9/11"
           gridCol="4"
-          link="games/triviadash"
-          title="Trivia Dash"
-          description="(work in progress) You're late for school! Study up and avoid the obstacles!"
+          title="Cash Out"
+          link="games/cashout/"
+          playstoreLink="https://play.google.com/store/apps/details?id=com.TroyGameDevelopment.CashOut"
+          description="A fast paced police pursuit game."
         />
         <ProjectItem
           bgImg="imgs/ajayliudark.png"
@@ -136,7 +140,7 @@ const Projects: React.FC = () => {
           gridCol="5"
           link="https://blog.ajayliu.com/"
           title="Blog"
-          description="My personal blog"
+          description="My personal blog."
         />
       </div>
     </section>
