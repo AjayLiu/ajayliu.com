@@ -85,6 +85,12 @@
 [[redirects]]
     from = "/anime-character-quiz"
     to = "https://anime-character-quiz.netlify.app/"
+[[redirects]]
+    from = "/bet-you-dont-know"
+    to = "https://bet-you-dont-know.herokuapp.com/"
+[[redirects]]
+    from = "/bet"
+    to = "https://bet-you-dont-know.herokuapp.com/"
 
 [[redirects]]
     from = "/allen"
