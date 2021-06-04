@@ -39,20 +39,41 @@
     to = "https://www.youtube.com/channel/UClr6XCaguPeM0g7UL6Lvs3g"
 
 [[redirects]]
-    from = "/sheeporgoat"
-    to = "https://sheepgoat.herokuapp.com/"
+    from = "/sheep-goat"
+    to = "https://sheep-goat.herokuapp.com/"
 [[redirects]]
-    from = "/inspirationjar"
-    to = "https://inspirationjar.herokuapp.com/"
+    from = "/sheep-or-goat"
+    to = "https://sheep-goat.herokuapp.com/"
+[[redirects]]
+    from = "/inspiration-jar"
+    to = "https://inspiration-jar.ajayliu.com/"
+[[redirects]]
+    from = "/inspiration"
+    to = "https://inspiration-jar.ajayliu.com/"
 [[redirects]]
     from = "/10seconds"
-    to = "https://10seconds.netlify.app/"
+    to = "https://10seconds.ajayliu.com/"
 [[redirects]]
     from = "/ichiban"
-    to = "https://ichiban.netlify.app/"
+    to = "https://ichiban.ajayliu.com/"
 [[redirects]]
     from = "/when"
-    to = "https://when.netlify.app/"
+    to = "https://when.ajayliu.com/"
+[[redirects]]
+    from = "/blog"
+    to = "https://blog.ajayliu.com/"
+[[redirects]]
+    from = "/acq"
+    to = "https://anime-character-quiz.ajayliu.com/"
+[[redirects]]
+    from = "/anime-character-quiz"
+    to = "https://anime-character-quiz.ajayliu.com/"
+[[redirects]]
+    from = "/bet-you-dont-know"
+    to = "https://bet-you-dont-know.herokuapp.com/"
+[[redirects]]
+    from = "/bet"
+    to = "https://bet-you-dont-know.herokuapp.com/"
 
 
 [[redirects]]
@@ -76,21 +97,6 @@
 [[redirects]]
     from = "/triviadash"
     to = "/games/triviadash"
-[[redirects]]
-    from = "/blog"
-    to = "https://blog.ajayliu.com/"
-[[redirects]]
-    from = "/acq"
-    to = "https://anime-character-quiz.netlify.app/"
-[[redirects]]
-    from = "/anime-character-quiz"
-    to = "https://anime-character-quiz.netlify.app/"
-[[redirects]]
-    from = "/bet-you-dont-know"
-    to = "https://bet-you-dont-know.herokuapp.com/"
-[[redirects]]
-    from = "/bet"
-    to = "https://bet-you-dont-know.herokuapp.com/"
 
 [[redirects]]
     from = "/allen"

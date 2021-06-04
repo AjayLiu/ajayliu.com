@@ -41,7 +41,7 @@ const Projects: React.FC = () => {
           gridRow="1/4"
           gridCol="5"
           title="Ichiban"
-          link="https://ichiban.netlify.app/"
+          link="https://ichiban.ajayliu.com/"
           playstoreLink="https://play.google.com/store/apps/details?id=com.ichibanreactnative"
           description="An anime popularity guessing game!"
         />
@@ -50,7 +50,7 @@ const Projects: React.FC = () => {
           gridRow="4/7"
           gridCol="1/3"
           title="Inspiration Jar"
-          link="https://inspirationjar.herokuapp.com"
+          link="https://inspiration-jar.ajayliu.com"
           description="Share words of encouragement to fellow humans around the world!"
         />
         <ProjectItem
@@ -58,7 +58,7 @@ const Projects: React.FC = () => {
           gridRow="4/7"
           gridCol="3/5"
           title="When?"
-          link="https://when.netlify.app/"
+          link="https://when.ajayliu.com/"
           description="Have a worldwide event? Share a single link to convert that meeting time to everyone's local time!"
         />
         <ProjectItem
@@ -66,7 +66,7 @@ const Projects: React.FC = () => {
           gridRow="4/7"
           gridCol="5"
           title="Sheep or Goat?"
-          link="https://sheepgoat.herokuapp.com/"
+          link="https://sheep-goat.herokuapp.com/"
           description="Can't tell apart a sheep from a goat? Let the power of machine learning assist you!"
         />
         <ProjectItem
@@ -75,7 +75,7 @@ const Projects: React.FC = () => {
           gridCol="1/3"
           bgColor="#b88897"
           title="Anime Character Quiz"
-          link="https://anime-character-quiz.netlify.app/"
+          link="https://anime-character-quiz.ajayliu.com/"
           description="Can you tell which anime these characters are from just from a single image?"
           hardToRead
           imgWidth="50%"
@@ -122,7 +122,7 @@ const Projects: React.FC = () => {
           gridRow="9/11"
           gridCol="3"
           title="10 Second Challenge"
-          link="https://10seconds.netlify.app/"
+          link="https://10seconds.ajayliu.com/"
           description="How well can you count 10 seconds in your head?"
         />
         <ProjectItem
