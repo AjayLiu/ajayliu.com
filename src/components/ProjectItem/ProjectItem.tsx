@@ -1,6 +1,5 @@
 import styles from "./ProjectItem.module.scss";
 import GooglePlayButton from "@components/GooglePlayButton/GooglePlayButton";
-import Link from "next/link";
 
 interface Props {
   title: string;
@@ -53,16 +52,14 @@ const ProjectItem: React.FC<Props> = (props) => {
 
   let googleplayElem = <></>;
   let letsGoElem = (
-    <Link href={props.link}>
-      <a>
-        <div
-          className={styles.link}
-          // onClick={(e) => handleAnchorClick(e)}
-        >
-          Let's Go!
-        </div>
-      </a>
-    </Link>
+    <a href={props.link}>
+      <div
+        className={styles.link}
+        // onClick={(e) => handleAnchorClick(e)}
+      >
+        Let's Go!
+      </div>
+    </a>
   );
   if (props.playstoreLink != null) {
     googleplayElem = <GooglePlayButton link={props.playstoreLink} />;

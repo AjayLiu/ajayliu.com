@@ -1,4 +1,3 @@
-import Link from "next/link";
 import styles from "./Achievement.module.scss";
 
 interface Props {
@@ -10,14 +9,12 @@ interface Props {
 
 const Achievement: React.FC<Props> = (props) => {
   return (
-    <Link href={props.link}>
-      <a>
-        <div className={styles.achievement}>
-          <img src={props.image} alt={props.alt} />
-          <p>{props.description}</p>
-        </div>
-      </a>
-    </Link>
+    <a href={props.link}>
+      <div className={styles.achievement}>
+        <img src={props.image} alt={props.alt} />
+        <p>{props.description}</p>
+      </div>
+    </a>
   );
 };
 
