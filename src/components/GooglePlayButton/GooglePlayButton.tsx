@@ -1,6 +1,5 @@
 import styles from "./GooglePlayButton.module.scss";
 import Link from "next/link";
-import Image from "next/image";
 interface Props {
   link: string;
 }
@@ -18,12 +17,7 @@ const GooglePlayButton: React.FC<Props> = (props) => {
             handleAnchorClick(e);
           }}
         >
-          <Image
-            src={"/img/playbutton.svg"}
-            width="153"
-            height="62"
-            alt="google play link button"
-          />
+          <img src={"/img/playbutton.svg"} alt="google play link button" />
         </a>
       </Link>
     </>

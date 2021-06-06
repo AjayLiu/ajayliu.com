@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import styles from "./Achievement.module.scss";
 
@@ -14,7 +13,7 @@ const Achievement: React.FC<Props> = (props) => {
     <Link href={props.link}>
       <a>
         <div className={styles.achievement}>
-          <Image src={props.image} alt={props.alt} width="100" height="100" />
+          <img src={props.image} alt={props.alt} />
           <p>{props.description}</p>
         </div>
       </a>
