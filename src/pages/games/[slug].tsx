@@ -7,11 +7,31 @@ interface Props {
   contentsJSON: string;
 }
 
-const Game: React.FC<Props> = ({ slug }) => {
-  const props = gameList.find((el) => el.slug == slug);
+const Game: React.FC<Props> = (props) => {
+  const {
+    gameName,
+    height,
+    howTo,
+    jsonPath,
+    slug,
+    width,
+    fullscreenOption,
+    is2018,
+    playstoreLink,
+  } = gameList.find((el) => el.slug == props.slug);
   return (
-    <Layout title={slug}>
-      <UnityPage props={props} />
+    <Layout title={props.slug}>
+      <UnityPage
+        gameName={gameName}
+        height={height}
+        howTo={howTo}
+        jsonPath={jsonPath}
+        slug={slug}
+        width={width}
+        fullscreenOption={fullscreenOption}
+        is2018={is2018}
+        playstoreLink={playstoreLink}
+      />
     </Layout>
   );
 };

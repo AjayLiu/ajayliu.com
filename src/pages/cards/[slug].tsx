@@ -7,12 +7,20 @@ interface Props {
   contentsJSON: string;
 }
 
-const CardPage: React.FC<Props> = ({ slug }) => {
-  const props = cardList.find((el) => el.slug == slug);
+const CardPage: React.FC<Props> = (props) => {
+  const { banner, content, imagePath, signature, title } = cardList.find(
+    (el) => el.slug == props.slug
+  );
   return (
-    <Layout>
+    <Layout title={title}>
       <pre>
-        <Card props={props} />
+        <Card
+          banner={banner}
+          content={content}
+          imagePath={imagePath}
+          signature={signature}
+          title={title}
+        />
       </pre>
     </Layout>
   );

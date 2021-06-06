@@ -1,5 +1,4 @@
 module.exports = {
-  images: {
-    domains: ["ajayliu.com"],
-  },
+  // Target must be serverless
+  target: "serverless",
 };

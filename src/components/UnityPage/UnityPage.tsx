@@ -1,7 +1,7 @@
 import React from "react";
 import Head from "next/head";
 import styles from "./UnityPage.module.scss";
-import templateStyles from "@styles/TemplateData.module.scss";
+import templateStyles from "./TemplateData.module.scss";
 import GooglePlayButton from "@components/GooglePlayButton/GooglePlayButton";
 import Link from "next/link";
 
