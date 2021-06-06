@@ -17,7 +17,11 @@ const GooglePlayButton: React.FC<Props> = (props) => {
             handleAnchorClick(e);
           }}
         >
-          <img src={"/img/playbutton.svg"} alt="google play link button" />
+          <img
+            src={"/img/playbutton.svg"}
+            alt="google play link button"
+            className={styles.img}
+          />
         </a>
       </Link>
     </>
