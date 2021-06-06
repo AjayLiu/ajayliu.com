@@ -1,7 +1,7 @@
 [build]
-    command = "yarn run build && yarn run export"
+    command = "yarn run build"
     publish = "out"
-    functions = "functions"
+    functions = "my_functions"
 
 [[plugins]]
   package = "netlify-plugin-image-optim"
