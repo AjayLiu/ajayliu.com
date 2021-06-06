@@ -1,4 +1,5 @@
 import styles from "./SkillPair.module.scss";
+import Image from "next/image";
 
 interface Props {
   image: string;
@@ -6,13 +7,19 @@ interface Props {
   description: string;
 }
 
-const SkillPair: React.FC<Props> = ({ image, alt, description }) => {
+const SkillPair: React.FC<Props> = (props) => {
   return (
     <div className={styles.skillPair}>
       <div className={styles.skillImgContainer}>
-        <img className={styles.skillImg} src={image} alt={alt} />
+        <Image
+          className={styles.skillImg}
+          src={props.image}
+          alt={props.alt}
+          width="70"
+          height="70"
+        />
       </div>
-      <p>{description}</p>
+      <p>{props.description}</p>
     </div>
   );
 };

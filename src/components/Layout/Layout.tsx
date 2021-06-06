@@ -23,7 +23,7 @@ const Layout: React.FC<Props> = (props) => {
         <meta property="og:url" content="https://ajayliu.com/" />
         <meta
           property="og:image"
-          content="https://ajayliu.com/imgs/ajayliudark.png"
+          content="https://ajayliu.com/img/ajayliudark.png"
         />
         <meta
           property="og:description"

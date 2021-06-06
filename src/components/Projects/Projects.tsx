@@ -16,7 +16,7 @@ const Projects: React.FC = () => {
       <p style={{ marginBottom: "40px" }}>Click on any of them to play!</p>
       <div id={styles.gallery}>
         <ProjectItem
-          bgImg="imgs/cubeinc.jpg"
+          bgImg="/img/cubeinc.jpg"
           gridRow="1/4"
           gridCol="1/3"
           title="Cube Inc."
@@ -28,7 +28,7 @@ const Projects: React.FC = () => {
         <ProjectItem
           gridRow="1/4"
           gridCol="3/5"
-          bgImg="imgs/bet-you-dont-know-logo.png"
+          bgImg="/img/bet-you-dont-know-logo.png"
           link="https://bet-you-dont-know.herokuapp.com/"
           title="Bet You Don't Know"
           description="A multiplayer game of wits, deception, and bets! (2+players)"
@@ -37,7 +37,7 @@ const Projects: React.FC = () => {
           hardToRead
         />
         <ProjectItem
-          bgImg="imgs/ichiban.jpg"
+          bgImg="/img/ichiban.jpg"
           gridRow="1/4"
           gridCol="5"
           title="Ichiban"
@@ -46,7 +46,7 @@ const Projects: React.FC = () => {
           description="An anime popularity guessing game!"
         />
         <ProjectItem
-          bgImg="imgs/inspirationbanner.png"
+          bgImg="/img/inspirationbanner.png"
           gridRow="4/7"
           gridCol="1/3"
           title="Inspiration Jar"
@@ -54,7 +54,7 @@ const Projects: React.FC = () => {
           description="Share words of encouragement to fellow humans around the world!"
         />
         <ProjectItem
-          bgImg="imgs/when.jpg"
+          bgImg="/img/when.jpg"
           gridRow="4/7"
           gridCol="3/5"
           title="When?"
@@ -62,7 +62,7 @@ const Projects: React.FC = () => {
           description="Have a worldwide event? Share a single link to convert that meeting time to everyone's local time!"
         />
         <ProjectItem
-          bgImg="imgs/goatsheepbanner.png"
+          bgImg="/img/goatsheepbanner.png"
           gridRow="4/7"
           gridCol="5"
           title="Sheep or Goat?"
@@ -70,7 +70,7 @@ const Projects: React.FC = () => {
           description="Can't tell apart a sheep from a goat? Let the power of machine learning assist you!"
         />
         <ProjectItem
-          bgImg="imgs/anime-character-quiz.svg"
+          bgImg="/img/anime-character-quiz.svg"
           gridRow="7/9"
           gridCol="1/3"
           bgColor="#b88897"
@@ -81,7 +81,7 @@ const Projects: React.FC = () => {
           imgWidth="50%"
         />
         <ProjectItem
-          bgImg="imgs/pixelbeats.png"
+          bgImg="/img/pixelbeats.png"
           gridRow="7/9"
           gridCol="3/5"
           title="Pixel Beats"
@@ -89,7 +89,7 @@ const Projects: React.FC = () => {
           description="Are you an artist, musician, or dancer? Tap to the beat and be them all!"
         />
         <ProjectItem
-          bgImg="imgs/bouncebanner.PNG"
+          bgImg="/img/bouncebanner.PNG"
           gridRow="7/9"
           gridCol="5"
           title="Bounce Architect"
@@ -98,7 +98,7 @@ const Projects: React.FC = () => {
           description="What shape bounces best in all orientations? Sketch it out now! Made in under 12 hours."
         />
         <ProjectItem
-          bgImg="imgs/tapdefender.jpg"
+          bgImg="/img/tapdefender.jpg"
           gridRow="9/11"
           gridCol="1"
           title="Tap Defender"
@@ -108,7 +108,7 @@ const Projects: React.FC = () => {
           hardToRead
         />
         <ProjectItem
-          bgImg="imgs/colorjumpwide.png"
+          bgImg="/img/colorjumpwide.png"
           gridRow="9/11"
           gridCol="2"
           title="Color Jump"
@@ -118,7 +118,7 @@ const Projects: React.FC = () => {
           hardToRead
         />
         <ProjectItem
-          bgImg="imgs/timerbanner.PNG"
+          bgImg="/img/timerbanner.PNG"
           gridRow="9/11"
           gridCol="3"
           title="10 Second Challenge"
@@ -126,7 +126,7 @@ const Projects: React.FC = () => {
           description="How well can you count 10 seconds in your head?"
         />
         <ProjectItem
-          bgImg="imgs/cashout.jpg"
+          bgImg="/img/cashout.jpg"
           gridRow="9/11"
           gridCol="4"
           title="Cash Out"
@@ -135,7 +135,7 @@ const Projects: React.FC = () => {
           description="A fast paced police pursuit game."
         />
         <ProjectItem
-          bgImg="imgs/ajayliudark.png"
+          bgImg="/img/ajayliudark.png"
           gridRow="9/11"
           gridCol="5"
           link="https://blog.ajayliu.com/"

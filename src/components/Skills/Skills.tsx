@@ -8,129 +8,129 @@ const Skills: React.FC = () => {
       <div id={styles.skills}>
         <div id={styles.skillBar}>
           <SkillPair
-            image="imgs/unity.svg"
+            image="/img/unity.svg"
             alt="unity logo"
             description="Unity"
           />
           <SkillPair
-            image="imgs/vscode.svg"
+            image="/img/vscode.svg"
             alt="vscode logo"
             description="Visual Studio Code"
           />
-          <SkillPair image="imgs/csharp.svg" alt="C# logo" description="C#" />
+          <SkillPair image="/img/csharp.svg" alt="C# logo" description="C#" />
           <SkillPair
-            image="imgs/typescript.svg"
+            image="/img/typescript.svg"
             alt="typescript logo"
             description="TypeScript"
           />
           <SkillPair
-            image="imgs/react.svg"
+            image="/img/react.svg"
             alt="react logo"
             description="React"
           />
           <SkillPair
-            image="imgs/nextjs.png"
+            image="/img/nextjs.png"
             alt="Next.js logo"
             description="Next.js"
           />
           <SkillPair
-            image="imgs/gatsby.svg"
+            image="/img/gatsby.svg"
             alt="gatsbyjs logo"
             description="Gatsby"
           />
-          <SkillPair image="imgs/cpp.svg" alt="C++ logo" description="C++" />
-          <SkillPair image="imgs/java.svg" alt="Java logo" description="Java" />
+          <SkillPair image="/img/cpp.svg" alt="C++ logo" description="C++" />
+          <SkillPair image="/img/java.svg" alt="Java logo" description="Java" />
           <SkillPair
-            image="imgs/js.svg"
+            image="/img/js.svg"
             alt="javascript logo"
             description="JavaScript"
           />
           <SkillPair
-            image="imgs/py.svg"
+            image="/img/py.svg"
             alt="Python logo"
             description="Python"
           />
-          <SkillPair image="imgs/html.svg" alt="HTML logo" description="HTML" />
-          <SkillPair image="imgs/css.png" alt="CSS logo" description="CSS" />
+          <SkillPair image="/img/html.svg" alt="HTML logo" description="HTML" />
+          <SkillPair image="/img/css.png" alt="CSS logo" description="CSS" />
           <SkillPair
-            image="imgs/sass.svg"
+            image="/img/sass.svg"
             alt="Sass CSS logo"
             description="SCSS"
           />
           <SkillPair
-            image="imgs/postgres.svg"
+            image="/img/postgres.svg"
             alt="postgresql logo"
             description="PostgreSQL"
           />
           <SkillPair
-            image="imgs/mongoleaf.svg"
+            image="/img/mongoleaf.svg"
             alt="MongoDB logo"
             description="MongoDB"
           />
           <SkillPair
-            image="imgs/socketio.svg"
+            image="/img/socketio.svg"
             alt="socket.io logo"
             description="Socket.io"
           />
           <SkillPair
-            image="imgs/graphql.svg"
+            image="/img/graphql.svg"
             alt="GraphQL logo"
             description="GraphQL"
           />
           <SkillPair
-            image="imgs/expressjs.png"
+            image="/img/expressjs.png"
             alt="expressjs logo"
             description="Express.js"
           />
           <SkillPair
-            image="imgs/nodejs.svg"
+            image="/img/nodejs.svg"
             alt="node.js logo"
             description="Node.js"
           />
-          <SkillPair image="imgs/php.svg" alt="PHP logo" description="PHP" />
+          <SkillPair image="/img/php.svg" alt="PHP logo" description="PHP" />
           <SkillPair
-            image="imgs/fastai.jpg"
+            image="/img/fastai.jpg"
             alt="Fast.ai logo"
             description="Fast.ai"
           />
           <SkillPair
-            image="imgs/react.svg"
+            image="/img/react.svg"
             alt="react native logo"
             description="React Native"
           />
-          <SkillPair image="imgs/vim.svg" alt="Vim logo" description="Vim" />
+          <SkillPair image="/img/vim.svg" alt="Vim logo" description="Vim" />
           <SkillPair
-            image="imgs/photoshop.svg"
+            image="/img/photoshop.svg"
             alt="photoshop logo"
             description="Photoshop"
           />
           <SkillPair
-            image="imgs/vegaspro.svg"
+            image="/img/vegaspro.svg"
             alt="sony vegas pro logo"
             description="Sony Vegas Pro"
           />
           <SkillPair
-            image="imgs/github.png"
+            image="/img/github.png"
             alt="Github logo"
             description="Github"
           />
           <SkillPair
-            image="imgs/netlify.svg"
+            image="/img/netlify.svg"
             alt="Netlify logo"
             description="Netlify"
           />
           <SkillPair
-            image="imgs/netlifycms.png"
+            image="/img/netlifycms.png"
             alt="Netlify CMS logo"
             description="NetlifyCMS"
           />
           <SkillPair
-            image="imgs/heroku.svg"
+            image="/img/heroku.svg"
             alt="Heroku logo"
             description="Heroku"
           />
           <SkillPair
-            image="imgs/gcp.svg"
+            image="/img/gcp.svg"
             alt="Google cloud platform logo"
             description="Google Cloud Platform"
           />

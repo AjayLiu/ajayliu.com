@@ -1,9 +1,9 @@
 import styles from "./LandingPage.module.scss";
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import NET from "vanta/dist/vanta.net.min";
 
 const LandingPage: React.FC = () => {
-  const vantaRef = React.createRef<HTMLDivElement>();
+  const vantaRef = useRef<HTMLDivElement>();
   let vantaEffect;
 
   useEffect(() => {

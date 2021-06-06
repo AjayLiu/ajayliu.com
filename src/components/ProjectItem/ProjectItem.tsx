@@ -1,9 +1,6 @@
-// import React, { useEffect, useState } from 'react'
 import styles from "./ProjectItem.module.scss";
 import GooglePlayButton from "@components/GooglePlayButton/GooglePlayButton";
-import { getStaticProps } from "src/pages/games/[slug]";
-import StyledLink from "@components/StyledLink/StyledLink";
-import { useRouter } from "next/dist/client/router";
+import Link from "next/link";
 
 interface Props {
   title: string;
@@ -19,33 +16,21 @@ interface Props {
   imgWidth?: string;
 }
 
-const ProjectItem: React.FC<Props> = ({
-  title,
-  description,
-  hardToRead,
-  bgImg,
-  gridRow,
-  gridCol,
-  link,
-  playstoreLink,
-  isRecommended,
-  bgColor,
-  imgWidth,
-}) => {
-  // const [isHover, setIsHover] = useState(false);
+const ProjectItem: React.FC<Props> = (props) => {
   const blockStyle = {
-    backgroundImage: `url(${bgImg})`,
-    backgroundSize: imgWidth || "cover",
-    backgroundColor: bgColor,
+    backgroundImage: `url(${props.bgImg})`,
+    backgroundSize: props.imgWidth || "cover",
+    backgroundColor: props.bgColor,
     backgroundPosition: "50% 10%",
-    gridRow: gridRow,
-    gridColumn: gridCol,
+    gridRow: props.gridRow,
+    gridColumn: props.gridCol,
   };
 
   const click = () => {
-    window.location.href = link || playstoreLink;
+    window.location.href = props.link || props.playstoreLink;
   };
 
+  // const [isHover, setIsHover] = useState(false);
   // const mouseEnter = () => {
   //     setIsHover(true);
   // }
@@ -61,35 +46,39 @@ const ProjectItem: React.FC<Props> = ({
   const textStyle = {
     // opacity: this.state.isHover ? "1":"0",
     // transition: this.state.isHover? "opacity 0.1s" : "opacity 0.5s"
-    textShadow: hardToRead
+    textShadow: props.hardToRead
       ? "black 0px 0px 10px, black 0px 0px 10px, black 0px 0px 10px, black 0px 0px 10px"
       : "",
   };
 
   let googleplayElem = <></>;
   let letsGoElem = (
-    <StyledLink href={link}>
-      <div
-        className={styles.link}
-        // onClick={(e) => handleAnchorClick(e)}
-      >
-        Let's Go!
-      </div>
-    </StyledLink>
+    <Link href={props.link}>
+      <a>
+        <div
+          className={styles.link}
+          // onClick={(e) => handleAnchorClick(e)}
+        >
+          Let's Go!
+        </div>
+      </a>
+    </Link>
   );
-  if (playstoreLink != null) {
-    googleplayElem = <GooglePlayButton link={playstoreLink} />;
-    if (link == null) {
+  if (props.playstoreLink != null) {
+    googleplayElem = <GooglePlayButton link={props.playstoreLink} />;
+    if (props.link == null) {
       letsGoElem = <></>;
     }
   }
   let recommendedElem = <></>;
-  if (isRecommended) {
+  if (props.isRecommended) {
     recommendedElem = (
       <img
         id={styles.recommend}
-        src="imgs/recommended.png"
+        src="/img/recommended.png"
         alt="recommendation thumbs up badge"
+        width="80"
+        height="80"
       />
     );
   }
@@ -98,13 +87,14 @@ const ProjectItem: React.FC<Props> = ({
     <div
       style={blockStyle}
       className={styles.gameBlock}
-      /* onMouseEnter={mouseEnter} onMouseLeave={mouseLeave} */ onClick={click}
+      /* onMouseEnter={mouseEnter} onMouseLeave={mouseLeave} */
+      onClick={click}
     >
       {recommendedElem}
       <div style={textStyle} className={styles.gametext}>
-        <div className={styles.gametitle}>{title}</div>
+        <div className={styles.gametitle}>{props.title}</div>
         <div className={styles.gamedescription}>
-          <p>{description}</p>
+          <p>{props.description}</p>
         </div>
         <div className={styles.gamelinks}>
           {letsGoElem}

@@ -10,8 +10,11 @@
 }
 #socialLinks {
   display: flex;
-  img {
+  a {
     margin: 0 20px;
     width: 50px;
+    .image {
+      width: 50px;
+    }
   }
 }

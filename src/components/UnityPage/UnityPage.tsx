@@ -3,10 +3,7 @@ import Head from "next/head";
 import styles from "./UnityPage.module.scss";
 import templateStyles from "@styles/TemplateData.module.scss";
 import GooglePlayButton from "@components/GooglePlayButton/GooglePlayButton";
-
-interface PropObject {
-  props: Props;
-}
+import Link from "next/link";
 
 interface Props {
   slug: string;
@@ -20,26 +17,17 @@ interface Props {
   playstoreLink?: string;
 }
 
-const UnityPage: React.FC<PropObject> = (props) => {
-  const {
-    gameName,
-    jsonPath,
-    width,
-    height,
-    howTo,
-    fullscreenOption,
-    is2018,
-    playstoreLink,
-  } = props.props;
-
-  const unityLoaderPath = is2018 ? "/2018UnityLoader.js" : "/UnityLoader.js";
+const UnityPage: React.FC<Props> = (props) => {
+  const unityLoaderPath = props.is2018
+    ? "/2018UnityLoader.js"
+    : "/UnityLoader.js";
 
   const fullscreenHandler = () => {
     // @ts-ignore
     unityInstance.SetFullscreen(1);
   };
 
-  var fullscreenElem = fullscreenOption ? (
+  var fullscreenElem = props.fullscreenOption ? (
     <>
       <div className={templateStyles.footer}>
         <div
@@ -61,27 +49,31 @@ const UnityPage: React.FC<PropObject> = (props) => {
         <script src={unityLoaderPath}></script>
         <script>
           var unityInstance = UnityLoader.instantiate( `unityContainer`, `
-          {jsonPath}`);
+          {props.jsonPath}`);
         </script>
-        <title>{gameName}</title>
+        <title>{props.gameName}</title>
         {/* <meta charset="utf-8" /> */}
         <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
       </Head>
 
-      <a className={styles.returnHome} href="../">
-        Return Home
-      </a>
-      <div className={styles.howTo}>{howTo}</div>
-      <div className={styles.gamename}>{gameName}</div>
+      <Link href="../">
+        <a className={styles.returnHome}>Return Home</a>
+      </Link>
+      <div className={styles.howTo}>{props.howTo}</div>
+      <div className={styles.gamename}>{props.gameName}</div>
       <div className={styles.webglContent}>
         <div
           id="unityContainer"
-          style={{ width: `${width}`, height: `${height}`, margin: "auto" }}
+          style={{
+            width: `${props.width}`,
+            height: `${props.height}`,
+            margin: "auto",
+          }}
         ></div>
         {fullscreenElem}
       </div>
 
-      {playstoreLink && <GooglePlayButton link={playstoreLink} />}
+      {props.playstoreLink && <GooglePlayButton link={props.playstoreLink} />}
     </>
   );
 };
