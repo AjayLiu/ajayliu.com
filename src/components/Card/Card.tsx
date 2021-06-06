@@ -1,7 +1,9 @@
 import styles from "./Card.module.scss";
 import Head from "next/head";
-import Image from "next/image";
 
+interface PropsObj {
+  props: Props;
+}
 interface Props {
   title: string;
   banner: JSX.Element;
@@ -9,7 +11,7 @@ interface Props {
   signature: JSX.Element;
   imagePath: string;
 }
-const Card: React.FC<Props> = (props) => {
+const Card: React.FC<PropsObj> = ({ props }) => {
   const { title, banner, content, signature, imagePath } = props;
 
   return (
@@ -20,7 +22,7 @@ const Card: React.FC<Props> = (props) => {
       <section id={styles.banner}>{banner}</section>
 
       <section id={styles.content}>
-        <Image src={imagePath} id={styles.image} width="200" height="200" />
+        <img src={imagePath} id={styles.image} width="200" height="200" />
         <div>{content}</div>
         <p id={styles.signature}>{signature}</p>
       </section>

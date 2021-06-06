@@ -1,5 +1,4 @@
 import styles from "./About.module.scss";
-import Image from "next/image";
 import Achievement from "@components/Achievement/Achievement";
 
 const About: React.FC = () => {
@@ -10,12 +9,10 @@ const About: React.FC = () => {
         <div id={styles.aboutSplit}>
           <div id={styles.profile}>
             <div>
-              <Image
+              <img
                 id={styles.aboutImg}
                 src="/img/profile-picture.jpg"
                 alt="profile picture"
-                width="250"
-                height="250"
               />
               <p>
                 <strong>Ajay Liu</strong>

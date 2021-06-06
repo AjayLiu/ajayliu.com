@@ -5,6 +5,9 @@ import templateStyles from "./TemplateData.module.scss";
 import GooglePlayButton from "@components/GooglePlayButton/GooglePlayButton";
 import Link from "next/link";
 
+interface PropsObj {
+  props: Props;
+}
 interface Props {
   slug: string;
   gameName: string;
@@ -17,7 +20,7 @@ interface Props {
   playstoreLink?: string;
 }
 
-const UnityPage: React.FC<Props> = (props) => {
+const UnityPage: React.FC<PropsObj> = ({ props }) => {
   const unityLoaderPath = props.is2018
     ? "/2018UnityLoader.js"
     : "/UnityLoader.js";
