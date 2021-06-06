@@ -22,7 +22,7 @@ const Card: React.FC<PropsObj> = ({ props }) => {
       <section id={styles.banner}>{banner}</section>
 
       <section id={styles.content}>
-        <img src={imagePath} id={styles.image} width="200" height="200" />
+        <img src={imagePath} id={styles.image} />
         <div>{content}</div>
         <p id={styles.signature}>{signature}</p>
       </section>

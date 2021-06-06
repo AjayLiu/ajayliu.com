@@ -1,6 +1,6 @@
 import Card from "@components/Card/Card";
 import Layout from "@components/Layout/Layout";
-import { cardList } from "public/cards/CardList.js";
+import { cardList } from "public/CardList.js";
 
 interface Props {
   slug: string;
@@ -8,19 +8,11 @@ interface Props {
 }
 
 const CardPage: React.FC<Props> = (props) => {
-  const { banner, content, imagePath, signature, title } = cardList.find(
-    (el) => el.slug == props.slug
-  );
+  const propsObj = cardList.find((el) => el.slug == props.slug);
   return (
-    <Layout title={title}>
+    <Layout title={propsObj.title}>
       <pre>
-        <Card
-          banner={banner}
-          content={content}
-          imagePath={imagePath}
-          signature={signature}
-          title={title}
-        />
+        <Card props={propsObj} />
       </pre>
     </Layout>
   );
