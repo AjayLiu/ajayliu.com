@@ -30,6 +30,7 @@
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
         <li><a href="#installation">Installation</a></li>
+        <li><a href="#development">Development</a></li>
       </ul>
     </li>
     <li><a href="#license">License</a></li>
@@ -114,5 +115,5 @@ Project Link: [https://github.com/AjayLiu/ajayliu.com](https://github.com/AjayLi
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
-* [Vanta.js for the awesome landing screen background](https://www.vantajs.com/)
+* [Vanta.js for the awesome landing screen background](https://fusejs.io/)
 * [Netlify](https://www.netlify.com/)
