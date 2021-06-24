@@ -82,6 +82,20 @@ Here is a guide if you want to clone my website and modify it for yourself, all 
    ```
 4. Publish the site on Netlify using continuous git integration. :tada:
 
+### Development
+
+To run the development server
+   ```sh
+   yarn dev
+   ```
+Then head over to localhost:3000
+
+To run some serverless backend functions from netlify, use Netlify CLI (install) instead:
+   ```sh
+   netlify dev
+   ``` 
+Then head over to localhost:8888
+
 <!-- LICENSE -->
 ## License
 
