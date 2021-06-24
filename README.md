@@ -81,7 +81,8 @@ Here is a guide if you want to clone my website and modify it for yourself, all 
    SENDGRID_API_KEY = (i use sengrid to send mail, so just use your api key here if u happen to use sendgrid to send contact emails)
    DISCORD_WEBHOOK_URL = (i also receive a discord notification, place your webhook url here if you want)
    ```
-4. Publish the site on Netlify using continuous git integration. :tada:
+4. Enter the same environment variables in Netlify.
+5. Publish the site on Netlify using continuous git integration. :tada:
 
 ### Development
 
