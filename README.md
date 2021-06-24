@@ -75,7 +75,7 @@ Here is a guide if you want to clone my website and modify it for yourself, all 
    yarn
    ```
 3. Create a `.env` file in the root and fill in the following info (if you want)
-   ```env
+   ```
    RECIPIENT_EMAIL = yourEmail@gmail.com (must match your sendgrid recipient email thing)
    SENDGRID_API_KEY = (i use sengrid to send mail, so just use your api key here if u happen to use sendgrid to send contact emails)
    DISCORD_WEBHOOK_URL = (i also receive a discord notification, place your webhook url here if you want)
