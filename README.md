@@ -1,7 +1,7 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/a10d8945-fe38-4346-90a7-904802729ca4/deploy-status)](https://app.netlify.com/sites/ajayliu/deploys)
 
 <p align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
+  <a href="https://github.com/AjayLiu/ajayliu.com">
     <img src="public/img/logothin.png" alt="Logo" width="80" height="80">
   </a>
 
