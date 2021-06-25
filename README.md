@@ -31,7 +31,7 @@
         <li><a href="#prerequisites">Prerequisites</a></li>
         <li><a href="#installation">Installation</a></li>
         <li><a href="#development">Development</a></li>
-        <li><a href="#development">Publishing</a></li>
+        <li><a href="#deployment">Deployment</a></li>
       </ul>
     </li>
     <li><a href="#license">License</a></li>
@@ -98,7 +98,7 @@ To run some serverless backend functions from netlify, use Netlify CLI (install)
    ``` 
 Then head over to localhost:8888
 
-### Publishing
+### Deployment
 1. Publish the site on Netlify using continuous git integration.
 2. Enter the same environment variables in Netlify, same as your `.env`
 
