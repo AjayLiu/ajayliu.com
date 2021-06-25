@@ -1,102 +1,49 @@
 import styles from "./ProjectItem.module.scss";
-import GooglePlayButton from "@components/GooglePlayButton/GooglePlayButton";
 
 interface Props {
   title: string;
   description: string;
-  hardToRead?: boolean;
-  bgImg: string;
-  gridRow: string;
-  gridCol: string;
+  image: string;
   link?: string;
+  githubLink?: string;
   playstoreLink?: string;
-  isRecommended?: boolean;
-  bgColor?: string;
-  imgWidth?: string;
 }
 
 const ProjectItem: React.FC<Props> = (props) => {
-  const blockStyle = {
-    backgroundImage: `url(${props.bgImg})`,
-    backgroundSize: props.imgWidth || "cover",
-    backgroundColor: props.bgColor,
-    backgroundPosition: "50% 10%",
-    gridRow: props.gridRow,
-    gridColumn: props.gridCol,
-  };
-
-  const click = () => {
-    window.location.href = props.link || props.playstoreLink;
-  };
-
-  // const [isHover, setIsHover] = useState(false);
-  // const mouseEnter = () => {
-  //     setIsHover(true);
-  // }
-
-  // const mouseLeave = () => {
-  //     setIsHover(false);
-  // }
-
-  // const handleAnchorClick = (e) => {
-  //   e.stopPropagation();
-  // };
-
-  const textStyle = {
-    // opacity: this.state.isHover ? "1":"0",
-    // transition: this.state.isHover? "opacity 0.1s" : "opacity 0.5s"
-    textShadow: props.hardToRead
-      ? "black 0px 0px 10px, black 0px 0px 10px, black 0px 0px 10px, black 0px 0px 10px"
-      : "",
-  };
-
-  let googleplayElem = <></>;
-  let letsGoElem = (
-    <a href={props.link}>
-      <div
-        className={styles.link}
-        // onClick={(e) => handleAnchorClick(e)}
-      >
-        Let's Go!
-      </div>
-    </a>
-  );
-  if (props.playstoreLink != null) {
-    googleplayElem = <GooglePlayButton link={props.playstoreLink} />;
-    if (props.link == null) {
-      letsGoElem = <></>;
-    }
-  }
-  let recommendedElem = <></>;
-  if (props.isRecommended) {
-    recommendedElem = (
-      <img
-        id={styles.recommend}
-        src="/img/recommended.png"
-        alt="recommendation thumbs up badge"
-        width="80"
-        height="80"
-      />
-    );
-  }
-
   return (
-    <div
-      style={blockStyle}
-      className={styles.gameBlock}
-      /* onMouseEnter={mouseEnter} onMouseLeave={mouseLeave} */
-      onClick={click}
-    >
-      {recommendedElem}
-      <div style={textStyle} className={styles.gametext}>
-        <div className={styles.gametitle}>{props.title}</div>
-        <div className={styles.gamedescription}>
-          <p>{props.description}</p>
-        </div>
-        <div className={styles.gamelinks}>
-          {letsGoElem}
-          {googleplayElem}
-        </div>
+    <div className={styles.container}>
+      <a
+        className={styles.imageAnchor}
+        href={props.link || props.playstoreLink}
+      >
+        <img className={styles.image} src={props.image} />
+      </a>
+      <div className={styles.text}>
+        <strong className={styles.title}>{props.title}</strong>
+        <p className={styles.description}>{props.description}</p>
+      </div>
+      <div className={styles.links}>
+        {props.link && (
+          <a className={styles.link} href={props.link}>
+            Try it
+          </a>
+        )}
+        {props.githubLink && (
+          <a
+            className={`${styles.link} ${styles.leftBorder}`}
+            href={props.githubLink}
+          >
+            <img src="/img/github.svg" alt="github logo" height="80%" />
+          </a>
+        )}
+        {props.playstoreLink && (
+          <a
+            className={`${styles.link} ${styles.leftBorder}`}
+            href={props.playstoreLink}
+          >
+            <img src="/img/playstore.svg" alt="github logo" height="70%" />
+          </a>
+        )}
       </div>
     </div>
   );

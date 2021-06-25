@@ -1,6 +1,6 @@
 @import "@styles/mixins";
 
-#demoReel {
+.demoReel {
   margin-bottom: 100px;
 
   iframe {
@@ -12,16 +12,32 @@
     }
   }
 }
-
-#gallery {
-  display: grid;
+.gallery {
+  width: 90%;
   margin: auto;
-  grid-template-columns: 19% 19% 19% 19% 19%;
-  grid-template-rows: 150px 150px 150px 150px 150px 150px 150px 150px 150px 150px;
-  justify-content: space-evenly;
-  gap: 12px 0;
   @include mobile {
+    width: 100%;
+  }
+
+  .galleryTitle {
+    text-align: left;
+    font-size: xx-large;
+    border-bottom: 1px solid;
+    padding: 0px 5px 5px 0px;
+    width: fit-content;
+    margin: 50px 25px 20px;
+    @include mobile {
+      text-align: center;
+      margin: 40px auto;
+    }
+  }
+  .galleryRow {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    @include mobile {
+      justify-content: center;
+    }
   }
 }

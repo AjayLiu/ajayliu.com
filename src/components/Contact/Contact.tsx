@@ -38,7 +38,6 @@ const Contact: React.FC<Props> = (props) => {
       axios
         .post("/api/mail", formState)
         .then((res) => {
-          console.log(res.data);
           if (res.data.result !== "success") {
             setForm({
               ...formState,
@@ -75,19 +74,16 @@ const Contact: React.FC<Props> = (props) => {
   return (
     <section>
       <h2 className="sectionTitle">Contact</h2>
-      <div id={styles.contact}>
-        <a
-          href={`https://mail.google.com/mail/?view=cm&fs=1&to=${props.email}`}
-        >
-          <div className="link" id={styles.contactBar}>
-            <img
-              src="/img/gmail.svg"
-              className={styles.image}
-              alt="gmail logo"
-            />
-            <p>{props.email}</p>
-          </div>
-        </a>
+      <div className={styles.contact}>
+        <div className={styles.gmailInfo}>
+          <a
+            href={`https://mail.google.com/mail/?view=cm&fs=1&to=${props.email}`}
+          >
+            <img src="img/gmail.svg" alt="email" />
+          </a>
+          <p>contact@ajayliu.com</p>
+        </div>
+        {/* THIS IS A BOT FIELD BELOW */}
         <form
           name="contact"
           method="POST"
@@ -105,24 +101,22 @@ const Contact: React.FC<Props> = (props) => {
         <form className={styles.form} name="contact">
           <div className={styles.formTitle}>Contact Form</div>
           <div className={styles.fieldsContainer}>
-            <div className={styles.row}>
-              <p onChange={onChange} className={styles.field}>
-                <input
-                  className={styles.smallInput}
-                  type="text"
-                  name="name"
-                  placeholder="Your Name"
-                />
-              </p>
-              <p onChange={onChange} className={styles.field} id={styles.email}>
-                <input
-                  className={styles.smallInput}
-                  type="text"
-                  name="email"
-                  placeholder="Your Email"
-                />
-              </p>
-            </div>
+            <p onChange={onChange} className={styles.field}>
+              <input
+                className={styles.input}
+                type="text"
+                name="name"
+                placeholder="Name"
+              />
+            </p>
+            <p onChange={onChange} className={styles.field}>
+              <input
+                className={styles.input}
+                type="text"
+                name="email"
+                placeholder="Email"
+              />
+            </p>
             <p onChange={onChange} className={styles.field}>
               <textarea
                 className={styles.messageBox}
