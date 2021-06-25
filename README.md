@@ -31,6 +31,7 @@
         <li><a href="#prerequisites">Prerequisites</a></li>
         <li><a href="#installation">Installation</a></li>
         <li><a href="#development">Development</a></li>
+        <li><a href="#development">Publishing</a></li>
       </ul>
     </li>
     <li><a href="#license">License</a></li>
@@ -81,8 +82,7 @@ Here is a guide if you want to clone my website and modify it for yourself, all 
    SENDGRID_API_KEY = (i use sengrid to send mail, so just use your api key here if u happen to use sendgrid to send contact emails)
    DISCORD_WEBHOOK_URL = (i also receive a discord notification, place your webhook url here if you want)
    ```
-4. Enter the same environment variables in Netlify.
-5. Publish the site on Netlify using continuous git integration. :tada:
+
 
 ### Development
 
@@ -98,11 +98,14 @@ To run some serverless backend functions from netlify, use Netlify CLI (install)
    ``` 
 Then head over to localhost:8888
 
+### Publishing
+1. Publish the site on Netlify using continuous git integration.
+2. Enter the same environment variables in Netlify, same as your `.env`
+
 <!-- LICENSE -->
 ## License
 
 Distributed under the MIT License. See `LICENSE` for more information.
-
 
 
 <!-- CONTACT -->
@@ -117,4 +120,8 @@ Project Link: [https://github.com/AjayLiu/ajayliu.com](https://github.com/AjayLi
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
 * [Vanta.js for the awesome landing screen background](https://fusejs.io/)
+* [Sendgrid](https://sendgrid.com/)
+* [Discord Webhooks](https://support.discord.com/hc/en-us/articles/228383668-Intro-to-Webhooks)
+* [Google Analytics](https://analytics.google.com/analytics/web/)
+* [react-accessible-accordion](https://www.npmjs.com/package/react-accessible-accordion)
 * [Netlify](https://www.netlify.com/)
