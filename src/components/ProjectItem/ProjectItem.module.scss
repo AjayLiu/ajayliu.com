@@ -1,80 +1,54 @@
 @import "@styles/mixins";
-
-#recommend {
-  width: 80px;
-  display: flex;
-  position: absolute;
-  margin-left: 20px;
-  margin-top: 15px;
-}
-
-.gameBlock {
-  border-radius: 2%;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  text-shadow: black 0px 0px 10px;
-
-  @include mobile {
-    height: 300px;
-  }
-}
-
-.gameBlock:hover {
-  cursor: pointer;
-  transition: transform 0.2s; /* Animation */
-  transform: scale(1.02);
-}
-
-.gametext {
-  z-index: 2;
-  /* opacity: 0; */
-  margin: auto;
-  width: 90%;
-  height: 90%;
+@import "@styles/variables";
+.container {
+  width: 300px;
+  height: 400px;
+  background-color: $secondary;
+  border-radius: 5px;
+  margin: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-}
 
-.gametitle {
-  /* text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
-      1px 1px 0 #000; */
-  font-size: 300%;
-  line-height: 100%;
-  margin-bottom: 20px;
-  font-weight: bolder;
-}
-
-.gamedescription p {
-  margin: auto;
-  width: fit-content;
-  font-size: medium;
-}
-
-.hardToRead {
-  text-shadow: black 0px 0px 10px, black 0px 0px 10px, black 0px 0px 10px,
-    black 0px 0px 10px;
-}
-
-.gamelinks {
-  margin-top: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  .link {
-    font-weight: bold;
-    color: gold;
+  .imageAnchor {
+    margin: 20px auto 10px;
+    height: 30%;
+    min-width: 200px;
   }
-  img {
-    vertical-align: middle;
+  .image {
+    max-width: 100%;
+    max-height: 100%;
   }
-  @include mobile {
-    flex-direction: row;
-    justify-content: space-evenly;
+
+  .text {
+    .title {
+      font-size: larger;
+    }
+    flex-grow: 1;
+    text-align: left;
+    padding: 20px;
+  }
+
+  .links {
+    height: 50px;
     width: 100%;
-    max-width: 300px;
-    margin: 10px auto;
+    display: flex;
+
+    background-color: $third;
+    :hover {
+      background-color: $fourth;
+    }
+
+    .link {
+      flex-grow: 1;
+      max-width: 50%;
+      min-width: 30%;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .leftBorder {
+      border-left: 5px solid $theme;
+    }
   }
 }

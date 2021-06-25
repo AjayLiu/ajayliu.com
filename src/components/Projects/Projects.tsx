@@ -2,10 +2,47 @@ import styles from "./Projects.module.scss";
 import ProjectItem from "@components/ProjectItem/ProjectItem";
 
 const Projects: React.FC = () => {
+  const cubeInc = (
+    <ProjectItem
+      image="/img/cubeinc.jpg"
+      title="Cube Inc. (2019)"
+      link="/games/cubeinc"
+      githubLink="https://github.com/troygamedev/cubeinc"
+      playstoreLink="https://play.google.com/store/apps/details?id=com.TroyGameDevelopmentClub.CubeInc"
+      description="A minimalistic, yet challenging puzzle game."
+    />
+  );
+  const inspirationJar = (
+    <ProjectItem
+      image="/img/inspiration-jar.svg"
+      title="Inspiration Jar (2021)"
+      link="https://inspiration-jar.ajayliu.com"
+      githubLink="https://github.com/AjayLiu/inspiration-jar"
+      description="Share words of encouragement to fellow humans around the world!"
+    />
+  );
+  const when = (
+    <ProjectItem
+      image="/img/when.png"
+      title="When? (2021)"
+      link="https://when.ajayliu.com/"
+      githubLink="https://github.com/AjayLiu/when"
+      description="Have a worldwide event? Share a single link to convert that meeting time to everyone's local time!"
+    />
+  );
+  const animeCharacterQuiz = (
+    <ProjectItem
+      image="/img/anime-character-quiz.svg"
+      title="Anime Character Quiz (2021)"
+      link="https://anime-character-quiz.ajayliu.com/"
+      githubLink="https://github.com/AjayLiu/anime-character-quiz"
+      description="Can you tell which anime these characters are from just from a single image?"
+    />
+  );
   return (
     <section>
       <h2 className="sectionTitle">Projects</h2>
-      <div id={styles.demoReel}>
+      <div className={styles.demoReel}>
         <iframe
           src="https://www.youtube.com/embed/n_rKZs7hjDI"
           frameBorder="0"
@@ -13,135 +50,107 @@ const Projects: React.FC = () => {
           allowFullScreen
         ></iframe>
       </div>
-      <p style={{ marginBottom: "40px" }}>Click on any of them to play!</p>
-      <div id={styles.gallery}>
-        <ProjectItem
-          bgImg="/img/cubeinc.jpg"
-          gridRow="1/4"
-          gridCol="1/3"
-          title="Cube Inc."
-          link="/games/cubeinc"
-          playstoreLink="https://play.google.com/store/apps/details?id=com.TroyGameDevelopmentClub.CubeInc"
-          description="A minimalistic, yet challenging puzzle game."
-          isRecommended
-        />
-        <ProjectItem
-          gridRow="1/4"
-          gridCol="3/5"
-          bgImg="/img/bet-you-dont-know-logo.png"
-          link="https://bet-you-dont-know.herokuapp.com/"
-          title="Bet You Don't Know"
-          description="A multiplayer game of wits, deception, and bets! (2+players)"
-          imgWidth="50%"
-          bgColor="#181818"
-          hardToRead
-        />
-        <ProjectItem
-          bgImg="/img/ichiban.jpg"
-          gridRow="1/4"
-          gridCol="5"
-          title="Ichiban"
-          link="https://ichiban.ajayliu.com/"
-          playstoreLink="https://play.google.com/store/apps/details?id=com.ichibanreactnative"
-          description="An anime popularity guessing game!"
-        />
-        <ProjectItem
-          bgImg="/img/inspirationbanner.png"
-          gridRow="4/7"
-          gridCol="1/3"
-          title="Inspiration Jar"
-          link="https://inspiration-jar.ajayliu.com"
-          description="Share words of encouragement to fellow humans around the world!"
-        />
-        <ProjectItem
-          bgImg="/img/when.jpg"
-          gridRow="4/7"
-          gridCol="3/5"
-          title="When?"
-          link="https://when.ajayliu.com/"
-          description="Have a worldwide event? Share a single link to convert that meeting time to everyone's local time!"
-        />
-        <ProjectItem
-          bgImg="/img/goatsheepbanner.png"
-          gridRow="4/7"
-          gridCol="5"
-          title="Sheep or Goat?"
-          link="https://sheep-goat.herokuapp.com/"
-          description="Can't tell apart a sheep from a goat? Let the power of machine learning assist you!"
-        />
-        <ProjectItem
-          bgImg="/img/anime-character-quiz.svg"
-          gridRow="7/9"
-          gridCol="1/3"
-          bgColor="#b88897"
-          title="Anime Character Quiz"
-          link="https://anime-character-quiz.ajayliu.com/"
-          description="Can you tell which anime these characters are from just from a single image?"
-          hardToRead
-          imgWidth="50%"
-        />
-        <ProjectItem
-          bgImg="/img/pixelbeats.png"
-          gridRow="7/9"
-          gridCol="3/5"
-          title="Pixel Beats"
-          link="games/pixelbeats/"
-          description="Are you an artist, musician, or dancer? Tap to the beat and be them all!"
-        />
-        <ProjectItem
-          bgImg="/img/bouncebanner.PNG"
-          gridRow="7/9"
-          gridCol="5"
-          title="Bounce Architect"
-          link="games/bouncearchitect/"
-          playstoreLink="https://play.google.com/store/apps/details?id=com.HackathonGroup.BounceArchitect"
-          description="What shape bounces best in all orientations? Sketch it out now! Made in under 12 hours."
-        />
-        <ProjectItem
-          bgImg="/img/tapdefender.jpg"
-          gridRow="9/11"
-          gridCol="1"
-          title="Tap Defender"
-          link="games/tapdefender/"
-          playstoreLink="https://play.google.com/store/apps/details?id=com.TroyGameDev.TapDefender"
-          description="A funny, light-hearted tapping game."
-          hardToRead
-        />
-        <ProjectItem
-          bgImg="/img/colorjumpwide.png"
-          gridRow="9/11"
-          gridCol="2"
-          title="Color Jump"
-          link="games/colorjump"
-          playstoreLink="https://play.google.com/store/apps/details?id=com.MerbolaGames.ColorJump"
-          description="A color coordination arcade game - easy to learn, hard to master."
-          hardToRead
-        />
-        <ProjectItem
-          bgImg="/img/timerbanner.PNG"
-          gridRow="9/11"
-          gridCol="3"
-          title="10 Second Challenge"
-          link="https://10seconds.ajayliu.com/"
-          description="How well can you count 10 seconds in your head?"
-        />
-        <ProjectItem
-          bgImg="/img/cashout.jpg"
-          gridRow="9/11"
-          gridCol="4"
-          title="Cash Out"
-          link="games/cashout/"
-          playstoreLink="https://play.google.com/store/apps/details?id=com.TroyGameDevelopment.CashOut"
-          description="A fast paced police pursuit game."
-        />
-        <ProjectItem
-          bgImg="/img/ajayliudark.png"
-          gridRow="9/11"
-          gridCol="5"
-          link="https://blog.ajayliu.com/"
-          title="Blog"
-          description="My personal blog."
-        />
+      <div className={styles.gallery}>
+        <div className={styles.galleryTitle}>Top Picks ⭐ </div>
+        <div className={styles.galleryRow}>
+          {cubeInc} {inspirationJar} {when} {animeCharacterQuiz}
+        </div>
+      </div>
+      <div className={styles.gallery}>
+        <div className={styles.galleryTitle}>Website Projects</div>
+        <div className={styles.galleryRow}>
+          <ProjectItem
+            image="/img/bet-you-dont-know-logo.png"
+            title="Bet You Don't Know (2021)"
+            link="https://bet-you-dont-know.herokuapp.com/"
+            githubLink="https://github.com/troygamedev/bet-you-dont-know"
+            description="A multiplayer party game of wits, deception, and bets! (2+players)"
+          />
+          <ProjectItem
+            image="/img/logothin.png"
+            title="Blog (2021)"
+            link="https://blog.ajayliu.com/"
+            githubLink="https://github.com/AjayLiu/blog"
+            description="My personal blog."
+          />
+          {inspirationJar}
+          {when}
+          {animeCharacterQuiz}
+          <ProjectItem
+            image="/img/ichiban.png"
+            title="Ichiban (2021)"
+            link="https://ichiban.ajayliu.com/"
+            githubLink="https://github.com/AjayLiu/ichiban"
+            playstoreLink="https://play.google.com/store/apps/details?id=com.ichibanreactnative"
+            description="An anime popularity guessing game!"
+          />
+          <ProjectItem
+            image="/img/sheep.png"
+            title="Sheep or Goat? (2020)"
+            link="https://sheep-goat.herokuapp.com/"
+            githubLink="https://github.com/AjayLiu/sheep-or-goat"
+            description="Can't tell apart a sheep from a goat? Let the power of machine learning assist you!"
+          />
+          <ProjectItem
+            image="/img/timerbanner.PNG"
+            title="10 Second Challenge (2020)"
+            link="https://10seconds.ajayliu.com/"
+            githubLink="https://github.com/AjayLiu/10-second-challenge"
+            description="How well can you count 10 seconds in your head?"
+          />
+          <ProjectItem
+            image="/img/logothin.png"
+            title="AjayLiu.com (2020-)"
+            link="https://ajayliu.com/"
+            githubLink="https://github.com/AjayLiu/ajayliu.com"
+            description="This website."
+          />
+        </div>
+      </div>
+      <div className={styles.gallery}>
+        <div className={styles.galleryTitle}>Made with Unity</div>
+        <div className={styles.galleryRow}>
+          <ProjectItem
+            image="/img/pixel-beats.png"
+            title="Pixel Beats (2020)"
+            link="games/pixelbeats/"
+            githubLink="https://github.com/troygamedev/pixel-beats"
+            description="Tap to the beat and watch as a pixel art emerges!"
+          />
+          <ProjectItem
+            image="/img/bouncebanner.PNG"
+            title="Bounce Architect (2020)"
+            link="games/bouncearchitect/"
+            githubLink="https://github.com/AjayLiu/bounce-architect"
+            playstoreLink="https://play.google.com/store/apps/details?id=com.HackathonGroup.BounceArchitect"
+            description="What shape bounces best in all orientations? Sketch it out now! Made in under 12 hours."
+          />
+          <ProjectItem
+            image="/img/tap-defender.png"
+            title="Tap Defender (2020)"
+            link="games/tapdefender/"
+            githubLink="https://github.com/troygamedev/tap-defender"
+            playstoreLink="https://play.google.com/store/apps/details?id=com.TroyGameDev.TapDefender"
+            description="A funny, light-hearted tapping game."
+          />
+          <ProjectItem
+            image="/img/cashout.jpg"
+            title="Cash Out (2019-20)"
+            link="games/cashout/"
+            githubLink="https://github.com/troygamedev/cashout"
+            playstoreLink="https://play.google.com/store/apps/details?id=com.TroyGameDevelopment.CashOut"
+            description="A fast paced police pursuit game."
+          />
+          {cubeInc}
+          <ProjectItem
+            image="/img/colorjumpwide.png"
+            title="Color Jump (2018)"
+            link="games/colorjump"
+            githubLink="https://github.com/AjayLiu/all-unity-games/tree/master/Color%20Jump"
+            playstoreLink="https://play.google.com/store/apps/details?id=com.MerbolaGames.ColorJump"
+            description="A color coordination arcade game - easy to learn, hard to master."
+          />
+        </div>
       </div>
     </section>
   );

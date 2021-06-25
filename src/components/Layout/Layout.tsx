@@ -30,7 +30,7 @@ const Layout: React.FC<Props> = (props) => {
           content="My name is Ajay Liu and I love creating things!"
         />
       </Head>
-      <main>{props.children}</main>
+      <main style={{ minHeight: "70vh" }}>{props.children}</main>
       <Footer />
     </>
   );
