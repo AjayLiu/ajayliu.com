@@ -4,42 +4,23 @@ import NET from "vanta/dist/vanta.net.min";
 
 const LandingPage: React.FC = () => {
   const vantaRef = useRef<HTMLDivElement>();
-  let vantaEffect;
 
   useEffect(() => {
-    if (window.innerWidth > 1200) {
-      vantaEffect = NET({
-        el: vantaRef.current,
-        points: 5,
-        spacing: 22,
-        maxDistance: 30,
-        backgroundColor: "#252934",
-        color: "#74e78d",
-        mouseControls: true,
-        touchControls: true,
-        minHeight: 200.0,
-        minWidth: 200.0,
-        scale: 1.0,
-        scaleMobile: 1.0,
-        showDots: true,
-      });
-    } else {
-      vantaEffect = NET({
-        el: vantaRef.current,
-        points: 3,
-        spacing: 35,
-        maxDistance: 70,
-        backgroundColor: "#252934",
-        color: "#74e78d",
-        mouseControls: true,
-        touchControls: true,
-        minHeight: 200.0,
-        minWidth: 200.0,
-        scale: 1.0,
-        scaleMobile: 1.0,
-        showDots: true,
-      });
-    }
+    const vantaEffect = NET({
+      el: vantaRef.current,
+      backgroundColor: "#252934",
+      color: "#74e78d",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.0,
+      minWidth: 200.0,
+      scale: 1.0,
+      scaleMobile: 1.0,
+      points: 3.0,
+      maxDistance: 50.0,
+      spacing: 40.0,
+    });
     return () => {
       if (vantaEffect) vantaEffect.destroy();
     };
