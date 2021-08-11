@@ -1,8 +1,13 @@
-#skills a {
-  text-decoration: none;
-}
-
-#skillBar {
-  width: 90%;
-  margin: auto;
+.skills {
+  .categoryTitle {
+    font-size: larger;
+    margin: 30px;
+  }
+  .skillBar {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+  }
 }

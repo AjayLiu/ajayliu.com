@@ -1,6 +1,6 @@
 import Layout from "@components/Layout/Layout";
 import UnityPage from "@components/UnityPage/UnityPage";
-import { gameList } from "public/GameList";
+import gameList from "public/GameList";
 
 interface Props {
   slug: string;

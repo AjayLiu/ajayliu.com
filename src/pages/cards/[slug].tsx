@@ -1,6 +1,6 @@
 import Card from "@components/Card/Card";
 import Layout from "@components/Layout/Layout";
-import { cardList } from "public/CardList.js";
+import cardList from "public/CardList";
 
 interface Props {
   slug: string;

@@ -1,3 +1,5 @@
+import SkillPair from "@components/SkillPair/SkillPair";
+import { Skill } from "public/SkillList";
 import styles from "./ProjectItem.module.scss";
 
 interface Props {
@@ -7,6 +9,7 @@ interface Props {
   link?: string;
   githubLink?: string;
   playstoreLink?: string;
+  madeWith: Array<Skill>;
 }
 
 const ProjectItem: React.FC<Props> = (props) => {
@@ -21,11 +24,17 @@ const ProjectItem: React.FC<Props> = (props) => {
       <div className={styles.text}>
         <strong className={styles.title}>{props.title}</strong>
         <p className={styles.description}>{props.description}</p>
+        <div className={styles.madeWithLabel}>Made with: </div>
+        <div className={styles.madeWith}>
+          {props.madeWith.map((skill, idx) => {
+            return <SkillPair skill={skill} key={idx} size="small" />;
+          })}
+        </div>
       </div>
       <div className={styles.links}>
         {props.link && (
           <a className={styles.link} href={props.link}>
-            Try it
+            Click to Try
           </a>
         )}
         {props.githubLink && (

@@ -2,7 +2,7 @@
 @import "@styles/variables";
 .container {
   width: 300px;
-  height: 400px;
+  height: 500px;
   background-color: $secondary;
   border-radius: 5px;
   margin: 20px;
@@ -11,21 +11,36 @@
 
   .imageAnchor {
     margin: 20px auto 10px;
-    height: 30%;
+    height: 20%;
     min-width: 200px;
   }
   .image {
-    max-width: 100%;
+    max-width: 90%;
     max-height: 100%;
   }
 
   .text {
+    flex-grow: 1;
+    background-color: $secondary;
+    text-align: left;
+    padding: 20px;
+
     .title {
       font-size: larger;
     }
-    flex-grow: 1;
-    text-align: left;
-    padding: 20px;
+    .description {
+      margin-bottom: 30px;
+    }
+
+    .madeWithLabel {
+      text-align: center;
+      margin: 10px;
+    }
+    .madeWith {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
   }
 
   .links {

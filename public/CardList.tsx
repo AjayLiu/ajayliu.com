@@ -1,4 +1,13 @@
-export const cardList = [
+interface Card {
+  slug: string;
+  title: string;
+  banner: JSX.Element;
+  content: JSX.Element;
+  signature: JSX.Element;
+  imagePath: string;
+}
+
+const cardList: Array<Card> = [
   {
     slug: "allen",
     title: "Happy Birthday Bro!",
@@ -199,3 +208,5 @@ export const cardList = [
     imagePath: "/img/tiffany.jpg",
   },
 ];
+
+export default cardList;

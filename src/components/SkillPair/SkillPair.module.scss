@@ -1,18 +1,35 @@
+// ONLY APPLIES TO SMALL
+.small {
+  font-size: xx-small;
+  line-height: 0%;
+  .skillPair {
+    margin: 4px 8px;
+    .skillImgContainer {
+      height: 20px;
+      .skillImg {
+        width: 100%;
+        max-width: 20px;
+        max-height: 20px;
+      }
+    }
+  }
+}
+
+// GENERAL RULES
 .skillPair {
   display: inline-block;
   margin: 20px;
-}
-
-.skillImgContainer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 70px;
-  margin: auto;
-}
-
-.skillImg {
-  width: 100%;
-  max-width: 70px;
-  max-height: 70px;
+  text-align: center;
+  .skillImgContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    margin: auto;
+    .skillImg {
+      width: 100%;
+      max-width: 70px;
+      max-height: 70px;
+    }
+  }
 }

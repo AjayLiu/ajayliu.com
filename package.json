@@ -12,6 +12,7 @@
   "dependencies": {
     "@sendgrid/mail": "^7.4.2",
     "axios": "^0.21.1",
+    "classnames": "^2.3.1",
     "imagemin-mozjpeg": "^9.0.0",
     "imagemin-optipng": "^8.0.0",
     "imagemin-svgo": "^9.0.0",
