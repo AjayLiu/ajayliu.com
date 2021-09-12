@@ -27,7 +27,7 @@ const About: React.FC = () => {
               link="https://troygamedev.com/"
               image="/img/gamedev.png"
               alt="game development club logo"
-              description="President and Lead Programmer of Game Development Club"
+              description="President of Game Development Club"
             />
             <Achievement
               link="http://usaco.org/current/data/feb20_bronze_results.html"
