@@ -1,6 +1,7 @@
 import styles from "./Contact.module.scss";
 import { useState } from "react";
 import axios from "axios";
+import ReCAPTCHA from "react-google-recaptcha";
 
 interface Props {
   email: string;
@@ -18,57 +19,69 @@ const Contact: React.FC<Props> = (props) => {
   const onChange = (e) => {
     setForm({ ...formState, [e.target.name]: e.target.value });
   };
+  const resetForm = () => {
+    setForm({
+      name: "",
+      email: "",
+      message: "",
+      sent: false,
+      buttonText: "Submit",
+      err: "",
+    });
+  };
   const submitForm = (e) => {
     e.preventDefault();
     if (!formState.sent) {
-      setForm({
-        ...formState,
-        buttonText: "Sending...",
-      });
-      const resetForm = () => {
+      if (passedCaptcha) {
         setForm({
-          name: "",
-          email: "",
-          message: "",
-          sent: false,
-          buttonText: "Submit",
-          err: "",
+          ...formState,
+          buttonText: "Sending...",
         });
-      };
-      axios
-        .post("/api/mail", formState)
-        .then((res) => {
-          if (res.data.result !== "success") {
+        axios
+          .post("/api/mail", formState)
+          .then((res) => {
+            if (res.data.result !== "success") {
+              setForm({
+                ...formState,
+                buttonText: "Failed to send",
+                sent: false,
+                err: "fail",
+              });
+              setTimeout(() => {
+                resetForm();
+              }, 6000);
+            } else {
+              setForm({
+                ...formState,
+                sent: true,
+                buttonText: "Sent",
+                err: "success",
+              });
+              setTimeout(() => {
+                resetForm();
+              }, 6000);
+            }
+          })
+          .catch((err) => {
+            console.log(err);
             setForm({
               ...formState,
               buttonText: "Failed to send",
-              sent: false,
               err: "fail",
             });
-            setTimeout(() => {
-              resetForm();
-            }, 6000);
-          } else {
-            setForm({
-              ...formState,
-              sent: true,
-              buttonText: "Sent",
-              err: "success",
-            });
-            setTimeout(() => {
-              resetForm();
-            }, 6000);
-          }
-        })
-        .catch((err) => {
-          console.log(err);
-          setForm({
-            ...formState,
-            buttonText: "Failed to send",
-            err: "fail",
           });
-        });
+      } else {
+        alert("Please complete the ReCAPTCHA.");
+      }
     }
+  };
+  const [passedCaptcha, setPassedCaptcha] = useState(false);
+  const onCaptcha = (value) => {
+    axios.post("/api/recaptcha", { token: value }).then((res) => {
+      if (res.data.success) {
+        setPassedCaptcha(true);
+      }
+    });
   };
 
   return (
@@ -124,6 +137,12 @@ const Contact: React.FC<Props> = (props) => {
                 placeholder="Your Message"
               ></textarea>
             </p>
+          </div>
+          <div className={styles.captcha}>
+            <ReCAPTCHA
+              sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_KEY}
+              onChange={onCaptcha}
+            />
           </div>
           <button className={styles.formButton} onClick={submitForm}>
             {formState.buttonText}

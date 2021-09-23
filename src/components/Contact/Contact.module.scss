@@ -1,6 +1,5 @@
 @import "@styles/mixins";
 @import "@styles/variables";
-
 .contact {
   width: 40%;
   margin: 20px auto;
@@ -61,6 +60,11 @@
           padding-top: 10px;
         }
       }
+    }
+
+    .captcha {
+      width: fit-content;
+      margin: auto;
     }
 
     .formButton {
