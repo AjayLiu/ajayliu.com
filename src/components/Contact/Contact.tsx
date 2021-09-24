@@ -1,7 +1,8 @@
 import styles from "./Contact.module.scss";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import axios from "axios";
 import ReCAPTCHA from "react-google-recaptcha";
+import swal from "sweetalert";
 
 interface Props {
   email: string;
@@ -12,68 +13,61 @@ const Contact: React.FC<Props> = (props) => {
     name: "",
     email: "",
     message: "",
-    sent: false,
-    buttonText: "Submit",
-    err: "",
   });
+
+  // change the states based on their "name" fields
   const onChange = (e) => {
     setForm({ ...formState, [e.target.name]: e.target.value });
   };
+
+  const recaptchaRef = useRef();
+
   const resetForm = () => {
     setForm({
       name: "",
       email: "",
       message: "",
-      sent: false,
-      buttonText: "Submit",
-      err: "",
     });
+
+    // reset the recaptcha
+    // @ts-ignore
+    recaptchaRef?.current?.reset();
+    setPassedCaptcha(false);
   };
+
   const submitForm = (e) => {
     e.preventDefault();
-    if (!formState.sent) {
-      if (passedCaptcha) {
-        setForm({
-          ...formState,
-          buttonText: "Sending...",
-        });
-        axios
-          .post("/api/mail", formState)
-          .then((res) => {
-            if (res.data.result !== "success") {
-              setForm({
-                ...formState,
-                buttonText: "Failed to send",
-                sent: false,
-                err: "fail",
-              });
-              setTimeout(() => {
-                resetForm();
-              }, 6000);
-            } else {
-              setForm({
-                ...formState,
-                sent: true,
-                buttonText: "Sent",
-                err: "success",
-              });
-              setTimeout(() => {
-                resetForm();
-              }, 6000);
-            }
-          })
-          .catch((err) => {
-            console.log(err);
-            setForm({
-              ...formState,
-              buttonText: "Failed to send",
-              err: "fail",
-            });
-          });
-      } else {
-        alert("Please complete the ReCAPTCHA.");
-      }
+    if (!passedCaptcha) {
+      swal("ReCAPTCHA", "Please complete the ReCAPTCHA.", "error");
+      return;
     }
+    if (
+      formState.name === "" ||
+      formState.email === "" ||
+      formState.message === ""
+    ) {
+      swal("Incomplete fields", "Please complete all fields.", "error");
+      return;
+    }
+    axios
+      .post("/api/mail", formState)
+      .then((res) => {
+        if (res.data.result !== "success") {
+          swal("Error", "Failed to send", "error").then(() => {
+            resetForm();
+          });
+        } else {
+          swal("Success", "Message successfully sent.", "success").then(() => {
+            resetForm();
+          });
+        }
+      })
+      .catch((err) => {
+        console.log(err);
+        swal("Error", "Failed to send", "error").then(() => {
+          resetForm();
+        });
+      });
   };
   const [passedCaptcha, setPassedCaptcha] = useState(false);
   const onCaptcha = (value) => {
@@ -120,6 +114,7 @@ const Contact: React.FC<Props> = (props) => {
                 type="text"
                 name="name"
                 placeholder="Name"
+                value={formState.name}
               />
             </p>
             <p onChange={onChange} className={styles.field}>
@@ -128,6 +123,7 @@ const Contact: React.FC<Props> = (props) => {
                 type="text"
                 name="email"
                 placeholder="Email"
+                value={formState.email}
               />
             </p>
             <p onChange={onChange} className={styles.field}>
@@ -135,6 +131,7 @@ const Contact: React.FC<Props> = (props) => {
                 className={styles.messageBox}
                 name="message"
                 placeholder="Your Message"
+                value={formState.message}
               ></textarea>
             </p>
           </div>
@@ -142,10 +139,11 @@ const Contact: React.FC<Props> = (props) => {
             <ReCAPTCHA
               sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_KEY}
               onChange={onCaptcha}
+              ref={recaptchaRef}
             />
           </div>
           <button className={styles.formButton} onClick={submitForm}>
-            {formState.buttonText}
+            Send
           </button>
         </form>
       </div>
