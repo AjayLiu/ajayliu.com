@@ -13,8 +13,6 @@
     <a href="https://ajayliu.com"><strong>Website »</strong></a>
 </p>
 
-
-
 <!-- TABLE OF CONTENTS -->
 <details open="open">
   <summary>Table of Contents</summary>
@@ -40,31 +38,31 @@
   </ol>
 </details>
 
-
-
 <!-- ABOUT THE PROJECT -->
+
 ## About The Project
 
 <img src="https://github.com/AjayLiu/ajayliu/blob/main/scroll.gif?raw=true"></img>
 
-This is my first site and also the best maintained one. It was originally made with just raw HTML, CSS, and JavaScript and is now revamped with React, Next.js, and SCSS. 
+This is my first site and also the best maintained one. It was originally made with just raw HTML, CSS, and JavaScript and is now revamped with React, Next.js, and SCSS.
 
 ### Built With
-* [Next.js](https://nextjs.org/)
-* [React](https://reactjs.org/)
-* [SCSS](https://sass-lang.com/)
-* [Netlify](https://www.netlify.com/)
 
+- [Next.js](https://nextjs.org/)
+- [React](https://reactjs.org/)
+- [SCSS](https://sass-lang.com/)
+- [Netlify](https://www.netlify.com/)
 
 <!-- GETTING STARTED -->
+
 ## Getting Started
 
 Here is a guide if you want to clone my website and modify it for yourself, all the way to deployment.
 
 ### Prerequisites
 
-* [yarn](https://yarnpkg.com/)
-* [git](https://git-scm.com/)
+- [yarn](https://yarnpkg.com/)
+- [git](https://git-scm.com/)
 
 ### Installation
 
@@ -76,52 +74,61 @@ Here is a guide if you want to clone my website and modify it for yourself, all 
    ```sh
    yarn
    ```
-3. Create a `.env` file in the root and fill in the following info (if you want)
+3. Create a `.env` or `.env.local` file in the root and fill in the following info (if you want)
    ```
    RECIPIENT_EMAIL = yourEmail@gmail.com (must match your sendgrid recipient email thing)
    SENDGRID_API_KEY = (i use sengrid to send mail, so just use your api key here if u happen to use sendgrid to send contact emails)
    DISCORD_WEBHOOK_URL = (i also receive a discord notification, place your webhook url here if you want)
+   NEXT_PUBLIC_RECAPTCHA_KEY= (get from recaptcha dashboard)
+   RECAPTCHA_SECRET_KEY=(get from recaptcha dashboard)
    ```
-
 
 ### Development
 
 To run the development server
-   ```sh
-   yarn dev
-   ```
+
+```sh
+yarn dev
+```
+
 Then head over to localhost:3000
 
 To run some serverless backend functions from netlify, use Netlify CLI (install) instead:
-   ```sh
-   netlify dev
-   ``` 
+
+```sh
+netlify dev
+```
+
 Then head over to localhost:8888
 
 ### Deployment
+
 1. Publish the site on Netlify using continuous git integration.
 2. Enter the same environment variables in Netlify, same as your `.env`
 
 <!-- LICENSE -->
+
 ## License
 
 Distributed under the MIT License. See `LICENSE` for more information.
 
-
 <!-- CONTACT -->
+
 ## Contact
 
 Ajay Liu - contact@ajayliu.com
 
 Project Link: [https://github.com/AjayLiu/ajayliu.com](https://github.com/AjayLiu/ajayliu.com)
 
-
-
 <!-- ACKNOWLEDGEMENTS -->
+
 ## Acknowledgements
-* [Vanta.js for the awesome landing screen background](https://fusejs.io/)
-* [Sendgrid](https://sendgrid.com/)
-* [Discord Webhooks](https://support.discord.com/hc/en-us/articles/228383668-Intro-to-Webhooks)
-* [Google Analytics](https://analytics.google.com/analytics/web/)
-* [react-accessible-accordion](https://www.npmjs.com/package/react-accessible-accordion)
-* [Netlify](https://www.netlify.com/)
+
+- [Vanta.js for the awesome landing screen background](https://fusejs.io/)
+- [Sendgrid](https://sendgrid.com/)
+- [Discord Webhooks](https://support.discord.com/hc/en-us/articles/228383668-Intro-to-Webhooks)
+- [Google Analytics](https://analytics.google.com/analytics/web/)
+- [react-accessible-accordion](https://www.npmjs.com/package/react-accessible-accordion)
+- [sweetalert](https://www.npmjs.com/package/sweetalert)
+- [react-google-recaptcha](https://www.npmjs.com/package/react-google-recaptcha)
+- [Netlify](https://www.netlify.com/)
