@@ -37,6 +37,15 @@ const Contact: React.FC<Props> = (props) => {
 
   const submitForm = (e) => {
     e.preventDefault();
+    if (!allowSend) {
+      swal(
+        "Cooldown",
+        "Please wait 1 minute between sending each message.",
+        "error"
+      );
+      return;
+    }
+
     if (!passedCaptcha) {
       swal("ReCAPTCHA", "Please complete the ReCAPTCHA.", "error");
       return;
@@ -60,6 +69,12 @@ const Contact: React.FC<Props> = (props) => {
           swal("Success", "Message successfully sent.", "success").then(() => {
             resetForm();
           });
+
+          // set timeout for sending (cooldown)
+          setAllowSend(false);
+          setTimeout(() => {
+            setAllowSend(true);
+          }, sendCooldown);
         }
       })
       .catch((err) => {
@@ -77,6 +92,10 @@ const Contact: React.FC<Props> = (props) => {
       }
     });
   };
+
+  // prevent spamming
+  const [allowSend, setAllowSend] = useState(true);
+  const sendCooldown = 60 * 1000; // 1 minute cooldown
 
   return (
     <section>
