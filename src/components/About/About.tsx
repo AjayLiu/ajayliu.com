@@ -30,6 +30,12 @@ const About: React.FC = () => {
               description="President of Game Development Club"
             />
             <Achievement
+              link="https://www.youtube.com/watch?v=WF0kBV3vVXI"
+              image="/img/dance.svg"
+              alt="hip hop dance icon"
+              description={"Co-Captain of Troy All Male Dance Team"}
+            />
+            <Achievement
               link="http://usaco.org/current/data/feb20_bronze_results.html"
               image="/img/silver.svg"
               alt="usaco silver medal"
@@ -63,12 +69,6 @@ const About: React.FC = () => {
               image="/img/tutor.svg"
               alt="online tutor icon"
               description="Online Tutor"
-            />
-            <Achievement
-              link="https://www.youtube.com/watch?v=RM-mVUny46s"
-              image="/img/dance.svg"
-              alt="hip hop dance icon"
-              description={' "All Male" Varsity Dance Team '}
             />
             <Achievement
               link="/secret"
