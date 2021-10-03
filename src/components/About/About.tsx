@@ -11,7 +11,7 @@ const About: React.FC = () => {
             <div>
               <img
                 id={styles.aboutImg}
-                src="/img/nike-freeze.jpg"
+                src="/img/pfp.jpg"
                 alt="profile picture"
               />
               <p>
@@ -30,7 +30,7 @@ const About: React.FC = () => {
               description="President of Game Development Club"
             />
             <Achievement
-              link="https://www.youtube.com/watch?v=WF0kBV3vVXI"
+              link="https://www.youtube.com/playlist?list=PLXKpTSB4c1bHeV6WtBpMytKeMnyvpO7yE"
               image="/img/dance.svg"
               alt="hip hop dance icon"
               description={"Co-Captain of Troy All Male Dance Team"}
