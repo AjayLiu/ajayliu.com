@@ -207,6 +207,33 @@ const cardList: Array<Card> = [
 
     imagePath: "/img/tiffany.jpg",
   },
+  {
+    slug: "tiffany-2021",
+    title: "Happy Birthday!",
+    banner: (
+      <>
+        <p>誕生日</p>
+        <p>おめ</p>
+        <p>でとう!</p>
+      </>
+    ),
+    content: (
+      <>
+        Wow, four years already flew past. It's pretty crazy how much both of us
+        have grown in this short period of time. I'm sure I couldn't have
+        reached where I am today without all of your care and patience,
+        especially with how 跩 I am all the time. I'm always inspired by how you
+        always seek for opportunities and try something new all the time, and I
+        wish we both never stop doing that. We're both going to go on our own
+        journeys soon, but we'll keep supporting each other for sure.
+        <br />
+      </>
+    ),
+
+    signature: <>-最跩的杰哥</>,
+
+    imagePath: "/img/snoopy.jpg",
+  },
 ];
 
 export default cardList;
