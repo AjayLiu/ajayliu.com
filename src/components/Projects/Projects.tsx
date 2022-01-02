@@ -81,7 +81,7 @@ const Projects: React.FC = () => {
       <h2 className="sectionTitle">Projects</h2>
       <div className={styles.demoReel}>
         <iframe
-          src="https://www.youtube.com/embed/n_rKZs7hjDI"
+          src="https://www.youtube.com/embed/uT_41GcorMI"
           frameBorder="0"
           allow="accelerometer; autoplay=1; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
           allowFullScreen
