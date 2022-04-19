@@ -123,7 +123,7 @@ Project Link: [https://github.com/AjayLiu/ajayliu.com](https://github.com/AjayLi
 <!-- ACKNOWLEDGEMENTS -->
 
 ## Acknowledgements
-
+- [Took heavy inspiration from this guy's site](http://findmatthew.com/)
 - [Vanta.js for the awesome landing screen background](https://fusejs.io/)
 - [Sendgrid](https://sendgrid.com/)
 - [Discord Webhooks](https://support.discord.com/hc/en-us/articles/228383668-Intro-to-Webhooks)
