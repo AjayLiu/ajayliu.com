@@ -33,7 +33,7 @@ const About: React.FC = () => {
               link="https://www.youtube.com/playlist?list=PLXKpTSB4c1bHeV6WtBpMytKeMnyvpO7yE"
               image="/img/dance.svg"
               alt="hip hop dance icon"
-              description={"Co-Captain of Troy All Male Dance Team"}
+              description={"Captain of Troy All Male Dance Team"}
             />
             <Achievement
               link="http://usaco.org/current/data/feb20_bronze_results.html"
