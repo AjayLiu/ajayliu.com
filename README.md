@@ -124,7 +124,7 @@ Project Link: [https://github.com/AjayLiu/ajayliu.com](https://github.com/AjayLi
 
 ## Acknowledgements
 - [Took heavy inspiration from this guy's site](http://findmatthew.com/)
-- [Vanta.js for the awesome landing screen background](https://fusejs.io/)
+- [Vanta.js for the awesome landing screen background](https://www.vantajs.com/)
 - [Sendgrid](https://sendgrid.com/)
 - [Discord Webhooks](https://support.discord.com/hc/en-us/articles/228383668-Intro-to-Webhooks)
 - [Google Analytics](https://analytics.google.com/analytics/web/)
