@@ -30,7 +30,7 @@ const About: React.FC = () => {
               description="President of Game Development Club"
             />
             <Achievement
-              link="https://www.youtube.com/playlist?list=PLXKpTSB4c1bHeV6WtBpMytKeMnyvpO7yE"
+              link="https://www.youtube.com/watch?v=-G17cfugcKI&list=PLWHnSaZAUr1E3y2Zb2baYAigJdPPfInXZ&index=3"
               image="/img/dance.svg"
               alt="hip hop dance icon"
               description={"Captain of Troy All Male Dance Team"}
