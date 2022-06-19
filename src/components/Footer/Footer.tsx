@@ -33,7 +33,7 @@ const Footer: React.FC = () => {
             alt="github logo"
           />
         </a>
-        <a href="https://www.youtube.com/channel/UClr6XCaguPeM0g7UL6Lvs3g">
+        <a href="https://www.youtube.com/channel/UCompAYRB224zqCPDyexvmng">
           <img
             className={styles.image}
             src={"/img/youtube.svg"}
