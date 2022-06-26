@@ -24,6 +24,12 @@ const About: React.FC = () => {
           </div>
           <div id={styles.aboutAchievements}>
             <Achievement
+              link="https://tascholarshipfund.org/tasf-scholarship-recipients/"
+              image="/img/tasf.jpg"
+              alt="Taiwanese American Scholarship Fund Logo"
+              description="2022 Taiwanese American Scholarship Fund Winner"
+            />
+            <Achievement
               link="https://troygamedev.com/"
               image="/img/gamedev.png"
               alt="game development club logo"
@@ -63,12 +69,6 @@ const About: React.FC = () => {
                   <em>I coded this website</em>
                 </>
               }
-            />
-            <Achievement
-              link="https://www.linkedin.com/in/ajayliu/"
-              image="/img/tutor.svg"
-              alt="online tutor icon"
-              description="Online Tutor"
             />
             <Achievement
               link="/secret"
