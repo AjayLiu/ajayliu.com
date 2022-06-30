@@ -48,16 +48,16 @@ const About: React.FC = () => {
               description="USACO Silver"
             />
             <Achievement
+              link="https://www.apcf.org/chao-family-foundation-scholarship-open"
+              image="/img/chao.png"
+              alt="Chao Family Foundation Logo"
+              description="2022 Chao Family Foundation Scholarship Winner"
+            />
+            <Achievement
               link="https://play.google.com/store/apps/developer?id=Troy+Game+Development+Club"
               image="/img/googleplay.svg"
               alt="google play logo"
               description="Released more than 8 games on Google Play"
-            />
-            <Achievement
-              link="https://unity.com/"
-              image="/img/unity.svg"
-              alt="unity logo"
-              description="Unity Game Developer"
             />
             <Achievement
               link="https://github.com/AjayLiu"
