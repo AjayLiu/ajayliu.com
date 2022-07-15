@@ -5,6 +5,7 @@ interface Card {
   content: JSX.Element;
   signature: JSX.Element;
   imagePath: string;
+  confetti?: boolean;
 }
 
 const cardList: Array<Card> = [
@@ -233,6 +234,29 @@ const cardList: Array<Card> = [
     signature: <>-最跩的杰哥</>,
 
     imagePath: "/img/snoopy.jpg",
+  },
+  {
+    slug: "allen-2022",
+    title: "Happy Birthday!",
+    banner: (
+      <>
+        <p>Happy Birthday!</p>
+      </>
+    ),
+    content: (
+      <>
+        姊姊 drew this picture for you! We want to thank you so much for helping
+        us become more independent. I (Ajay) remember my New Years Resolution
+        was to be more independent and now, halfway through the year, I can
+        definitely say I've made lots of progress thanks to you! Thanks for
+        being our mentor and most importantly, the best brother ever!
+        <br />
+      </>
+    ),
+
+    signature: <>-Tiffany and Ajay</>,
+    imagePath: "/img/allen-2022.png",
+    confetti: true,
   },
 ];
 
