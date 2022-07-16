@@ -33,7 +33,7 @@ const Card: React.FC<PropsObj> = ({ props }) => {
   const [shoot, setShoot] = useState(false);
   useEffect(() => {
     if (props.confetti) setShoot(true);
-  }, []);
+  }, [props.confetti]);
   return (
     <>
       <Head>
