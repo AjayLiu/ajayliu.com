@@ -4,6 +4,7 @@ import styles from "./UnityPage.module.scss";
 import templateStyles from "./TemplateData.module.scss";
 import GooglePlayButton from "@components/GooglePlayButton/GooglePlayButton";
 import Link from "next/link";
+import Script from "next/script";
 
 interface PropsObj {
   props: Props;
@@ -30,7 +31,7 @@ const UnityPage: React.FC<PropsObj> = ({ props }) => {
     unityInstance.SetFullscreen(1);
   };
 
-  var fullscreenElem = props.fullscreenOption ? (
+  const fullscreenElem = props.fullscreenOption ? (
     <>
       <div className={templateStyles.footer}>
         <div
@@ -50,10 +51,10 @@ const UnityPage: React.FC<PropsObj> = ({ props }) => {
     <>
       <Head>
         <script src={unityLoaderPath}></script>
-        <script>
+        <Script>
           var unityInstance = UnityLoader.instantiate( `unityContainer`, `
           {props.jsonPath}`);
-        </script>
+        </Script>
         <title>{props.gameName}</title>
         {/* <meta charset="utf-8" /> */}
         <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
