@@ -51,10 +51,10 @@ const UnityPage: React.FC<PropsObj> = ({ props }) => {
     <>
       <Head>
         <script src={unityLoaderPath}></script>
-        <Script>
+        <script>
           var unityInstance = UnityLoader.instantiate( `unityContainer`, `
           {props.jsonPath}`);
-        </Script>
+        </script>
         <title>{props.gameName}</title>
         {/* <meta charset="utf-8" /> */}
         <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
