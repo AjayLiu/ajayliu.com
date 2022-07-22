@@ -81,6 +81,7 @@ Here is a guide if you want to clone my website and modify it for yourself, all 
    DISCORD_WEBHOOK_URL = (i also receive a discord notification, place your webhook url here if you want)
    NEXT_PUBLIC_RECAPTCHA_KEY= (get from recaptcha dashboard)
    RECAPTCHA_SECRET_KEY=(get from recaptcha dashboard)
+   NODE_VERSION=14.18.0 (if your netlify build crashes during node installation then try upgrading this)
    ```
 
 ### Development
@@ -123,6 +124,7 @@ Project Link: [https://github.com/AjayLiu/ajayliu.com](https://github.com/AjayLi
 <!-- ACKNOWLEDGEMENTS -->
 
 ## Acknowledgements
+
 - [Took heavy inspiration from this guy's site](http://findmatthew.com/)
 - [Vanta.js for the awesome landing screen background](https://www.vantajs.com/)
 - [Sendgrid](https://sendgrid.com/)
