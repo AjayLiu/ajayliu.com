@@ -50,6 +50,16 @@ const UnityPage: React.FC<PropsObj> = ({ props }) => {
   return (
     <>
       <Head>
+        {/*
+         *
+         *
+         *
+         * HAS TO BE SCRIPT TAGS FOR SOME REASON OR ELSE UNITY WONT LOAD
+         * ... just keep it that way idk why
+         *
+         *
+         *
+         * */}
         <script src={unityLoaderPath}></script>
         <script>
           var unityInstance = UnityLoader.instantiate( `unityContainer`, `
