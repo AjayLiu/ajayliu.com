@@ -54,7 +54,7 @@ const About: React.FC = () => {
               description="2022 Chao Family Foundation Scholarship Winner"
             />
             <Achievement
-              link="https://play.google.com/store/apps/developer?id=Troy+Game+Development+Club"
+              link="https://play.google.com/store/apps/dev?id=6962993996464856524"
               image="/img/googleplay.svg"
               alt="google play logo"
               description="Released more than 8 games on Google Play"
