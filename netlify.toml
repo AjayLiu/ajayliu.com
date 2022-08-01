@@ -75,7 +75,9 @@
 [[redirects]]
     from = "/bet"
     to = "https://bet-you-dont-know.herokuapp.com/"
-
+[[redirects]]
+    from = "/notation"
+    to = "http://notation-visualizer.ajayliu.com/"
 
 [[redirects]]
     from = "/cubeinc"

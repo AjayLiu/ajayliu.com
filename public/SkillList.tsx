@@ -58,7 +58,7 @@ const skills: Array<Skill> = [
     image: "/img/cpp.svg",
     alt: "C++ logo",
     name: "C++",
-    familiarity: 2,
+    familiarity: 3,
   },
   {
     image: "/img/java.svg",
@@ -136,7 +136,7 @@ const skills: Array<Skill> = [
     image: "/img/vim.svg",
     alt: "Vim logo",
     name: "Vim",
-    familiarity: 3,
+    familiarity: 2,
   },
   {
     image: "/img/github.png",
@@ -160,6 +160,12 @@ const skills: Array<Skill> = [
     image: "/img/heroku.svg",
     alt: "Heroku logo",
     name: "Heroku",
+    familiarity: 2,
+  },
+  {
+    image: "/img/tailwind.svg",
+    alt: "TailwindCSS logo",
+    name: "TailwindCSS",
     familiarity: 3,
   },
 ];

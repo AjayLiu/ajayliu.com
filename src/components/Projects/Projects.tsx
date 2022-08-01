@@ -76,6 +76,22 @@ const Projects: React.FC = () => {
       ])}
     />
   );
+  const notationVisualizer = (
+    <ProjectItem
+      image="/img/notation-visualizer.svg"
+      title="Notation Visualizer (2022)"
+      link="http://notation-visualizer.ajayliu.com/"
+      githubLink="https://github.com/AjayLiu/notation-visualizer"
+      description="An interactive website to visualize how Infix, Prefix (Polish), and Postfix (Reverse Polish) notation are converted and evaluated."
+      madeWith={findSkillsWithNames([
+        "Next.js",
+        "TailwindCSS",
+        "React",
+        "Netlify",
+        "Typescript",
+      ])}
+    />
+  );
   return (
     <section>
       <h2 className="sectionTitle">Projects</h2>
@@ -90,12 +106,13 @@ const Projects: React.FC = () => {
       <div className={styles.gallery}>
         <div className={styles.galleryTitle}>Top Picks ⭐ </div>
         <div className={styles.galleryRow}>
-          {cubeInc} {inspirationJar} {when} {animeCharacterQuiz}
+          {notationVisualizer} {cubeInc} {inspirationJar} {animeCharacterQuiz}
         </div>
       </div>
       <div className={styles.gallery}>
         <div className={styles.galleryTitle}>Website Projects</div>
         <div className={styles.galleryRow}>
+          {notationVisualizer}
           <ProjectItem
             image="/img/bet-you-dont-know-logo.png"
             title="Bet You Don't Know (2021)"
