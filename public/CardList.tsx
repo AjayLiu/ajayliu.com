@@ -258,6 +258,29 @@ const cardList: Array<Card> = [
     imagePath: "/img/allen-2022.png",
     confetti: true,
   },
+  {
+    slug: "fathers-day-2022",
+    title: "Happy Father's Day!",
+    banner: (
+      <>
+        <p>Happy</p>
+        <p>Father's</p>
+        <p>Day!</p>
+      </>
+    ),
+    content: (
+      <>
+        姊姊 drew this picture! We want to thank you so much for always taking
+        care of us! Without you, we would not be who we are today. Good luck at
+        your new job and remember to have fun every day! 父親節快樂!
+        <br />
+      </>
+    ),
+
+    signature: <>-Tiffany and Ajay</>,
+    imagePath: "/img/fathers-day.jpg",
+    confetti: true,
+  },
 ];
 
 export default cardList;
