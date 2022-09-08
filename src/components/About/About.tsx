@@ -33,13 +33,13 @@ const About: React.FC = () => {
               link="https://troygamedev.com/"
               image="/img/gamedev.png"
               alt="game development club logo"
-              description="President of Game Development Club"
+              description="Former President of Game Development Club"
             />
             <Achievement
               link="https://www.youtube.com/watch?v=-G17cfugcKI&list=PLWHnSaZAUr1E3y2Zb2baYAigJdPPfInXZ&index=3"
               image="/img/dance.svg"
               alt="hip hop dance icon"
-              description={"Captain of Troy All Male Dance Team"}
+              description={"Former Captain of Troy All Male Dance Team"}
             />
             <Achievement
               link="http://usaco.org/current/data/feb20_bronze_results.html"
