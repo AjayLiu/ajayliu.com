@@ -119,3 +119,7 @@
 [[redirects]]
     from = "/allmale"
     to = "https://drive.google.com/drive/folders/1w6r2isw6Oc4BQPwCj8S_SxxYq0lxJs8h?usp=sharing"
+
+[[redirects]]
+    from = "/resume"
+    to = "https://docs.google.com/document/d/1-zj3WNdJ0gWlXbo4m47Hk3PXxBuqi80EQeX4sjumZko/edit?usp=sharing"
