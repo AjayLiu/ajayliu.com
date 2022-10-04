@@ -7,7 +7,8 @@
     width: 90%;
   }
 
-  .gmailInfo {
+  .gmailInfo,
+  .resume {
     display: flex;
     align-items: center;
     border-radius: 5px;
@@ -24,6 +25,20 @@
       }
     }
   }
+  .resume {
+    margin-top: 20px;
+    .resumeLink {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 60%;
+      .text {
+        margin-left: 20px;
+      }
+    }
+  }
+
   .form {
     margin: 40px auto;
     border-radius: 5px;

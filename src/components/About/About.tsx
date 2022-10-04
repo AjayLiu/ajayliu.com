@@ -18,11 +18,23 @@ const About: React.FC = () => {
                 <strong>Ajay Liu</strong>
               </p>
               <p>
-                <em>"You deserve a month-long break 12 times a year!"</em>
+                <em>"yes my eyes are open"</em>
               </p>
             </div>
           </div>
           <div id={styles.aboutAchievements}>
+            <Achievement
+              link="https://www.cs.ucsb.edu/"
+              image="/img/ucsb.svg"
+              alt="UC Santa Barbara logo"
+              description="UC Santa Barbara Computer Science Class of 2026"
+            />
+            <Achievement
+              link="https://www.instagram.com/untitleddanceco"
+              image="/img/untitled.jpg"
+              alt="Untitled Dance Company Logo"
+              description={"Untitled Dance Co. Member"}
+            />
             <Achievement
               link="https://tascholarshipfund.org/tasf-scholarship-recipients/"
               image="/img/tasf.jpg"
@@ -30,28 +42,16 @@ const About: React.FC = () => {
               description="2022 Taiwanese American Scholarship Fund Winner"
             />
             <Achievement
-              link="https://troygamedev.com/"
-              image="/img/gamedev.png"
-              alt="game development club logo"
-              description="Former President of Game Development Club"
-            />
-            <Achievement
-              link="https://www.youtube.com/watch?v=-G17cfugcKI&list=PLWHnSaZAUr1E3y2Zb2baYAigJdPPfInXZ&index=3"
-              image="/img/dance.svg"
-              alt="hip hop dance icon"
-              description={"Former Captain of Troy All Male Dance Team"}
-            />
-            <Achievement
-              link="http://usaco.org/current/data/feb20_bronze_results.html"
-              image="/img/silver.svg"
-              alt="usaco silver medal"
-              description="USACO Silver"
-            />
-            <Achievement
               link="https://www.apcf.org/chao-family-foundation-scholarship-open"
               image="/img/chao.png"
               alt="Chao Family Foundation Logo"
               description="2022 Chao Family Foundation Scholarship Winner"
+            />
+            <Achievement
+              link="https://troygamedev.com/"
+              image="/img/gamedev.png"
+              alt="game development club logo"
+              description="Former President of Game Development Club"
             />
             <Achievement
               link="https://play.google.com/store/apps/dev?id=6962993996464856524"
@@ -72,9 +72,9 @@ const About: React.FC = () => {
             />
             <Achievement
               link="/secret"
-              image="/img/trilingual.svg"
-              alt="multilingual speaker icon"
-              description="Trilingual... ok maybe bilingual"
+              image="/img/dog.svg"
+              alt="Dog icon"
+              description="I have dog-phobia (please leash your cute doggos)"
             />
           </div>
         </div>
