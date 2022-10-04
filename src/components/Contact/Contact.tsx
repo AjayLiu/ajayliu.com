@@ -109,6 +109,15 @@ const Contact: React.FC<Props> = (props) => {
           </a>
           <p>contact@ajayliu.com</p>
         </div>
+        <div className={styles.resume}>
+          <a
+            href={`https://docs.google.com/document/d/1-zj3WNdJ0gWlXbo4m47Hk3PXxBuqi80EQeX4sjumZko`}
+            className={styles.resumeLink}
+          >
+            <img src="img/resume.svg" alt="Resume" />
+            <div className={styles.text}>Resume / CV</div>
+          </a>
+        </div>
         {/* THIS IS A BOT FIELD BELOW */}
         <form
           name="contact"
