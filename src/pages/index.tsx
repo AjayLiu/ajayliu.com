@@ -27,7 +27,7 @@ const Home: React.FC = () => {
               psst... there's a secret link you can click somewhere on this page
               ;)
             </p>
-            <p>hint: i wonder how many languages you can speak</p>
+            <p>hint: my phobia</p>
           </div>
         </main>
       </div>
