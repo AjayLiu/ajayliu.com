@@ -25,7 +25,7 @@ const About: React.FC = () => {
           <div id={styles.aboutAchievements}>
             <Achievement
               link="https://www.cs.ucsb.edu/"
-              image="/img/ucsb.svg"
+              image="/img/ucsb.png"
               alt="UC Santa Barbara logo"
               description="UC Santa Barbara Computer Science Class of 2026"
             />
