@@ -3,6 +3,7 @@ import { useRef, useState } from "react";
 import axios from "axios";
 import ReCAPTCHA from "react-google-recaptcha";
 import swal from "sweetalert";
+import Link from "next/link";
 
 interface Props {
   email: string;
@@ -110,13 +111,12 @@ const Contact: React.FC<Props> = (props) => {
           <p>contact@ajayliu.com</p>
         </div>
         <div className={styles.resume}>
-          <a
-            href={`https://docs.google.com/document/d/1-zj3WNdJ0gWlXbo4m47Hk3PXxBuqi80EQeX4sjumZko`}
-            className={styles.resumeLink}
-          >
-            <img src="img/resume.svg" alt="Resume" />
-            <div className={styles.text}>Resume / CV</div>
-          </a>
+          <Link href={"/resume.pdf"}>
+            <a target="_blank" className={styles.resumeLink}>
+              <img src="img/resume.svg" alt="Resume" />
+              <div className={styles.text}>Resume / CV</div>
+            </a>
+          </Link>
         </div>
         {/* THIS IS A BOT FIELD BELOW */}
         <form
