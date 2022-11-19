@@ -116,7 +116,7 @@ const Projects: React.FC = () => {
           <ProjectItem
             image="/img/bet-you-dont-know-logo.png"
             title="Bet You Don't Know (2021)"
-            link="https://bet-you-dont-know.herokuapp.com/"
+            link="https://bet-you-dont-know.ajayliu.com/"
             githubLink="https://github.com/troygamedev/bet-you-dont-know"
             description="A multiplayer party game of wits, deception, and bets! (2+players)"
             madeWith={findSkillsWithNames([
@@ -165,7 +165,7 @@ const Projects: React.FC = () => {
           <ProjectItem
             image="/img/sheep.png"
             title="Sheep or Goat? (2020)"
-            link="https://sheep-goat.herokuapp.com/"
+            link="https://sheep-goat.ajayliu.com/"
             githubLink="https://github.com/AjayLiu/sheep-or-goat"
             description="Can't tell apart a sheep from a goat? Let the power of machine learning assist you!"
             madeWith={findSkillsWithNames(["Fast.ai", "Python", "Heroku"])}

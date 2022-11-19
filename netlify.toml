@@ -41,10 +41,10 @@
 
 [[redirects]]
     from = "/sheep-goat"
-    to = "https://sheep-goat.herokuapp.com/"
+    to = "https://sheep-goat.ajayliu.com/"
 [[redirects]]
     from = "/sheep-or-goat"
-    to = "https://sheep-goat.herokuapp.com/"
+    to = "https://sheep-goat.ajayliu.com/"
 [[redirects]]
     from = "/inspiration-jar"
     to = "https://inspiration-jar.ajayliu.com/"
@@ -71,10 +71,10 @@
     to = "https://anime-character-quiz.ajayliu.com/"
 [[redirects]]
     from = "/bet-you-dont-know"
-    to = "https://bet-you-dont-know.herokuapp.com/"
+    to = "https://bet-you-dont-know.ajayliu.com/"
 [[redirects]]
     from = "/bet"
-    to = "https://bet-you-dont-know.herokuapp.com/"
+    to = "https://bet-you-dont-know.ajayliu.com/"
 [[redirects]]
     from = "/notation"
     to = "http://notation-visualizer.ajayliu.com/"
