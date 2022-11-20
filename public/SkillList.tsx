@@ -163,6 +163,12 @@ const skills: Array<Skill> = [
     familiarity: 2,
   },
   {
+    image: "/img/render.png",
+    alt: "Render logo",
+    name: "Render",
+    familiarity: 2,
+  },
+  {
     image: "/img/tailwind.svg",
     alt: "TailwindCSS logo",
     name: "TailwindCSS",

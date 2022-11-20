@@ -38,7 +38,7 @@ const Projects: React.FC = () => {
         "Express.js",
         "Node.js",
         "PostgreSQL",
-        "Heroku",
+        "Render",
         "Typescript",
       ])}
     />
@@ -128,6 +128,7 @@ const Projects: React.FC = () => {
               "Node.js",
               "Netlify",
               "Typescript",
+              "Render",
             ])}
           />
           <ProjectItem
@@ -168,7 +169,7 @@ const Projects: React.FC = () => {
             link="https://sheep-goat.ajayliu.com/"
             githubLink="https://github.com/AjayLiu/sheep-or-goat"
             description="Can't tell apart a sheep from a goat? Let the power of machine learning assist you!"
-            madeWith={findSkillsWithNames(["Fast.ai", "Python", "Heroku"])}
+            madeWith={findSkillsWithNames(["Fast.ai", "Python", "Render"])}
           />
           <ProjectItem
             image="/img/timerbanner.PNG"
