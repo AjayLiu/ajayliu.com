@@ -39,13 +39,13 @@ const About: React.FC = () => {
               link="https://tascholarshipfund.org/tasf-scholarship-recipients/"
               image="/img/tasf.jpg"
               alt="Taiwanese American Scholarship Fund Logo"
-              description="2022 Taiwanese American Scholarship Fund Winner"
+              description="2022 Taiwanese American Scholarship Fund Awardee"
             />
             <Achievement
               link="https://www.apcf.org/chao-family-foundation-scholarship-open"
               image="/img/chao.png"
               alt="Chao Family Foundation Logo"
-              description="2022 Chao Family Foundation Scholarship Winner"
+              description="2022 Chao Family Foundation Scholarship Awardee"
             />
             <Achievement
               link="https://troygamedev.com/"
