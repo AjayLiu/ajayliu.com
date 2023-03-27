@@ -34,23 +34,27 @@ const ProjectItem: React.FC<Props> = (props) => {
       <div className={styles.links}>
         {props.link && (
           <a className={styles.link} href={props.link}>
-            Click to Try
+            Demo
           </a>
         )}
         {props.githubLink && (
-          <a
-            className={`${styles.link} ${styles.leftBorder}`}
-            href={props.githubLink}
-          >
-            <img src="/img/github.svg" alt="github logo" height="80%" />
+          <a className={styles.link} href={props.githubLink}>
+            <img
+              src="/img/github.svg"
+              alt="github logo"
+              width="100%"
+              height="80%"
+            />
           </a>
         )}
         {props.playstoreLink && (
-          <a
-            className={`${styles.link} ${styles.leftBorder}`}
-            href={props.playstoreLink}
-          >
-            <img src="/img/playstore.svg" alt="github logo" height="70%" />
+          <a className={styles.link} href={props.playstoreLink}>
+            <img
+              src="/img/playstore.svg"
+              alt="playstore logo"
+              width="100%"
+              height="70%"
+            />
           </a>
         )}
       </div>

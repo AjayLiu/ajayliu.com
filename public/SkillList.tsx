@@ -136,7 +136,7 @@ const skills: Array<Skill> = [
     image: "/img/vim.svg",
     alt: "Vim logo",
     name: "Vim",
-    familiarity: 2,
+    familiarity: 3,
   },
   {
     image: "/img/github.png",
@@ -173,6 +173,12 @@ const skills: Array<Skill> = [
     alt: "TailwindCSS logo",
     name: "TailwindCSS",
     familiarity: 3,
+  },
+  {
+    image: "/img/firebase.svg",
+    alt: "Firebase logo",
+    name: "Firebase",
+    familiarity: 2,
   },
 ];
 
