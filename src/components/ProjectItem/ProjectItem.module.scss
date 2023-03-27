@@ -55,15 +55,11 @@
 
     .link {
       flex-grow: 1;
-      max-width: 50%;
       min-width: 30%;
 
       display: flex;
       align-items: center;
-      justify-content: center;
-    }
-    .leftBorder {
-      border-left: 5px solid $theme;
+      justify-content: space-around;
     }
   }
 }

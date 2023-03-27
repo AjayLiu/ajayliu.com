@@ -106,7 +106,10 @@ const Projects: React.FC = () => {
       <div className={styles.gallery}>
         <div className={styles.galleryTitle}>Top Picks ⭐ </div>
         <div className={styles.galleryRow}>
-          {notationVisualizer} {cubeInc} {inspirationJar} {animeCharacterQuiz}
+          {inspirationJar}
+          {animeCharacterQuiz}
+          {notationVisualizer}
+          {cubeInc}
         </div>
       </div>
       <div className={styles.gallery}>
@@ -153,12 +156,12 @@ const Projects: React.FC = () => {
             title="Ichiban (2021)"
             link="https://ichiban.ajayliu.com/"
             githubLink="https://github.com/AjayLiu/ichiban"
-            playstoreLink="https://play.google.com/store/apps/details?id=com.ichibanreactnative"
             description="An anime popularity guessing game!"
             madeWith={findSkillsWithNames([
               "Gatsby",
               "React",
               "SCSS",
+              "React Native",
               "Netlify",
               "Javascript",
             ])}
@@ -192,6 +195,30 @@ const Projects: React.FC = () => {
               "Netlify",
               "Typescript",
             ])}
+          />
+        </div>
+      </div>
+      <div className={styles.gallery}>
+        <div className={styles.galleryTitle}>Apps</div>
+        <div className={styles.galleryRow}>
+          <ProjectItem
+            image="/img/verde.png"
+            title="Verde (2023)"
+            githubLink="https://github.com/AjayLiu/verde"
+            description="A social media app where users upload photos of themselves completing fun sustainability challenges!"
+            madeWith={findSkillsWithNames([
+              "React Native",
+              "Typescript",
+              "Firebase",
+            ])}
+          />
+          <ProjectItem
+            image="/img/ichiban.png"
+            title="Ichiban, App Version (2021)"
+            githubLink="https://github.com/AjayLiu/ichiban-react-native"
+            playstoreLink="https://play.google.com/store/apps/details?id=com.ichibanreactnative"
+            description="An anime popularity guessing game!"
+            madeWith={findSkillsWithNames(["React Native", "Javascript"])}
           />
         </div>
       </div>
