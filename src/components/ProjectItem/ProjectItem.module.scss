@@ -8,6 +8,11 @@
   margin: 20px;
   display: flex;
   flex-direction: column;
+  
+  
+  @include mobile {
+    margin-bottom: 40px;
+  }
 
   .imageAnchor {
     margin: 20px auto 10px;
