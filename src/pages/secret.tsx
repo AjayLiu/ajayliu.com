@@ -24,7 +24,7 @@ const Secret: React.FC = () => {
         things of these a day really forced my brain to think about the good in
         everything. Below are some of the things I've written before:
       </p>
-      <ul style={{ listStyle: "inside" }}>
+      <ul style={{ listStyle: "inside", width: "80%" }}>
         <li>Thankful for alarm working this morning.</li>
         <li>Thankful for not forgetting anything back home.</li>
         <li>Thankful for not waiting long for the bus today.</li>
