@@ -52,7 +52,7 @@ const skills: Array<Skill> = [
     image: "/img/gatsby.svg",
     alt: "gatsbyjs logo",
     name: "Gatsby",
-    familiarity: 2,
+    familiarity: 1,
   },
   {
     image: "/img/cpp.svg",
@@ -130,7 +130,7 @@ const skills: Array<Skill> = [
     image: "/img/react.svg",
     alt: "react native logo",
     name: "React Native",
-    familiarity: 1,
+    familiarity: 2,
   },
   {
     image: "/img/vim.svg",
