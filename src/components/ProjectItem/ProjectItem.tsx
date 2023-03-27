@@ -39,12 +39,12 @@ const ProjectItem: React.FC<Props> = (props) => {
         )}
         {props.githubLink && (
           <a className={styles.link} href={props.githubLink}>
-            <img src="/img/github.svg" alt="github logo" width="50px" />
+            <img src="/img/github.svg" alt="github logo" width="40px" />
           </a>
         )}
         {props.playstoreLink && (
           <a className={styles.link} href={props.playstoreLink}>
-            <img src="/img/playstore.svg" alt="playstore logo" width="40px" />
+            <img src="/img/playstore.svg" alt="playstore logo" width="30px" />
           </a>
         )}
       </div>
