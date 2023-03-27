@@ -67,7 +67,7 @@ const About: React.FC = () => {
             />
 
             <Achievement
-              link="/https://www.youtube.com/watch?v=OEeX7aFvcLY&ab_channel=Attractions360%C2%B0"
+              link="https://www.youtube.com/watch?v=OEeX7aFvcLY&ab_channel=Attractions360%C2%B0"
               image="/img/rollercoaster.svg"
               alt="Roller coaster icon"
               description="I love roller coasters!"
