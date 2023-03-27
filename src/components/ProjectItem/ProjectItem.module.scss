@@ -54,12 +54,13 @@
     }
 
     .link {
-      flex-grow: 1;
-      min-width: 30%;
-
+      flex: 1;
       display: flex;
       align-items: center;
-      justify-content: space-around;
+      justify-content: center;
+    }
+    .leftBorder {
+      border-left: 5px solid $theme;
     }
   }
 }
