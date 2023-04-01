@@ -205,6 +205,7 @@ const Projects: React.FC = () => {
             image="/img/verde.png"
             title="Verde (2023)"
             githubLink="https://github.com/AjayLiu/verde"
+            youtubeLink="https://www.youtube.com/watch?v=o1LMi6rVhtw"
             description="A social media app where users upload photos of themselves completing fun sustainability challenges!"
             madeWith={findSkillsWithNames([
               "React Native",
