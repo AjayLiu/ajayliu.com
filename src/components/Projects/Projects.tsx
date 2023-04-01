@@ -93,6 +93,17 @@ const Projects: React.FC = () => {
       ])}
     />
   );
+  const verde = (
+    <ProjectItem
+      image="/img/verde.png"
+      title="Verde (2023)"
+      githubLink="https://github.com/AjayLiu/verde"
+      youtubeLink="https://www.youtube.com/watch?v=o1LMi6rVhtw"
+      description="A social media app where users upload photos of themselves completing fun sustainability challenges!"
+      madeWith={findSkillsWithNames(["React Native", "Typescript", "Firebase"])}
+    />
+  );
+
   return (
     <section>
       <h2 className="sectionTitle">Projects</h2>
@@ -107,9 +118,9 @@ const Projects: React.FC = () => {
       <div className={styles.gallery}>
         <div className={styles.galleryTitle}>Top Picks ⭐ </div>
         <div className={styles.galleryRow}>
+          {verde}
           {inspirationJar}
           {animeCharacterQuiz}
-          {notationVisualizer}
           {cubeInc}
         </div>
       </div>
@@ -202,18 +213,7 @@ const Projects: React.FC = () => {
       <div className={styles.gallery}>
         <div className={styles.galleryTitle}>Apps</div>
         <div className={styles.galleryRow}>
-          <ProjectItem
-            image="/img/verde.png"
-            title="Verde (2023)"
-            githubLink="https://github.com/AjayLiu/verde"
-            youtubeLink="https://www.youtube.com/watch?v=o1LMi6rVhtw"
-            description="A social media app where users upload photos of themselves completing fun sustainability challenges!"
-            madeWith={findSkillsWithNames([
-              "React Native",
-              "Typescript",
-              "Firebase",
-            ])}
-          />
+          {verde}
           <ProjectItem
             image="/img/ichiban.png"
             title="Ichiban, App Version (2021)"
