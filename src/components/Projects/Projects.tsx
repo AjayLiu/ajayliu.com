@@ -82,6 +82,7 @@ const Projects: React.FC = () => {
       title="Notation Visualizer (2022)"
       link="http://notation-visualizer.ajayliu.com/"
       githubLink="https://github.com/AjayLiu/notation-visualizer"
+      youtubeLink="https://www.youtube.com/watch?v=3RhLATMb7OI"
       description="An interactive website to visualize how Infix, Prefix (Polish), and Postfix (Reverse Polish) notation are converted and evaluated."
       madeWith={findSkillsWithNames([
         "Next.js",
