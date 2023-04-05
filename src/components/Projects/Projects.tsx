@@ -99,7 +99,7 @@ const Projects: React.FC = () => {
       title="Verde (2023)"
       githubLink="https://github.com/AjayLiu/verde"
       youtubeLink="https://www.youtube.com/watch?v=o1LMi6rVhtw"
-      description="A social media app where users upload photos of themselves completing fun sustainability challenges!"
+      description="A social media app where users upload photos of themselves completing fun sustainability challenges! Won 1st at UCSB's GDSC Solution Challenge."
       madeWith={findSkillsWithNames(["React Native", "Typescript", "Firebase"])}
     />
   );
