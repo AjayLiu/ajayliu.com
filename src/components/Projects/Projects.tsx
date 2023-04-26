@@ -170,10 +170,9 @@ const Projects: React.FC = () => {
             githubLink="https://github.com/AjayLiu/ichiban"
             description="An anime popularity guessing game!"
             madeWith={findSkillsWithNames([
-              "Gatsby",
+              "Next.js",
               "React",
               "SCSS",
-              "React Native",
               "Netlify",
               "Javascript",
             ])}
