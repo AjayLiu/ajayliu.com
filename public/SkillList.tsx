@@ -25,6 +25,12 @@ const skills: Array<Skill> = [
     familiarity: 3,
   },
   {
+    image: "/img/cpp.svg",
+    alt: "C++ logo",
+    name: "C++",
+    familiarity: 3,
+  },
+  {
     image: "/img/sass.svg",
     alt: "Sass CSS logo",
     name: "SCSS",
@@ -49,16 +55,16 @@ const skills: Array<Skill> = [
     familiarity: 3,
   },
   {
+    image: "/img/github.png",
+    alt: "Github logo",
+    name: "Github",
+    familiarity: 3,
+  },
+  {
     image: "/img/gatsby.svg",
     alt: "gatsbyjs logo",
     name: "Gatsby",
     familiarity: 1,
-  },
-  {
-    image: "/img/cpp.svg",
-    alt: "C++ logo",
-    name: "C++",
-    familiarity: 3,
   },
   {
     image: "/img/java.svg",
@@ -133,18 +139,6 @@ const skills: Array<Skill> = [
     familiarity: 2,
   },
   {
-    image: "/img/vim.svg",
-    alt: "Vim logo",
-    name: "Vim",
-    familiarity: 3,
-  },
-  {
-    image: "/img/github.png",
-    alt: "Github logo",
-    name: "Github",
-    familiarity: 3,
-  },
-  {
     image: "/img/netlify.svg",
     alt: "Netlify logo",
     name: "Netlify",
@@ -172,13 +166,13 @@ const skills: Array<Skill> = [
     image: "/img/tailwind.svg",
     alt: "TailwindCSS logo",
     name: "TailwindCSS",
-    familiarity: 3,
+    familiarity: 2,
   },
   {
     image: "/img/firebase.svg",
     alt: "Firebase logo",
     name: "Firebase",
-    familiarity: 2,
+    familiarity: 1,
   },
 ];
 
