@@ -103,6 +103,17 @@ const Projects: React.FC = () => {
       madeWith={findSkillsWithNames(["React Native", "Typescript", "Firebase"])}
     />
   );
+  const graticat = (
+    <ProjectItem
+      image="/img/graticat.png"
+      title="GratiCat (2023)"
+      devpostLink="https://devpost.com/software/graticat"
+      youtubeLink="https://www.youtube.com/watch?v=8OnUD35byNw"
+      githubLink="https://github.com/AjayLiu/GratiCat"
+      description="Help GratiCat fill his coffee by practicing gratitude every day! Won Top 5 Overall at SB Hacks XI."
+      madeWith={findSkillsWithNames(["React Native", "Typescript", "Firebase"])}
+    />
+  );
 
   return (
     <section>
@@ -118,6 +129,7 @@ const Projects: React.FC = () => {
       <div className={styles.gallery}>
         <div className={styles.galleryTitle}>Top Picks ⭐ </div>
         <div className={styles.galleryRow}>
+          {graticat}
           {verde}
           {inspirationJar}
           {animeCharacterQuiz}
@@ -212,6 +224,7 @@ const Projects: React.FC = () => {
       <div className={styles.gallery}>
         <div className={styles.galleryTitle}>Apps</div>
         <div className={styles.galleryRow}>
+          {graticat}
           {verde}
           <ProjectItem
             image="/img/ichiban.png"

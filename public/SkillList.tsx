@@ -31,12 +31,6 @@ const skills: Array<Skill> = [
     familiarity: 3,
   },
   {
-    image: "/img/sass.svg",
-    alt: "Sass CSS logo",
-    name: "SCSS",
-    familiarity: 3,
-  },
-  {
     image: "/img/vscode.svg",
     alt: "vscode logo",
     name: "Visual Studio Code",
@@ -59,6 +53,18 @@ const skills: Array<Skill> = [
     alt: "Github logo",
     name: "Github",
     familiarity: 3,
+  },
+  {
+    image: "/img/react.svg",
+    alt: "react native logo",
+    name: "React Native",
+    familiarity: 2,
+  },
+  {
+    image: "/img/sass.svg",
+    alt: "Sass CSS logo",
+    name: "SCSS",
+    familiarity: 2,
   },
   {
     image: "/img/gatsby.svg",
@@ -94,7 +100,7 @@ const skills: Array<Skill> = [
     image: "/img/mongoleaf.svg",
     alt: "MongoDB logo",
     name: "MongoDB",
-    familiarity: 2,
+    familiarity: 1,
   },
   {
     image: "/img/socketio.svg",
@@ -133,12 +139,6 @@ const skills: Array<Skill> = [
     familiarity: 1,
   },
   {
-    image: "/img/react.svg",
-    alt: "react native logo",
-    name: "React Native",
-    familiarity: 2,
-  },
-  {
     image: "/img/netlify.svg",
     alt: "Netlify logo",
     name: "Netlify",
@@ -172,7 +172,7 @@ const skills: Array<Skill> = [
     image: "/img/firebase.svg",
     alt: "Firebase logo",
     name: "Firebase",
-    familiarity: 1,
+    familiarity: 3,
   },
 ];
 

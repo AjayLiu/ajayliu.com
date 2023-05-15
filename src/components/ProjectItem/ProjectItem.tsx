@@ -10,6 +10,7 @@ interface Props {
   githubLink?: string;
   playstoreLink?: string;
   youtubeLink?: string;
+  devpostLink?: string;
   madeWith: Array<Skill>;
 }
 
@@ -46,6 +47,11 @@ const ProjectItem: React.FC<Props> = (props) => {
         {props.playstoreLink && (
           <a className={styles.link} href={props.playstoreLink}>
             <img src="/img/playstore.svg" alt="playstore logo" width="30px" />
+          </a>
+        )}
+        {props.devpostLink && (
+          <a className={styles.link} href={props.devpostLink}>
+            <img src="/img/devpost.svg" alt="devpost logo" width="35px" />
           </a>
         )}
         {props.youtubeLink && (
