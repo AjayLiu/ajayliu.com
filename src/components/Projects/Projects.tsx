@@ -110,7 +110,7 @@ const Projects: React.FC = () => {
       devpostLink="https://devpost.com/software/graticat"
       youtubeLink="https://www.youtube.com/watch?v=8OnUD35byNw"
       githubLink="https://github.com/AjayLiu/GratiCat"
-      description="Help GratiCat fill his coffee by practicing gratitude every day! Won Top 5 Overall at SB Hacks XI."
+      description="Help GratiCat fill his coffee by practicing gratitude every day! Won Top 5 Overall at SB Hacks IX."
       madeWith={findSkillsWithNames(["React Native", "Typescript", "Firebase"])}
     />
   );
