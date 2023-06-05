@@ -83,6 +83,25 @@ const FAQ: React.FC = () => {
             </p>
           </AccordionItemPanel>
         </AccordionItem>
+        <AccordionItem>
+          <AccordionItemHeading>
+            <AccordionItemButton>
+              Why is your demo site not working?
+            </AccordionItemButton>
+          </AccordionItemHeading>
+          <AccordionItemPanel>
+            <p>
+              Please wait a few minutes if the demo site just shows a blank
+              screen. Many of my projects are pretty old and used to run for
+              free on Heroku. However, Heroku discontinued their free tier so I
+              migrated many of my projects to Render. Unfortunately, Render
+              takes quite a while to boot up a server after inactive use, so you
+              may see a blank screen for up to a minute sometimes. If my demo
+              site is still not working after waiting, please contact me at
+              contact@ajayliu.com.
+            </p>
+          </AccordionItemPanel>
+        </AccordionItem>
       </Accordion>
     </>
   );
