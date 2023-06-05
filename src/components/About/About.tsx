@@ -36,6 +36,12 @@ const About: React.FC = () => {
               description={"Untitled Dance Co. Member"}
             />
             <Achievement
+              link="https://snagdelivery.app/"
+              image="/img/snag.png"
+              alt="snag delivery app logo"
+              description="Snag Delivery App Software Engineer Intern"
+            />
+            <Achievement
               link="https://tascholarshipfund.org/tasf-scholarship-recipients/"
               image="/img/tasf.jpg"
               alt="Taiwanese American Scholarship Fund Logo"
@@ -58,12 +64,6 @@ const About: React.FC = () => {
               image="/img/dog.svg"
               alt="Dog icon"
               description="I have dog-phobia (working on it)"
-            />
-            <Achievement
-              link="https://anime-character-quiz.ajayliu.com/"
-              image="/img/japan.svg"
-              alt="japan flag logo"
-              description="I'm 1/8 Japanese"
             />
 
             <Achievement
