@@ -12,6 +12,21 @@ const Home: React.FC = () => {
     <Layout title="Ajay Liu">
       <div className="container">
         <Head>
+          <title>Ajay Liu - Developer Portfolio</title>
+          <meta
+            name="description"
+            content="Check out all the projects I've worked on!"
+            key="desc"
+          />
+          <meta property="og:title" content="Ajay Liu - Developer Portfolio" />
+          <meta
+            property="og:description"
+            content="Check out all the projects I've worked on!"
+          />
+          <meta
+            property="og:image"
+            content="https://ajayliu.com/img/icon.png"
+          />
           <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
         </Head>
 
