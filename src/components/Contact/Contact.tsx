@@ -99,7 +99,7 @@ const Contact: React.FC<Props> = (props) => {
   const sendCooldown = 60 * 1000; // 1 minute cooldown
 
   return (
-    <section>
+    <section style={{ marginTop: "100px" }}>
       <h2 className="sectionTitle">Contact</h2>
       <div className={styles.contact}>
         <div className={styles.gmailInfo}>

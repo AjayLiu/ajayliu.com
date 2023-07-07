@@ -4,7 +4,7 @@ import skills from "public/SkillList";
 
 const Skills: React.FC = () => {
   return (
-    <section>
+    <section style={{ marginTop: "100px" }}>
       <h2 className="sectionTitle">I use...</h2>
       <div className={styles.skills}>
         <p className={styles.categoryTitle}>My favorites:</p>

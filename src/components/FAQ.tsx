@@ -8,7 +8,7 @@ import {
 
 const FAQ: React.FC = () => {
   return (
-    <>
+    <section style={{ marginTop: "100px" }}>
       <h2 className="sectionTitle">Q&A</h2>
       <Accordion allowZeroExpanded allowMultipleExpanded>
         <AccordionItem>
@@ -103,7 +103,7 @@ const FAQ: React.FC = () => {
           </AccordionItemPanel>
         </AccordionItem>
       </Accordion>
-    </>
+    </section>
   );
 };
 

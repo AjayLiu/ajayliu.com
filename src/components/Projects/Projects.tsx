@@ -116,7 +116,7 @@ const Projects: React.FC = () => {
   );
 
   return (
-    <section>
+    <section style={{ marginTop: "100px" }}>
       <h2 className="sectionTitle">Projects</h2>
       <div className={styles.demoReel}>
         <iframe
@@ -206,7 +206,7 @@ const Projects: React.FC = () => {
             madeWith={findSkillsWithNames(["React", "Netlify", "Javascript"])}
           />
           <ProjectItem
-            image="/img/logothin.png"
+            image="/img/icon-round.png"
             title="AjayLiu.com (2020-)"
             link="https://ajayliu.com/"
             githubLink="https://github.com/AjayLiu/ajayliu.com"
