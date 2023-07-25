@@ -1,8 +1,12 @@
 import Layout from "@components/Layout/Layout";
+import Head from "next/head";
 
 const Secret: React.FC = () => {
   return (
     <Layout title="SECRET PAGE">
+      <Head>
+        <meta name="robots" content="noindex" />
+      </Head>
       <h1>YOU'VE FOUND THE SECRET PAGE!</h1>
       <p style={{ margin: "20px auto", width: "80%" }}>
         Here, have a cookie, you deserve it! While you're eating, how's your day
