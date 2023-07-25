@@ -11,7 +11,7 @@ const About: React.FC = () => {
             <div>
               <img
                 id={styles.aboutImg}
-                src="/img/pfp.jpg"
+                src="/img/pfp.png"
                 alt="profile picture"
               />
               <p>
