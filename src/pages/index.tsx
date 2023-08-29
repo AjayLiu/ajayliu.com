@@ -42,7 +42,7 @@ const Home: React.FC = () => {
               psst... there's a secret link you can click somewhere on this page
               ;)
             </p>
-            <p>hint: my phobia</p>
+            <p>hint: Six Flags Magic Mountain</p>
           </div>
         </main>
       </div>

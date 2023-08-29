@@ -45,13 +45,13 @@ const About: React.FC = () => {
               link="https://tascholarshipfund.org/tasf-scholarship-recipients/"
               image="/img/tasf.jpg"
               alt="Taiwanese American Scholarship Fund Logo"
-              description="2022 Taiwanese American Scholarship Fund Awardee"
+              description="Taiwanese American Scholarship Fund Awardee"
             />
             <Achievement
               link="https://www.apcf.org/chao-family-foundation-scholarship-open"
               image="/img/chao.png"
               alt="Chao Family Foundation Logo"
-              description="2022 Chao Family Foundation Scholarship Awardee"
+              description="Chao Family Foundation Scholarship Awardee"
             />
             <Achievement
               link="https://troygamedev.com/"
@@ -60,14 +60,14 @@ const About: React.FC = () => {
               description="Former President of Game Development Club"
             />
             <Achievement
-              link="/secret"
-              image="/img/dog.svg"
-              alt="Dog icon"
-              description="I have dog-phobia (working on it)"
+              link="https://www.jheneaiko.com/"
+              image="/img/jhene-aiko.png"
+              alt="Jhene Aiko icon"
+              description="My favorite artist is Jhené Aiko"
             />
 
             <Achievement
-              link="https://www.youtube.com/watch?v=OEeX7aFvcLY&ab_channel=Attractions360%C2%B0"
+              link="/secret"
               image="/img/rollercoaster.svg"
               alt="Roller coaster icon"
               description="I love roller coasters!"
