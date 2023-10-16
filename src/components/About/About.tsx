@@ -18,7 +18,7 @@ const About: React.FC = () => {
                 <strong>Ajay Liu</strong>
               </p>
               <p>
-                <em>"gratitude is greater than or equal to happiness"</em>
+                <em>"grateful to be"</em>
               </p>
             </div>
           </div>
