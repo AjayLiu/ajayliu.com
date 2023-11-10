@@ -136,29 +136,32 @@ const Contact: React.FC<Props> = (props) => {
         <form className={styles.form} name="contact">
           <div className={styles.formTitle}>Contact Form</div>
           <div className={styles.fieldsContainer}>
-            <p onChange={onChange} className={styles.field}>
+            <p className={styles.field}>
               <input
                 className={styles.input}
                 type="text"
                 name="name"
                 placeholder="Name"
+                onChange={onChange}
                 value={formState.name}
               />
             </p>
-            <p onChange={onChange} className={styles.field}>
+            <p className={styles.field}>
               <input
                 className={styles.input}
                 type="text"
                 name="email"
                 placeholder="Email"
+                onChange={onChange}
                 value={formState.email}
               />
             </p>
-            <p onChange={onChange} className={styles.field}>
+            <p className={styles.field}>
               <textarea
                 className={styles.messageBox}
                 name="message"
                 placeholder="Your Message"
+                onChange={onChange}
                 value={formState.message}
               ></textarea>
             </p>

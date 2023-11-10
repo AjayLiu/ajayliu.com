@@ -6,6 +6,7 @@ import Skills from "@components/Skills/Skills";
 import Contact from "@components/Contact/Contact";
 import FAQ from "@components/FAQ";
 import Layout from "@components/Layout/Layout";
+import Script from "next/script";
 
 const Home: React.FC = () => {
   return (
@@ -27,8 +28,11 @@ const Home: React.FC = () => {
             property="og:image"
             content="https://ajayliu.com/img/icon.png"
           />
-          <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
         </Head>
+        <Script
+          src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"
+          strategy="beforeInteractive"
+        />
 
         <main>
           <LandingPage />
