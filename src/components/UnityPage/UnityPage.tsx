@@ -3,9 +3,7 @@ import Head from "next/head";
 import styles from "./UnityPage.module.scss";
 import templateStyles from "./TemplateData.module.scss";
 import GooglePlayButton from "@components/GooglePlayButton/GooglePlayButton";
-import Link from "next/link";
 import Script from "next/script";
-import { useRouter } from "next/router";
 
 interface PropsObj {
   props: Props;
@@ -48,8 +46,6 @@ const UnityPage: React.FC<PropsObj> = ({ props }) => {
     ""
   );
 
-  const router = useRouter();
-
   return (
     <>
       <Head>
@@ -62,9 +58,32 @@ const UnityPage: React.FC<PropsObj> = ({ props }) => {
         unityInstance = UnityLoader.instantiate( `unityContainer`, `
         {props.jsonPath}`);
       </Script>
-      <button type="button" onClick={() => router.back()}>
-        Return to Home
-      </button>
+      <div
+        style={{ textAlign: "center", margin: "50px auto", maxWidth: "800px" }}
+      >
+        <a
+          href="#"
+          style={{
+            display: "inline-block",
+            padding: "10px 20px",
+            backgroundColor: "#3498db",
+            color: "#fff",
+            textDecoration: "none",
+            borderRadius: "5px",
+            fontSize: "16px",
+            transition: "background-color 0.3s ease",
+          }}
+          onMouseEnter={(e) => {
+            e.currentTarget.style.backgroundColor = "#2980b9";
+          }}
+          onMouseLeave={(e) => {
+            e.currentTarget.style.backgroundColor = "#3498db";
+          }}
+          onClick={() => (window.location.href = "/")}
+        >
+          Return to Home
+        </a>
+      </div>
       <div className={styles.howTo}>{props.howTo}</div>
       <div className={styles.gamename}>{props.gameName}</div>
       <div className={styles.webglContent}>
