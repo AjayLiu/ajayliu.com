@@ -5,6 +5,7 @@ import templateStyles from "./TemplateData.module.scss";
 import GooglePlayButton from "@components/GooglePlayButton/GooglePlayButton";
 import Link from "next/link";
 import Script from "next/script";
+import { useRouter } from "next/router";
 
 interface PropsObj {
   props: Props;
@@ -47,6 +48,8 @@ const UnityPage: React.FC<PropsObj> = ({ props }) => {
     ""
   );
 
+  const router = useRouter();
+
   return (
     <>
       <Head>
@@ -59,9 +62,9 @@ const UnityPage: React.FC<PropsObj> = ({ props }) => {
         unityInstance = UnityLoader.instantiate( `unityContainer`, `
         {props.jsonPath}`);
       </Script>
-      <Link href="../">
-        <a className={styles.returnHome}>Return Home</a>
-      </Link>
+      <button type="button" onClick={() => router.back()}>
+        Return to Home
+      </button>
       <div className={styles.howTo}>{props.howTo}</div>
       <div className={styles.gamename}>{props.gameName}</div>
       <div className={styles.webglContent}>

@@ -12,9 +12,7 @@ const Secret: React.FC = () => {
         Here, have a cookie, you deserve it! While you're eating, how's your day
         been?
       </p>
-      {/* <a href="https://www.youtube.com/watch?v=bwpK5QJu6K4"> */}
       <img src="/img/cookie.svg" style={{ width: "200px" }} />
-      {/* </a> */}
       <p style={{ margin: "20px auto", width: "80%" }}>
         Today might've been a rough day or it may have been great, but either
         way, don't forget to cherish the little things in life. It's so easy to
