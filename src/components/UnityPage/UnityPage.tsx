@@ -54,9 +54,9 @@ const UnityPage: React.FC<PropsObj> = ({ props }) => {
         {/* <meta charset="utf-8" /> */}
         <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
       </Head>
-      <Script src={unityLoaderPath} />
-      <Script>
-        var unityInstance = UnityLoader.instantiate( `unityContainer`, `
+      <Script strategy="beforeInteractive" src={unityLoaderPath} />
+      <Script strategy="lazyOnload">
+        unityInstance = UnityLoader.instantiate( `unityContainer`, `
         {props.jsonPath}`);
       </Script>
       <Link href="../">
