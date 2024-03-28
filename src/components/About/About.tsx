@@ -36,12 +36,6 @@ const About: React.FC = () => {
               description={"Untitled Dance Co. Member"}
             />
             <Achievement
-              link="https://snagdelivery.app/"
-              image="/img/snag.png"
-              alt="snag delivery app logo"
-              description="Snag Delivery App Software Engineer Intern"
-            />
-            <Achievement
               link="https://tascholarshipfund.org/tasf-scholarship-recipients/"
               image="/img/tasf.jpg"
               alt="Taiwanese American Scholarship Fund Logo"
@@ -54,23 +48,28 @@ const About: React.FC = () => {
               description="Chao Family Foundation Scholarship Awardee"
             />
             <Achievement
+              link="https://www.it.ucsb.edu/it-ucsb/ucsb-it-internship"
+              image="/img/ucsb.png"
+              alt="UCSB logo"
+              description="UCSB IT Internship Program - Web Application Developer (2024)"
+            />
+            <Achievement
+              link="https://snagdelivery.app/"
+              image="/img/snag.png"
+              alt="snag delivery app logo"
+              description="Snag Delivery App Software Engineer Intern (2023)"
+            />
+            <Achievement
               link="https://troygamedev.com/"
               image="/img/gamedev.png"
               alt="game development club logo"
-              description="Former President of Game Development Club"
+              description="President of Troy Game Development Club (2019-22)"
             />
             <Achievement
-              link="https://www.jheneaiko.com/"
+              link="/secret"
               image="/img/jhene-aiko.png"
               alt="Jhene Aiko icon"
               description="My favorite artist is Jhené Aiko"
-            />
-
-            <Achievement
-              link="/secret"
-              image="/img/rollercoaster.svg"
-              alt="Roller coaster icon"
-              description="I love roller coasters!"
             />
           </div>
         </div>
