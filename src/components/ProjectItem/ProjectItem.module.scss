@@ -1,71 +1,93 @@
 @import "@styles/mixins";
 @import "@styles/variables";
+
 .container {
-  width: 300px;
-  height: 500px;
-  background-color: $secondary;
-  border-radius: 5px;
-  margin: 20px;
-  display: flex;
-  flex-direction: column;
-  
-  
-  @include mobile {
-    margin-bottom: 40px;
-  }
+	width: 300px;
+	height: 600px;
+	background-color: $secondary;
+	border-radius: 5px;
+	margin: 20px;
+	display: flex;
+	flex-direction: column;
 
-  .imageAnchor {
-    margin: 20px auto 10px;
-    height: 20%;
-    min-width: 200px;
-  }
-  .image {
-    max-width: 90%;
-    max-height: 100%;
-  }
 
-  .text {
-    flex-grow: 1;
-    background-color: $secondary;
-    text-align: left;
-    padding: 20px;
+	@include mobile {
+		margin-bottom: 40px;
+	}
 
-    .title {
-      font-size: larger;
-    }
-    .description {
-      margin-bottom: 30px;
-    }
+	.imageAnchor {
+		margin: 20px auto 10px;
+		height: 20%;
+		min-width: 200px;
+	}
 
-    .madeWithLabel {
-      text-align: center;
-      margin: 10px;
-    }
-    .madeWith {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-  }
+	.image {
+		max-width: 90%;
+		max-height: 100%;
+	}
 
-  .links {
-    height: 50px;
-    width: 100%;
-    display: flex;
+	.text {
+		flex-grow: 1;
+		background-color: $secondary;
+		text-align: left;
+		padding: 20px;
 
-    background-color: $third;
-    :hover {
-      background-color: $fourth;
-    }
+		.title {
+			font-size: larger;
+		}
 
-    .link {
-      flex: 1;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    .leftBorder {
-      border-left: 5px solid $theme;
-    }
-  }
+		.description {
+			margin-bottom: 30px;
+		}
+
+		.madeWithLabel {
+			text-align: center;
+			margin: 10px;
+		}
+
+		.madeWith {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+
+		.collabLabel {
+			text-align: center;
+			margin-top: 30px;
+		}
+
+		.collabList {
+			margin: auto;
+			width: fit-content;
+			margin-top: 5px;
+		}
+
+		.collabItem {
+			font-size: small;
+			padding-right: 40px;
+		}
+	}
+
+	.links {
+		height: 50px;
+		width: 100%;
+		display: flex;
+
+		background-color: $third;
+
+		:hover {
+			background-color: $fourth;
+		}
+
+		.link {
+			flex: 1;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.leftBorder {
+			border-left: 5px solid $theme;
+		}
+	}
 }
