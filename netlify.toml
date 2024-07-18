@@ -119,6 +119,9 @@
 [[redirects]]
     from = "/allmale"
     to = "https://drive.google.com/drive/folders/1w6r2isw6Oc4BQPwCj8S_SxxYq0lxJs8h?usp=sharing"
+[[redirects]]
+    from = "/angie"
+    to = "/cards/angie"
 
 [[redirects]]
     from = "/resume"
