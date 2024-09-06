@@ -149,6 +149,7 @@ const Projects: React.FC = () => {
 						title="Early Research Scholars Program (2023-24)"
 						link="/poster.pdf"
 						githubLink="https://github.com/Helen123/userwesite_ersp"
+						youtubeLink="https://www.youtube.com/watch?v=VkVKGskg0zE"
 						description="Conducted trials on 15+ human subjects with UCSB's Four Eyes Lab to study the effectiveness of GPT-4 on memory tasks."
 						madeWith={findSkillsWithNames(["React", "Typescript"])}
 						collaborators={["Prof. Tobias Hollerer", "Radha Kumaran", "Alex Rich", "Qi Wu", "Towela Phiri", "Frank Zhong"]}
