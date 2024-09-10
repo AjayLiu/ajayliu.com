@@ -20,32 +20,21 @@ const About: React.FC = () => {
               <p>
                 <em>"grateful to be"</em>
               </p>
+              <p id={styles.aboutBio}>
+                Hi! I’m a third-year Computer Science undergrad at UCSB
+                <br />
+                specializing in Fullstack Web/App/Game Development.
+                <br />
+                Check out my projects below!
+              </p>
             </div>
           </div>
           <div id={styles.aboutAchievements}>
             <Achievement
               link="https://www.cs.ucsb.edu/"
-              image="/img/ucsb.png"
-              alt="UC Santa Barbara logo"
+              image="/img/ucsb-cs.png"
+              alt="UC Santa Barbara Computer Science logo"
               description="UC Santa Barbara Computer Science 2026 w/ Regents"
-            />
-            <Achievement
-              link="https://www.instagram.com/untitleddanceco"
-              image="/img/untitled.jpg"
-              alt="Untitled Dance Company Logo"
-              description={"Untitled Dance Co. Member"}
-            />
-            <Achievement
-              link="https://tascholarshipfund.org/tasf-scholarship-recipients/"
-              image="/img/tasf.jpg"
-              alt="Taiwanese American Scholarship Fund Logo"
-              description="Taiwanese American Scholarship Fund Awardee"
-            />
-            <Achievement
-              link="https://www.apcf.org/chao-family-foundation-scholarship-open"
-              image="/img/chao.png"
-              alt="Chao Family Foundation Logo"
-              description="Chao Family Foundation Scholarship Awardee"
             />
             <Achievement
               link="https://www.it.ucsb.edu/it-ucsb/ucsb-it-internship"
@@ -66,10 +55,28 @@ const About: React.FC = () => {
               description="President of Troy Game Development Club (2019-22)"
             />
             <Achievement
+              link="https://www.instagram.com/untitleddanceco"
+              image="/img/untitled.jpg"
+              alt="Untitled Dance Company Logo"
+              description={"Untitled Dance Co. Member"}
+            />
+            <Achievement
+              link="https://tascholarshipfund.org/tasf-scholarship-recipients/"
+              image="/img/tasf.jpg"
+              alt="Taiwanese American Scholarship Fund Logo"
+              description="Taiwanese American Scholarship Fund Awardee"
+            />
+            <Achievement
+              link="https://www.apcf.org/chao-family-foundation-scholarship-open"
+              image="/img/chao.png"
+              alt="Chao Family Foundation Logo"
+              description="Chao Family Foundation Scholarship Awardee"
+            />
+            <Achievement
               link="/secret"
-              image="/img/jhene-aiko.png"
-              alt="Jhene Aiko icon"
-              description="My favorite artist is Jhené Aiko"
+              image="/img/asl.svg"
+              alt="American Sign Language Letter 'a'"
+              description="Currently learning American Sign Language"
             />
           </div>
         </div>

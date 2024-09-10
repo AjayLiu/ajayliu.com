@@ -32,10 +32,15 @@
   strong {
     font-size: 300%;
   }
+
+  #aboutBio{
+  	width: 450px;
+  }
   @include mobile {
     margin: auto;
     margin-bottom: 50px;
   }
+
 }
 
 .cite {

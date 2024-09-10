@@ -37,16 +37,16 @@ const Home: React.FC = () => {
         <main>
           <LandingPage />
           <About />
-          <Projects />
           <Skills />
+          <Projects />
           <Contact email="contact@ajayliu.com" />
           <FAQ />
-          <div style={{ margin: "200px 40px 0px", fontStyle: "italic" }}>
+          <div style={{ margin: "200px 40px 0px" }}>
             <p>
               psst... there's a secret link you can click somewhere on this page
               ;)
             </p>
-            <p>hint: happiness over everything</p>
+            <p>hint: 🤟</p>
           </div>
         </main>
       </div>

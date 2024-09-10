@@ -91,14 +91,35 @@ const FAQ: React.FC = () => {
           </AccordionItemHeading>
           <AccordionItemPanel>
             <p>
-              Please wait a few minutes if the demo site just shows a blank
-              screen. Many of my projects are pretty old and used to run for
-              free on Heroku. However, Heroku discontinued their free tier so I
-              migrated many of my projects to Render. Unfortunately, Render
+              Please wait a few minutes to refresh if any demo site shows a
+              blank screen. Many of my projects are pretty old and used to run
+              for free on Heroku. However, Heroku discontinued their free tier
+              so I migrated many of my projects to Render. Unfortunately, Render
               takes quite a while to boot up a server after inactive use, so you
               may see a blank screen for up to a minute sometimes. If my demo
               site is still not working after waiting, please contact me at
               contact@ajayliu.com.
+            </p>
+          </AccordionItemPanel>
+        </AccordionItem>
+        <AccordionItem>
+          <AccordionItemHeading>
+            <AccordionItemButton>
+              What's your background in programming?
+            </AccordionItemButton>
+          </AccordionItemHeading>
+          <AccordionItemPanel>
+            <p>
+              I started programming in 2016 with an interest in making games
+              since, you know, games are fun! In high school, I co-founded the
+              Game Development Club and led a team of 30 members to create
+              various mobile / web / standalone games. While building our club’s
+              website (troygamedev.com) to showcase our projects, I discovered
+              Web Development. During the pandemic, I launched numerous projects
+              experimenting with developing mobile apps, machine-learning
+              models, multiplayer games, social media websites, participated in
+              university competitions, and interned at several companies to turn
+              creative ideas into reality.
             </p>
           </AccordionItemPanel>
         </AccordionItem>

@@ -7,7 +7,7 @@ const Skills: React.FC = () => {
     <section style={{ marginTop: "100px" }}>
       <h2 className="sectionTitle">I use...</h2>
       <div className={styles.skills}>
-        <p className={styles.categoryTitle}>My favorites:</p>
+        <p className={styles.categoryTitle}>Most experienced:</p>
         <div className={styles.skillBar}>
           {skills
             .filter((skill) => skill.familiarity === 3)
@@ -15,7 +15,7 @@ const Skills: React.FC = () => {
               <SkillPair skill={skill} key={idx} size="large" />
             ))}
         </div>
-        <p className={styles.categoryTitle}>I use these sometimes:</p>
+        <p className={styles.categoryTitle}>Some experience:</p>
         <div className={styles.skillBar}>
           {skills
             .filter((skill) => skill.familiarity === 2)
@@ -23,9 +23,7 @@ const Skills: React.FC = () => {
               <SkillPair skill={skill} key={idx} size="large" />
             ))}
         </div>
-        <p className={styles.categoryTitle}>
-          Some things I've used maybe like once:
-        </p>
+        <p className={styles.categoryTitle}>A little experience:</p>
         <div className={styles.skillBar}>
           {skills
             .filter((skill) => skill.familiarity === 1)
