@@ -35,10 +35,15 @@
 
   #aboutBio{
   	width: 450px;
+	@include mobile {
+		width: 100%;
+	}
+	
   }
   @include mobile {
     margin: auto;
     margin-bottom: 50px;
+	width: 100%;
   }
 
 }

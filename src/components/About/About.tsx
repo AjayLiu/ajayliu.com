@@ -21,9 +21,10 @@ const About: React.FC = () => {
                 <em>"grateful to be"</em>
               </p>
               <p id={styles.aboutBio}>
-                Hi! I’m a third-year Computer Science undergrad at UCSB
-                <br />
+                👋 Hi! I’m a third-year Computer Science undergrad at UCSB
                 specializing in Fullstack Web/App/Game Development.
+                <br />
+                Currently seeking Summer 2025 internships!
                 <br />
                 Check out my projects below!
               </p>

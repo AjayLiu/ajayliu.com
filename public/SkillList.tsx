@@ -9,7 +9,7 @@ const skills: Array<Skill> = [
   {
     image: "/img/typescript.svg",
     alt: "typescript logo",
-    name: "Typescript",
+    name: "TypeScript",
     familiarity: 3,
   },
   {
@@ -49,6 +49,12 @@ const skills: Array<Skill> = [
     familiarity: 3,
   },
   {
+    image: "/img/dotnet.svg",
+    alt: ".NET logo",
+    name: "Microsoft .NET",
+    familiarity: 3,
+  },
+  {
     image: "/img/github.png",
     alt: "Github logo",
     name: "Github",
@@ -81,7 +87,7 @@ const skills: Array<Skill> = [
   {
     image: "/img/js.svg",
     alt: "javascript logo",
-    name: "Javascript",
+    name: "JavaScript",
     familiarity: 2,
   },
   {

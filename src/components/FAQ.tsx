@@ -8,9 +8,52 @@ import {
 
 const FAQ: React.FC = () => {
   return (
-    <section style={{ marginTop: "100px" }}>
+    <section style={{ marginTop: "100px", width: "100%" }}>
       <h2 className="sectionTitle">Q&A</h2>
       <Accordion allowZeroExpanded allowMultipleExpanded>
+        <AccordionItem>
+          <AccordionItemHeading>
+            <AccordionItemButton>
+              What's your background in programming?
+            </AccordionItemButton>
+          </AccordionItemHeading>
+          <AccordionItemPanel>
+            <p>
+              I started programming in 2016 with an interest in making games
+              since, you know, games are fun! In high school, I co-founded the
+              Game Development Club and led a team of 30 members to create
+              various mobile / web / standalone games. While building our club’s
+              website (troygamedev.com) to showcase our projects, I discovered
+              Web Development. During the pandemic, I launched numerous projects
+              experimenting with developing mobile apps, machine-learning
+              models, multiplayer games, and social media websites. At UCSB,
+              I've interned at several companies and participated in university
+              competitions to turn creative ideas into reality.
+            </p>
+          </AccordionItemPanel>
+        </AccordionItem>
+        <AccordionItem>
+          <AccordionItemHeading>
+            <AccordionItemButton>
+              What did you use to make this website?
+            </AccordionItemButton>
+          </AccordionItemHeading>
+          <AccordionItemPanel>
+            <p>
+              Everything on this website was coded by me in Next.js React +
+              TypeScript. Originally, this website began as pure
+              HTML/CSS/JavaScript for me to host my Unity games for friends to
+              play. This site is hosted on Netlify and all the code to this
+              website can be found on my{" "}
+              <a href="https://github.com/ajayliu" style={{ color: "gold" }}>
+                github
+              </a>
+              . If you like my website and wish to clone it for yourself, please
+              give me credit by linking back to my website (Currently MIT
+              Licensed).
+            </p>
+          </AccordionItemPanel>
+        </AccordionItem>
         <AccordionItem>
           <AccordionItemHeading>
             <AccordionItemButton>
@@ -67,25 +110,6 @@ const FAQ: React.FC = () => {
         <AccordionItem>
           <AccordionItemHeading>
             <AccordionItemButton>
-              What did you use to make this website?
-            </AccordionItemButton>
-          </AccordionItemHeading>
-          <AccordionItemPanel>
-            <p>
-              This website was originally coded from pure HTML, CSS, and
-              JavaScript. Now I have refactored the code to React and Next.js,
-              written in TypeScript. This site is hosted on Netlify and all the
-              code to this website can be found on my{" "}
-              <a href="https://github.com/ajayliu" style={{ color: "gold" }}>
-                github
-              </a>
-              .
-            </p>
-          </AccordionItemPanel>
-        </AccordionItem>
-        <AccordionItem>
-          <AccordionItemHeading>
-            <AccordionItemButton>
               Why is your demo site not working?
             </AccordionItemButton>
           </AccordionItemHeading>
@@ -99,27 +123,6 @@ const FAQ: React.FC = () => {
               may see a blank screen for up to a minute sometimes. If my demo
               site is still not working after waiting, please contact me at
               contact@ajayliu.com.
-            </p>
-          </AccordionItemPanel>
-        </AccordionItem>
-        <AccordionItem>
-          <AccordionItemHeading>
-            <AccordionItemButton>
-              What's your background in programming?
-            </AccordionItemButton>
-          </AccordionItemHeading>
-          <AccordionItemPanel>
-            <p>
-              I started programming in 2016 with an interest in making games
-              since, you know, games are fun! In high school, I co-founded the
-              Game Development Club and led a team of 30 members to create
-              various mobile / web / standalone games. While building our club’s
-              website (troygamedev.com) to showcase our projects, I discovered
-              Web Development. During the pandemic, I launched numerous projects
-              experimenting with developing mobile apps, machine-learning
-              models, multiplayer games, social media websites, participated in
-              university competitions, and interned at several companies to turn
-              creative ideas into reality.
             </p>
           </AccordionItemPanel>
         </AccordionItem>
