@@ -1,6 +1,7 @@
 import styles from "./LandingPage.module.scss";
 import React, { useEffect, useRef } from "react";
 import NET from "vanta/dist/vanta.net.min";
+import { TypeAnimation } from "react-type-animation";
 
 const LandingPage: React.FC = () => {
   const vantaRef = useRef<HTMLDivElement>();
@@ -32,13 +33,30 @@ const LandingPage: React.FC = () => {
   return (
     <div id={styles.net} ref={vantaRef}>
       <div className={styles.intro}>
-        <h1>
+        <h1 className={styles.introText}>
           Hello! My name is <strong>Ajay Liu</strong>
           <br />
-          I love creating things!
+          <TypeAnimation
+            sequence={[
+              "Fullstack Web Developer",
+              3000,
+              "Mobile App Developer",
+              1000,
+              "Game Developer",
+              1000,
+              "Dancer",
+              1000,
+              "Tofu Enthusiast",
+              1000,
+            ]}
+            speed={20}
+            preRenderFirstString={true}
+            style={{ display: "block", height: "1em" }}
+            repeat={Infinity}
+          />
           <br />
           <button id={styles.viewButton} onClick={handleClick}>
-            Let's Go!
+            Let's Go <span>&#8595;</span>
           </button>
         </h1>
       </div>

@@ -46,7 +46,7 @@ const Home: React.FC = () => {
               psst... there's a secret link you can click somewhere on this page
               ;)
             </p>
-            <p>hint: 🤟</p>
+            <p>hint: 👋</p>
           </div>
         </main>
       </div>

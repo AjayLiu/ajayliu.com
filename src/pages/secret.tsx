@@ -36,7 +36,7 @@ const Secret: React.FC = () => {
       </Head>
       <h1>YOU'VE FOUND THE SECRET PAGE!</h1>
       <p style={{ margin: "20px auto", width: "80%" }}>
-        Congrats 🎉! You win a cookie!
+        Congrats 🎉! Here's a virtual cookie as your reward!
       </p>
       <img src="/img/cookie.svg" style={{ width: "50px" }} />
       <p
@@ -130,6 +130,15 @@ const Secret: React.FC = () => {
         }}
       >
         Anyways, thanks for reading!
+      </p>
+      <p
+        style={{
+          marginTop: "200px",
+        }}
+      >
+        <a href="/" style={{ border: "1px solid white", padding: "10px" }}>
+          Return to home page
+        </a>
       </p>
     </Layout>
   );

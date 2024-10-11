@@ -114,7 +114,7 @@ const Contact: React.FC<Props> = (props) => {
           <Link href={"/resume.pdf"}>
             <a target="_blank" className={styles.resumeLink}>
               <img src="img/resume.svg" alt="Resume" />
-              <div className={styles.text}>Resume / CV</div>
+              <div className={styles.text}>Resume (pdf)</div>
             </a>
           </Link>
         </div>

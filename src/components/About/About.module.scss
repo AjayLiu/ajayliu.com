@@ -67,7 +67,7 @@
 #aboutAchievements {
   display: grid;
   grid-template-columns: auto auto auto auto;
-  width: 70%;
+  width: 100%;
   @include mobile {
     display: flex;
     align-items: center;

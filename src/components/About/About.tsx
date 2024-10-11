@@ -18,11 +18,12 @@ const About: React.FC = () => {
                 <strong>Ajay Liu</strong>
               </p>
               <p>
-                <em>"grateful to be"</em>
+                <em>"Grateful to be."</em>
               </p>
               <p id={styles.aboutBio}>
-                👋 Hi! I’m a third-year Computer Science undergrad at UCSB
-                specializing in Fullstack Web/App/Game Development.
+                <a href="/secret">👋</a> Hi! I’m a third-year Computer Science
+                undergrad at UCSB specializing in Fullstack Web/App/Game
+                Development.
                 <br />
                 Currently seeking Summer 2025 internships!
                 <br />
@@ -41,25 +42,31 @@ const About: React.FC = () => {
               link="https://www.it.ucsb.edu/it-ucsb/ucsb-it-internship"
               image="/img/ucsb.png"
               alt="UCSB logo"
-              description="UCSB IT Internship Program - Web Application Developer (2024)"
+              description="UCSB IT Internship Program - Web Application Developer (2024 - Present)"
+            />
+            <Achievement
+              link="/secret"
+              image="/img/gdg.png"
+              alt="Google Developer Group @ UCSB"
+              description="Google Developer Group @ UCSB - Director of Instruction (2024 - Present)"
             />
             <Achievement
               link="https://snagdelivery.app/"
               image="/img/snag.png"
               alt="snag delivery app logo"
-              description="Snag Delivery App Software Engineer Intern (2023)"
+              description="Snag Delivery App - Software Engineer Intern (2023)"
             />
             <Achievement
               link="https://troygamedev.com/"
               image="/img/gamedev.png"
               alt="game development club logo"
-              description="President of Troy Game Development Club (2019-22)"
+              description="Troy Game Development Club - President (2019-2022)"
             />
             <Achievement
               link="https://www.instagram.com/untitleddanceco"
               image="/img/untitled.jpg"
               alt="Untitled Dance Company Logo"
-              description={"Untitled Dance Co. Member"}
+              description={"Untitled Dance Company - Dancer"}
             />
             <Achievement
               link="https://tascholarshipfund.org/tasf-scholarship-recipients/"
@@ -72,12 +79,6 @@ const About: React.FC = () => {
               image="/img/chao.png"
               alt="Chao Family Foundation Logo"
               description="Chao Family Foundation Scholarship Awardee"
-            />
-            <Achievement
-              link="/secret"
-              image="/img/asl.svg"
-              alt="American Sign Language Letter 'a'"
-              description="Currently learning American Sign Language"
             />
           </div>
         </div>

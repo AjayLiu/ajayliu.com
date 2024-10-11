@@ -15,6 +15,7 @@ const Projects: React.FC = () => {
   };
   const cubeInc = (
     <ProjectItem
+      key="cubeInc"
       image="/img/cubeinc.jpg"
       title="Cube Inc. (2019)"
       link="/games/cubeinc"
@@ -27,6 +28,7 @@ const Projects: React.FC = () => {
   );
   const inspirationJar = (
     <ProjectItem
+      key="inspirationJar"
       image="/img/inspiration-jar.svg"
       title="Inspiration Jar (2021)"
       link="https://inspiration-jar.ajayliu.com"
@@ -46,6 +48,7 @@ const Projects: React.FC = () => {
   );
   const when = (
     <ProjectItem
+      key="when"
       image="/img/when.png"
       title="When? (2021)"
       link="https://when.ajayliu.com/"
@@ -62,6 +65,7 @@ const Projects: React.FC = () => {
   );
   const animeCharacterQuiz = (
     <ProjectItem
+      key="animeCharacterQuiz"
       image="/img/anime-character-quiz.svg"
       title="Anime Character Quiz (2021)"
       link="https://anime-character-quiz.ajayliu.com/"
@@ -79,6 +83,7 @@ const Projects: React.FC = () => {
   );
   const notationVisualizer = (
     <ProjectItem
+      key="notationVisualizer"
       image="/img/notation-visualizer.svg"
       title="Notation Visualizer (2022)"
       link="http://notation-visualizer.ajayliu.com/"
@@ -97,6 +102,7 @@ const Projects: React.FC = () => {
   );
   const verde = (
     <ProjectItem
+      key="verde"
       image="/img/verde.png"
       title="🏆 Verde (2023)"
       githubLink="https://github.com/AjayLiu/verde"
@@ -108,6 +114,7 @@ const Projects: React.FC = () => {
   );
   const graticat = (
     <ProjectItem
+      key="graticat"
       image="/img/graticat.png"
       title="🏅 GratiCat (2023)"
       devpostLink="https://devpost.com/software/graticat"
@@ -127,7 +134,7 @@ const Projects: React.FC = () => {
         <iframe
           src="https://www.youtube.com/embed/I2y8RWBl9Do"
           frameBorder="0"
-          allow="accelerometer; autoplay=1; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
+          allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
           allowFullScreen
         ></iframe>
       </div>
@@ -146,6 +153,7 @@ const Projects: React.FC = () => {
         <div className={styles.galleryTitle}>Research</div>
         <div className={styles.galleryRow}>
           <ProjectItem
+            key="ersp"
             image="/img/ersp.png"
             title="Early Research Scholars Program (2023-24)"
             link="/poster.pdf"
@@ -169,6 +177,7 @@ const Projects: React.FC = () => {
         <div className={styles.galleryRow}>
           {notationVisualizer}
           <ProjectItem
+            key="betYouDontKnow"
             image="/img/bet-you-dont-know-logo.png"
             title="Bet You Don't Know (2021)"
             link="https://bet-you-dont-know.ajayliu.com/"
@@ -188,6 +197,7 @@ const Projects: React.FC = () => {
             collaborators={["Troy Game Development Club"]}
           />
           <ProjectItem
+            key="blog"
             image="/img/logothin.png"
             title="Blog (2021)"
             link="https://blog.ajayliu.com/"
@@ -205,6 +215,7 @@ const Projects: React.FC = () => {
           {when}
           {animeCharacterQuiz}
           <ProjectItem
+            key="ichiban"
             image="/img/ichiban.png"
             title="Ichiban (2021)"
             link="https://ichiban.ajayliu.com/"
@@ -219,6 +230,7 @@ const Projects: React.FC = () => {
             ])}
           />
           <ProjectItem
+            key="sheepOrGoat"
             image="/img/sheep.png"
             title="Sheep or Goat? (2020)"
             link="https://sheep-goat.ajayliu.com/"
@@ -227,6 +239,7 @@ const Projects: React.FC = () => {
             madeWith={findSkillsWithNames(["Fast.ai", "Python", "Render"])}
           />
           <ProjectItem
+            key="10secondchallenge"
             image="/img/timerbanner.PNG"
             title="10 Second Challenge (2020)"
             link="https://10seconds.ajayliu.com/"
@@ -235,6 +248,7 @@ const Projects: React.FC = () => {
             madeWith={findSkillsWithNames(["React", "Netlify", "Javascript"])}
           />
           <ProjectItem
+            key="ajayliu.com"
             image="/img/icon-round.png"
             title="AjayLiu.com (2020-)"
             link="https://ajayliu.com/"
@@ -256,6 +270,7 @@ const Projects: React.FC = () => {
           {graticat}
           {verde}
           <ProjectItem
+            key="ichibanReactNative"
             image="/img/ichiban.png"
             title="Ichiban, App Version (2021)"
             githubLink="https://github.com/AjayLiu/ichiban-react-native"
@@ -269,6 +284,7 @@ const Projects: React.FC = () => {
         <div className={styles.galleryTitle}>Games Made with Unity</div>
         <div className={styles.galleryRow}>
           <ProjectItem
+            key="pixelBeats"
             image="/img/pixel-beats.png"
             title="Pixel Beats (2020)"
             link="games/pixelbeats/"
@@ -278,6 +294,7 @@ const Projects: React.FC = () => {
             collaborators={["Troy Game Development Club"]}
           />
           <ProjectItem
+            key="bouncearchitect"
             image="/img/bouncebanner.PNG"
             title="Bounce Architect (2020)"
             link="games/bouncearchitect/"
@@ -289,6 +306,7 @@ const Projects: React.FC = () => {
             collaborators={["Talha Ahmed", "Robin Jiang", "Hyunsoo Cho"]}
           />
           <ProjectItem
+            key="tapDefender"
             image="/img/tap-defender.png"
             title="Tap Defender (2020)"
             link="games/tapdefender/"
@@ -299,6 +317,7 @@ const Projects: React.FC = () => {
             collaborators={["Troy Game Development Club"]}
           />
           <ProjectItem
+            key="cashout"
             image="/img/cashout.jpg"
             title="Cash Out (2019-20)"
             link="games/cashout/"
@@ -310,6 +329,7 @@ const Projects: React.FC = () => {
           />
           {cubeInc}
           <ProjectItem
+            key="colorjump"
             image="/img/colorjumpwide.png"
             title="Color Jump (2018)"
             link="games/colorjump"
