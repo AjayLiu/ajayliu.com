@@ -45,7 +45,7 @@ const About: React.FC = () => {
               description="UCSB IT Internship Program - Web Application Developer (2024 - Present)"
             />
             <Achievement
-              link="/secret"
+              link="https://gdg.community.dev/gdg-on-campus-university-of-california-santa-barbara-santa-barbara-united-states/"
               image="/img/gdg.png"
               alt="Google Developer Group @ UCSB"
               description="Google Developer Group @ UCSB - Director of Instruction (2024 - Present)"
