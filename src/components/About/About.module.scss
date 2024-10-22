@@ -1,81 +1,76 @@
 @import "@styles/mixins";
 
 #aboutSection {
-  margin-top: 100px;
+	margin-top: 100px;
 }
 
 #about {
-  margin: auto 80px;
+	margin: auto 80px;
 
-  @include mobile {
-    margin: 0;
-  }
+	@include mobile {
+		margin: 0;
+	}
 }
 
 #aboutSplit {
-  display: flex;
-  flex-direction: row;
-  margin: auto 10px;
-
-  justify-content: center;
-  @include mobile {
-    margin: 0;
-    flex-direction: column;
-  }
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
 #profile {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-right: 100px;
-  strong {
-    font-size: 300%;
-  }
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: auto;
+	margin-bottom: 50px;
 
-  #aboutBio{
-  	width: 450px;
-	@include mobile {
-		width: 100%;
+	strong {
+		font-size: 200%;
 	}
-	
-  }
-  @include mobile {
-    margin: auto;
-    margin-bottom: 50px;
-	width: 100%;
-  }
+
+	#aboutBio {
+		margin: auto;
+		width: 80%;
+		max-width: 600px;
+	}
+
+
+	#aboutImg {
+		margin: auto;
+		width: 100%;
+		max-width: 250px;
+		border-radius: 50%;
+	}
 
 }
 
 .cite {
-  position: relative;
-  text-align: right;
-  font-size: x-small;
-  @include mobile {
-    right: 0;
-  }
+	position: relative;
+	text-align: right;
+	font-size: x-small;
+
+	@include mobile {
+		right: 0;
+	}
 }
 
-#aboutImg {
-  margin: auto;
-  width: 100%;
-  max-width: 250px;
-  border-radius: 50%;
-}
 
 #aboutAchievements {
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-  width: 100%;
-  @include mobile {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    /* border: 1px solid red; */
-    width: 100%;
-    margin-bottom: 30px;
-    /* height: 2000px; */
-  }
+	display: grid;
+	width: 100%;
+	grid-template-columns: repeat(4, 1fr);
+	justify-content: center;
+	align-items: center;
+
+	@include mobile {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-wrap: wrap;
+		/* border: 1px solid red; */
+		width: 100%;
+		margin-bottom: 30px;
+		/* height: 2000px; */
+	}
 }

@@ -1,22 +1,25 @@
 .achievement {
-  align-items: center;
-  width: 230px;
-//   border: 1px solid red; 
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+	align-items: center;
+	width: 100%;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	justify-self: center;
+	align-self: center;
 
-  img {
-    width: 150px;
-    height: 150px;
-    margin: auto;
-	margin-bottom: 15px;
-  }
-  p {
-	text-align: center;
-    width: 180px;
-	margin: auto;
-    font-size: medium;
-  }
+	img {
+		width: 150px;
+		height: 150px;
+		margin: auto;
+		margin-bottom: 15px;
+	}
+
+	p {
+		text-align: center;
+		width: 180px;
+		margin: auto;
+		font-size: medium;
+	}
+
 }
