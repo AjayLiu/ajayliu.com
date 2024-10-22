@@ -7,15 +7,19 @@
 #about {
 	margin: auto 80px;
 
-	@include mobile {
+	@include largeMobile{
 		margin: 0;
 	}
 }
 
 #aboutSplit {
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	justify-content: center;
+	
+	@include largeMobile{
+		flex-direction: column;
+	}
 }
 
 #profile {
@@ -24,6 +28,11 @@
 	justify-content: center;
 	margin: auto;
 	margin-bottom: 50px;
+	margin-right: 50px;
+
+	@include largeMobile{
+		margin: auto;
+	}
 
 	strong {
 		font-size: 200%;
@@ -45,17 +54,6 @@
 
 }
 
-.cite {
-	position: relative;
-	text-align: right;
-	font-size: x-small;
-
-	@include mobile {
-		right: 0;
-	}
-}
-
-
 #aboutAchievements {
 	display: grid;
 	width: 100%;
@@ -63,12 +61,11 @@
 	justify-content: center;
 	align-items: center;
 
-	@include mobile {
+	@include largeMobile {
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		flex-wrap: wrap;
-		/* border: 1px solid red; */
 		width: 100%;
 		margin-bottom: 30px;
 		/* height: 2000px; */
