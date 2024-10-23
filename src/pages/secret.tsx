@@ -96,11 +96,10 @@ const Secret: React.FC = () => {
         and I just thought it was worth sharing. I will update this page with
         any thoughts I have.
       </p>
-
       <p
         style={{
           textAlign: "left",
-          margin: "20px auto",
+          margin: "200px auto 0",
           width: "80%",
           maxWidth: "800px",
         }}
@@ -123,7 +122,27 @@ const Secret: React.FC = () => {
         style={{ width: "500px", marginTop: "50px" }}
       />
       <p>My journal evolution circa 2024</p>
-
+      <p
+        style={{
+          textAlign: "left",
+          margin: "200px auto 30px",
+          width: "80%",
+          maxWidth: "800px",
+        }}
+      >
+        Update 10/22/2024: I'm taking WRIT 105PS (Public Speaking) at UCSB and
+        had to come up with a venture idea that I'm passionate about. I was
+        originally going to do a laundromat cafe (which I also really like the
+        idea of) but thought this had a more personal touch to it.
+      </p>
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/nhA-RMP2Dso?si=707tY4G2LNcYAkbJ"
+        title="YouTube video player"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowFullScreen
+      ></iframe>
       <p
         style={{
           marginTop: "200px",
