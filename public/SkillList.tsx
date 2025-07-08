@@ -13,6 +13,24 @@ const skills: Array<Skill> = [
     familiarity: 3,
   },
   {
+    image: "/img/cpp.svg",
+    alt: "C++ logo",
+    name: "C++",
+    familiarity: 3,
+  },
+  {
+    image: "/img/csharp.svg",
+    alt: "C# logo",
+    name: "C#",
+    familiarity: 3,
+  },
+  {
+    image: "/img/ruby.svg",
+    alt: "Ruby logo",
+    name: "Ruby",
+    familiarity: 3,
+  },
+  {
     image: "/img/nextjs.png",
     alt: "Next.js logo",
     name: "Next.js",
@@ -24,12 +42,8 @@ const skills: Array<Skill> = [
     name: "React",
     familiarity: 3,
   },
-  {
-    image: "/img/cpp.svg",
-    alt: "C++ logo",
-    name: "C++",
-    familiarity: 3,
-  },
+  
+  
   {
     image: "/img/vscode.svg",
     alt: "vscode logo",
@@ -42,12 +56,7 @@ const skills: Array<Skill> = [
     name: "Unity",
     familiarity: 3,
   },
-  {
-    image: "/img/csharp.svg",
-    alt: "C# logo",
-    name: "C#",
-    familiarity: 3,
-  },
+  
   {
     image: "/img/dotnet.svg",
     alt: ".NET logo",
@@ -59,6 +68,18 @@ const skills: Array<Skill> = [
     alt: "Github logo",
     name: "Github",
     familiarity: 3,
+  },
+  {
+	image: "/img/circleci.svg",
+	alt: "CircleCI logo",
+	name: "CircleCI",
+	familiarity: 2,
+  },
+  {
+	image: "/img/docker.svg",
+	alt: "Docker logo",
+	name: "Docker",
+	familiarity: 2,
   },
   {
     image: "/img/react.svg",

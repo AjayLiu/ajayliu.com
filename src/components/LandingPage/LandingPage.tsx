@@ -40,6 +40,8 @@ const LandingPage: React.FC = () => {
             sequence={[
               "Fullstack Web Developer",
               3000,
+              "DevOps Engineer",
+              1000,
               "Mobile App Developer",
               1000,
               "Game Developer",

@@ -21,11 +21,9 @@ const About: React.FC = () => {
                 <em>"Grateful to be."</em>
               </p>
               <p id={styles.aboutBio}>
-                <a href="/secret">👋</a> Hi! I’m a third-year Computer Science
+                <a href="/secret">👋</a> Hi! I’m a fourth-year Computer Science
                 undergrad at UCSB specializing in Fullstack Web/App/Game
-                Development.
-                <br />
-                Currently seeking Summer 2025 internships!
+                Development and DevOps.
                 <br />
                 Check out my projects below!
               </p>
@@ -34,15 +32,15 @@ const About: React.FC = () => {
           <div id={styles.aboutAchievements}>
             <Achievement
               link="https://www.cs.ucsb.edu/"
-              image="/img/ucsb-cs.png"
-              alt="UC Santa Barbara Computer Science logo"
-              description="UC Santa Barbara Computer Science 2026 w/ Regents"
+              image="/img/appfolio.png"
+              alt="AppFolio logo"
+              description="AppFolio - Software Engineer Intern (2025)"
             />
             <Achievement
               link="https://www.it.ucsb.edu/it-ucsb/ucsb-it-internship"
               image="/img/ucsb.png"
               alt="UCSB logo"
-              description="UCSB IT Internship Program - Web Application Developer (2024 - Present)"
+              description="UCSB IT Internship Program - Web Application Developer (2024 - 2025)"
             />
             <Achievement
               link="https://gdg.community.dev/gdg-on-campus-university-of-california-santa-barbara-santa-barbara-united-states/"
