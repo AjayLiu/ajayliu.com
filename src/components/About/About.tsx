@@ -27,6 +27,29 @@ const About: React.FC = () => {
                 <br />
                 Check out my projects below!
               </p>
+              <div className={styles.socialLinks}>
+                <a href="https://github.com/AjayLiu">
+                  <img
+                    className={styles.image}
+                    src="/img/github.svg"
+                    alt="github logo"
+                  />
+                </a>
+                <a href="https://www.linkedin.com/in/ajayliu/">
+                  <img
+                    className={styles.image}
+                    src="/img/linkedin.svg"
+                    alt="linkedin logo"
+                  />
+                </a>
+                <a href="https://www.youtube.com/channel/UCompAYRB224zqCPDyexvmng">
+                  <img
+                    className={styles.image}
+                    src="/img/youtube.svg"
+                    alt="youtube logo"
+                  />
+                </a>
+              </div>
             </div>
           </div>
           <div id={styles.aboutAchievements}>
@@ -34,7 +57,7 @@ const About: React.FC = () => {
               link="https://www.cs.ucsb.edu/"
               image="/img/appfolio.png"
               alt="AppFolio logo"
-              description="AppFolio - Software Engineer Intern (2025)"
+              description="AppFolio - Software Engineer Intern (CI & Dev Tooling Team) (2025)"
             />
             <Achievement
               link="https://www.it.ucsb.edu/it-ucsb/ucsb-it-internship"

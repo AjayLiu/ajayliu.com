@@ -72,3 +72,20 @@
 		/* height: 2000px; */
 	}
 }
+
+.socialLinks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0 40px 0;
+  a {
+    margin: 0 10px;
+    width: 36px;
+    .image {
+      width: 36px;
+    }
+  }
+}
+.image {
+  width: 36px;
+}
