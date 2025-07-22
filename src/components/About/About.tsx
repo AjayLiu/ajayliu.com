@@ -28,13 +28,6 @@ const About: React.FC = () => {
                 Check out my projects below!
               </p>
               <div className={styles.socialLinks}>
-                <a href="https://ajayliu.com">
-                  <img
-                    className={styles.image}
-                    src="/img/web_icon.svg"
-                    alt="website logo"
-                  />
-                </a>
                 <a href="https://github.com/AjayLiu">
                   <img
                     className={styles.image}
