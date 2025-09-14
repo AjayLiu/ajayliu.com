@@ -281,6 +281,75 @@ const cardList: Array<Card> = [
     imagePath: "/img/fathers-day.jpg",
     confetti: true,
   },
+  {
+    slug: "appfolio",
+    title: "AppFolio Internship",
+    banner: <></>,
+    content: (
+      <>
+        <h2>AppFolio Internship</h2>
+        <p>6.23.25 - 9.19.25 </p>
+        
+        <h3>Memories</h3>
+        <div style={{ 
+          display: 'grid', 
+          gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', 
+          gap: '1rem', 
+          margin: '1rem auto',
+          width: '50%',
+          maxWidth: 'none',
+          overflow: 'visible'
+        }}>
+          <img src="/img/zoo.jpeg" alt="Zoo visit" style={{ width: '100%', height: '300px', objectFit: 'cover', borderRadius: '8px', display: 'block' }} />
+          <img src="/img/joshua-tree.jpeg" alt="Joshua Tree National Park" style={{ width: '100%', height: '300px', objectFit: 'cover', borderRadius: '8px', display: 'block' }} />
+          <img src="/img/joshua-tree2.jpeg" alt="Joshua Tree National Park" style={{ width: '100%', height: '300px', objectFit: 'cover', borderRadius: '8px', display: 'block' }} />
+          <img src="/img/joshua-tree3.jpeg" alt="Joshua Tree National Park" style={{ width: '100%', height: '300px', objectFit: 'cover', borderRadius: '8px', display: 'block' }} />
+          <img src="/img/bbq.jpeg" alt="BBQ with team" style={{ width: '100%', height: '300px', objectFit: 'cover', borderRadius: '8px', display: 'block' }} />
+          <img src="/img/bbq2.jpeg" alt="BBQ with team" style={{ width: '100%', height: '300px', objectFit: 'cover', borderRadius: '8px', display: 'block' }} />
+          <img src="/img/bbq3.jpeg" alt="BBQ with team" style={{ width: '100%', height: '300px', objectFit: 'cover', borderRadius: '8px', display: 'block' }} />
+          <img src="/img/disney.jpeg" alt="Disney visit" style={{ width: '100%', height: '300px', objectFit: 'cover', borderRadius: '8px', display: 'block' }} />
+          <img src="/img/hibachi.jpeg" alt="Hibachi dinner" style={{ width: '100%', height: '300px', objectFit: 'cover', borderRadius: '8px', display: 'block' }} />
+        </div>
+
+		<p>This was hands down the best internship I've had. I was fully expecting to have a pretty boring summer stuck in Santa Barbara, but bro I was so wrong.</p>
+		
+		<h4>To my fellow interns:</h4>
+		<p>This summer was so peak. First few days when I got here, I was scared I'd just be a loner in the office, but I'm so glad I was wrong. 
+			We basically hanged out together like every other day. The Joshua Tree trip will remain a core memory for me, and I'm glad I could be my weird self with you guys
+			(*frat flicking*). 
+		</p>
+		<p>Victor: You're such a Golden Retreiver dude. You were giving me boyfriend treatment the way we had so many dinner dates together LMAO. I feel
+			like it's always us two creating motion, and I love that. Joshua Tree wouldn't have happened without you, or Magic the Gathering, Catan, or the Brazilian Phonk beats.
+
+			Anyways I'll see you in Fall. </p>
+
+
+		<h4>To the Mightiest DUX team:</h4>
+		<p>You guys are absolute wizards. I imagine DUX as the firefighters of AppFolio. Whenever CI goes down (sometimes because of me LOL), 
+			you guys are the first line of defense- and probably the only ones who can fix it. </p>
+		<p>Nick: I don't think you know this but I have a running joke with the other interns about how your last name is impossible to spell 😂. You've been a wonderful 
+			manager and I'm glad we conquered the Guardians of the Galaxy drop tower at Disney together. I can tell you care very much about your team, and we are all 
+			incredibly grateful.
+		</p>
+		<p></p>
+		<p>Paul: I learned so much from pairing with you. Not only are you a CI wizard but you make a really good teacher. The way you annotate on Zoom is quite impressive. 
+			I don't think I could've navigated Kermit or whatever's going on in CircleCI without you. Honestly I still don't really get what's going on with Bazel and what not, 
+			but everyone knows you're the expert- and you can explain it in a way that makes sense to anyone. Also I was surprised how good you are at <a
+				href="https://anime-character-quiz.ajayliu.com/"
+				target="_blank"
+				rel="noopener noreferrer"
+				style={{ color: '#a864fd' }}
+			>Anime Character Quiz</a>,
+			I think you can easily beat score 25.
+		</p>
+		
+
+      </>
+
+    ),
+    signature: <>-Ajay Liu</>,
+    imagePath: "/img/appfolio.png",
+  },
 ];
 
 export default cardList;
