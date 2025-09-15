@@ -289,12 +289,12 @@ const cardList: Array<Card> = [
       <>
         <h2>AppFolio Internship</h2>
         <p>6.23.25 - 9.19.25 </p>
-        
+
         <h3>Memories</h3>
-        <div style={{ 
-          display: 'grid', 
-          gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', 
-          gap: '1rem', 
+        <div style={{
+          display: 'grid',
+          gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))',
+          gap: '1rem',
           margin: '1rem auto',
           width: '50%',
           maxWidth: 'none',
@@ -311,38 +311,106 @@ const cardList: Array<Card> = [
           <img src="/img/hibachi.jpeg" alt="Hibachi dinner" style={{ width: '100%', height: '300px', objectFit: 'cover', borderRadius: '8px', display: 'block' }} />
         </div>
 
-		<p>This was hands down the best internship I've had. I was fully expecting to have a pretty boring summer stuck in Santa Barbara, but bro I was so wrong.</p>
-		
-		<h4>To my fellow interns:</h4>
-		<p>This summer was so peak. First few days when I got here, I was scared I'd just be a loner in the office, but I'm so glad I was wrong. 
-			We basically hanged out together like every other day. The Joshua Tree trip will remain a core memory for me, and I'm glad I could be my weird self with you guys
-			(*frat flicking*). 
-		</p>
-		<p>Victor: You're such a Golden Retreiver dude. You were giving me boyfriend treatment the way we had so many dinner dates together LMAO. I feel
-			like it's always us two creating motion, and I love that. Joshua Tree wouldn't have happened without you, or Magic the Gathering, Catan, or the Brazilian Phonk beats.
+        <p>This was hands down the best internship I've had. I was fully expecting to have a pretty boring summer stuck in Santa Barbara, but I was so wrong.</p>
 
-			Anyways I'll see you in Fall. </p>
+        <h4 style={{ marginTop: '100px' }}>To my fellow interns:</h4>
+        <p>This summer was so peak. First few days when I got here, I was scared I'd just be a loner in the office, but I'm so glad that wasn't the case.
+          We basically had motion like every single day. The Joshua Tree trip will remain a core memory for me, and I'm glad I could be my weird self with you guys
+          (*frat flicking*). #internz may be filled with dead deactivated accounts now, but the memories we made will last forever.
+        </p>
+        <p>Victor Liu 劉勝利: You're such a Golden Retreiver dude the way you just exude positive energy and consideration for others.
+          You were giving me boyfriend treatment the way we had so many dinner dates together LMAO. I feel
+          like it's always us two creating motion, and I love that. Joshua Tree wouldn't have happened without you, or Magic the Gathering, Catan, or the Brazilian Phonk beats.
 
+          Anyways I'll see you in Fall. I can be your placeholder girlfriend in the meantime ;) </p>
 
-		<h4>To the Mightiest DUX team:</h4>
-		<p>You guys are absolute wizards. I imagine DUX as the firefighters of AppFolio. Whenever CI goes down (sometimes because of me LOL), 
-			you guys are the first line of defense- and probably the only ones who can fix it. </p>
-		<p>Nick: I don't think you know this but I have a running joke with the other interns about how your last name is impossible to spell 😂. You've been a wonderful 
-			manager and I'm glad we conquered the Guardians of the Galaxy drop tower at Disney together. I can tell you care very much about your team, and we are all 
-			incredibly grateful.
-		</p>
-		<p></p>
-		<p>Paul: I learned so much from pairing with you. Not only are you a CI wizard but you make a really good teacher. The way you annotate on Zoom is quite impressive. 
-			I don't think I could've navigated Kermit or whatever's going on in CircleCI without you. Honestly I still don't really get what's going on with Bazel and what not, 
-			but everyone knows you're the expert- and you can explain it in a way that makes sense to anyone. Also I was surprised how good you are at <a
-				href="https://anime-character-quiz.ajayliu.com/"
-				target="_blank"
-				rel="noopener noreferrer"
-				style={{ color: '#a864fd' }}
-			>Anime Character Quiz</a>,
-			I think you can easily beat score 25.
-		</p>
-		
+        <p>AndyMcGamer: My matchaholic Liu brother in crime. I find it so funny that you'd go to such great lengths
+          to visit Folio HQ or to see the princesses at Disney, but that's the type of energy I need more in my life.
+          The reels you send are getting more and more unhinged and it just reminds me that life is meant to be silly
+          and fun. I can tell you're the guy everyone confides in, whether it's girl problems or problems that can only
+          be solved in Chinese (woc 😂). I hope we keep playing league and breaking production code :)
+        </p>
+
+        <p>Rift Harold: You remind me of my big bro the way you always keep it real; you're like the senpai I always wanted
+          (uwu). Nah but you made me feel some typa way when we sat in the frunk of Arnav's tessie and stargazed at Joshua Tree 😳.
+          Your tessie is also quite legendary, like driving to Seaside blasting Pride - Fame J. Like you said, I feel like we would've
+          been amazing friends if we met in high school or undergrad, but I'm glad we crossed paths. I'll catch you on a ttv/Wyzae stream
+          or somewhere on Colima Rd or smth lol.
+        </p>
+
+        <p>Big Nav: Arnav you're the embodiment of unwavering work ethic, and although I get concerned about your work-life balance the way
+          I see you making apm_bundle PRs at like 11pm ❓❓, I really admire the drive you have to succeed and achieve your goals. Honestly I've
+          been kinda lost in finding purpose in what I want to work towards, but you remind me of how exhilirating it can be to be
+          completely immersed in exciting work. I see you as my younger, quarantine peak 2021 coding Ajay, and it's a part of me I don't wanna forget.</p>
+
+        <p>Ege Dmitri: You are so unfiltered and funny bro 😂, I hope all the people I meet when I study abroad will be unhinged as you.
+          You're like a nonstop meme generator, first with Sigma Kappa Chinatsu and then with the whole men with baggage thing. Also soccer
+          was sm fun, and somehow you always win at board games even (especially) when it's your first time playing?? Anyways let's make smallergig.com
+          a thing :)
+        </p>
+
+        <p>Candis: You remind me of my sister back when she was in undergrad, kinda silly and effortlessly funny. I hope you resolve
+          your housemate beef situation and enjoy your time abroad. Also whatever iPhone 19 Pro Max you used to take the performative night
+          sky pics at Joshua Tree were so peak.
+        </p>
+
+        <p>Sahiti: You are so funny lol. I'm so glad you could come to Joshua Tree cuz what you wrote on Jackbox was hilarious 😂 (sorry Ajay).
+          Also we need to play ping pong again, for some reason we always get some really good rallies going but I just can't do that with
+          anyone else.
+        </p>
+
+        <p>David: Bro I didn't get the chance to play tennis with you 😭. Witnessing you play ping pong with Arnav in the game room
+          was only a glimpse of what your true potential on tennis was. I'm sure you've won the
+          "Most Likely to Bring Home to Mom and Dad" superlative plenty times before, but you're also just funny af too.
+          I hope Yale's not killing you rn. </p>
+
+        <h4 style={{ marginTop: '100px' }}>To the Mightiest DUX team:</h4>
+        <p>You guys are absolute wizards. I imagine DUX as the firefighters of AppFolio. Whenever CI goes down (sometimes because of me LOL),
+          you guys are the first line of defense- and probably the only ones who can fix it. </p>
+        <p>Nick: I don't think you know this but I have a running joke with the other interns about how your last name is impossible to spell 😂. You've been a wonderful
+          manager and I'm glad we conquered the Guardians of the Galaxy drop tower at Disney together. I can tell you care very much about your team, and we are all
+          incredibly grateful to have you as our manager.
+        </p>
+        <p>Shawn: The most badass mentor! I find your life out in the midwest really inspirational: how you didn't originally start in tech,
+          how you only eat one meal a day, and basically 100% Zelda. I like how you're so passionate about incorporating LLMs into your work,
+          with the Deflakinator and otto ask. It really goes to show how much you love to learn and solve problems, always thinking about
+          how to use the latest tech to make things better.
+        </p>
+
+        <p>Paul: I learned so much from pairing with you. Not only are you a CI wizard but you make a really good teacher. The way you annotate on Zoom is quite impressive.
+          I don't think I could've navigated Kermit or whatever's going on in CircleCI without you. Honestly I still don't really get what's going on with Bazel and what not,
+          but everyone knows you're the expert- and you can explain it in a way that makes sense to anyone. Also I was surprised how good you are at <a
+            href="https://anime-character-quiz.ajayliu.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ color: '#a864fd' }}
+          >Anime Character Quiz</a>,
+          I think you can easily beat score 25.
+        </p>
+
+        <p>Matt: Not everyone I've talked to knows about DUX, but everyone knows Matt Webb 😂. The amount of times I just
+          search for a problem I have on Slack, and I see you've already responded to it. I admire how you are always
+          willing to help others, and I can see how that can become a burden. But I think it really speaks to your
+          character, and I'm sure it's a very fulfilling feeling to use your knowledge to make a positive impact. </p>
+
+        <p>Tony: I think about your DOTA story a lot because the CTO's office is like right next to my seat and the imagery
+          of you guys playing DOTA together is quite extraordinary 😂. But yeah I've been thinking of moving to NYC after
+          grad and the fact that you work from there really made it seem very plausible. It was quite refreshing to navigate
+          the Kermit code base with you because we both have little prior knowledge, so we were on the same page. I'm sure we'll have
+          the chance to meet up in NYC one day.
+        </p>
+
+        <p>Sam: You're the only one on the team who's in SB, and I'm glad we had the chance to meet at Disney. I need to thank you
+          for teaching me how to cancel the git rebase -i vim interface with :cq, it's saved my life too many times since LOL.
+        </p>
+
+        <p>Hillary: Your username onthespotqa really does live up to its name. Sometimes I put a PR for review and I refresh the page and
+          you've already approved it!
+        </p>
+
+        <p>Kumar: It's funny how you reversed your first name last name, because we have an intern also called Abhishek Kumar. I wish I could've
+          had more time to know what you do day-to-day.
+        </p>
 
       </>
 
