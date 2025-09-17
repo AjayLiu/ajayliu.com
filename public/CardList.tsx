@@ -309,6 +309,14 @@ const cardList: Array<Card> = [
           <img src="/img/bbq3.jpeg" alt="BBQ with team" style={{ width: '100%', height: '300px', objectFit: 'cover', borderRadius: '8px', display: 'block' }} />
           <img src="/img/disney.jpeg" alt="Disney visit" style={{ width: '100%', height: '300px', objectFit: 'cover', borderRadius: '8px', display: 'block' }} />
           <img src="/img/hibachi.jpeg" alt="Hibachi dinner" style={{ width: '100%', height: '300px', objectFit: 'cover', borderRadius: '8px', display: 'block' }} />
+          <img src="/img/appfolio-1.jpeg" alt="AppFolio memories" style={{ width: '100%', height: '300px', objectFit: 'cover', borderRadius: '8px', display: 'block' }} />
+          <img src="/img/appfolio-2.jpeg" alt="AppFolio memories" style={{ width: '100%', height: '300px', objectFit: 'cover', borderRadius: '8px', display: 'block' }} />
+          <img src="/img/appfolio-3.jpeg" alt="AppFolio memories" style={{ width: '100%', height: '300px', objectFit: 'cover', borderRadius: '8px', display: 'block' }} />
+          <img src="/img/appfolio-4.jpeg" alt="AppFolio memories" style={{ width: '100%', height: '300px', objectFit: 'cover', borderRadius: '8px', display: 'block' }} />
+          <img src="/img/appfolio-5.jpeg" alt="AppFolio memories" style={{ width: '100%', height: '300px', objectFit: 'cover', borderRadius: '8px', display: 'block' }} />
+          <img src="/img/appfolio-6.jpeg" alt="AppFolio memories" style={{ width: '100%', height: '300px', objectFit: 'cover', borderRadius: '8px', display: 'block' }} />
+          <img src="/img/appfolio-7.jpeg" alt="AppFolio memories" style={{ width: '100%', height: '300px', objectFit: 'cover', borderRadius: '8px', display: 'block' }} />
+          <img src="/img/appfolio-8.jpeg" alt="AppFolio memories" style={{ width: '100%', height: '300px', objectFit: 'cover', borderRadius: '8px', display: 'block' }} />
         </div>
 
         <p>This was hands down the best internship I've had. I was fully expecting to have a pretty boring summer stuck in Santa Barbara, but I was so wrong.</p>
