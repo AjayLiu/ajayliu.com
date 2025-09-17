@@ -318,66 +318,84 @@ const cardList: Array<Card> = [
           We basically had motion like every single day. The Joshua Tree trip will remain a core memory for me, and I'm glad I could be my weird self with you guys
           (*frat flicking*). #internz may be filled with dead deactivated accounts now, but the memories we made will last forever.
         </p>
-        <p style={{fontSize: '1.5rem'}}>Victor Liu 劉勝利: You're such a Golden Retreiver dude the way you just exude positive energy and consideration for others.
+        <p style={{fontSize: '1rem'}}>Victor Liu 劉勝利: You're such a Golden Retreiver dude the way you just exude positive energy and consideration for others.
           You were giving me boyfriend treatment the way we had so many dinner dates together LMAO. I feel
           like it's always us two creating motion, and I love that. Joshua Tree wouldn't have happened without you, or Magic the Gathering, Catan, or the Brazilian Phonk beats.
 
           Anyways I'll see you in Fall. I can be your placeholder girlfriend in the meantime ;) </p>
 
-        <p style={{fontSize: '1.5rem'}}>AndyMcGamer: My matchaholic Liu brother in crime. I find it so funny that you'd go to such great lengths
+        <p style={{fontSize: '1rem'}}>AndyMcGamer: My matchaholic Liu brother in crime. I find it so funny that you'd go to such great lengths
           to visit Folio HQ or to see the princesses at Disney, but that's the type of energy I need more in my life.
           The reels you send are getting more and more unhinged and it just reminds me that life is meant to be silly
           and fun. I can tell you're the guy everyone confides in, whether it's girl problems or problems that can only
           be solved in Chinese (woc 😂). I hope we keep playing league and breaking production code :)
         </p>
 
-        <p style={{fontSize: '1.5rem'}}>Rift Harold: You remind me of my big bro the way you always keep it real; you're like the senpai I always wanted
+        <p style={{fontSize: '1rem'}}>Rift Harold: You remind me of my big bro the way you always keep it real; you're like the senpai I always wanted
           (uwu). Nah but you made me feel some typa way when we sat in the frunk of Arnav's tessie and stargazed at Joshua Tree 😳.
           Your tessie is also quite legendary, like driving to Seaside blasting Pride - Fame J. Like you said, I feel like we would've
           been amazing friends if we met in high school or undergrad, but I'm glad we crossed paths. I'll catch you on a ttv/Wyzae stream
           or somewhere on Colima Rd or smth lol.
         </p>
 
-        <p style={{fontSize: '1.5rem'}}>Big Nav: Arnav you're the embodiment of unwavering work ethic, and although I get concerned about your work-life balance the way
+        <p style={{fontSize: '1rem'}}>Big Nav: Arnav you're the embodiment of unwavering work ethic, and although I get concerned about your work-life balance the way
           I see you making apm_bundle PRs at like 11pm ❓❓, I really admire the drive you have to succeed and achieve your goals. Honestly I've
           been kinda lost in finding purpose in what I want to work towards, but you remind me of how exhilirating it can be to be
           completely immersed in exciting work. I see you as my younger, quarantine peak 2021 coding Ajay, and it's a part of me I don't wanna forget.</p>
 
-        <p style={{fontSize: '1.5rem'}}>Ege Dmitri: You are so unfiltered and funny bro 😂, I hope all the people I meet when I study abroad will be unhinged as you.
+        <p style={{fontSize: '1rem'}}>Ege Dmitri: You are so unfiltered and funny bro 😂, I hope all the people I meet when I study abroad will be unhinged as you.
           You're like a nonstop meme generator, first with Sigma Kappa Chinatsu and then with the whole men with baggage thing. Also soccer
-          was sm fun, and somehow you always win at board games even (especially) when it's your first time playing?? Anyways let's make smallergig.com
+          was sm fun, and somehow you always win at board games even (especially) when it's your first time playing?? But you could never win me 
+		  at Stickman Badminton 😎. Hopefully one day you'll make smallergig.com and post a vlog about it
           a thing :)
         </p>
 
-        <p style={{fontSize: '1.5rem'}}>Candis: You remind me of my sister back when she was in undergrad, kinda silly and effortlessly funny. I hope you resolve
+        <p style={{fontSize: '1rem'}}>Candis: You remind me of my sister back when she was in undergrad, kinda silly and effortlessly funny. I hope you resolve
           your housemate beef situation and enjoy your time abroad. Also whatever iPhone 19 Pro Max you used to take the performative night
-          sky pics at Joshua Tree were so peak.
+          sky pics at Joshua Tree were so peak. Thanks for listening to all my yappings near the end when it was basically just us and Ege in the office,
+		  kept me sane from my quarter-life crisis fr.
         </p>
 
-        <p style={{fontSize: '1.5rem'}}>Sahiti: You are so funny lol. I'm so glad you could come to Joshua Tree cuz what you wrote on Jackbox was hilarious 😂 (sorry Ajay).
+        <p style={{fontSize: '1rem'}}>Sahiti: You are so funny lol. I'm so glad you could come to Joshua Tree cuz what you wrote on Jackbox was hilarious 😂 (sorry Ajay).
           Also we need to play ping pong again, for some reason we always get some really good rallies going but I just can't do that with
           anyone else.
         </p>
 
-        <p style={{fontSize: '1.5rem'}}>David: Bro I didn't get the chance to play tennis with you 😭. Witnessing you play ping pong with Arnav in the game room
+        <p style={{fontSize: '1rem'}}>David Jeong: Bro I didn't get the chance to play tennis with you 😭. Witnessing you play ping pong with Arnav in the game room
           was only a glimpse of what your true potential on tennis was. I'm sure you've won the
           "Most Likely to Bring Home to Mom and Dad" superlative plenty times before, but you're also just funny af too.
-          I hope Yale's not killing you rn. </p>
+          I hope Yale's not killing you rn lol. </p>
+
+        <p style={{fontSize: '1rem'}}> Samir: The fact that you made the #coffee-sb bot is such a huge flex. Sometimes I feel like you're an unc 
+			living in a college kid's body with all that wisdom and knowledge, but you clearly still party hard lol. Coming to work hungover
+			and using beer for electrolytes is crazyyy. Your gatorade is still on the desk next to mine lol. Hope you're doing great in New York, 
+			maybe you'll still be there post-grad and we can meet up there? Or in SB idk</p>
+		
+		<p style={{fontSize: '1rem'}}> Brenna: Congrats on starting part time! I'm definitely gonna contact you about classes at Lund,
+			I'm trying to maximize my time abroad. I could tell you're such a kind-hearted person, and I hope you get to try the 
+			yoga class in the office some time (it's kinda intense ngl).</p>
+
+        <p style={{fontSize: '1rem'}}> Aman: You were the first intern I spoke with at AppFolio and you were so welcoming. I remember you
+			left a post-it note to come eat lunch at Lily's Taqueria with you, Samir, and Alex. Quite unfortunate how you left so early, but
+			you sure left a lasting impression while you were here ("cocaine" incident 🫢). </p>
+		<p style={{fontSize: '1rem'}}> Abhishek: I don't know where you went man, you were here then you teleported to Santa Cruz or
+			something. Like a rare pokemon. It's funny because there's someone on my team also named Abhishek Kumar, except he reversed
+			his first and last name so it's Kumar Abhishek (just to be different from you i guess lol). </p>
 
         <h4 style={{ marginTop: '100px' }}>To the Mightiest DUX team:</h4>
-        <p style={{fontSize: '1.5rem'}}>You guys are absolute wizards. I imagine DUX as the firefighters of AppFolio. Whenever CI goes down (sometimes because of me LOL),
+        <p style={{fontSize: '1rem'}}>You guys are absolute wizards. I imagine DUX as the firefighters of AppFolio. Whenever CI goes down (sometimes because of me LOL),
           you guys are the first line of defense- and probably the only ones who can fix it. </p>
-        <p style={{fontSize: '1.5rem'}}>Nick: I don't think you know this but I have a running joke with the other interns about how your last name is impossible to spell 😂. You've been a wonderful
-          manager and I'm glad we conquered the Guardians of the Galaxy drop tower at Disney together. I can tell you care very much about your team, and we are all
+        <p style={{fontSize: '1rem'}}>Nick: I don't think you know this but I have a running joke with the other interns about how your last name is impossible to spell 😂. You've been a wonderful
+          manager and I'm glad we conquered the Guardians of the Galaxy drop tower at Disney together. I can tell you care very much about everyone on DUX, and we are all
           incredibly grateful to have you as our manager.
         </p>
-        <p style={{fontSize: '1.5rem'}}>Shawn: The most badass mentor! I find your life out in the midwest really inspirational: how you didn't originally start in tech,
-          how you only eat one meal a day, and basically 100% Zelda. I like how you're so passionate about incorporating LLMs into your work,
+        <p style={{fontSize: '1rem'}}>Shawn: The most badass mentor! I find your life out in the midwest really inspirational: how you didn't originally start in tech,
+          how you only eat one meal a day, and basically 100%'d Zelda. I like how you're so passionate about incorporating LLMs into your work,
           with the Deflakinator and otto ask. It really goes to show how much you love to learn and solve problems, always thinking about
           how to use the latest tech to make things better.
         </p>
 
-        <p style={{fontSize: '1.5rem'}}>Paul: I learned so much from pairing with you. Not only are you a CI wizard but you make a really good teacher. The way you annotate on Zoom is quite impressive.
+        <p style={{fontSize: '1rem'}}>Paul: I learned so much from pairing with you. Not only are you a CI wizard but you make a really good teacher. The way you annotate on Zoom is quite impressive.
           I don't think I could've navigated Kermit or whatever's going on in CircleCI without you. Honestly I still don't really get what's going on with Bazel and what not,
           but everyone knows you're the expert- and you can explain it in a way that makes sense to anyone. Also I was surprised how good you are at <a
             href="https://anime-character-quiz.ajayliu.com/"
@@ -388,30 +406,68 @@ const cardList: Array<Card> = [
           I think you can easily beat score 25.
         </p>
 
-        <p style={{fontSize: '1.5rem'}}>Matt: Not everyone I've talked to knows about DUX, but everyone knows Matt Webb 😂. The amount of times I just
+        <p style={{fontSize: '1rem'}}>Matt: Not everyone I've talked to knows about DUX, but everyone knows Matt Webb 😂. The amount of times I just
           search for a problem I have on Slack, and I see you've already responded to it. I admire how you are always
           willing to help others, and I can see how that can become a burden. But I think it really speaks to your
           character, and I'm sure it's a very fulfilling feeling to use your knowledge to make a positive impact. </p>
 
-        <p style={{fontSize: '1.5rem'}}>Tony: I think about your DOTA story a lot because the CTO's office is like right next to my seat and the imagery
+        <p style={{fontSize: '1rem'}}>Tony: I think about your DOTA story a lot because the CTO's office is like right next to my seat and the imagery
           of you guys playing DOTA together is quite extraordinary 😂. But yeah I've been thinking of moving to NYC after
           grad and the fact that you work from there really made it seem very plausible. It was quite refreshing to navigate
           the Kermit code base with you because we both have little prior knowledge, so we were on the same page. I'm sure we'll have
           the chance to meet up in NYC one day.
         </p>
 
-        <p style={{fontSize: '1.5rem'}}>Sam: You're the only one on the team who's in SB, and I'm glad we had the chance to meet at Disney. I need to thank you
+        <p style={{fontSize: '1rem'}}>Sam: You're the only one on the team who's in SB, and I'm glad we had the chance to meet at Disney. I need to thank you
           for teaching me how to cancel the git rebase -i vim interface with :cq, it's saved my life too many times since LOL.
         </p>
 
-        <p style={{fontSize: '1.5rem'}}>Hillary: Your username onthespotqa really does live up to its name. Sometimes I put a PR for review and I refresh the page and
+        <p style={{fontSize: '1rem'}}>Hillary: Your username onthespotqa really does live up to its name. Sometimes I put a PR for review and I refresh the page and
           you've already approved it!
         </p>
 
-        <p style={{fontSize: '1.5rem'}}>Kumar: It's funny how you reversed your first name last name, because we have an intern also called Abhishek Kumar. I wish I could've
-          had more time to know what you do day-to-day.
+        <p style={{fontSize: '1rem'}}>Kumar: It's funny how you reversed your first name last name, because we have an intern also called Abhishek Kumar lol.
         </p>
 
+        <h4 style={{ marginTop: '100px' }}>To some other special characters:</h4>
+        <p style={{fontSize: '1rem'}}> 
+			Brandon: You're such a genuine guy. When we were drunk at the Zoo (and you called me a walking HR violation), I felt like I finally found someone who could 
+			match my unfiltered energy. I've said this before but you really remind me of my big brother, and your story is so inspiring and made me realize how
+			lucky I am: it's <s>uncs</s> great people like you who set a good example for us to follow. I really enjoy our conversations and I'm so glad to have
+			someone to help me navigate through this new chapter of my life.
+		</p>
+		<p style={{fontSize: '1rem'}}>
+			Evan: Literally none of this would've been possible without you. I still remember vividly when I received the call from you with news
+			that I got the internship. I had just finished my Final Presentation for my UCSB IT Internship, and was eating lunch at Coral Tree Cafe
+			when I just started jumping in excitement. I really want to thank you in person, and I hope to have you as a Guest Speaker for 
+			this upcoming Fall quarter! The interview process was so smooth and transparent, and this internship has been nothing but an amazing experience.
+		</p>
+		<p style={{fontSize: '1rem'}}>
+			Aleen: Our honorary intern! I'm so glad you could come to Joshua Tree and shoutout to your Lexus! It would not have been possible without you. 
+			Meeting your parents was also such a fun experience, they are so sweet and it really made me miss my own parents. It's quite courageous of you
+			to leave so far from home to start a new life in Santa Barbara, but I'm sure you're doing great for yourself.
+		</p>
+		<p style={{fontSize: '1rem'}}>
+			Edison: I get the vibe that you're like a classmate in one of my CS classes, which makes sense since you're a fresh grad lol. It's 
+			cool to hear about how the internships were like in the past, and now your're full time! Glad you could share your stories with us!
+		</p>
+		<p style={{fontSize: '1rem'}}>
+			David Avocado: Man those deep philosophical conversations were so much fun. Our topics would go from public transportation to the meaning of life within
+			the span of like 5 minutes but our chats really got me thinking about what I really want to do with my life. Especially the ideas of existentialism and living a 
+			comfortable life, whatever that means. Ping pong was also really fun with you and Martin. But yeah I love how you always challenge every thought
+			I have and it really makes me think deeper about my core values and beliefs. Thinking is healthy, and you make me think :)
+		</p>
+
+		<h4>Thank you guys so much for making this summer so memorable!</h4>
+		<p>Please stay connected with me! I'll be in SB until the end of the year, then I'll be studying abroad in Sweden from Jan-Jun 2026. After 
+			graduating in June, I'm thinking of moving to NYC, but I really do wish to stay with AppFolio. I love the work and the food and snacks,
+			but I love the people the most, and that's all thanks to you guys. Here's my contact info, please hit me up if you're ever in town or wanna chat.
+		</p>
+		<p>Email: ajayliu2928@gmail.com</p>
+		<p>Phone: (714) 717 - 5172</p>
+		<p>LinkedIn: <a href="https://www.linkedin.com/in/ajayliu/" target="_blank" rel="noopener noreferrer">https://www.linkedin.com/in/ajayliu/</a></p>
+		<p>Instagram: <a href="https://www.instagram.com/ajayliu_/" target="_blank" rel="noopener noreferrer">https://www.instagram.com/ajayliu_/</a></p>
+		<p>GitHub: <a href="https://github.com/AjayLiu" target="_blank" rel="noopener noreferrer">https://github.com/AjayLiu</a></p>
       </>
 
     ),
