@@ -122,6 +122,9 @@
 [[redirects]]
     from = "/angie"
     to = "/cards/angie"
+[[redirects]]
+    from = "/appfolio"
+    to = "/cards/appfolio"
 
 [[redirects]]
     from = "/resume"
