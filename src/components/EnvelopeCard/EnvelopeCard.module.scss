@@ -1,0 +1,163 @@
+﻿.envelopeContainer {
+  perspective: 1000px;
+  display: inline-block;
+  margin: 20px;
+  cursor: pointer;
+  vertical-align: top;
+}
+
+.envelope {
+  position: relative;
+  width: 460px;
+  height: 400px;
+  transform-style: preserve-3d;
+  transition: transform 0.6s ease-in-out;
+}
+
+.envelope.flipped {
+  transform: rotateY(180deg);
+}
+
+.envelopeFront,
+.envelopeBack {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+}
+
+/* Front of envelope */
+.envelopeFront {
+  background: #ffffff;
+  border: 2px solid #ddd;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+/* Envelope flap */
+.envelopeTop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 150px;
+  background: #f0f0f0;
+  border: 2px solid #ddd;
+  border-bottom: none;
+  transform-origin: top;
+  transform: rotateX(-15deg);
+  z-index: 2;
+  clip-path: polygon(0 0, 50% 75%, 100% 0);
+}
+
+/* Envelope body */
+.envelopeBody {
+  position: absolute;
+  top: 85px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #ffffff;
+  border: 2px solid #ddd;
+  border-top: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+/* Name tag */
+.nameTag {
+  background: #f5f5f5;
+  padding: 18px 30px;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e0e0e0;
+  text-align: center;
+}
+
+.name {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+}
+
+/* Back of envelope */
+.envelopeBack {
+  background: #ffffff;
+  border: 2px solid #ddd;
+  transform: rotateY(180deg);
+  padding: 28px;
+  display: flex;
+  align-items: stretch;
+  justify-content: stretch;
+  box-sizing: border-box;
+}
+
+/* Message content */
+.message {
+  background: #f9f9f9;
+  padding: 22px;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e0e0e0;
+  width: 100%;
+  height: 100%;
+  max-height: none;
+  overflow: auto;
+  box-sizing: border-box;
+  min-height: 0;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior: contain;
+  touch-action: pan-y;
+}
+
+.message p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #333;
+  text-align: left;
+}
+
+/* Hover effects removed by request */
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .envelope {
+    width: 95vw;
+    max-width: 520px;
+    height: 420px;
+  }
+  .envelopeTop {
+    height: 150px;
+  }
+  .envelopeBody {
+    top: 90px;
+  }
+  
+  .name {
+    font-size: 18px;
+  }
+  
+  .message p {
+    font-size: 14px;
+  }
+  
+  .message {
+    padding: 18px;
+    max-height: none;
+  }
+  
+  .nameTag {
+    padding: 14px 24px;
+  }
+}
