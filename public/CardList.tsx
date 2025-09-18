@@ -520,7 +520,7 @@ const cardList: Array<Card> = [
         <h4 style={{ marginTop: "100px", fontSize: "1em" }}>
           To my fellow interns:
         </h4>
-        <p style={{ fontSize: "0.95em" }}>
+        <p style={{ fontSize: "0.9em" }}>
           This summer was so peak. First few days when I got here, I was scared
           I'd just be a loner in the office, but I'm so glad that wasn't the
           case. We basically had motion like every single day. The Joshua Tree
@@ -602,7 +602,7 @@ const cardList: Array<Card> = [
         <h4 style={{ marginTop: "100px", fontSize: "1em" }}>
           To the Mightiest DUX team:
         </h4>
-        <p style={{ fontSize: "0.95em" }}>
+        <p style={{ fontSize: "0.9em" }}>
           You guys are absolute wizards. I imagine DUX as the firefighters of
           AppFolio. Whenever CI goes down (sometimes because of me LOL), you
           guys are the first line of defense- and probably the only ones who can
@@ -699,7 +699,7 @@ const cardList: Array<Card> = [
         <h4 style={{ fontSize: "1em" }}>
           Thank you guys so much for making this summer so memorable!
         </h4>
-        <p style={{ fontSize: "0.95em" }}>
+        <p style={{ fontSize: "0.9em" }}>
           Please stay connected with me! I'll be in SB until the end of the
           year, then I'll be studying abroad in Sweden from Jan-Jun 2026. After
           graduating in June, I'm thinking of moving to NYC, but I really do
@@ -708,36 +708,36 @@ const cardList: Array<Card> = [
           Here's my contact info, please hit me up if you're ever in town or
           wanna chat.
         </p>
-        <p style={{ fontSize: "0.95em" }}>Email: ajayliu2928@gmail.com</p>
-        <p style={{ fontSize: "0.95em" }}>Phone: (714) 717 - 5172</p>
-        <p style={{ fontSize: "0.95em" }}>
+        <p style={{ fontSize: "0.9em" }}>Email: ajayliu2928@gmail.com</p>
+        <p style={{ fontSize: "0.9em" }}>Phone: (714) 717 - 5172</p>
+        <p style={{ fontSize: "0.9em" }}>
           LinkedIn:{" "}
           <a
             href="https://www.linkedin.com/in/ajayliu/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            https://www.linkedin.com/in/ajayliu/
+            linkedin.com/in/ajayliu
           </a>
         </p>
-        <p style={{ fontSize: "0.95em" }}>
+        <p style={{ fontSize: "0.9em" }}>
           Instagram:{" "}
           <a
             href="https://www.instagram.com/ajayliu_/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            https://www.instagram.com/ajayliu_/
+            instagram.com/ajayliu_
           </a>
         </p>
-        <p style={{ fontSize: "0.95em" }}>
+        <p style={{ fontSize: "0.9em" }}>
           GitHub:{" "}
           <a
             href="https://github.com/AjayLiu"
             target="_blank"
             rel="noopener noreferrer"
           >
-            https://github.com/AjayLiu
+            github.com/AjayLiu
           </a>
         </p>
       </>
