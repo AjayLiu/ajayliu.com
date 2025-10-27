@@ -126,6 +126,22 @@ const Projects: React.FC = () => {
       collaborators={["Isaiah Garcia", "Kevin Zhang", "Victor Prchlik"]}
     />
   );
+  const yapmaps = (
+    <ProjectItem
+      key="yapmaps"
+      image="/img/yapmaps.png"
+      title="YapMaps (2025)"
+      link="https://yapmaps.vercel.app/"
+      githubLink="https://github.com/bsen1/team-sendy"
+      description="Won 1st Overall at Unwrapathon 2025. An NLP-powered map visualizing trending campus discussions across U.S. universities. "
+      madeWith={findSkillsWithNames([
+        "Python",
+        "Next.js",
+        "React",
+        "TypeScript",
+      ])}
+    />
+  );
 
   return (
     <section style={{ marginTop: "100px" }}>
@@ -141,10 +157,8 @@ const Projects: React.FC = () => {
       <div className={styles.gallery}>
         <div className={styles.galleryTitle}>Top Picks ⭐ </div>
         <div className={styles.galleryRow}>
-          {verde}
-          {graticat}
+          {yapmaps}
           {notationVisualizer}
-          {inspirationJar}
           {animeCharacterQuiz}
           {cubeInc}
         </div>
@@ -175,6 +189,7 @@ const Projects: React.FC = () => {
       <div className={styles.gallery}>
         <div className={styles.galleryTitle}>Website Projects</div>
         <div className={styles.galleryRow}>
+          {yapmaps}
           {notationVisualizer}
           <ProjectItem
             key="betYouDontKnow"
