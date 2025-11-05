@@ -1,11 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   // Note: The "target" property is deprecated in Next.js 13+
-  // Netlify plugin will handle the deployment configuration
-  output: 'export',
-  images: {
-    unoptimized: true, // Required for static export
-  },
+  // Let Netlify plugin handle the deployment configuration
+  // Do not use output: 'export' as it conflicts with @netlify/plugin-nextjs
 }
 
 module.exports = nextConfig
