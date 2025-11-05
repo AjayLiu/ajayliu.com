@@ -2,6 +2,9 @@
   "name": "ajayliu.com",
   "version": "0.2.0",
   "private": true,
+  "engines": {
+    "node": ">=18.0.0"
+  },
   "scripts": {
     "dev": "next",
     "build": "next build",
@@ -13,7 +16,7 @@
     "@sendgrid/mail": "^7.4.2",
     "axios": "^0.27.2",
     "classnames": "^2.3.1",
-    "next": "^12.2.3",
+    "next": "^13.5.7",
     "react": "18.2.0",
     "react-accessible-accordion": "^5.0.0",
     "react-dom": "18.2.0",
