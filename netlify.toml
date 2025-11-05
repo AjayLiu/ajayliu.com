@@ -1,7 +1,11 @@
 [build]
-    command = "yarn run build"
+    command = "rm -rf out && yarn run build"
     publish = "out"
     functions = "my_functions"
+
+# Note: @netlify/plugin-nextjs is disabled for static exports
+# If enabled in Netlify UI, it must be manually disabled there
+# to prevent duplicate execution conflicts
 
 [[plugins]]
   package = "netlify-plugin-image-optim"
