@@ -8,7 +8,10 @@
 	margin: auto 80px;
 
 	@include largeMobile {
-		margin: 0;
+		margin: 0 auto;
+		padding: 0 20px;
+		width: 100%;
+		box-sizing: border-box;
 	}
 }
 
@@ -68,8 +71,21 @@
 		justify-content: center;
 		flex-wrap: wrap;
 		width: 100%;
-		margin-bottom: 30px;
+		margin: 0 auto 30px auto;
+		padding: 0;
+		box-sizing: border-box;
+		gap: 20px;
 		/* height: 2000px; */
+
+		a {
+			margin-left: 0;
+			margin-right: 0;
+			
+			div {
+				margin-left: 0;
+				margin-right: 0;
+			}
+		}
 	}
 }
 
