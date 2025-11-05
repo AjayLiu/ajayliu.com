@@ -1,7 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Minimal config - Netlify will use the latest adapter automatically
-  // Note: Do not include 'target' property as it's deprecated in Next.js 13+
+  // Temporary workaround: removed output: 'export' to work with outdated plugin
+  // TODO: Remove @netlify/plugin-nextjs@3.9.2 from Netlify UI, then re-enable output: 'export'
+  // With static export, you don't need the plugin at all
 }
 
 module.exports = nextConfig
