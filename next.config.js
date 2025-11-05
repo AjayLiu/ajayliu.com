@@ -1,8 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Note: The "target" property is deprecated in Next.js 13+
-  // but may be required as a workaround for compatibility with Netlify adapter
-  target: 'serverless',
+  // Minimal config - Netlify will use the latest adapter automatically
+  // Note: Do not include 'target' property as it's deprecated in Next.js 13+
 }
 
 module.exports = nextConfig
