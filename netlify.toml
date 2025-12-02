@@ -1,7 +1,13 @@
 [build]
-    command = "yarn run build"
+    command = "rm -rf out .next && yarn run build"
     publish = "out"
     functions = "my_functions"
+
+# IMPORTANT: After upgrading build image, newer images auto-detect Next.js and enable the plugin.
+# For static exports (output: 'export'), the plugin must be disabled:
+# 1. Go to Netlify UI → Site Settings → Build & Deploy → Environment
+# 2. Add environment variable: NETLIFY_NEXT_PLUGIN_SKIP = "true"
+# OR disable the plugin in: Site Settings → Build & Deploy → Plugins
 
 [[plugins]]
   package = "netlify-plugin-image-optim"

@@ -28,10 +28,10 @@ export const getStaticPaths = async () => {
   };
 };
 
-export const getStaticProps = async ({ params: { slug } }) => {
+export const getStaticProps = async ({ params }: { params: { slug: string } }) => {
   return {
     props: {
-      slug,
+      slug: params.slug,
     },
   };
 };
