@@ -50,6 +50,9 @@
     from = "/sheep-or-goat"
     to = "https://sheep-goat.ajayliu.com/"
 [[redirects]]
+    from = "/local-lore"
+    to = "https://local-lore.ajayliu.com/"
+[[redirects]]
     from = "/inspiration-jar"
     to = "https://inspiration-jar.ajayliu.com/"
 [[redirects]]

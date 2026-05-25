@@ -111,11 +111,14 @@ const Contact: React.FC<Props> = (props) => {
           <p>contact@ajayliu.com</p>
         </div>
         <div className={styles.resume}>
-          <Link href={"/resume.pdf"}>
-            <a target="_blank" className={styles.resumeLink}>
-              <img src="img/resume.svg" alt="Resume" />
-              <div className={styles.text}>Resume (pdf)</div>
-            </a>
+          <Link
+            href="/resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.resumeLink}
+          >
+            <img src="img/resume.svg" alt="Resume" />
+            <div className={styles.text}>Resume (pdf)</div>
           </Link>
         </div>
         {/* THIS IS A BOT FIELD BELOW */}

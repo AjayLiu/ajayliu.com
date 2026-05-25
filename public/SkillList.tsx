@@ -172,6 +172,24 @@ const skills: Array<Skill> = [
     familiarity: 3,
   },
   {
+    image: "/img/vercel.svg",
+    alt: "Vercel logo",
+    name: "Vercel",
+    familiarity: 3,
+  },
+  {
+    image: "/img/gemini.svg",
+    alt: "Gemini logo",
+    name: "Gemini",
+    familiarity: 3,
+  },
+  {
+    image: "/img/openai.svg",
+    alt: "OpenAI logo",
+    name: "OpenAI",
+    familiarity: 3,
+  },
+  {
     image: "/img/netlifycms.png",
     alt: "Netlify CMS logo",
     name: "NetlifyCMS",

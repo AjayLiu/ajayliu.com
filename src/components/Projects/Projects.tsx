@@ -139,6 +139,28 @@ const Projects: React.FC = () => {
         "Next.js",
         "React",
         "TypeScript",
+        "Vercel",
+        "OpenAI"
+      ])}
+      collaborators={["Brian Sen", "William Lau"]}
+    />
+  );
+  const localLore = (
+    <ProjectItem
+      key="localLore"
+      image="/img/local-lore.svg"
+      title="Local Lore (2026)"
+      link="https://local-lore.ajayliu.com/"
+      githubLink="https://github.com/ajayliu/local-lore"
+      youtubeLink="https://youtu.be/KaIJmj_LC48"
+      description="AI-powered local history explorer"
+      madeWith={findSkillsWithNames([
+        "Next.js",
+        "TailwindCSS",
+        "React",
+        "Typescript",
+        "Vercel",
+        "Gemini"
       ])}
     />
   );
@@ -157,6 +179,7 @@ const Projects: React.FC = () => {
       <div className={styles.gallery}>
         <div className={styles.galleryTitle}>Top Picks ⭐ </div>
         <div className={styles.galleryRow}>
+          {localLore}
           {yapmaps}
           {notationVisualizer}
           {animeCharacterQuiz}
@@ -189,6 +212,7 @@ const Projects: React.FC = () => {
       <div className={styles.gallery}>
         <div className={styles.galleryTitle}>Website Projects</div>
         <div className={styles.galleryRow}>
+          {localLore}
           {yapmaps}
           {notationVisualizer}
           <ProjectItem
