@@ -11,6 +11,18 @@
       height: 45vw;
     }
   }
+
+  .demoReelCta {
+    margin-top: 12px;
+    font-size: 1.05rem;
+
+    a {
+      display: inline-block;
+      margin-top: 6px;
+      font-weight: 700;
+      text-decoration: underline;
+    }
+  }
 }
 .gallery {
   width: 90%;

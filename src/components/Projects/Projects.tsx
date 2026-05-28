@@ -160,7 +160,8 @@ const Projects: React.FC = () => {
         "React",
         "Typescript",
         "Vercel",
-        "Gemini"
+        "Gemini",
+        "Supabase",
       ])}
     />
   );
@@ -175,6 +176,11 @@ const Projects: React.FC = () => {
           allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
           allowFullScreen
         ></iframe>
+        <p className={styles.demoReelCta}>
+          Try out my newest project, Local Lore 📍
+          <br />
+          <a href="https://local-lore.ajayliu.com/">🔗 Demo Link</a>
+        </p>
       </div>
       <div className={styles.gallery}>
         <div className={styles.galleryTitle}>Top Picks ⭐ </div>

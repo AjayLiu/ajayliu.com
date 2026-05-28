@@ -219,6 +219,12 @@ const skills: Array<Skill> = [
     name: "Firebase",
     familiarity: 3,
   },
+  {
+    image: "/img/supabase.svg",
+    alt: "Supabase logo",
+    name: "Supabase",
+    familiarity: 3,
+  },
 ];
 
 export default skills;
